@@ -1,16 +1,21 @@
-// GTFS-Realtime VehiclePositions feed for Arroyo de la Encomienda
-// Proxies https://arroyo.actiosae.com/bff/mobile/vehiclePosition and re-encodes
-// the response as a GTFS-Realtime FeedMessage (protobuf).
+// GTFS-Realtime VehiclePositions feed for Arroyo de la Encomienda.
+//
+// The upstream `/bff/mobile/vehiclePosition` endpoint returns an empty list,
+// but each entry in `/bff/mobile/arrivals/{stopId}` carries the assigned
+// vehicle's lat/lon/gpsTimestamp. We fan out across every stop, dedupe by
+// vehicleId, and keep the most recent GPS sample per vehicle.
 //
 // GET /functions/v1/gtfs-rt              -> application/x-protobuf (GTFS-RT)
-// GET /functions/v1/gtfs-rt?format=json  -> JSON (debug / raw upstream)
+// GET /functions/v1/gtfs-rt?format=json  -> JSON debug
 
-const UPSTREAM = "https://arroyo.actiosae.com/bff/mobile/vehiclePosition";
+const BASE = "https://arroyo.actiosae.com";
 const API_KEY = "AIzaSyCvtaF21g0lPX0cTgOiIcHZNZRQlw2TRVA";
 const ANDROID_PACKAGE = "com.geoactio.arroyo_encomienda";
 const ANDROID_CERT_SHA1 = "222E5B204DE7B52F04DBED2A8B7947D566B0C2CA";
 const FEED_ID = "arroyo";
-const CACHE_TTL_MS = 5_000;
+const FEED_TTL_MS = 5_000;
+const STOPS_TTL_MS = 5 * 60_000;
+const FANOUT_CONCURRENCY = 8;
 
 const corsHeaders: Record<string, string> = {
   "Access-Control-Allow-Origin": "*",
@@ -19,21 +24,31 @@ const corsHeaders: Record<string, string> = {
   "Access-Control-Allow-Methods": "GET, OPTIONS",
 };
 
-interface GpsPosition {
-  timestamp?: string;
-  latitude: number;
-  longitude: number;
-  orientation?: number;
-  speed?: number;
-  directionId?: string;
-  routeId?: string;
-  vehicleId?: string;
-  vehicleName?: string;
+interface Stop { stopId: string; }
+interface Arrival {
+  tripId?: string;
+  stopId?: string;
+  stopSequence?: string | number;
+  directionId?: string | number;
+  vehicleId?: string | null;
+  lat?: number;
+  lon?: number;
+  gpsTimestamp?: string;
+  isAproximated?: boolean;
+  route?: { routeId?: string };
 }
 
-interface UpstreamResponse {
-  gpsPositions?: GpsPosition[];
-  message?: string;
+interface VehicleSample {
+  vehicleId: string;
+  lat: number;
+  lon: number;
+  ts: number;
+  tripId?: string;
+  routeId?: string;
+  directionId?: string | number;
+  stopId?: string;
+  stopSequence?: string | number;
+  isAproximated?: boolean;
 }
 
 // ---------- tiny protobuf writer ----------
@@ -87,42 +102,48 @@ class PbWriter {
   }
 }
 
-function encodePosition(p: GpsPosition): Uint8Array {
+function encodePosition(s: VehicleSample): Uint8Array {
   const w = new PbWriter();
-  w.tagFloat(1, p.latitude); // latitude
-  w.tagFloat(2, p.longitude); // longitude
-  if (typeof p.orientation === "number") w.tagFloat(3, p.orientation); // bearing
-  if (typeof p.speed === "number") w.tagFloat(5, p.speed / 3.6); // m/s
+  w.tagFloat(1, s.lat);
+  w.tagFloat(2, s.lon);
   return w.bytes();
 }
 
-function encodeTripDescriptor(p: GpsPosition): Uint8Array | null {
-  if (!p.routeId && !p.directionId) return null;
+function encodeTripDescriptor(s: VehicleSample): Uint8Array | null {
+  if (!s.tripId && !s.routeId && s.directionId === undefined) return null;
   const w = new PbWriter();
-  if (p.routeId) w.tagString(5, p.routeId); // route_id
-  if (p.directionId !== undefined && p.directionId !== null) {
-    const n = Number(p.directionId);
-    if (!Number.isNaN(n)) w.tagVarint(6, n); // direction_id (uint32)
+  if (s.tripId) w.tagString(1, s.tripId); // trip_id
+  if (s.routeId) w.tagString(5, s.routeId); // route_id
+  if (s.directionId !== undefined && s.directionId !== null) {
+    const n = Number(s.directionId);
+    if (!Number.isNaN(n)) w.tagVarint(6, n);
   }
   return w.bytes();
 }
 
-function encodeVehicleDescriptor(p: GpsPosition): Uint8Array | null {
-  if (!p.vehicleId && !p.vehicleName) return null;
+function encodeVehicleDescriptor(id: string): Uint8Array {
   const w = new PbWriter();
-  if (p.vehicleId) w.tagString(1, p.vehicleId); // id
-  if (p.vehicleName) w.tagString(2, p.vehicleName); // label
+  w.tagString(1, id); // id
+  w.tagString(2, id); // label
   return w.bytes();
 }
 
-function encodeVehiclePosition(p: GpsPosition, ts: number): Uint8Array {
+function encodeStopRef(s: VehicleSample, w: PbWriter) {
+  if (s.stopId) w.tagString(7, s.stopId); // stop_id
+  if (s.stopSequence !== undefined) {
+    const n = Number(s.stopSequence);
+    if (!Number.isNaN(n)) w.tagVarint(3, n); // current_stop_sequence
+  }
+}
+
+function encodeVehiclePosition(s: VehicleSample): Uint8Array {
   const w = new PbWriter();
-  const trip = encodeTripDescriptor(p);
+  const trip = encodeTripDescriptor(s);
   if (trip) w.tagMessage(1, trip);
-  w.tagMessage(2, encodePosition(p)); // position
-  const veh = encodeVehicleDescriptor(p);
-  if (veh) w.tagMessage(8, veh);
-  w.tagVarint(5, ts); // timestamp (uint64)
+  w.tagMessage(2, encodePosition(s));
+  encodeStopRef(s, w);
+  w.tagVarint(5, s.ts); // timestamp
+  w.tagMessage(8, encodeVehicleDescriptor(s.vehicleId));
   return w.bytes();
 }
 
@@ -141,14 +162,12 @@ function encodeFeedHeader(ts: number): Uint8Array {
   return w.bytes();
 }
 
-function encodeFeedMessage(positions: GpsPosition[], feedTs: number): Uint8Array {
+function encodeFeedMessage(samples: VehicleSample[], feedTs: number): Uint8Array {
   const w = new PbWriter();
-  w.tagMessage(1, encodeFeedHeader(feedTs)); // header
-  positions.forEach((p, i) => {
-    const ts = parseTimestamp(p.timestamp) ?? feedTs;
-    const id = p.vehicleId || `veh_${i}`;
-    w.tagMessage(2, encodeFeedEntity(id, encodeVehiclePosition(p, ts))); // entity
-  });
+  w.tagMessage(1, encodeFeedHeader(feedTs));
+  for (const s of samples) {
+    w.tagMessage(2, encodeFeedEntity(s.vehicleId, encodeVehiclePosition(s)));
+  }
   return w.bytes();
 }
 
@@ -162,28 +181,82 @@ function parseTimestamp(s?: string): number | null {
   return null;
 }
 
-// ---------- upstream fetch with short in-memory cache ----------
-let cache: { at: number; data: UpstreamResponse } | null = null;
+// ---------- upstream fetch ----------
+const upHeaders = {
+  "X-Android-Package": ANDROID_PACKAGE,
+  "X-Android-Cert": ANDROID_CERT_SHA1,
+  "Accept": "application/json",
+};
 
-async function fetchPositions(): Promise<UpstreamResponse> {
-  if (cache && Date.now() - cache.at < CACHE_TTL_MS) return cache.data;
-  const url = new URL(UPSTREAM);
-  url.searchParams.set("feedId", FEED_ID);
-  url.searchParams.set("key", API_KEY);
-  const res = await fetch(url.toString(), {
-    headers: {
-      "X-Android-Package": ANDROID_PACKAGE,
-      "X-Android-Cert": ANDROID_CERT_SHA1,
-      "Accept": "application/json",
-    },
-  });
-  if (!res.ok) {
-    const text = await res.text().catch(() => "");
-    throw new Error(`Upstream ${res.status}: ${text.slice(0, 200)}`);
+let stopsCache: { at: number; ids: string[] } | null = null;
+async function fetchStopIds(): Promise<string[]> {
+  if (stopsCache && Date.now() - stopsCache.at < STOPS_TTL_MS) return stopsCache.ids;
+  const u = new URL(`${BASE}/bff/mobile/stop/list`);
+  u.searchParams.set("feedId", FEED_ID);
+  u.searchParams.set("key", API_KEY);
+  const r = await fetch(u, { headers: upHeaders });
+  if (!r.ok) throw new Error(`stops ${r.status}`);
+  const json = await r.json();
+  const ids = (json.stops as Stop[]).map((s) => s.stopId);
+  stopsCache = { at: Date.now(), ids };
+  return ids;
+}
+
+async function fetchArrivals(stopId: string): Promise<Arrival[]> {
+  const u = new URL(`${BASE}/bff/mobile/arrivals/${encodeURIComponent(stopId)}`);
+  u.searchParams.set("feedId", FEED_ID);
+  u.searchParams.set("key", API_KEY);
+  const r = await fetch(u, { headers: upHeaders });
+  if (!r.ok) return [];
+  const json = await r.json().catch(() => []);
+  return Array.isArray(json) ? (json as Arrival[]) : [];
+}
+
+async function pool<T, R>(items: T[], n: number, fn: (t: T) => Promise<R>): Promise<R[]> {
+  const out: R[] = new Array(items.length);
+  let i = 0;
+  async function worker() {
+    while (true) {
+      const idx = i++;
+      if (idx >= items.length) return;
+      try { out[idx] = await fn(items[idx]); } catch { out[idx] = [] as unknown as R; }
+    }
   }
-  const data: UpstreamResponse = await res.json();
-  cache = { at: Date.now(), data };
-  return data;
+  await Promise.all(Array.from({ length: Math.min(n, items.length) }, worker));
+  return out;
+}
+
+let feedCache: { at: number; samples: VehicleSample[] } | null = null;
+async function buildSamples(): Promise<VehicleSample[]> {
+  if (feedCache && Date.now() - feedCache.at < FEED_TTL_MS) return feedCache.samples;
+  const stopIds = await fetchStopIds();
+  const all = await pool(stopIds, FANOUT_CONCURRENCY, fetchArrivals);
+  const best = new Map<string, VehicleSample>();
+  for (const arrivals of all) {
+    for (const a of arrivals) {
+      if (!a.vehicleId) continue;
+      if (typeof a.lat !== "number" || typeof a.lon !== "number") continue;
+      const ts = parseTimestamp(a.gpsTimestamp);
+      if (ts === null) continue;
+      const cur = best.get(a.vehicleId);
+      if (cur && cur.ts >= ts) continue;
+      best.set(a.vehicleId, {
+        vehicleId: a.vehicleId,
+        lat: a.lat,
+        lon: a.lon,
+        ts,
+        tripId: a.tripId,
+        routeId: a.route?.routeId,
+        directionId: a.directionId,
+        stopId: a.stopId,
+        stopSequence: a.stopSequence,
+        isAproximated: a.isAproximated,
+      });
+    }
+  }
+  const samples = [...best.values()];
+  feedCache = { at: Date.now(), samples };
+  return samples;
 }
 
 Deno.serve(async (req) => {
@@ -197,8 +270,7 @@ Deno.serve(async (req) => {
   try {
     const url = new URL(req.url);
     const format = url.searchParams.get("format");
-    const data = await fetchPositions();
-    const positions = data.gpsPositions ?? [];
+    const samples = await buildSamples();
     const feedTs = Math.floor(Date.now() / 1000);
 
     if (format === "json") {
@@ -209,21 +281,18 @@ Deno.serve(async (req) => {
             incrementality: "FULL_DATASET",
             timestamp: feedTs,
           },
-          entity: positions.map((p, i) => ({
-            id: p.vehicleId || `veh_${i}`,
+          entity: samples.map((s) => ({
+            id: s.vehicleId,
             vehicle: {
-              trip: { route_id: p.routeId, direction_id: p.directionId },
-              position: {
-                latitude: p.latitude,
-                longitude: p.longitude,
-                bearing: p.orientation,
-                speed: typeof p.speed === "number" ? p.speed / 3.6 : undefined,
-              },
-              vehicle: { id: p.vehicleId, label: p.vehicleName },
-              timestamp: parseTimestamp(p.timestamp) ?? feedTs,
+              trip: { trip_id: s.tripId, route_id: s.routeId, direction_id: s.directionId },
+              position: { latitude: s.lat, longitude: s.lon },
+              current_stop_sequence: s.stopSequence,
+              stop_id: s.stopId,
+              timestamp: s.ts,
+              vehicle: { id: s.vehicleId, label: s.vehicleId },
+              is_approximated: s.isAproximated,
             },
           })),
-          upstream_message: data.message,
         }, null, 2),
         {
           headers: {
@@ -235,14 +304,14 @@ Deno.serve(async (req) => {
       );
     }
 
-    const pb = encodeFeedMessage(positions, feedTs);
+    const pb = encodeFeedMessage(samples, feedTs);
     return new Response(pb, {
       headers: {
         ...corsHeaders,
         "Content-Type": "application/x-protobuf",
         "Content-Disposition": 'inline; filename="vehicle-positions.pb"',
         "Cache-Control": "public, max-age=5",
-        "X-Vehicle-Count": String(positions.length),
+        "X-Vehicle-Count": String(samples.length),
         "X-Feed-Timestamp": String(feedTs),
       },
     });
