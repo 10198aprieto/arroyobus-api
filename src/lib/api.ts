@@ -1,5 +1,3 @@
-import { supabase } from "@/integrations/supabase/client";
-
 const BASE = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/actio`;
 const KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
@@ -32,6 +30,3 @@ export async function actioPost<T = unknown>(path: string, body: unknown): Promi
   if (!r.ok) throw new Error(typeof parsed === "string" ? parsed : JSON.stringify(parsed));
   return parsed as T;
 }
-
-// avoid unused import warning if tree-shaking misbehaves
-export const _s = supabase;
