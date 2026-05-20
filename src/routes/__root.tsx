@@ -72,11 +72,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Arroyobus Open Data" },
+      { name: "description", content: "Acceso libre a líneas, paradas, llegadas, vehículos y alertas de Arroyobus." },
+      { name: "author", content: "Arroyobus Proxy" },
+      { property: "og:title", content: "Arroyobus Open Data" },
+      { property: "og:description", content: "Líneas, paradas, llegadas, vehículos y alertas en tiempo real." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -113,7 +113,34 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <div className="min-h-screen bg-background text-foreground">
+        <header className="border-b border-border bg-card">
+          <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-1 px-4 py-3">
+            <Link to="/" className="mr-4 font-bold text-lg">Arroyobus</Link>
+            {[
+              ["/routes", "Líneas"],
+              ["/stops", "Paradas"],
+              ["/vehicles", "Vehículos"],
+              ["/alerts", "Alertas"],
+              ["/tad", "TAD"],
+              ["/suggestion", "Sugerencias"],
+              ["/gtfs-rt", "GTFS-RT"],
+            ].map(([to, label]) => (
+              <Link
+                key={to}
+                to={to}
+                className="rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-foreground [&.active]:bg-primary [&.active]:text-primary-foreground"
+                activeProps={{ className: "active" }}
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+        </header>
+        <main className="mx-auto max-w-6xl px-4 py-6">
+          <Outlet />
+        </main>
+      </div>
     </QueryClientProvider>
   );
 }
