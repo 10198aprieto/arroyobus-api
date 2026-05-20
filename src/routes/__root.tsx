@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Acceso libre a líneas, paradas, llegadas, vehículos y alertas de Arroyobus." },
       { name: "author", content: "Arroyobus Proxy" },
       { property: "og:title", content: "Arroyobus Open Data" },
-      { property: "og:description", content: "Líneas, paradas, llegadas, vehículos y alertas en tiempo real." },
+      { property: "og:description", content: "Acceso libre a líneas, paradas, llegadas, vehículos y alertas de Arroyobus." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Arroyobus Open Data" },
+      { name: "twitter:description", content: "Acceso libre a líneas, paradas, llegadas, vehículos y alertas de Arroyobus." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Pc7TvDt3YycYbiypl49Z1C8eYV82/social-images/social-1779303317104-Captura_de_pantalla_2026-05-20_205502.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Pc7TvDt3YycYbiypl49Z1C8eYV82/social-images/social-1779303317104-Captura_de_pantalla_2026-05-20_205502.webp" },
     ],
     links: [
       {
