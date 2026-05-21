@@ -1,20 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup, CircleMarker, useMap } from "react-leaflet";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { actioGet } from "@/lib/api";
 
-export const Route = createFileRoute("/explorer")({ component: ExplorerPage });
+const MapView = lazy(() => import("@/components/explorer-map"));
 
-// Fix default marker icons under bundlers
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-delete (L.Icon.Default.prototype as any)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-});
+export const Route = createFileRoute("/explorer")({ component: ExplorerPage });
 
 type EndpointKey = "route/list" | "stop/list" | "arrivals" | "vehiclePosition" | "alert/list" | "stopInfo";
 
@@ -35,8 +25,8 @@ const ENDPOINTS: EP[] = [
   { key: "alert/list", label: "GET /alert/list", path: () => "alert/list", params: [] },
 ];
 
-interface Stop { stopId: string; stopName?: string; lat?: number; lon?: number; stopLat?: number; stopLon?: number }
-interface Vehicle { vehicleId?: string; lat?: number; lon?: number; latitude?: number; longitude?: number; bearing?: number; timestamp?: string; gpsTimestamp?: string; routeId?: string; tripId?: string }
+export interface Stop { stopId: string; stopName?: string; lat?: number; lon?: number; stopLat?: number; stopLon?: number }
+export interface Vehicle { vehicleId?: string; lat?: number; lon?: number; latitude?: number; longitude?: number; bearing?: number; timestamp?: string; gpsTimestamp?: string; routeId?: string; tripId?: string }
 
 // Reconstructed vehicle positions via our own GTFS-RT JSON endpoint
 async function fetchReconstructedVehicles(): Promise<Vehicle[]> {
@@ -62,17 +52,9 @@ async function fetchReconstructedVehicles(): Promise<Vehicle[]> {
   });
 }
 
-function FitBounds({ points }: { points: [number, number][] }) {
-  const map = useMap();
-  useEffect(() => {
-    if (!points.length) return;
-    const b = L.latLngBounds(points);
-    map.fitBounds(b, { padding: [30, 30], maxZoom: 15 });
-  }, [points, map]);
-  return null;
-}
-
 function ExplorerPage() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
   const [epKey, setEpKey] = useState<EndpointKey>("stop/list");
   const ep = useMemo(() => ENDPOINTS.find((e) => e.key === epKey)!, [epKey]);
   const [params, setParams] = useState<Record<string, string>>({});
@@ -152,8 +134,6 @@ function ExplorerPage() {
   }, [stops, vehicles]);
 
   const showMap = mapPoints.length > 0 || epKey === "vehiclePosition" || epKey === "stop/list";
-  // Default center: Arroyo de la Encomienda (Valladolid)
-  const center: [number, number] = mapPoints[0] ?? [41.6201, -4.7674];
 
   return (
     <div>
@@ -206,46 +186,11 @@ function ExplorerPage() {
         </aside>
 
         <section className="space-y-3">
-          {showMap && (
+          {showMap && mounted && (
             <div className="h-[400px] overflow-hidden rounded-lg border border-border">
-              <MapContainer center={center} zoom={13} style={{ height: "100%", width: "100%" }}>
-                <TileLayer
-                  attribution='&copy; OpenStreetMap'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <FitBounds points={mapPoints} />
-                {stops.map((s) => {
-                  const la = s.lat ?? s.stopLat, lo = s.lon ?? s.stopLon;
-                  if (!la || !lo) return null;
-                  return (
-                    <CircleMarker key={s.stopId} center={[la, lo]} radius={6} pathOptions={{ color: "#2563eb", fillColor: "#3b82f6", fillOpacity: 0.8 }}>
-                      <Popup>
-                        <div className="text-xs">
-                          <div className="font-semibold">{s.stopName ?? s.stopId}</div>
-                          <div>id: {s.stopId}</div>
-                          <a href={`/arrivals/${s.stopId}`} className="text-blue-600 underline">Ver llegadas</a>
-                        </div>
-                      </Popup>
-                    </CircleMarker>
-                  );
-                })}
-                {vehicles.map((v, i) => {
-                  const la = v.lat ?? v.latitude, lo = v.lon ?? v.longitude;
-                  if (!la || !lo) return null;
-                  return (
-                    <Marker key={`${v.vehicleId ?? i}`} position={[la, lo]}>
-                      <Popup>
-                        <div className="text-xs">
-                          <div className="font-semibold">Bus {v.vehicleId ?? "?"}</div>
-                          {v.routeId && <div>Línea: {v.routeId}</div>}
-                          {v.tripId && <div>Trip: {v.tripId}</div>}
-                          {v.timestamp && <div>{new Date(v.timestamp).toLocaleTimeString("es-ES")}</div>}
-                        </div>
-                      </Popup>
-                    </Marker>
-                  );
-                })}
-              </MapContainer>
+              <Suspense fallback={<div className="flex h-full items-center justify-center text-sm text-muted-foreground">Cargando mapa…</div>}>
+                <MapView stops={stops} vehicles={vehicles} />
+              </Suspense>
               <div className="border-t border-border bg-card px-3 py-1 text-xs text-muted-foreground">
                 {stops.length > 0 && `${stops.length} parada(s) · `}
                 {vehicles.length > 0 && `${vehicles.length} vehículo(s)${epKey === "vehiclePosition" && !((data as { gpsPositions?: unknown[] })?.gpsPositions?.length) ? " (reconstruidos desde GTFS-RT)" : ""}`}
