@@ -186,6 +186,27 @@ Deno.serve(async (req) => {
   try {
     const r = await fetch(upstream, init);
     const body = await r.text();
+    if (path === "vehiclePosition") {
+      let parsed: { gpsPositions?: unknown[]; message?: string } | null = null;
+      try { parsed = JSON.parse(body); } catch { parsed = null; }
+      if (!r.ok || !parsed?.gpsPositions?.length) {
+        const positions = await buildVehiclePositions();
+        return new Response(JSON.stringify({
+          gpsPositions: positions,
+          message: positions.length
+            ? "vehiclePosition reconstruido desde arrivals porque el endpoint nativo viene vacío"
+            : parsed?.message ?? "Sin vehículos activos detectados",
+          native: parsed ?? body,
+        }), {
+          status: 200,
+          headers: {
+            ...cors,
+            "Content-Type": "application/json; charset=utf-8",
+            "Cache-Control": "public, max-age=10",
+          },
+        });
+      }
+    }
     return new Response(body, {
       status: r.status,
       headers: {
