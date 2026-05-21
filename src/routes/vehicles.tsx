@@ -21,8 +21,8 @@ function VehiclesPage() {
       <h1 className="text-2xl font-bold">Vehículos (tiempo real)</h1>
       <p className="mt-1 font-mono text-xs text-muted-foreground">GET /bff/mobile/vehiclePosition</p>
       <p className="mt-3 text-sm text-muted-foreground">
-        El endpoint nativo suele devolver lista vacía. Para posiciones GPS reales,
-        reconstruidas a partir de las llegadas, usa el feed GTFS-RT en la sección{" "}
+        Si el endpoint nativo devuelve vacío, esta vista muestra automáticamente
+        posiciones GPS reconstruidas a partir de las llegadas. También están en{" "}
         <a className="text-primary hover:underline" href="/gtfs-rt">GTFS-RT</a>.
       </p>
       <button

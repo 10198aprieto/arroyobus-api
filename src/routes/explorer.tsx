@@ -28,31 +28,13 @@ const ENDPOINTS: EP[] = [
   { key: "alert/list", label: "GET /alert/list", path: () => "alert/list", params: [] },
 ];
 
-export interface Stop { stopId: string; stopName?: string; lat?: number; lon?: number; stopLat?: number; stopLon?: number }
+export interface Stop { stopId: string; stopName?: string; lat?: number | string; lon?: number | string; stopLat?: number | string; stopLon?: number | string }
 export interface Vehicle { vehicleId?: string; lat?: number; lon?: number; latitude?: number; longitude?: number; bearing?: number; timestamp?: string; gpsTimestamp?: string; routeId?: string; tripId?: string }
 
-// Reconstructed vehicle positions via our own GTFS-RT JSON endpoint
-async function fetchReconstructedVehicles(): Promise<Vehicle[]> {
-  const base = import.meta.env.VITE_SUPABASE_URL as string;
-  const r = await fetch(`${base}/functions/v1/gtfs-rt?format=json`, {
-    headers: { apikey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string },
-  });
-  if (!r.ok) return [];
-  const j = await r.json();
-  // Normalize to Vehicle[]
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return (j.entity ?? []).map((e: any) => {
-    const v = e.vehicle ?? {};
-    return {
-      vehicleId: v.vehicle?.id ?? e.id,
-      lat: v.position?.latitude,
-      lon: v.position?.longitude,
-      bearing: v.position?.bearing,
-      timestamp: v.timestamp ? new Date(Number(v.timestamp) * 1000).toISOString() : undefined,
-      routeId: v.trip?.routeId,
-      tripId: v.trip?.tripId,
-    };
-  });
+function toCoord(value: number | string | undefined): number | undefined {
+  if (value === undefined || value === null || value === "") return undefined;
+  const n = Number(value);
+  return Number.isFinite(n) ? n : undefined;
 }
 
 function ExplorerPage() {
@@ -66,9 +48,6 @@ function ExplorerPage() {
   const [loading, setLoading] = useState(false);
   const [autoRefresh, setAutoRefresh] = useState(true);
   const [tick, setTick] = useState(0);
-
-  // For vehicles: always merge reconstructed positions for the map
-  const [reconVehicles, setReconVehicles] = useState<Vehicle[]>([]);
 
   async function run() {
     setLoading(true);
@@ -98,15 +77,6 @@ function ExplorerPage() {
     return () => clearInterval(id);
   }, [autoRefresh, ep.refresh]);
 
-  // Reconstructed vehicles refresh every 10s
-  useEffect(() => {
-    let alive = true;
-    const load = () => fetchReconstructedVehicles().then((v) => { if (alive) setReconVehicles(v); }).catch(() => {});
-    load();
-    const id = setInterval(load, 10_000);
-    return () => { alive = false; clearInterval(id); };
-  }, []);
-
   // Derive map data
   const { stops, arrivals, vehicles } = useMemo(() => {
     let stops: Stop[] = [];
@@ -118,15 +88,15 @@ function ExplorerPage() {
     if (epKey === "stopInfo" && d) stops = [d as Stop];
     if (epKey === "vehiclePosition") {
       const raw = (d?.gpsPositions ?? []) as Vehicle[];
-      vehicles = raw.length ? raw : reconVehicles;
+      vehicles = raw;
     }
     return { stops, arrivals, vehicles };
-  }, [data, epKey, reconVehicles]);
+  }, [data, epKey]);
 
   const mapPoints = useMemo<[number, number][]>(() => {
     const out: [number, number][] = [];
     for (const s of stops) {
-      const la = s.lat ?? s.stopLat, lo = s.lon ?? s.stopLon;
+      const la = toCoord(s.lat ?? s.stopLat), lo = toCoord(s.lon ?? s.stopLon);
       if (la && lo) out.push([la, lo]);
     }
     for (const v of vehicles) {
