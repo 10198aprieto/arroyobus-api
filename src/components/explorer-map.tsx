@@ -44,7 +44,7 @@ export default function ExplorerMap({ stops, vehicles }: { stops: Stop[]; vehicl
       <TileLayer attribution="&copy; OpenStreetMap" url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <FitBounds points={pts} />
       {stops.map((s) => {
-        const la = s.lat ?? s.stopLat, lo = s.lon ?? s.stopLon;
+        const la = toCoord(s.lat ?? s.stopLat), lo = toCoord(s.lon ?? s.stopLon);
         if (!la || !lo) return null;
         return (
           <CircleMarker key={s.stopId} center={[la, lo]} radius={6} pathOptions={{ color: "#2563eb", fillColor: "#3b82f6", fillOpacity: 0.8 }}>
