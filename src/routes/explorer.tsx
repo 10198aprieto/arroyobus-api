@@ -4,7 +4,10 @@ import { actioGet } from "@/lib/api";
 
 const MapView = lazy(() => import("@/components/explorer-map"));
 
-export const Route = createFileRoute("/explorer")({ component: ExplorerPage });
+export const Route = createFileRoute("/explorer")({
+  ssr: false,
+  component: ExplorerPage,
+});
 
 type EndpointKey = "route/list" | "stop/list" | "arrivals" | "vehiclePosition" | "alert/list" | "stopInfo";
 
