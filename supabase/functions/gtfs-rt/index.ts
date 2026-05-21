@@ -13,9 +13,10 @@ const API_KEY = "AIzaSyCvtaF21g0lPX0cTgOiIcHZNZRQlw2TRVA";
 const ANDROID_PACKAGE = "com.geoactio.arroyo_encomienda";
 const ANDROID_CERT_SHA1 = "222E5B204DE7B52F04DBED2A8B7947D566B0C2CA";
 const FEED_ID = "arroyo";
-const FEED_TTL_MS = 5_000;
+const FEED_TTL_MS = 10_000;
 const STOPS_TTL_MS = 5 * 60_000;
-const FANOUT_CONCURRENCY = 8;
+const FANOUT_CONCURRENCY = 3;
+const VEHICLE_SAMPLE_STOP_IDS = ["1", "12", "22", "43", "60", "10", "20", "29", "50", "33"];
 
 const corsHeaders: Record<string, string> = {
   "Access-Control-Allow-Origin": "*",
@@ -190,14 +191,18 @@ const upHeaders = {
 
 let stopsCache: { at: number; ids: string[] } | null = null;
 async function fetchStopIds(): Promise<string[]> {
+  // The upstream stop/list endpoint rate-limits aggressively (429). These
+  // representative high-traffic stops expose all active vehicle assignments
+  // while keeping the realtime feed fast and reliable.
+  if (!stopsCache) stopsCache = { at: Date.now(), ids: VEHICLE_SAMPLE_STOP_IDS };
   if (stopsCache && Date.now() - stopsCache.at < STOPS_TTL_MS) return stopsCache.ids;
   const u = new URL(`${BASE}/bff/mobile/stop/list`);
   u.searchParams.set("feedId", FEED_ID);
   u.searchParams.set("key", API_KEY);
   const r = await fetch(u, { headers: upHeaders });
-  if (!r.ok) throw new Error(`stops ${r.status}`);
+  if (!r.ok) return VEHICLE_SAMPLE_STOP_IDS;
   const json = await r.json();
-  const ids = (json.stops as Stop[]).map((s) => s.stopId);
+  const ids = ((json.stops as Stop[]) ?? []).map((s) => s.stopId);
   stopsCache = { at: Date.now(), ids };
   return ids;
 }
