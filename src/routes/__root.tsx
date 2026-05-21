@@ -129,6 +129,7 @@ function RootComponent() {
               ["/tad", "TAD"],
               ["/suggestion", "Sugerencias"],
               ["/gtfs-rt", "GTFS-RT"],
+              ["/explorer", "Explorer"],
             ].map(([to, label]) => (
               <Link
                 key={to}

@@ -15,6 +15,7 @@ import { Route as SuggestionRouteImport } from './routes/suggestion'
 import { Route as StopsRouteImport } from './routes/stops'
 import { Route as RoutesRouteImport } from './routes/routes'
 import { Route as GtfsRtRouteImport } from './routes/gtfs-rt'
+import { Route as ExplorerRouteImport } from './routes/explorer'
 import { Route as AlertsRouteImport } from './routes/alerts'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as StopsStopIdRouteImport } from './routes/stops.$stopId'
@@ -50,6 +51,11 @@ const GtfsRtRoute = GtfsRtRouteImport.update({
   path: '/gtfs-rt',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ExplorerRoute = ExplorerRouteImport.update({
+  id: '/explorer',
+  path: '/explorer',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AlertsRoute = AlertsRouteImport.update({
   id: '/alerts',
   path: '/alerts',
@@ -74,6 +80,7 @@ const ArrivalsStopIdRoute = ArrivalsStopIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/alerts': typeof AlertsRoute
+  '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
   '/routes': typeof RoutesRoute
   '/stops': typeof StopsRouteWithChildren
@@ -86,6 +93,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/alerts': typeof AlertsRoute
+  '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
   '/routes': typeof RoutesRoute
   '/stops': typeof StopsRouteWithChildren
@@ -99,6 +107,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/alerts': typeof AlertsRoute
+  '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
   '/routes': typeof RoutesRoute
   '/stops': typeof StopsRouteWithChildren
@@ -113,6 +122,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/alerts'
+    | '/explorer'
     | '/gtfs-rt'
     | '/routes'
     | '/stops'
@@ -125,6 +135,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/alerts'
+    | '/explorer'
     | '/gtfs-rt'
     | '/routes'
     | '/stops'
@@ -137,6 +148,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/alerts'
+    | '/explorer'
     | '/gtfs-rt'
     | '/routes'
     | '/stops'
@@ -150,6 +162,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AlertsRoute: typeof AlertsRoute
+  ExplorerRoute: typeof ExplorerRoute
   GtfsRtRoute: typeof GtfsRtRoute
   RoutesRoute: typeof RoutesRoute
   StopsRoute: typeof StopsRouteWithChildren
@@ -203,6 +216,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GtfsRtRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/explorer': {
+      id: '/explorer'
+      path: '/explorer'
+      fullPath: '/explorer'
+      preLoaderRoute: typeof ExplorerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/alerts': {
       id: '/alerts'
       path: '/alerts'
@@ -247,6 +267,7 @@ const StopsRouteWithChildren = StopsRoute._addFileChildren(StopsRouteChildren)
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AlertsRoute: AlertsRoute,
+  ExplorerRoute: ExplorerRoute,
   GtfsRtRoute: GtfsRtRoute,
   RoutesRoute: RoutesRoute,
   StopsRoute: StopsRouteWithChildren,
