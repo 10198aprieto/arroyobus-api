@@ -1,0 +1,5 @@
+﻿route_id,agency_id,route_short_name,route_long_name,route_sort_order,route_type,route_url,route_color,route_text_color
+Roja,laregional,Roja,Valladolid-La Flecha-Sotoverde-La Vega-Valladolid,1,3,https://www.autocareslaregional.com/lineas-regulares/lineas-metropolitanas/valladolid-la-flecha-rio-shopping-linea-roja/,ca0d32,FFFFFF
+Azul,laregional,Azul,Valladolid-La Vega-Sotoverde-La Flecha-Valladolid,2,3,https://www.autocareslaregional.com/lineas-regulares/lineas-metropolitanas/valladolid-la-vega-sotoverde-linea-azul/,3b4cd1,FFFFFF
+Verde,laregional,Verde,Universidades-Hospitales,3,3,https://www.autocareslaregional.com/lineas-regulares/lineas-metropolitanas/valladolid-arroyo-de-la-encomienda-linea-universitaria/,0fab6a,FFFFFF
+Buho,laregional,Buho,Valladolid-La Flecha-Sotoverde-La Vega-Valladolid,4,3,https://www.autocareslaregional.com/lineas-regulares/lineas-metropolitanas/valladolid-arroyo-de-la-encomienda-buho/,000000,FFFFFF

@@ -1,0 +1,116 @@
+﻿route_id,service_id,trip_id,trip_headsign,direction_id,shape_id,wheelchair_accessible,bikes_allowed
+Azul,laborales,A1,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A2,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A3,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A4,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A5,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A6,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A7,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A8,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A9,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A10,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A11,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A12,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A13,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A14,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A15,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A16,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A17,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A18,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A19,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A20,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A21,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A22,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A23,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A24,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A25,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A26,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A27,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A28,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A29,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A30,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A31,Est Autobuses Valladolid,,Azul,1,2
+Azul,laborales,A32,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A33,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A34,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A35,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A36,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A37,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A38,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A39,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A40,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A41,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A42,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A43,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A44,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A45,Est Autobuses Valladolid,,Azul,1,2
+Azul,sabados,A46,Est Autobuses Valladolid,,Azul,1,2
+Azul,domingos_y_festivos,A47,Est Autobuses Valladolid,,Azul,1,2
+Azul,domingos_y_festivos,A48,Est Autobuses Valladolid,,Azul,1,2
+Azul,domingos_y_festivos,A49,Est Autobuses Valladolid,,Azul,1,2
+Azul,domingos_y_festivos,A50,Est Autobuses Valladolid,,Azul,1,2
+Azul,domingos_y_festivos,A51,Est Autobuses Valladolid,,Azul,1,2
+Buho,viernes,B1,Est de Autobuses Valladolid,,Buho,1,2
+Buho,viernes,B2,Est de Autobuses Valladolid,,Buho,1,2
+Buho,viernes,B3,Est de Autobuses Valladolid,,Buho,1,2
+Buho,viernes,B4,Est de Autobuses Valladolid,,Buho,1,2
+Buho,sabados,B5,Est de Autobuses Valladolid,,Buho,1,2
+Buho,sabados,B6,Est de Autobuses Valladolid,,Buho,1,2
+Buho,sabados,B7,Est de Autobuses Valladolid,,Buho,1,2
+Buho,sabados,B8,Est de Autobuses Valladolid,,Buho,1,2
+Buho,sabados,B9,Est de Autobuses Valladolid,,Buho,1,2
+Roja,laborales,R1,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R2,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R3,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R4,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R5,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R6,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R7,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R8,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R9,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R10,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R11,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R12,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R13,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R14,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R15,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R16,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R17,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R18,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R19,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R20,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R21,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R22,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R23,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R24,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R25,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R26,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R27,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R28,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R29,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R30,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R31,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R32,Est de Autobuses Valladolid,,Roja,1,2
+Roja,laborales,R33,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R34,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R35,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R36,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R37,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R38,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R39,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R40,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R41,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R42,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R43,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R44,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R45,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R46,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R47,Est de Autobuses Valladolid,,Roja,1,2
+Roja,sabados,R48,Est de Autobuses Valladolid,,Roja,1,2
+Roja,domingos_y_festivos,R49,Est de Autobuses Valladolid,,Roja,1,2
+Roja,domingos_y_festivos,R50,Est de Autobuses Valladolid,,Roja,1,2
+Roja,domingos_y_festivos,R51,Est de Autobuses Valladolid,,Roja,1,2
+Roja,domingos_y_festivos,R52,Est de Autobuses Valladolid,,Roja,1,2
+Roja,domingos_y_festivos,R53,Est de Autobuses Valladolid,,Roja,1,2
+Verde,laborales,V1I,Pl Magdalena (Facultad de F y L),0,Verde_ida,1,2
+Verde,laborales,V1V,Av Colón 175,1,Verde_vuelta,1,2

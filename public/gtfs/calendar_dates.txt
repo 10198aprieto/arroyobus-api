@@ -1,0 +1,4 @@
+service_id,date,exception_type
+laborales,20261225,2
+viernes,20261225,2
+laborales,20261231,2
