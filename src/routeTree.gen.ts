@@ -20,7 +20,6 @@ import { Route as AlertsRouteImport } from './routes/alerts'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as StopsStopIdRouteImport } from './routes/stops.$stopId'
 import { Route as ArrivalsStopIdRouteImport } from './routes/arrivals.$stopId'
-import { Route as ApiPublicGtfsStaticFileRouteImport } from './routes/api/public/gtfs-static/$file'
 
 const VehiclesRoute = VehiclesRouteImport.update({
   id: '/vehicles',
@@ -77,11 +76,6 @@ const ArrivalsStopIdRoute = ArrivalsStopIdRouteImport.update({
   path: '/arrivals/$stopId',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicGtfsStaticFileRoute = ApiPublicGtfsStaticFileRouteImport.update({
-  id: '/api/public/gtfs-static/$file',
-  path: '/api/public/gtfs-static/$file',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -95,7 +89,6 @@ export interface FileRoutesByFullPath {
   '/vehicles': typeof VehiclesRoute
   '/arrivals/$stopId': typeof ArrivalsStopIdRoute
   '/stops/$stopId': typeof StopsStopIdRoute
-  '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -109,7 +102,6 @@ export interface FileRoutesByTo {
   '/vehicles': typeof VehiclesRoute
   '/arrivals/$stopId': typeof ArrivalsStopIdRoute
   '/stops/$stopId': typeof StopsStopIdRoute
-  '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -124,7 +116,6 @@ export interface FileRoutesById {
   '/vehicles': typeof VehiclesRoute
   '/arrivals/$stopId': typeof ArrivalsStopIdRoute
   '/stops/$stopId': typeof StopsStopIdRoute
-  '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -140,7 +131,6 @@ export interface FileRouteTypes {
     | '/vehicles'
     | '/arrivals/$stopId'
     | '/stops/$stopId'
-    | '/api/public/gtfs-static/$file'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -154,7 +144,6 @@ export interface FileRouteTypes {
     | '/vehicles'
     | '/arrivals/$stopId'
     | '/stops/$stopId'
-    | '/api/public/gtfs-static/$file'
   id:
     | '__root__'
     | '/'
@@ -168,7 +157,6 @@ export interface FileRouteTypes {
     | '/vehicles'
     | '/arrivals/$stopId'
     | '/stops/$stopId'
-    | '/api/public/gtfs-static/$file'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -182,7 +170,6 @@ export interface RootRouteChildren {
   TadRoute: typeof TadRoute
   VehiclesRoute: typeof VehiclesRoute
   ArrivalsStopIdRoute: typeof ArrivalsStopIdRoute
-  ApiPublicGtfsStaticFileRoute: typeof ApiPublicGtfsStaticFileRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -264,13 +251,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArrivalsStopIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/gtfs-static/$file': {
-      id: '/api/public/gtfs-static/$file'
-      path: '/api/public/gtfs-static/$file'
-      fullPath: '/api/public/gtfs-static/$file'
-      preLoaderRoute: typeof ApiPublicGtfsStaticFileRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -295,8 +275,17 @@ const rootRouteChildren: RootRouteChildren = {
   TadRoute: TadRoute,
   VehiclesRoute: VehiclesRoute,
   ArrivalsStopIdRoute: ArrivalsStopIdRoute,
-  ApiPublicGtfsStaticFileRoute: ApiPublicGtfsStaticFileRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
