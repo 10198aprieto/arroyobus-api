@@ -17,6 +17,12 @@ function GtfsRtPage() {
       pb: `${base}/gtfs-rt-trip-updates`,
       json: `${base}/gtfs-rt-trip-updates?format=json`,
     },
+    {
+      title: "ServiceAlerts",
+      desc: "Alertas de servicio (incidencias, obras, eventos).",
+      pb: `${base}/gtfs-rt-alerts`,
+      json: `${base}/gtfs-rt-alerts?format=json`,
+    },
   ];
 
   const staticBase = typeof window !== "undefined" ? window.location.origin : "";
