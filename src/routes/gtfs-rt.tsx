@@ -33,6 +33,18 @@ function GtfsRtPage() {
     { label: "feed_info.txt", url: `${staticBase}/gtfs/feed_info.txt` },
   ];
 
+  const jsonFeeds = [
+    { label: "agency.json", file: "agency" },
+    { label: "calendar.json", file: "calendar" },
+    { label: "calendar_dates.json", file: "calendar_dates" },
+    { label: "feed_info.json", file: "feed_info" },
+    { label: "routes.json", file: "routes" },
+    { label: "shapes.json", file: "shapes" },
+    { label: "stop_times.json", file: "stop_times" },
+    { label: "stops.json", file: "stops" },
+    { label: "trips.json", file: "trips" },
+  ];
+
   return (
     <div>
       <h1 className="text-2xl font-bold">Feeds GTFS-Realtime</h1>
@@ -72,6 +84,24 @@ function GtfsRtPage() {
               <a className="font-mono text-primary hover:underline" href={f.url}>{f.url}</a>
             </li>
           ))}
+        </ul>
+      </div>
+
+      <h2 className="mt-8 text-xl font-bold">GTFS estático como API JSON</h2>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Cada archivo .txt parseado a JSON vía endpoint REST. Útil para apps web y móviles.
+      </p>
+      <div className="mt-3 rounded-lg border border-border bg-card p-4 text-sm">
+        <ul className="space-y-1">
+          {jsonFeeds.map((f) => {
+            const url = `${staticBase}/api/public/gtfs-static/${f.file}`;
+            return (
+              <li key={f.file}>
+                <span className="text-muted-foreground">{f.label}: </span>
+                <a className="font-mono text-primary hover:underline" href={url}>{url}</a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
