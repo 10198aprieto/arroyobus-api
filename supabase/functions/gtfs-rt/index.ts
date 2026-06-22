@@ -318,6 +318,7 @@ Deno.serve(async (req) => {
         "Cache-Control": "public, max-age=5",
         "X-Vehicle-Count": String(samples.length),
         "X-Feed-Timestamp": String(feedTs),
+        "X-Upstream-Status": samples.length === 0 ? "no-vehicles-assigned" : "ok",
       },
     });
   } catch (err) {
