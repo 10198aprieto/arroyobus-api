@@ -95,15 +95,14 @@ function encStopTimeUpdate(a: Arrival): Uint8Array | null {
   const depTs = parseTs(a.departureTime);
   if (arrTs === null && depTs === null) return null;
   const w = new PbWriter();
-  if (a.stopSequence !== undefined && a.stopSequence !== null) {
-    const n = Number(a.stopSequence);
-    if (!Number.isNaN(n)) w.tagVarint(1, n); // stop_sequence
-  }
+  // NOTE: stop_sequence intentionally omitted — upstream sequence numbers
+  // do not match the static GTFS, causing INVALID_STOP_STOP_ID /
+  // SOME_STU_NOT_MATCHED. Matching by stop_id is unambiguous here.
   if (arrTs !== null) w.tagMessage(2, encStopTimeEvent(arrTs)); // arrival
   if (depTs !== null) w.tagMessage(3, encStopTimeEvent(depTs)); // departure
   if (a.stopId) w.tagString(4, a.stopId); // stop_id
-  // schedule_relationship (field 5): 0 SCHEDULED, 2 NO_DATA
-  w.tagVarint(5, a.isEstimated || (a.vehicleId && !a.isAproximated) ? 0 : 0);
+  // schedule_relationship: SCHEDULED (0)
+  w.tagVarint(5, 0);
   return w.bytes();
 }
 
@@ -128,13 +127,28 @@ function encTripUpdate(arrivals: Arrival[], feedTs: number): Uint8Array {
   const sample = arrivals[0];
   const w = new PbWriter();
   w.tagMessage(1, encTripDescriptor(sample)); // trip
-  // stop_time_update: ordered by sequence then arrival time
+  // Order by sequence then arrival time, then drop non-monotonic STUs
+  // (avoids STOP_TIME_UPDATE_PREMATURE_ARRIVAL).
   const sorted = [...arrivals].sort((a, b) => {
     const sa = Number(a.stopSequence ?? 0), sb = Number(b.stopSequence ?? 0);
     if (sa !== sb) return sa - sb;
     return (parseTs(a.arrivalTime) ?? 0) - (parseTs(b.arrivalTime) ?? 0);
   });
+  const monotonic: Arrival[] = [];
+  let lastTs = -Infinity;
+  const seenStops = new Set<string>();
   for (const a of sorted) {
+    if (a.stopId && seenStops.has(a.stopId)) continue;
+    const arr = parseTs(a.arrivalTime);
+    const dep = parseTs(a.departureTime);
+    const t = arr ?? dep;
+    if (t === null) continue;
+    if (t < lastTs) continue; // would trigger PREMATURE_ARRIVAL
+    lastTs = (dep ?? arr ?? lastTs);
+    if (a.stopId) seenStops.add(a.stopId);
+    monotonic.push(a);
+  }
+  for (const a of monotonic) {
     const stu = encStopTimeUpdate(a);
     if (stu) w.tagMessage(2, stu);
   }
@@ -223,6 +237,12 @@ async function buildByTrip(): Promise<Map<string, Arrival[]>> {
   for (const arrivals of all) {
     for (const a of arrivals) {
       if (!a.tripId) continue;
+      // Skip purely-approximated predictions (no real-time GPS / no estimate).
+      // These hourly placeholders cause TRIP_UPDATE_SUSPICIOUS_DELAY because
+      // their times differ from the static schedule by many hours.
+      const isRealtime = a.isEstimated === true ||
+        (a.vehicleId != null && a.isAproximated !== true);
+      if (!isRealtime) continue;
       const list = byTrip.get(a.tripId) ?? [];
       list.push(a);
       byTrip.set(a.tripId, list);
