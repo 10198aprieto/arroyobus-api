@@ -50,15 +50,15 @@ Azul,domingos_y_festivos,A48,Est Autobuses Valladolid,,Azul,1,2
 Azul,domingos_y_festivos,A49,Est Autobuses Valladolid,,Azul,1,2
 Azul,domingos_y_festivos,A50,Est Autobuses Valladolid,,Azul,1,2
 Azul,domingos_y_festivos,A51,Est Autobuses Valladolid,,Azul,1,2
-Buho,viernes,B1,Est de Autobuses Valladolid,,Buho,1,2
-Buho,viernes,B2,Est de Autobuses Valladolid,,Buho,1,2
-Buho,viernes,B3,Est de Autobuses Valladolid,,Buho,1,2
-Buho,viernes,B4,Est de Autobuses Valladolid,,Buho,1,2
-Buho,sabados,B5,Est de Autobuses Valladolid,,Buho,1,2
-Buho,sabados,B6,Est de Autobuses Valladolid,,Buho,1,2
-Buho,sabados,B7,Est de Autobuses Valladolid,,Buho,1,2
-Buho,sabados,B8,Est de Autobuses Valladolid,,Buho,1,2
-Buho,sabados,B9,Est de Autobuses Valladolid,,Buho,1,2
+Buho,sabados,B1,Est de Autobuses Valladolid,,Buho,1,2
+Buho,sabados,B2,Est de Autobuses Valladolid,,Buho,1,2
+Buho,sabados,B3,Est de Autobuses Valladolid,,Buho,1,2
+Buho,sabados,B4,Est de Autobuses Valladolid,,Buho,1,2
+Buho,domingos_y_festivos,B5,Est de Autobuses Valladolid,,Buho,1,2
+Buho,domingos_y_festivos,B6,Est de Autobuses Valladolid,,Buho,1,2
+Buho,domingos_y_festivos,B7,Est de Autobuses Valladolid,,Buho,1,2
+Buho,domingos_y_festivos,B8,Est de Autobuses Valladolid,,Buho,1,2
+Buho,domingos_y_festivos,B9,Est de Autobuses Valladolid,,Buho,1,2
 Roja,laborales,R1,Est de Autobuses Valladolid,,Roja,1,2
 Roja,laborales,R2,Est de Autobuses Valladolid,,Roja,1,2
 Roja,laborales,R3,Est de Autobuses Valladolid,,Roja,1,2

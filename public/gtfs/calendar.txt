@@ -1,5 +1,4 @@
 ﻿service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-laborales,1,1,1,1,1,0,0,20260512,20261231
-viernes,0,0,0,0,1,0,0,20260512,20261231
-sabados,0,0,0,0,0,1,0,20260512,20261231
-domingos_y_festivos,0,0,0,0,0,0,1,20260512,20261231
+laborales,1,1,1,1,1,0,0,20260623,20261231
+sabados,0,0,0,0,0,1,0,20260623,20261231
+domingos_y_festivos,0,0,0,0,0,0,1,20260623,20261231

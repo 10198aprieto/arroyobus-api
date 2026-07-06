@@ -32,13 +32,13 @@ A1,07:27:03,07:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A1,07:29:18,07:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A1,07:30:21,07:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A1,07:31:18,07:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A1,07:33:48,07:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A1,07:34:16,07:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A1,07:35:27,07:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A1,07:40:27,07:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A1,07:44:27,07:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A1,07:46:27,07:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A1,07:49:27,07:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A1,07:33:48,07:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A1,07:34:16,07:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A1,07:35:27,07:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A1,07:40:27,07:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A1,07:44:27,07:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A1,07:46:27,07:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A1,07:49:27,07:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A2,07:15:45,07:15:45,1,1,CC Rio Shopping,0,0,1
 A2,07:17:33,07:17:33,2,2,CC Rio Shopping,0,0,0
 A2,07:20:18,07:20:18,3,3,CC Rio Shopping,0,0,0
@@ -75,10 +75,10 @@ A2,07:59:15,07:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A2,08:00:40,08:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A2,08:01:15,08:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A2,08:03:59,08:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A2,08:07:08,08:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A2,08:10:41,08:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A2,08:14:24,08:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A2,08:17:05,08:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A2,08:07:08,08:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A2,08:10:41,08:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A2,08:14:24,08:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A2,08:17:05,08:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A3,07:45:12,07:45:12,1,1,CC Rio Shopping,0,0,0
 A3,07:47:18,07:47:18,2,2,CC Rio Shopping,0,0,0
 A3,07:50:03,07:50:03,3,3,CC Rio Shopping,0,0,0
@@ -112,13 +112,13 @@ A3,08:27:03,08:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A3,08:29:18,08:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A3,08:30:21,08:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A3,08:31:18,08:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A3,08:33:48,08:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A3,08:34:16,08:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A3,08:35:27,08:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A3,08:40:27,08:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A3,08:44:27,08:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A3,08:46:27,08:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A3,08:49:27,08:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A3,08:33:48,08:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A3,08:34:16,08:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A3,08:35:27,08:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A3,08:40:27,08:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A3,08:44:27,08:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A3,08:46:27,08:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A3,08:49:27,08:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A4,08:15:45,08:15:45,1,1,CC Rio Shopping,0,0,1
 A4,08:17:33,08:17:33,2,2,CC Rio Shopping,0,0,0
 A4,08:20:18,08:20:18,3,3,CC Rio Shopping,0,0,0
@@ -155,10 +155,10 @@ A4,08:59:15,08:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A4,09:00:40,09:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A4,09:01:15,09:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A4,09:03:59,09:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A4,09:07:08,09:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A4,09:10:41,09:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A4,09:14:24,09:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A4,09:17:05,09:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A4,09:07:08,09:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A4,09:10:41,09:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A4,09:14:24,09:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A4,09:17:05,09:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A5,08:45:12,08:45:12,1,1,CC Rio Shopping,0,0,0
 A5,08:47:18,08:47:18,2,2,CC Rio Shopping,0,0,0
 A5,08:50:03,08:50:03,3,3,CC Rio Shopping,0,0,0
@@ -192,13 +192,13 @@ A5,09:27:03,09:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A5,09:29:18,09:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A5,09:30:21,09:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A5,09:31:18,09:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A5,09:33:48,09:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A5,09:34:16,09:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A5,09:35:27,09:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A5,09:40:27,09:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A5,09:44:27,09:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A5,09:46:27,09:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A5,09:49:27,09:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A5,09:33:48,09:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A5,09:34:16,09:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A5,09:35:27,09:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A5,09:40:27,09:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A5,09:44:27,09:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A5,09:46:27,09:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A5,09:49:27,09:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A6,09:15:45,09:15:45,1,1,CC Rio Shopping,0,0,1
 A6,09:17:33,09:17:33,2,2,CC Rio Shopping,0,0,0
 A6,09:20:18,09:20:18,3,3,CC Rio Shopping,0,0,0
@@ -235,10 +235,10 @@ A6,09:59:15,09:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A6,10:00:40,10:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A6,10:01:15,10:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A6,10:03:59,10:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A6,10:07:08,10:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A6,10:10:41,10:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A6,10:14:24,10:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A6,10:17:05,10:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A6,10:07:08,10:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A6,10:10:41,10:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A6,10:14:24,10:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A6,10:17:05,10:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A7,09:45:12,09:45:12,1,1,CC Rio Shopping,0,0,0
 A7,09:47:18,09:47:18,2,2,CC Rio Shopping,0,0,0
 A7,09:50:03,09:50:03,3,3,CC Rio Shopping,0,0,0
@@ -272,13 +272,13 @@ A7,10:27:03,10:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A7,10:29:18,10:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A7,10:30:21,10:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A7,10:31:18,10:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A7,10:33:48,10:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A7,10:34:16,10:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A7,10:35:27,10:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A7,10:40:27,10:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A7,10:44:27,10:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A7,10:46:27,10:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A7,10:49:27,10:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A7,10:33:48,10:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A7,10:34:16,10:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A7,10:35:27,10:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A7,10:40:27,10:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A7,10:44:27,10:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A7,10:46:27,10:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A7,10:49:27,10:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A8,10:15:45,10:15:45,1,1,CC Rio Shopping,0,0,1
 A8,10:17:33,10:17:33,2,2,CC Rio Shopping,0,0,0
 A8,10:20:18,10:20:18,3,3,CC Rio Shopping,0,0,0
@@ -315,10 +315,10 @@ A8,10:59:15,10:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A8,11:00:40,11:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A8,11:01:15,11:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A8,11:03:59,11:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A8,11:07:08,11:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A8,11:10:41,11:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A8,11:14:24,11:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A8,11:17:05,11:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A8,11:07:08,11:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A8,11:10:41,11:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A8,11:14:24,11:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A8,11:17:05,11:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A9,10:45:12,10:45:12,1,1,CC Rio Shopping,0,0,0
 A9,10:47:18,10:47:18,2,2,CC Rio Shopping,0,0,0
 A9,10:50:03,10:50:03,3,3,CC Rio Shopping,0,0,0
@@ -352,13 +352,13 @@ A9,11:27:03,11:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A9,11:29:18,11:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A9,11:30:21,11:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A9,11:31:18,11:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A9,11:33:48,11:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A9,11:34:16,11:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A9,11:35:27,11:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A9,11:40:27,11:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A9,11:44:27,11:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A9,11:46:27,11:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A9,11:49:27,11:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A9,11:33:48,11:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A9,11:34:16,11:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A9,11:35:27,11:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A9,11:40:27,11:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A9,11:44:27,11:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A9,11:46:27,11:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A9,11:49:27,11:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A10,11:15:45,11:15:45,1,1,CC Rio Shopping,0,0,1
 A10,11:17:33,11:17:33,2,2,CC Rio Shopping,0,0,0
 A10,11:20:18,11:20:18,3,3,CC Rio Shopping,0,0,0
@@ -395,10 +395,10 @@ A10,11:59:15,11:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A10,12:00:40,12:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A10,12:01:15,12:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A10,12:03:59,12:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A10,12:07:08,12:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A10,12:10:41,12:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A10,12:14:24,12:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A10,12:17:05,12:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A10,12:07:08,12:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A10,12:10:41,12:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A10,12:14:24,12:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A10,12:17:05,12:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A11,11:45:12,11:45:12,1,1,CC Rio Shopping,0,0,0
 A11,11:47:18,11:47:18,2,2,CC Rio Shopping,0,0,0
 A11,11:50:03,11:50:03,3,3,CC Rio Shopping,0,0,0
@@ -432,13 +432,13 @@ A11,12:27:03,12:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A11,12:29:18,12:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A11,12:30:21,12:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A11,12:31:18,12:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A11,12:33:48,12:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A11,12:34:16,12:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A11,12:35:27,12:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A11,12:40:27,12:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A11,12:44:27,12:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A11,12:46:27,12:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A11,12:49:27,12:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A11,12:33:48,12:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A11,12:34:16,12:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A11,12:35:27,12:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A11,12:40:27,12:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A11,12:44:27,12:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A11,12:46:27,12:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A11,12:49:27,12:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A12,12:15:45,12:15:45,1,1,CC Rio Shopping,0,0,1
 A12,12:17:33,12:17:33,2,2,CC Rio Shopping,0,0,0
 A12,12:20:18,12:20:18,3,3,CC Rio Shopping,0,0,0
@@ -475,10 +475,10 @@ A12,12:59:15,12:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A12,13:00:40,13:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A12,13:01:15,13:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A12,13:03:59,13:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A12,13:07:08,13:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A12,13:10:41,13:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A12,13:14:24,13:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A12,13:17:05,13:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A12,13:07:08,13:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A12,13:10:41,13:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A12,13:14:24,13:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A12,13:17:05,13:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A13,12:45:12,12:45:12,1,1,CC Rio Shopping,0,0,0
 A13,12:47:18,12:47:18,2,2,CC Rio Shopping,0,0,0
 A13,12:50:03,12:50:03,3,3,CC Rio Shopping,0,0,0
@@ -512,13 +512,13 @@ A13,13:27:03,13:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A13,13:29:18,13:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A13,13:30:21,13:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A13,13:31:18,13:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A13,13:33:48,13:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A13,13:34:16,13:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A13,13:35:27,13:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A13,13:40:27,13:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A13,13:44:27,13:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A13,13:46:27,13:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A13,13:49:27,13:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A13,13:33:48,13:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A13,13:34:16,13:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A13,13:35:27,13:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A13,13:40:27,13:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A13,13:44:27,13:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A13,13:46:27,13:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A13,13:49:27,13:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A14,13:15:45,13:15:45,1,1,CC Rio Shopping,0,0,1
 A14,13:17:33,13:17:33,2,2,CC Rio Shopping,0,0,0
 A14,13:20:18,13:20:18,3,3,CC Rio Shopping,0,0,0
@@ -555,10 +555,10 @@ A14,13:59:15,13:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A14,14:00:40,14:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A14,14:01:15,14:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A14,14:03:59,14:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A14,14:07:08,14:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A14,14:10:41,14:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A14,14:14:24,14:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A14,14:17:05,14:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A14,14:07:08,14:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A14,14:10:41,14:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A14,14:14:24,14:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A14,14:17:05,14:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A15,13:45:12,13:45:12,1,1,CC Rio Shopping,0,0,0
 A15,13:47:18,13:47:18,2,2,CC Rio Shopping,0,0,0
 A15,13:50:03,13:50:03,3,3,CC Rio Shopping,0,0,0
@@ -592,13 +592,13 @@ A15,14:27:03,14:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A15,14:29:18,14:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A15,14:30:21,14:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A15,14:31:18,14:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A15,14:33:48,14:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A15,14:34:16,14:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A15,14:35:27,14:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A15,14:40:27,14:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A15,14:44:27,14:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A15,14:46:27,14:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A15,14:49:27,14:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A15,14:33:48,14:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A15,14:34:16,14:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A15,14:35:27,14:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A15,14:40:27,14:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A15,14:44:27,14:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A15,14:46:27,14:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A15,14:49:27,14:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A16,14:15:45,14:15:45,1,1,CC Rio Shopping,0,0,1
 A16,14:17:33,14:17:33,2,2,CC Rio Shopping,0,0,0
 A16,14:20:18,14:20:18,3,3,CC Rio Shopping,0,0,0
@@ -635,10 +635,10 @@ A16,14:59:15,14:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A16,15:00:40,15:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A16,15:01:15,15:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A16,15:03:59,15:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A16,15:07:08,15:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A16,15:10:41,15:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A16,15:14:24,15:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A16,15:17:05,15:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A16,15:07:08,15:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A16,15:10:41,15:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A16,15:14:24,15:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A16,15:17:05,15:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A17,14:45:12,14:45:12,1,1,CC Rio Shopping,0,0,0
 A17,14:47:18,14:47:18,2,2,CC Rio Shopping,0,0,0
 A17,14:50:03,14:50:03,3,3,CC Rio Shopping,0,0,0
@@ -672,13 +672,13 @@ A17,15:27:03,15:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A17,15:29:18,15:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A17,15:30:21,15:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A17,15:31:18,15:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A17,15:33:48,15:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A17,15:34:16,15:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A17,15:35:27,15:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A17,15:40:27,15:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A17,15:44:27,15:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A17,15:46:27,15:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A17,15:49:27,15:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A17,15:33:48,15:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A17,15:34:16,15:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A17,15:35:27,15:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A17,15:40:27,15:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A17,15:44:27,15:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A17,15:46:27,15:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A17,15:49:27,15:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A18,15:15:45,15:15:45,1,1,CC Rio Shopping,0,0,1
 A18,15:17:33,15:17:33,2,2,CC Rio Shopping,0,0,0
 A18,15:20:18,15:20:18,3,3,CC Rio Shopping,0,0,0
@@ -715,10 +715,10 @@ A18,15:59:15,15:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A18,16:00:40,16:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A18,16:01:15,16:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A18,16:03:59,16:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A18,16:07:08,16:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A18,16:10:41,16:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A18,16:14:24,16:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A18,16:17:05,16:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A18,16:07:08,16:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A18,16:10:41,16:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A18,16:14:24,16:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A18,16:17:05,16:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A19,15:45:12,15:45:12,1,1,CC Rio Shopping,0,0,0
 A19,15:47:18,15:47:18,2,2,CC Rio Shopping,0,0,0
 A19,15:50:03,15:50:03,3,3,CC Rio Shopping,0,0,0
@@ -752,13 +752,13 @@ A19,16:27:03,16:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A19,16:29:18,16:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A19,16:30:21,16:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A19,16:31:18,16:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A19,16:33:48,16:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A19,16:34:16,16:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A19,16:35:27,16:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A19,16:40:27,16:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A19,16:44:27,16:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A19,16:46:27,16:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A19,16:49:27,16:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A19,16:33:48,16:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A19,16:34:16,16:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A19,16:35:27,16:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A19,16:40:27,16:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A19,16:44:27,16:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A19,16:46:27,16:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A19,16:49:27,16:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A20,16:15:45,16:15:45,1,1,CC Rio Shopping,0,0,1
 A20,16:17:33,16:17:33,2,2,CC Rio Shopping,0,0,0
 A20,16:20:18,16:20:18,3,3,CC Rio Shopping,0,0,0
@@ -795,10 +795,10 @@ A20,16:59:15,16:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A20,17:00:40,17:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A20,17:01:15,17:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A20,17:03:59,17:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A20,17:07:08,17:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A20,17:10:41,17:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A20,17:14:24,17:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A20,17:17:05,17:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A20,17:07:08,17:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A20,17:10:41,17:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A20,17:14:24,17:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A20,17:17:05,17:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A21,16:45:12,16:45:12,1,1,CC Rio Shopping,0,0,0
 A21,16:47:18,16:47:18,2,2,CC Rio Shopping,0,0,0
 A21,16:50:03,16:50:03,3,3,CC Rio Shopping,0,0,0
@@ -832,13 +832,13 @@ A21,17:27:03,17:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A21,17:29:18,17:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A21,17:30:21,17:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A21,17:31:18,17:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A21,17:33:48,17:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A21,17:34:16,17:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A21,17:35:27,17:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A21,17:40:27,17:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A21,17:44:27,17:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A21,17:46:27,17:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A21,17:49:27,17:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A21,17:33:48,17:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A21,17:34:16,17:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A21,17:35:27,17:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A21,17:40:27,17:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A21,17:44:27,17:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A21,17:46:27,17:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A21,17:49:27,17:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A22,17:15:45,17:15:45,1,1,CC Rio Shopping,0,0,1
 A22,17:17:33,17:17:33,2,2,CC Rio Shopping,0,0,0
 A22,17:20:18,17:20:18,3,3,CC Rio Shopping,0,0,0
@@ -875,10 +875,10 @@ A22,17:59:15,17:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A22,18:00:40,18:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A22,18:01:15,18:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A22,18:03:59,18:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A22,18:07:08,18:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A22,18:10:41,18:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A22,18:14:24,18:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A22,18:17:05,18:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A22,18:07:08,18:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A22,18:10:41,18:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A22,18:14:24,18:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A22,18:17:05,18:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A23,17:45:12,17:45:12,1,1,CC Rio Shopping,0,0,0
 A23,17:47:18,17:47:18,2,2,CC Rio Shopping,0,0,0
 A23,17:50:03,17:50:03,3,3,CC Rio Shopping,0,0,0
@@ -912,13 +912,13 @@ A23,18:27:03,18:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A23,18:29:18,18:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A23,18:30:21,18:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A23,18:31:18,18:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A23,18:33:48,18:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A23,18:34:16,18:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A23,18:35:27,18:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A23,18:40:27,18:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A23,18:44:27,18:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A23,18:46:27,18:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A23,18:49:27,18:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A23,18:33:48,18:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A23,18:34:16,18:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A23,18:35:27,18:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A23,18:40:27,18:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A23,18:44:27,18:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A23,18:46:27,18:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A23,18:49:27,18:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A24,18:15:45,18:15:45,1,1,CC Rio Shopping,0,0,1
 A24,18:17:33,18:17:33,2,2,CC Rio Shopping,0,0,0
 A24,18:20:18,18:20:18,3,3,CC Rio Shopping,0,0,0
@@ -955,10 +955,10 @@ A24,18:59:15,18:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A24,19:00:40,19:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A24,19:01:15,19:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A24,19:03:59,19:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A24,19:07:08,19:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A24,19:10:41,19:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A24,19:14:24,19:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A24,19:17:05,19:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A24,19:07:08,19:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A24,19:10:41,19:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A24,19:14:24,19:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A24,19:17:05,19:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A25,18:45:12,18:45:12,1,1,CC Rio Shopping,0,0,0
 A25,18:47:18,18:47:18,2,2,CC Rio Shopping,0,0,0
 A25,18:50:03,18:50:03,3,3,CC Rio Shopping,0,0,0
@@ -992,13 +992,13 @@ A25,19:27:03,19:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A25,19:29:18,19:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A25,19:30:21,19:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A25,19:31:18,19:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A25,19:33:48,19:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A25,19:34:16,19:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A25,19:35:27,19:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A25,19:40:27,19:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A25,19:44:27,19:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A25,19:46:27,19:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A25,19:49:27,19:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A25,19:33:48,19:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A25,19:34:16,19:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A25,19:35:27,19:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A25,19:40:27,19:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A25,19:44:27,19:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A25,19:46:27,19:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A25,19:49:27,19:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A26,19:15:45,19:15:45,1,1,CC Rio Shopping,0,0,1
 A26,19:17:33,19:17:33,2,2,CC Rio Shopping,0,0,0
 A26,19:20:18,19:20:18,3,3,CC Rio Shopping,0,0,0
@@ -1035,10 +1035,10 @@ A26,19:59:15,19:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A26,20:00:40,20:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A26,20:01:15,20:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A26,20:03:59,20:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A26,20:07:08,20:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A26,20:10:41,20:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A26,20:14:24,20:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A26,20:17:05,20:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A26,20:07:08,20:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A26,20:10:41,20:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A26,20:14:24,20:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A26,20:17:05,20:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A27,19:45:12,19:45:12,1,1,CC Rio Shopping,0,0,0
 A27,19:47:18,19:47:18,2,2,CC Rio Shopping,0,0,0
 A27,19:50:03,19:50:03,3,3,CC Rio Shopping,0,0,0
@@ -1072,13 +1072,13 @@ A27,20:27:03,20:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A27,20:29:18,20:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A27,20:30:21,20:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A27,20:31:18,20:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A27,20:33:48,20:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A27,20:34:16,20:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A27,20:35:27,20:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A27,20:40:27,20:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A27,20:44:27,20:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A27,20:46:27,20:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A27,20:49:27,20:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A27,20:33:48,20:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A27,20:34:16,20:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A27,20:35:27,20:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A27,20:40:27,20:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A27,20:44:27,20:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A27,20:46:27,20:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A27,20:49:27,20:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A28,20:15:45,20:15:45,1,1,CC Rio Shopping,0,0,1
 A28,20:17:33,20:17:33,2,2,CC Rio Shopping,0,0,0
 A28,20:20:18,20:20:18,3,3,CC Rio Shopping,0,0,0
@@ -1115,10 +1115,10 @@ A28,20:59:15,20:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A28,21:00:40,21:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A28,21:01:15,21:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A28,21:03:59,21:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A28,21:07:08,21:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A28,21:10:41,21:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A28,21:14:24,21:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A28,21:17:05,21:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A28,21:07:08,21:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A28,21:10:41,21:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A28,21:14:24,21:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A28,21:17:05,21:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A29,20:45:12,20:45:12,1,1,CC Rio Shopping,0,0,0
 A29,20:47:18,20:47:18,2,2,CC Rio Shopping,0,0,0
 A29,20:50:03,20:50:03,3,3,CC Rio Shopping,0,0,0
@@ -1152,13 +1152,13 @@ A29,21:27:03,21:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A29,21:29:18,21:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A29,21:30:21,21:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A29,21:31:18,21:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A29,21:33:48,21:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A29,21:34:16,21:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A29,21:35:27,21:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A29,21:40:27,21:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A29,21:44:27,21:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A29,21:46:27,21:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A29,21:49:27,21:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A29,21:33:48,21:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A29,21:34:16,21:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A29,21:35:27,21:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A29,21:40:27,21:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A29,21:44:27,21:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A29,21:46:27,21:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A29,21:49:27,21:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A30,21:15:45,21:15:45,1,1,CC Rio Shopping,0,0,1
 A30,21:17:33,21:17:33,2,2,CC Rio Shopping,0,0,0
 A30,21:20:18,21:20:18,3,3,CC Rio Shopping,0,0,0
@@ -1195,10 +1195,10 @@ A30,21:59:15,21:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A30,22:00:40,22:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A30,22:01:15,22:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A30,22:03:59,22:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A30,22:07:08,22:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A30,22:10:41,22:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A30,22:14:24,22:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A30,22:17:05,22:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A30,22:07:08,22:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A30,22:10:41,22:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A30,22:14:24,22:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A30,22:17:05,22:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A31,21:45:12,21:45:12,1,1,CC Rio Shopping,0,0,0
 A31,21:47:18,21:47:18,2,2,CC Rio Shopping,0,0,0
 A31,21:50:03,21:50:03,3,3,CC Rio Shopping,0,0,0
@@ -1232,13 +1232,13 @@ A31,22:27:03,22:27:03,30,30,Estación de autobus Valladolid,0,0,0
 A31,22:29:18,22:29:18,31,31,Estación de autobus Valladolid,0,0,0
 A31,22:30:21,22:30:21,32,32,Estación de autobus Valladolid,0,0,0
 A31,22:31:18,22:31:18,33,33,Estación de autobus Valladolid,0,0,0
-A31,22:33:48,22:33:48,34,34,Estación de autobus Valladolid,1,0,0
-A31,22:34:16,22:34:16,35,35,Estación de autobus Valladolid,1,0,0
-A31,22:35:27,22:35:27,36,36,Estación de autobus Valladolid,1,0,0
-A31,22:40:27,22:40:27,37,37,Estación de autobus Valladolid,1,0,0
-A31,22:44:27,22:44:27,38,38,Estación de autobus Valladolid,1,0,0
-A31,22:46:27,22:46:27,39,39,Estación de autobus Valladolid,1,0,0
-A31,22:49:27,22:49:27,1,40,Estación de autobus Valladolid,1,0,0
+A31,22:33:48,22:33:48,34,34,Estación de autobus Valladolid,0,0,0
+A31,22:34:16,22:34:16,35,35,Estación de autobus Valladolid,0,0,0
+A31,22:35:27,22:35:27,36,36,Estación de autobus Valladolid,0,0,0
+A31,22:40:27,22:40:27,37,37,Estación de autobus Valladolid,0,0,0
+A31,22:44:27,22:44:27,38,38,Estación de autobus Valladolid,0,0,0
+A31,22:46:27,22:46:27,39,39,Estación de autobus Valladolid,0,0,0
+A31,22:49:27,22:49:27,1,40,Estación de autobus Valladolid,0,0,0
 A32,22:15:45,22:15:45,1,1,CC Rio Shopping,0,0,1
 A32,22:17:33,22:17:33,2,2,CC Rio Shopping,0,0,0
 A32,22:20:18,22:20:18,3,3,CC Rio Shopping,0,0,0
@@ -1275,10 +1275,10 @@ A32,22:59:15,22:59:15,33,33,Estación de autobús Valladolid,0,0,0
 A32,23:00:40,23:00:40,34,34,Estación de autobús Valladolid,0,0,0
 A32,23:01:15,23:01:15,35,35,Estación de autobús Valladolid,0,0,0
 A32,23:03:59,23:03:59,36,36,Estación de autobús Valladolid,0,0,0
-A32,23:07:08,23:07:08,37,37,Estación de autobús Valladolid,1,0,0
-A32,23:10:41,23:10:41,38,38,Estación de autobús Valladolid,1,0,0
-A32,23:14:24,23:14:24,39,39,Estación de autobús Valladolid,1,0,0
-A32,23:17:05,23:17:05,1,40,Estación de autobús Valladolid,1,0,0
+A32,23:07:08,23:07:08,37,37,Estación de autobús Valladolid,0,0,0
+A32,23:10:41,23:10:41,38,38,Estación de autobús Valladolid,0,0,0
+A32,23:14:24,23:14:24,39,39,Estación de autobús Valladolid,0,0,0
+A32,23:17:05,23:17:05,1,40,Estación de autobús Valladolid,0,0,0
 A33,09:00:12,09:00:12,1,1,CC Rio Shopping,0,0,0
 A33,09:02:18,09:02:18,2,2,CC Rio Shopping,0,0,0
 A33,09:05:03,09:05:03,3,3,CC Rio Shopping,0,0,0
@@ -1312,13 +1312,13 @@ A33,09:42:03,09:42:03,30,30,Estación de autobus Valladolid,0,0,0
 A33,09:44:18,09:44:18,31,31,Estación de autobus Valladolid,0,0,0
 A33,09:45:21,09:45:21,32,32,Estación de autobus Valladolid,0,0,0
 A33,09:46:18,09:46:18,33,33,Estación de autobus Valladolid,0,0,0
-A33,09:48:48,09:48:48,34,34,Estación de autobus Valladolid,1,0,0
-A33,09:49:16,09:49:16,35,35,Estación de autobus Valladolid,1,0,0
-A33,09:50:27,09:50:27,36,36,Estación de autobus Valladolid,1,0,0
-A33,09:55:27,09:55:27,37,37,Estación de autobus Valladolid,1,0,0
-A33,09:59:27,09:59:27,38,38,Estación de autobus Valladolid,1,0,0
-A33,10:01:27,10:01:27,39,39,Estación de autobus Valladolid,1,0,0
-A33,10:04:27,10:04:27,1,40,Estación de autobus Valladolid,1,0,0
+A33,09:48:48,09:48:48,34,34,Estación de autobus Valladolid,0,0,0
+A33,09:49:16,09:49:16,35,35,Estación de autobus Valladolid,0,0,0
+A33,09:50:27,09:50:27,36,36,Estación de autobus Valladolid,0,0,0
+A33,09:55:27,09:55:27,37,37,Estación de autobus Valladolid,0,0,0
+A33,09:59:27,09:59:27,38,38,Estación de autobus Valladolid,0,0,0
+A33,10:01:27,10:01:27,39,39,Estación de autobus Valladolid,0,0,0
+A33,10:04:27,10:04:27,1,40,Estación de autobus Valladolid,0,0,0
 A34,10:00:45,10:00:45,1,1,CC Rio Shopping,0,0,1
 A34,10:02:33,10:02:33,2,2,CC Rio Shopping,0,0,0
 A34,10:05:18,10:05:18,3,3,CC Rio Shopping,0,0,0
@@ -1355,10 +1355,10 @@ A34,10:44:15,10:44:15,33,33,Estación de autobús Valladolid,0,0,0
 A34,10:45:40,10:45:40,34,34,Estación de autobús Valladolid,0,0,0
 A34,10:46:15,10:46:15,35,35,Estación de autobús Valladolid,0,0,0
 A34,10:48:59,10:48:59,36,36,Estación de autobús Valladolid,0,0,0
-A34,10:52:08,10:52:08,37,37,Estación de autobús Valladolid,1,0,0
-A34,10:55:41,10:55:41,38,38,Estación de autobús Valladolid,1,0,0
-A34,10:59:24,10:59:24,39,39,Estación de autobús Valladolid,1,0,0
-A34,11:02:05,11:02:05,1,40,Estación de autobús Valladolid,1,0,0
+A34,10:52:08,10:52:08,37,37,Estación de autobús Valladolid,0,0,0
+A34,10:55:41,10:55:41,38,38,Estación de autobús Valladolid,0,0,0
+A34,10:59:24,10:59:24,39,39,Estación de autobús Valladolid,0,0,0
+A34,11:02:05,11:02:05,1,40,Estación de autobús Valladolid,0,0,0
 A35,11:00:12,11:00:12,1,1,CC Rio Shopping,0,0,0
 A35,11:02:18,11:02:18,2,2,CC Rio Shopping,0,0,0
 A35,11:05:03,11:05:03,3,3,CC Rio Shopping,0,0,0
@@ -1392,13 +1392,13 @@ A35,11:42:03,11:42:03,30,30,Estación de autobus Valladolid,0,0,0
 A35,11:44:18,11:44:18,31,31,Estación de autobus Valladolid,0,0,0
 A35,11:45:21,11:45:21,32,32,Estación de autobus Valladolid,0,0,0
 A35,11:46:18,11:46:18,33,33,Estación de autobus Valladolid,0,0,0
-A35,11:48:48,11:48:48,34,34,Estación de autobus Valladolid,1,0,0
-A35,11:49:16,11:49:16,35,35,Estación de autobus Valladolid,1,0,0
-A35,11:50:27,11:50:27,36,36,Estación de autobus Valladolid,1,0,0
-A35,11:55:27,11:55:27,37,37,Estación de autobus Valladolid,1,0,0
-A35,11:59:27,11:59:27,38,38,Estación de autobus Valladolid,1,0,0
-A35,12:01:27,12:01:27,39,39,Estación de autobus Valladolid,1,0,0
-A35,12:04:27,12:04:27,1,40,Estación de autobus Valladolid,1,0,0
+A35,11:48:48,11:48:48,34,34,Estación de autobus Valladolid,0,0,0
+A35,11:49:16,11:49:16,35,35,Estación de autobus Valladolid,0,0,0
+A35,11:50:27,11:50:27,36,36,Estación de autobus Valladolid,0,0,0
+A35,11:55:27,11:55:27,37,37,Estación de autobus Valladolid,0,0,0
+A35,11:59:27,11:59:27,38,38,Estación de autobus Valladolid,0,0,0
+A35,12:01:27,12:01:27,39,39,Estación de autobus Valladolid,0,0,0
+A35,12:04:27,12:04:27,1,40,Estación de autobus Valladolid,0,0,0
 A36,12:00:45,12:00:45,1,1,CC Rio Shopping,0,0,1
 A36,12:02:33,12:02:33,2,2,CC Rio Shopping,0,0,0
 A36,12:05:18,12:05:18,3,3,CC Rio Shopping,0,0,0
@@ -1435,10 +1435,10 @@ A36,12:44:15,12:44:15,33,33,Estación de autobús Valladolid,0,0,0
 A36,12:45:40,12:45:40,34,34,Estación de autobús Valladolid,0,0,0
 A36,12:46:15,12:46:15,35,35,Estación de autobús Valladolid,0,0,0
 A36,12:48:59,12:48:59,36,36,Estación de autobús Valladolid,0,0,0
-A36,12:52:08,12:52:08,37,37,Estación de autobús Valladolid,1,0,0
-A36,12:55:41,12:55:41,38,38,Estación de autobús Valladolid,1,0,0
-A36,12:59:24,12:59:24,39,39,Estación de autobús Valladolid,1,0,0
-A36,13:02:05,13:02:05,1,40,Estación de autobús Valladolid,1,0,0
+A36,12:52:08,12:52:08,37,37,Estación de autobús Valladolid,0,0,0
+A36,12:55:41,12:55:41,38,38,Estación de autobús Valladolid,0,0,0
+A36,12:59:24,12:59:24,39,39,Estación de autobús Valladolid,0,0,0
+A36,13:02:05,13:02:05,1,40,Estación de autobús Valladolid,0,0,0
 A37,13:00:12,13:00:12,1,1,CC Rio Shopping,0,0,0
 A37,13:02:18,13:02:18,2,2,CC Rio Shopping,0,0,0
 A37,13:05:03,13:05:03,3,3,CC Rio Shopping,0,0,0
@@ -1472,13 +1472,13 @@ A37,13:42:03,13:42:03,30,30,Estación de autobus Valladolid,0,0,0
 A37,13:44:18,13:44:18,31,31,Estación de autobus Valladolid,0,0,0
 A37,13:45:21,13:45:21,32,32,Estación de autobus Valladolid,0,0,0
 A37,13:46:18,13:46:18,33,33,Estación de autobus Valladolid,0,0,0
-A37,13:48:48,13:48:48,34,34,Estación de autobus Valladolid,1,0,0
-A37,13:49:16,13:49:16,35,35,Estación de autobus Valladolid,1,0,0
-A37,13:50:27,13:50:27,36,36,Estación de autobus Valladolid,1,0,0
-A37,13:55:27,13:55:27,37,37,Estación de autobus Valladolid,1,0,0
-A37,13:59:27,13:59:27,38,38,Estación de autobus Valladolid,1,0,0
-A37,14:01:27,14:01:27,39,39,Estación de autobus Valladolid,1,0,0
-A37,14:04:27,14:04:27,1,40,Estación de autobus Valladolid,1,0,0
+A37,13:48:48,13:48:48,34,34,Estación de autobus Valladolid,0,0,0
+A37,13:49:16,13:49:16,35,35,Estación de autobus Valladolid,0,0,0
+A37,13:50:27,13:50:27,36,36,Estación de autobus Valladolid,0,0,0
+A37,13:55:27,13:55:27,37,37,Estación de autobus Valladolid,0,0,0
+A37,13:59:27,13:59:27,38,38,Estación de autobus Valladolid,0,0,0
+A37,14:01:27,14:01:27,39,39,Estación de autobus Valladolid,0,0,0
+A37,14:04:27,14:04:27,1,40,Estación de autobus Valladolid,0,0,0
 A38,14:00:15,14:00:15,1,1,CC Rio Shopping,0,0,1
 A38,14:02:03,14:02:03,2,2,CC Rio Shopping,0,0,0
 A38,14:04:48,14:04:48,3,3,CC Rio Shopping,0,0,0
@@ -1515,10 +1515,10 @@ A38,14:43:45,14:43:45,33,33,Estación de autobús Valladolid,0,0,0
 A38,14:45:10,14:45:10,34,34,Estación de autobús Valladolid,0,0,0
 A38,14:45:45,14:45:45,35,35,Estación de autobús Valladolid,0,0,0
 A38,14:48:29,14:48:29,36,36,Estación de autobús Valladolid,0,0,0
-A38,14:51:38,14:51:38,37,37,Estación de autobús Valladolid,1,0,0
-A38,14:55:11,14:55:11,38,38,Estación de autobús Valladolid,1,0,0
-A38,14:58:54,14:58:54,39,39,Estación de autobús Valladolid,1,0,0
-A38,15:01:35,15:01:35,1,40,Estación de autobús Valladolid,1,0,0
+A38,14:51:38,14:51:38,37,37,Estación de autobús Valladolid,0,0,0
+A38,14:55:11,14:55:11,38,38,Estación de autobús Valladolid,0,0,0
+A38,14:58:54,14:58:54,39,39,Estación de autobús Valladolid,0,0,0
+A38,15:01:35,15:01:35,1,40,Estación de autobús Valladolid,0,0,0
 A39,15:00:12,15:00:12,1,1,CC Rio Shopping,0,0,0
 A39,15:02:18,15:02:18,2,2,CC Rio Shopping,0,0,0
 A39,15:05:03,15:05:03,3,3,CC Rio Shopping,0,0,0
@@ -1552,13 +1552,13 @@ A39,15:42:03,15:42:03,30,30,Estación de autobus Valladolid,0,0,0
 A39,15:44:18,15:44:18,31,31,Estación de autobus Valladolid,0,0,0
 A39,15:45:21,15:45:21,32,32,Estación de autobus Valladolid,0,0,0
 A39,15:46:18,15:46:18,33,33,Estación de autobus Valladolid,0,0,0
-A39,15:48:48,15:48:48,34,34,Estación de autobus Valladolid,1,0,0
-A39,15:49:16,15:49:16,35,35,Estación de autobus Valladolid,1,0,0
-A39,15:50:27,15:50:27,36,36,Estación de autobus Valladolid,1,0,0
-A39,15:55:27,15:55:27,37,37,Estación de autobus Valladolid,1,0,0
-A39,15:59:27,15:59:27,38,38,Estación de autobus Valladolid,1,0,0
-A39,16:01:27,16:01:27,39,39,Estación de autobus Valladolid,1,0,0
-A39,16:04:27,16:04:27,1,40,Estación de autobus Valladolid,1,0,0
+A39,15:48:48,15:48:48,34,34,Estación de autobus Valladolid,0,0,0
+A39,15:49:16,15:49:16,35,35,Estación de autobus Valladolid,0,0,0
+A39,15:50:27,15:50:27,36,36,Estación de autobus Valladolid,0,0,0
+A39,15:55:27,15:55:27,37,37,Estación de autobus Valladolid,0,0,0
+A39,15:59:27,15:59:27,38,38,Estación de autobus Valladolid,0,0,0
+A39,16:01:27,16:01:27,39,39,Estación de autobus Valladolid,0,0,0
+A39,16:04:27,16:04:27,1,40,Estación de autobus Valladolid,0,0,0
 A40,16:00:15,16:00:15,1,1,CC Rio Shopping,0,0,1
 A40,16:02:03,16:02:03,2,2,CC Rio Shopping,0,0,0
 A40,16:04:48,16:04:48,3,3,CC Rio Shopping,0,0,0
@@ -1595,10 +1595,10 @@ A40,16:43:45,16:43:45,33,33,Estación de autobús Valladolid,0,0,0
 A40,16:45:10,16:45:10,34,34,Estación de autobús Valladolid,0,0,0
 A40,16:45:45,16:45:45,35,35,Estación de autobús Valladolid,0,0,0
 A40,16:48:29,16:48:29,36,36,Estación de autobús Valladolid,0,0,0
-A40,16:51:38,16:51:38,37,37,Estación de autobús Valladolid,1,0,0
-A40,16:55:11,16:55:11,38,38,Estación de autobús Valladolid,1,0,0
-A40,16:58:54,16:58:54,39,39,Estación de autobús Valladolid,1,0,0
-A40,17:01:35,17:01:35,1,40,Estación de autobús Valladolid,1,0,0
+A40,16:51:38,16:51:38,37,37,Estación de autobús Valladolid,0,0,0
+A40,16:55:11,16:55:11,38,38,Estación de autobús Valladolid,0,0,0
+A40,16:58:54,16:58:54,39,39,Estación de autobús Valladolid,0,0,0
+A40,17:01:35,17:01:35,1,40,Estación de autobús Valladolid,0,0,0
 A41,17:00:12,17:00:12,1,1,CC Rio Shopping,0,0,0
 A41,17:02:18,17:02:18,2,2,CC Rio Shopping,0,0,0
 A41,17:05:03,17:05:03,3,3,CC Rio Shopping,0,0,0
@@ -1632,13 +1632,13 @@ A41,17:42:03,17:42:03,30,30,Estación de autobus Valladolid,0,0,0
 A41,17:44:18,17:44:18,31,31,Estación de autobus Valladolid,0,0,0
 A41,17:45:21,17:45:21,32,32,Estación de autobus Valladolid,0,0,0
 A41,17:46:18,17:46:18,33,33,Estación de autobus Valladolid,0,0,0
-A41,17:48:48,17:48:48,34,34,Estación de autobus Valladolid,1,0,0
-A41,17:49:16,17:49:16,35,35,Estación de autobus Valladolid,1,0,0
-A41,17:50:27,17:50:27,36,36,Estación de autobus Valladolid,1,0,0
-A41,17:55:27,17:55:27,37,37,Estación de autobus Valladolid,1,0,0
-A41,17:59:27,17:59:27,38,38,Estación de autobus Valladolid,1,0,0
-A41,18:01:27,18:01:27,39,39,Estación de autobus Valladolid,1,0,0
-A41,18:04:27,18:04:27,1,40,Estación de autobus Valladolid,1,0,0
+A41,17:48:48,17:48:48,34,34,Estación de autobus Valladolid,0,0,0
+A41,17:49:16,17:49:16,35,35,Estación de autobus Valladolid,0,0,0
+A41,17:50:27,17:50:27,36,36,Estación de autobus Valladolid,0,0,0
+A41,17:55:27,17:55:27,37,37,Estación de autobus Valladolid,0,0,0
+A41,17:59:27,17:59:27,38,38,Estación de autobus Valladolid,0,0,0
+A41,18:01:27,18:01:27,39,39,Estación de autobus Valladolid,0,0,0
+A41,18:04:27,18:04:27,1,40,Estación de autobus Valladolid,0,0,0
 A42,18:00:15,18:00:15,1,1,CC Rio Shopping,0,0,1
 A42,18:02:03,18:02:03,2,2,CC Rio Shopping,0,0,0
 A42,18:04:48,18:04:48,3,3,CC Rio Shopping,0,0,0
@@ -1675,10 +1675,10 @@ A42,18:43:45,18:43:45,33,33,Estación de autobús Valladolid,0,0,0
 A42,18:45:10,18:45:10,34,34,Estación de autobús Valladolid,0,0,0
 A42,18:45:45,18:45:45,35,35,Estación de autobús Valladolid,0,0,0
 A42,18:48:29,18:48:29,36,36,Estación de autobús Valladolid,0,0,0
-A42,18:51:38,18:51:38,37,37,Estación de autobús Valladolid,1,0,0
-A42,18:55:11,18:55:11,38,38,Estación de autobús Valladolid,1,0,0
-A42,18:58:54,18:58:54,39,39,Estación de autobús Valladolid,1,0,0
-A42,19:01:35,19:01:35,1,40,Estación de autobús Valladolid,1,0,0
+A42,18:51:38,18:51:38,37,37,Estación de autobús Valladolid,0,0,0
+A42,18:55:11,18:55:11,38,38,Estación de autobús Valladolid,0,0,0
+A42,18:58:54,18:58:54,39,39,Estación de autobús Valladolid,0,0,0
+A42,19:01:35,19:01:35,1,40,Estación de autobús Valladolid,0,0,0
 A43,19:00:12,19:00:12,1,1,CC Rio Shopping,0,0,0
 A43,19:02:18,19:02:18,2,2,CC Rio Shopping,0,0,0
 A43,19:05:03,19:05:03,3,3,CC Rio Shopping,0,0,0
@@ -1712,13 +1712,13 @@ A43,19:42:03,19:42:03,30,30,Estación de autobus Valladolid,0,0,0
 A43,19:44:18,19:44:18,31,31,Estación de autobus Valladolid,0,0,0
 A43,19:45:21,19:45:21,32,32,Estación de autobus Valladolid,0,0,0
 A43,19:46:18,19:46:18,33,33,Estación de autobus Valladolid,0,0,0
-A43,19:48:48,19:48:48,34,34,Estación de autobus Valladolid,1,0,0
-A43,19:49:16,19:49:16,35,35,Estación de autobus Valladolid,1,0,0
-A43,19:50:27,19:50:27,36,36,Estación de autobus Valladolid,1,0,0
-A43,19:55:27,19:55:27,37,37,Estación de autobus Valladolid,1,0,0
-A43,19:59:27,19:59:27,38,38,Estación de autobus Valladolid,1,0,0
-A43,20:01:27,20:01:27,39,39,Estación de autobus Valladolid,1,0,0
-A43,20:04:27,20:04:27,1,40,Estación de autobus Valladolid,1,0,0
+A43,19:48:48,19:48:48,34,34,Estación de autobus Valladolid,0,0,0
+A43,19:49:16,19:49:16,35,35,Estación de autobus Valladolid,0,0,0
+A43,19:50:27,19:50:27,36,36,Estación de autobus Valladolid,0,0,0
+A43,19:55:27,19:55:27,37,37,Estación de autobus Valladolid,0,0,0
+A43,19:59:27,19:59:27,38,38,Estación de autobus Valladolid,0,0,0
+A43,20:01:27,20:01:27,39,39,Estación de autobus Valladolid,0,0,0
+A43,20:04:27,20:04:27,1,40,Estación de autobus Valladolid,0,0,0
 A44,20:00:15,20:00:15,1,1,CC Rio Shopping,0,0,1
 A44,20:02:03,20:02:03,2,2,CC Rio Shopping,0,0,0
 A44,20:04:48,20:04:48,3,3,CC Rio Shopping,0,0,0
@@ -1755,10 +1755,10 @@ A44,20:43:45,20:43:45,33,33,Estación de autobús Valladolid,0,0,0
 A44,20:45:10,20:45:10,34,34,Estación de autobús Valladolid,0,0,0
 A44,20:45:45,20:45:45,35,35,Estación de autobús Valladolid,0,0,0
 A44,20:48:29,20:48:29,36,36,Estación de autobús Valladolid,0,0,0
-A44,20:51:38,20:51:38,37,37,Estación de autobús Valladolid,1,0,0
-A44,20:55:11,20:55:11,38,38,Estación de autobús Valladolid,1,0,0
-A44,20:58:54,20:58:54,39,39,Estación de autobús Valladolid,1,0,0
-A44,21:01:35,21:01:35,1,40,Estación de autobús Valladolid,1,0,0
+A44,20:51:38,20:51:38,37,37,Estación de autobús Valladolid,0,0,0
+A44,20:55:11,20:55:11,38,38,Estación de autobús Valladolid,0,0,0
+A44,20:58:54,20:58:54,39,39,Estación de autobús Valladolid,0,0,0
+A44,21:01:35,21:01:35,1,40,Estación de autobús Valladolid,0,0,0
 A45,21:00:12,21:00:12,1,1,CC Rio Shopping,0,0,0
 A45,21:02:18,21:02:18,2,2,CC Rio Shopping,0,0,0
 A45,21:05:03,21:05:03,3,3,CC Rio Shopping,0,0,0
@@ -1792,13 +1792,13 @@ A45,21:42:03,21:42:03,30,30,Estación de autobus Valladolid,0,0,0
 A45,21:44:18,21:44:18,31,31,Estación de autobus Valladolid,0,0,0
 A45,21:45:21,21:45:21,32,32,Estación de autobus Valladolid,0,0,0
 A45,21:46:18,21:46:18,33,33,Estación de autobus Valladolid,0,0,0
-A45,21:48:48,21:48:48,34,34,Estación de autobus Valladolid,1,0,0
-A45,21:49:16,21:49:16,35,35,Estación de autobus Valladolid,1,0,0
-A45,21:50:27,21:50:27,36,36,Estación de autobus Valladolid,1,0,0
-A45,21:55:27,21:55:27,37,37,Estación de autobus Valladolid,1,0,0
-A45,21:59:27,21:59:27,38,38,Estación de autobus Valladolid,1,0,0
-A45,22:01:27,22:01:27,39,39,Estación de autobus Valladolid,1,0,0
-A45,22:04:27,22:04:27,1,40,Estación de autobus Valladolid,1,0,0
+A45,21:48:48,21:48:48,34,34,Estación de autobus Valladolid,0,0,0
+A45,21:49:16,21:49:16,35,35,Estación de autobus Valladolid,0,0,0
+A45,21:50:27,21:50:27,36,36,Estación de autobus Valladolid,0,0,0
+A45,21:55:27,21:55:27,37,37,Estación de autobus Valladolid,0,0,0
+A45,21:59:27,21:59:27,38,38,Estación de autobus Valladolid,0,0,0
+A45,22:01:27,22:01:27,39,39,Estación de autobus Valladolid,0,0,0
+A45,22:04:27,22:04:27,1,40,Estación de autobus Valladolid,0,0,0
 A46,22:00:15,22:00:15,1,1,CC Rio Shopping,0,0,1
 A46,22:02:03,22:02:03,2,2,CC Rio Shopping,0,0,0
 A46,22:04:48,22:04:48,3,3,CC Rio Shopping,0,0,0
@@ -1835,10 +1835,10 @@ A46,22:43:45,22:43:45,33,33,Estación de autobús Valladolid,0,0,0
 A46,22:45:10,22:45:10,34,34,Estación de autobús Valladolid,0,0,0
 A46,22:45:45,22:45:45,35,35,Estación de autobús Valladolid,0,0,0
 A46,22:48:29,22:48:29,36,36,Estación de autobús Valladolid,0,0,0
-A46,22:51:38,22:51:38,37,37,Estación de autobús Valladolid,1,0,0
-A46,22:55:11,22:55:11,38,38,Estación de autobús Valladolid,1,0,0
-A46,22:58:54,22:58:54,39,39,Estación de autobús Valladolid,1,0,0
-A46,23:01:35,23:01:35,1,40,Estación de autobús Valladolid,1,0,0
+A46,22:51:38,22:51:38,37,37,Estación de autobús Valladolid,0,0,0
+A46,22:55:11,22:55:11,38,38,Estación de autobús Valladolid,0,0,0
+A46,22:58:54,22:58:54,39,39,Estación de autobús Valladolid,0,0,0
+A46,23:01:35,23:01:35,1,40,Estación de autobús Valladolid,0,0,0
 A47,10:15:12,10:15:12,1,1,CC Rio Shopping,0,0,0
 A47,10:17:18,10:17:18,2,2,CC Rio Shopping,0,0,0
 A47,10:20:03,10:20:03,3,3,CC Rio Shopping,0,0,0
@@ -1872,13 +1872,13 @@ A47,10:57:03,10:57:03,30,30,Estación de autobus Valladolid,0,0,0
 A47,10:59:18,10:59:18,31,31,Estación de autobus Valladolid,0,0,0
 A47,11:00:21,11:00:21,32,32,Estación de autobus Valladolid,0,0,0
 A47,11:01:18,11:01:18,33,33,Estación de autobus Valladolid,0,0,0
-A47,11:03:48,11:03:48,34,34,Estación de autobus Valladolid,1,0,0
-A47,11:04:16,11:04:16,35,35,Estación de autobus Valladolid,1,0,0
-A47,11:05:27,11:05:27,36,36,Estación de autobus Valladolid,1,0,0
-A47,11:10:27,11:10:27,37,37,Estación de autobus Valladolid,1,0,0
-A47,11:14:27,11:14:27,38,38,Estación de autobus Valladolid,1,0,0
-A47,11:16:27,11:16:27,39,39,Estación de autobus Valladolid,1,0,0
-A47,11:19:27,11:19:27,1,40,Estación de autobus Valladolid,1,0,0
+A47,11:03:48,11:03:48,34,34,Estación de autobus Valladolid,0,0,0
+A47,11:04:16,11:04:16,35,35,Estación de autobus Valladolid,0,0,0
+A47,11:05:27,11:05:27,36,36,Estación de autobus Valladolid,0,0,0
+A47,11:10:27,11:10:27,37,37,Estación de autobus Valladolid,0,0,0
+A47,11:14:27,11:14:27,38,38,Estación de autobus Valladolid,0,0,0
+A47,11:16:27,11:16:27,39,39,Estación de autobus Valladolid,0,0,0
+A47,11:19:27,11:19:27,1,40,Estación de autobus Valladolid,0,0,0
 A48,14:15:15,14:15:15,1,1,CC Rio Shopping,0,0,1
 A48,14:17:03,14:17:03,2,2,CC Rio Shopping,0,0,0
 A48,14:19:48,14:19:48,3,3,CC Rio Shopping,0,0,0
@@ -1915,10 +1915,10 @@ A48,14:58:45,14:58:45,33,33,Estación de autobús Valladolid,0,0,0
 A48,15:00:10,15:00:10,34,34,Estación de autobús Valladolid,0,0,0
 A48,15:00:45,15:00:45,35,35,Estación de autobús Valladolid,0,0,0
 A48,15:03:29,15:03:29,36,36,Estación de autobús Valladolid,0,0,0
-A48,15:06:38,15:06:38,37,37,Estación de autobús Valladolid,1,0,0
-A48,15:10:11,15:10:11,38,38,Estación de autobús Valladolid,1,0,0
-A48,15:13:54,15:13:54,39,39,Estación de autobús Valladolid,1,0,0
-A48,15:16:35,15:16:35,1,40,Estación de autobús Valladolid,1,0,0
+A48,15:06:38,15:06:38,37,37,Estación de autobús Valladolid,0,0,0
+A48,15:10:11,15:10:11,38,38,Estación de autobús Valladolid,0,0,0
+A48,15:13:54,15:13:54,39,39,Estación de autobús Valladolid,0,0,0
+A48,15:16:35,15:16:35,1,40,Estación de autobús Valladolid,0,0,0
 A49,17:15:12,17:15:12,1,1,CC Rio Shopping,0,0,0
 A49,17:17:18,17:17:18,2,2,CC Rio Shopping,0,0,0
 A49,17:20:03,17:20:03,3,3,CC Rio Shopping,0,0,0
@@ -1952,13 +1952,13 @@ A49,17:57:03,17:57:03,30,30,Estación de autobus Valladolid,0,0,0
 A49,17:59:18,17:59:18,31,31,Estación de autobus Valladolid,0,0,0
 A49,18:00:21,18:00:21,32,32,Estación de autobus Valladolid,0,0,0
 A49,18:01:18,18:01:18,33,33,Estación de autobus Valladolid,0,0,0
-A49,18:03:48,18:03:48,34,34,Estación de autobus Valladolid,1,0,0
-A49,18:04:16,18:04:16,35,35,Estación de autobus Valladolid,1,0,0
-A49,18:05:27,18:05:27,36,36,Estación de autobus Valladolid,1,0,0
-A49,18:10:27,18:10:27,37,37,Estación de autobus Valladolid,1,0,0
-A49,18:14:27,18:14:27,38,38,Estación de autobus Valladolid,1,0,0
-A49,18:16:27,18:16:27,39,39,Estación de autobus Valladolid,1,0,0
-A49,18:19:27,18:19:27,1,40,Estación de autobus Valladolid,1,0,0
+A49,18:03:48,18:03:48,34,34,Estación de autobus Valladolid,0,0,0
+A49,18:04:16,18:04:16,35,35,Estación de autobus Valladolid,0,0,0
+A49,18:05:27,18:05:27,36,36,Estación de autobus Valladolid,0,0,0
+A49,18:10:27,18:10:27,37,37,Estación de autobus Valladolid,0,0,0
+A49,18:14:27,18:14:27,38,38,Estación de autobus Valladolid,0,0,0
+A49,18:16:27,18:16:27,39,39,Estación de autobus Valladolid,0,0,0
+A49,18:19:27,18:19:27,1,40,Estación de autobus Valladolid,0,0,0
 A50,20:15:15,20:15:15,1,1,CC Rio Shopping,0,0,1
 A50,20:17:03,20:17:03,2,2,CC Rio Shopping,0,0,0
 A50,20:19:48,20:19:48,3,3,CC Rio Shopping,0,0,0
@@ -1995,10 +1995,10 @@ A50,20:58:45,20:58:45,33,33,Estación de autobús Valladolid,0,0,0
 A50,21:00:10,21:00:10,34,34,Estación de autobús Valladolid,0,0,0
 A50,21:00:45,21:00:45,35,35,Estación de autobús Valladolid,0,0,0
 A50,21:03:29,21:03:29,36,36,Estación de autobús Valladolid,0,0,0
-A50,21:06:38,21:06:38,37,37,Estación de autobús Valladolid,1,0,0
-A50,21:10:11,21:10:11,38,38,Estación de autobús Valladolid,1,0,0
-A50,21:13:54,21:13:54,39,39,Estación de autobús Valladolid,1,0,0
-A50,21:16:35,21:16:35,1,40,Estación de autobús Valladolid,1,0,0
+A50,21:06:38,21:06:38,37,37,Estación de autobús Valladolid,0,0,0
+A50,21:10:11,21:10:11,38,38,Estación de autobús Valladolid,0,0,0
+A50,21:13:54,21:13:54,39,39,Estación de autobús Valladolid,0,0,0
+A50,21:16:35,21:16:35,1,40,Estación de autobús Valladolid,0,0,0
 A51,22:15:12,22:15:12,1,1,CC Rio Shopping,0,0,0
 A51,22:17:18,22:17:18,2,2,CC Rio Shopping,0,0,0
 A51,22:20:03,22:20:03,3,3,CC Rio Shopping,0,0,0
@@ -2032,13 +2032,13 @@ A51,22:57:03,22:57:03,30,30,Estación de autobus Valladolid,0,0,0
 A51,22:59:18,22:59:18,31,31,Estación de autobus Valladolid,0,0,0
 A51,23:00:21,23:00:21,32,32,Estación de autobus Valladolid,0,0,0
 A51,23:01:18,23:01:18,33,33,Estación de autobus Valladolid,0,0,0
-A51,23:03:48,23:03:48,34,34,Estación de autobus Valladolid,1,0,0
-A51,23:04:16,23:04:16,35,35,Estación de autobus Valladolid,1,0,0
-A51,23:05:27,23:05:27,36,36,Estación de autobus Valladolid,1,0,0
-A51,23:10:27,23:10:27,37,37,Estación de autobus Valladolid,1,0,0
-A51,23:14:27,23:14:27,38,38,Estación de autobus Valladolid,1,0,0
-A51,23:16:27,23:16:27,39,39,Estación de autobus Valladolid,1,0,0
-A51,23:19:27,23:19:27,1,40,Estación de autobus Valladolid,1,0,0
+A51,23:03:48,23:03:48,34,34,Estación de autobus Valladolid,0,0,0
+A51,23:04:16,23:04:16,35,35,Estación de autobus Valladolid,0,0,0
+A51,23:05:27,23:05:27,36,36,Estación de autobus Valladolid,0,0,0
+A51,23:10:27,23:10:27,37,37,Estación de autobus Valladolid,0,0,0
+A51,23:14:27,23:14:27,38,38,Estación de autobus Valladolid,0,0,0
+A51,23:16:27,23:16:27,39,39,Estación de autobus Valladolid,0,0,0
+A51,23:19:27,23:19:27,1,40,Estación de autobus Valladolid,0,0,0
 B1,00:00:00,00:00:00,64,1,Estación de autobus Valladolid,0,0,1
 B1,00:04:00,00:04:00,1,2,Estación de autobus Valladolid,0,0,0
 B1,00:06:00,00:06:00,2,3,Estación de autobus Valladolid,0,0,0
@@ -2423,13 +2423,13 @@ R1,07:14:08,07:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R1,07:15:38,07:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R1,07:16:14,07:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R1,07:18:38,07:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R1,07:19:53,07:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R1,07:20:30,07:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R1,07:21:33,07:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R1,07:24:53,07:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R1,07:28:30,07:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R1,07:30:26,07:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R1,07:33:41,07:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R1,07:19:53,07:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R1,07:20:30,07:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R1,07:21:33,07:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R1,07:24:53,07:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R1,07:28:30,07:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R1,07:30:26,07:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R1,07:33:41,07:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R2,07:00:48,07:01:48,1,1,CC Rio Shopping,0,0,1
 R2,07:04:36,07:04:36,2,2,CC Rio Shopping,0,0,0
 R2,07:08:18,07:08:18,3,3,CC Rio Shopping,0,0,0
@@ -2468,8 +2468,8 @@ R2,07:50:00,07:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R2,07:52:25,07:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R2,07:55:31,07:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R2,07:59:31,07:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R2,08:02:37,08:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R2,08:05:57,08:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R2,08:02:37,08:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R2,08:05:57,08:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R3,07:30:08,07:30:08,1,1,CC Rio Shopping,0,0,0
 R3,07:33:53,07:33:53,2,2,CC Rio Shopping,0,0,0
 R3,07:37:11,07:37:11,3,3,CC Rio Shopping,0,0,0
@@ -2503,13 +2503,13 @@ R3,08:14:08,08:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R3,08:15:38,08:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R3,08:16:14,08:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R3,08:18:38,08:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R3,08:19:53,08:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R3,08:20:30,08:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R3,08:21:33,08:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R3,08:24:53,08:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R3,08:28:30,08:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R3,08:30:26,08:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R3,08:33:41,08:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R3,08:19:53,08:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R3,08:20:30,08:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R3,08:21:33,08:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R3,08:24:53,08:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R3,08:28:30,08:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R3,08:30:26,08:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R3,08:33:41,08:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R4,08:00:48,08:01:48,1,1,CC Rio Shopping,0,0,1
 R4,08:04:36,08:04:36,2,2,CC Rio Shopping,0,0,0
 R4,08:08:18,08:08:18,3,3,CC Rio Shopping,0,0,0
@@ -2548,8 +2548,8 @@ R4,08:50:00,08:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R4,08:52:25,08:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R4,08:55:31,08:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R4,08:59:31,08:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R4,09:02:37,09:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R4,09:05:57,09:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R4,09:02:37,09:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R4,09:05:57,09:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R5,08:30:08,08:30:08,1,1,CC Rio Shopping,0,0,0
 R5,08:33:53,08:33:53,2,2,CC Rio Shopping,0,0,0
 R5,08:37:11,08:37:11,3,3,CC Rio Shopping,0,0,0
@@ -2583,13 +2583,13 @@ R5,09:14:08,09:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R5,09:15:38,09:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R5,09:16:14,09:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R5,09:18:38,09:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R5,09:19:53,09:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R5,09:20:30,09:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R5,09:21:33,09:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R5,09:24:53,09:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R5,09:28:30,09:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R5,09:30:26,09:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R5,09:33:41,09:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R5,09:19:53,09:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R5,09:20:30,09:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R5,09:21:33,09:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R5,09:24:53,09:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R5,09:28:30,09:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R5,09:30:26,09:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R5,09:33:41,09:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R6,09:00:48,09:01:48,1,1,CC Rio Shopping,0,0,1
 R6,09:04:36,09:04:36,2,2,CC Rio Shopping,0,0,0
 R6,09:08:18,09:08:18,3,3,CC Rio Shopping,0,0,0
@@ -2628,8 +2628,8 @@ R6,09:50:00,09:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R6,09:52:25,09:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R6,09:55:31,09:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R6,09:59:31,09:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R6,10:02:37,10:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R6,10:05:57,10:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R6,10:02:37,10:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R6,10:05:57,10:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R7,09:30:08,09:30:08,1,1,CC Rio Shopping,0,0,0
 R7,09:33:53,09:33:53,2,2,CC Rio Shopping,0,0,0
 R7,09:37:11,09:37:11,3,3,CC Rio Shopping,0,0,0
@@ -2663,13 +2663,13 @@ R7,10:14:08,10:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R7,10:15:38,10:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R7,10:16:14,10:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R7,10:18:38,10:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R7,10:19:53,10:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R7,10:20:30,10:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R7,10:21:33,10:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R7,10:24:53,10:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R7,10:28:30,10:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R7,10:30:26,10:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R7,10:33:41,10:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R7,10:19:53,10:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R7,10:20:30,10:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R7,10:21:33,10:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R7,10:24:53,10:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R7,10:28:30,10:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R7,10:30:26,10:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R7,10:33:41,10:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R8,10:00:48,10:01:48,1,1,CC Rio Shopping,0,0,1
 R8,10:04:36,10:04:36,2,2,CC Rio Shopping,0,0,0
 R8,10:08:18,10:08:18,3,3,CC Rio Shopping,0,0,0
@@ -2708,8 +2708,8 @@ R8,10:50:00,10:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R8,10:52:25,10:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R8,10:55:31,10:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R8,10:59:31,10:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R8,11:02:37,11:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R8,11:05:57,11:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R8,11:02:37,11:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R8,11:05:57,11:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R9,10:30:08,10:30:08,1,1,CC Rio Shopping,0,0,0
 R9,10:33:53,10:33:53,2,2,CC Rio Shopping,0,0,0
 R9,10:37:11,10:37:11,3,3,CC Rio Shopping,0,0,0
@@ -2743,13 +2743,13 @@ R9,11:14:08,11:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R9,11:15:38,11:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R9,11:16:14,11:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R9,11:18:38,11:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R9,11:19:53,11:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R9,11:20:30,11:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R9,11:21:33,11:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R9,11:24:53,11:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R9,11:28:30,11:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R9,11:30:26,11:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R9,11:33:41,11:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R9,11:19:53,11:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R9,11:20:30,11:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R9,11:21:33,11:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R9,11:24:53,11:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R9,11:28:30,11:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R9,11:30:26,11:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R9,11:33:41,11:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R10,11:00:48,11:01:48,1,1,CC Rio Shopping,0,0,1
 R10,11:04:36,11:04:36,2,2,CC Rio Shopping,0,0,0
 R10,11:08:18,11:08:18,3,3,CC Rio Shopping,0,0,0
@@ -2788,8 +2788,8 @@ R10,11:50:00,11:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R10,11:52:25,11:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R10,11:55:31,11:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R10,11:59:31,11:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R10,12:02:37,12:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R10,12:05:57,12:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R10,12:02:37,12:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R10,12:05:57,12:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R11,11:30:08,11:30:08,1,1,CC Rio Shopping,0,0,0
 R11,11:33:53,11:33:53,2,2,CC Rio Shopping,0,0,0
 R11,11:37:11,11:37:11,3,3,CC Rio Shopping,0,0,0
@@ -2823,13 +2823,13 @@ R11,12:14:08,12:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R11,12:15:38,12:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R11,12:16:14,12:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R11,12:18:38,12:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R11,12:19:53,12:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R11,12:20:30,12:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R11,12:21:33,12:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R11,12:24:53,12:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R11,12:28:30,12:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R11,12:30:26,12:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R11,12:33:41,12:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R11,12:19:53,12:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R11,12:20:30,12:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R11,12:21:33,12:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R11,12:24:53,12:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R11,12:28:30,12:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R11,12:30:26,12:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R11,12:33:41,12:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R12,12:00:48,12:01:48,1,1,CC Rio Shopping,0,0,1
 R12,12:04:36,12:04:36,2,2,CC Rio Shopping,0,0,0
 R12,12:08:18,12:08:18,3,3,CC Rio Shopping,0,0,0
@@ -2868,8 +2868,8 @@ R12,12:50:00,12:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R12,12:52:25,12:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R12,12:55:31,12:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R12,12:59:31,12:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R12,13:02:37,13:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R12,13:05:57,13:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R12,13:02:37,13:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R12,13:05:57,13:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R13,12:30:08,12:30:08,1,1,CC Rio Shopping,0,0,0
 R13,12:33:53,12:33:53,2,2,CC Rio Shopping,0,0,0
 R13,12:37:11,12:37:11,3,3,CC Rio Shopping,0,0,0
@@ -2903,13 +2903,13 @@ R13,13:14:08,13:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R13,13:15:38,13:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R13,13:16:14,13:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R13,13:18:38,13:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R13,13:19:53,13:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R13,13:20:30,13:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R13,13:21:33,13:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R13,13:24:53,13:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R13,13:28:30,13:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R13,13:30:26,13:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R13,13:33:41,13:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R13,13:19:53,13:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R13,13:20:30,13:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R13,13:21:33,13:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R13,13:24:53,13:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R13,13:28:30,13:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R13,13:30:26,13:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R13,13:33:41,13:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R14,13:00:48,13:01:48,1,1,CC Rio Shopping,0,0,1
 R14,13:04:36,13:04:36,2,2,CC Rio Shopping,0,0,0
 R14,13:08:18,13:08:18,3,3,CC Rio Shopping,0,0,0
@@ -2948,8 +2948,8 @@ R14,13:50:00,13:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R14,13:52:25,13:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R14,13:55:31,13:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R14,13:59:31,13:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R14,14:02:37,14:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R14,14:05:57,14:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R14,14:02:37,14:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R14,14:05:57,14:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R15,13:30:08,13:30:08,1,1,CC Rio Shopping,0,0,0
 R15,13:33:53,13:33:53,2,2,CC Rio Shopping,0,0,0
 R15,13:37:11,13:37:11,3,3,CC Rio Shopping,0,0,0
@@ -2983,13 +2983,13 @@ R15,14:14:08,14:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R15,14:15:38,14:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R15,14:16:14,14:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R15,14:18:38,14:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R15,14:19:53,14:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R15,14:20:30,14:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R15,14:21:33,14:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R15,14:24:53,14:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R15,14:28:30,14:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R15,14:30:26,14:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R15,14:33:41,14:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R15,14:19:53,14:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R15,14:20:30,14:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R15,14:21:33,14:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R15,14:24:53,14:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R15,14:28:30,14:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R15,14:30:26,14:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R15,14:33:41,14:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R16,14:00:48,14:01:48,1,1,CC Rio Shopping,0,0,1
 R16,14:04:36,14:04:36,2,2,CC Rio Shopping,0,0,0
 R16,14:08:18,14:08:18,3,3,CC Rio Shopping,0,0,0
@@ -3028,8 +3028,8 @@ R16,14:50:00,14:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R16,14:52:25,14:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R16,14:55:31,14:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R16,14:59:31,14:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R16,15:02:37,15:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R16,15:05:57,15:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R16,15:02:37,15:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R16,15:05:57,15:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R17,14:30:08,14:30:08,1,1,CC Rio Shopping,0,0,0
 R17,14:33:53,14:33:53,2,2,CC Rio Shopping,0,0,0
 R17,14:37:11,14:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3063,13 +3063,13 @@ R17,15:14:08,15:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R17,15:15:38,15:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R17,15:16:14,15:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R17,15:18:38,15:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R17,15:19:53,15:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R17,15:20:30,15:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R17,15:21:33,15:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R17,15:24:53,15:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R17,15:28:30,15:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R17,15:30:26,15:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R17,15:33:41,15:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R17,15:19:53,15:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R17,15:20:30,15:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R17,15:21:33,15:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R17,15:24:53,15:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R17,15:28:30,15:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R17,15:30:26,15:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R17,15:33:41,15:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R18,15:00:48,15:01:48,1,1,CC Rio Shopping,0,0,1
 R18,15:04:36,15:04:36,2,2,CC Rio Shopping,0,0,0
 R18,15:08:18,15:08:18,3,3,CC Rio Shopping,0,0,0
@@ -3108,8 +3108,8 @@ R18,15:50:00,15:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R18,15:52:25,15:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R18,15:55:31,15:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R18,15:59:31,15:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R18,16:02:37,16:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R18,16:05:57,16:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R18,16:02:37,16:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R18,16:05:57,16:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R19,15:30:08,15:30:08,1,1,CC Rio Shopping,0,0,0
 R19,15:33:53,15:33:53,2,2,CC Rio Shopping,0,0,0
 R19,15:37:11,15:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3143,13 +3143,13 @@ R19,16:14:08,16:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R19,16:15:38,16:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R19,16:16:14,16:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R19,16:18:38,16:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R19,16:19:53,16:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R19,16:20:30,16:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R19,16:21:33,16:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R19,16:24:53,16:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R19,16:28:30,16:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R19,16:30:26,16:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R19,16:33:41,16:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R19,16:19:53,16:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R19,16:20:30,16:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R19,16:21:33,16:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R19,16:24:53,16:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R19,16:28:30,16:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R19,16:30:26,16:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R19,16:33:41,16:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R20,16:00:48,16:01:48,1,1,CC Rio Shopping,0,0,1
 R20,16:04:36,16:04:36,2,2,CC Rio Shopping,0,0,0
 R20,16:08:18,16:08:18,3,3,CC Rio Shopping,0,0,0
@@ -3188,8 +3188,8 @@ R20,16:50:00,16:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R20,16:52:25,16:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R20,16:55:31,16:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R20,16:59:31,16:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R20,17:02:37,17:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R20,17:05:57,17:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R20,17:02:37,17:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R20,17:05:57,17:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R21,16:30:08,16:30:08,1,1,CC Rio Shopping,0,0,0
 R21,16:33:53,16:33:53,2,2,CC Rio Shopping,0,0,0
 R21,16:37:11,16:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3223,13 +3223,13 @@ R21,17:14:08,17:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R21,17:15:38,17:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R21,17:16:14,17:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R21,17:18:38,17:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R21,17:19:53,17:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R21,17:20:30,17:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R21,17:21:33,17:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R21,17:24:53,17:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R21,17:28:30,17:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R21,17:30:26,17:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R21,17:33:41,17:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R21,17:19:53,17:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R21,17:20:30,17:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R21,17:21:33,17:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R21,17:24:53,17:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R21,17:28:30,17:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R21,17:30:26,17:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R21,17:33:41,17:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R22,17:00:48,17:01:48,1,1,CC Rio Shopping,0,0,1
 R22,17:04:36,17:04:36,2,2,CC Rio Shopping,0,0,0
 R22,17:08:18,17:08:18,3,3,CC Rio Shopping,0,0,0
@@ -3268,8 +3268,8 @@ R22,17:50:00,17:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R22,17:52:25,17:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R22,17:55:31,17:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R22,17:59:31,17:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R22,18:02:37,18:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R22,18:05:57,18:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R22,18:02:37,18:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R22,18:05:57,18:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R23,17:30:08,17:30:08,1,1,CC Rio Shopping,0,0,0
 R23,17:33:53,17:33:53,2,2,CC Rio Shopping,0,0,0
 R23,17:37:11,17:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3303,13 +3303,13 @@ R23,18:14:08,18:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R23,18:15:38,18:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R23,18:16:14,18:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R23,18:18:38,18:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R23,18:19:53,18:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R23,18:20:30,18:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R23,18:21:33,18:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R23,18:24:53,18:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R23,18:28:30,18:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R23,18:30:26,18:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R23,18:33:41,18:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R23,18:19:53,18:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R23,18:20:30,18:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R23,18:21:33,18:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R23,18:24:53,18:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R23,18:28:30,18:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R23,18:30:26,18:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R23,18:33:41,18:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R24,18:00:48,18:01:48,1,1,CC Rio Shopping,0,0,1
 R24,18:04:36,18:04:36,2,2,CC Rio Shopping,0,0,0
 R24,18:08:18,18:08:18,3,3,CC Rio Shopping,0,0,0
@@ -3348,8 +3348,8 @@ R24,18:50:00,18:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R24,18:52:25,18:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R24,18:55:31,18:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R24,18:59:31,18:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R24,19:02:37,19:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R24,19:05:57,19:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R24,19:02:37,19:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R24,19:05:57,19:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R25,18:30:08,18:30:08,1,1,CC Rio Shopping,0,0,0
 R25,18:33:53,18:33:53,2,2,CC Rio Shopping,0,0,0
 R25,18:37:11,18:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3383,13 +3383,13 @@ R25,19:14:08,19:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R25,19:15:38,19:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R25,19:16:14,19:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R25,19:18:38,19:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R25,19:19:53,19:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R25,19:20:30,19:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R25,19:21:33,19:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R25,19:24:53,19:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R25,19:28:30,19:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R25,19:30:26,19:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R25,19:33:41,19:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R25,19:19:53,19:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R25,19:20:30,19:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R25,19:21:33,19:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R25,19:24:53,19:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R25,19:28:30,19:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R25,19:30:26,19:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R25,19:33:41,19:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R26,19:00:48,19:01:48,1,1,CC Rio Shopping,0,0,1
 R26,19:04:36,19:04:36,2,2,CC Rio Shopping,0,0,0
 R26,19:08:18,19:08:18,3,3,CC Rio Shopping,0,0,0
@@ -3428,8 +3428,8 @@ R26,19:50:00,19:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R26,19:52:25,19:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R26,19:55:31,19:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R26,19:59:31,19:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R26,20:02:37,20:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R26,20:05:57,20:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R26,20:02:37,20:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R26,20:05:57,20:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R27,19:30:08,19:30:08,1,1,CC Rio Shopping,0,0,0
 R27,19:33:53,19:33:53,2,2,CC Rio Shopping,0,0,0
 R27,19:37:11,19:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3463,13 +3463,13 @@ R27,20:14:08,20:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R27,20:15:38,20:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R27,20:16:14,20:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R27,20:18:38,20:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R27,20:19:53,20:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R27,20:20:30,20:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R27,20:21:33,20:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R27,20:24:53,20:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R27,20:28:30,20:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R27,20:30:26,20:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R27,20:33:41,20:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R27,20:19:53,20:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R27,20:20:30,20:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R27,20:21:33,20:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R27,20:24:53,20:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R27,20:28:30,20:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R27,20:30:26,20:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R27,20:33:41,20:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R28,20:00:48,20:01:48,1,1,CC Rio Shopping,0,0,1
 R28,20:04:36,20:04:36,2,2,CC Rio Shopping,0,0,0
 R28,20:08:18,20:08:18,3,3,CC Rio Shopping,0,0,0
@@ -3508,8 +3508,8 @@ R28,20:50:00,20:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R28,20:52:25,20:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R28,20:55:31,20:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R28,20:59:31,20:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R28,21:02:37,21:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R28,21:05:57,21:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R28,21:02:37,21:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R28,21:05:57,21:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R29,20:30:08,20:30:08,1,1,CC Rio Shopping,0,0,0
 R29,20:33:53,20:33:53,2,2,CC Rio Shopping,0,0,0
 R29,20:37:11,20:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3543,13 +3543,13 @@ R29,21:14:08,21:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R29,21:15:38,21:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R29,21:16:14,21:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R29,21:18:38,21:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R29,21:19:53,21:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R29,21:20:30,21:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R29,21:21:33,21:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R29,21:24:53,21:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R29,21:28:30,21:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R29,21:30:26,21:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R29,21:33:41,21:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R29,21:19:53,21:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R29,21:20:30,21:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R29,21:21:33,21:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R29,21:24:53,21:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R29,21:28:30,21:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R29,21:30:26,21:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R29,21:33:41,21:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R30,21:00:48,21:01:48,1,1,CC Rio Shopping,0,0,1
 R30,21:04:36,21:04:36,2,2,CC Rio Shopping,0,0,0
 R30,21:08:18,21:08:18,3,3,CC Rio Shopping,0,0,0
@@ -3588,8 +3588,8 @@ R30,21:50:00,21:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R30,21:52:25,21:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R30,21:55:31,21:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R30,21:59:31,21:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R30,22:02:37,22:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R30,22:05:57,22:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R30,22:02:37,22:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R30,22:05:57,22:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R31,21:30:08,21:30:08,1,1,CC Rio Shopping,0,0,0
 R31,21:33:53,21:33:53,2,2,CC Rio Shopping,0,0,0
 R31,21:37:11,21:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3623,13 +3623,13 @@ R31,22:14:08,22:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R31,22:15:38,22:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R31,22:16:14,22:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R31,22:18:38,22:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R31,22:19:53,22:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R31,22:20:30,22:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R31,22:21:33,22:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R31,22:24:53,22:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R31,22:28:30,22:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R31,22:30:26,22:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R31,22:33:41,22:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R31,22:19:53,22:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R31,22:20:30,22:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R31,22:21:33,22:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R31,22:24:53,22:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R31,22:28:30,22:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R31,22:30:26,22:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R31,22:33:41,22:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R32,22:00:48,22:01:48,1,1,CC Rio Shopping,0,0,1
 R32,22:04:36,22:04:36,2,2,CC Rio Shopping,0,0,0
 R32,22:08:18,22:08:18,3,3,CC Rio Shopping,0,0,0
@@ -3668,8 +3668,8 @@ R32,22:50:00,22:50:00,62,35,Estación de autobús Valladolid,0,0,0
 R32,22:52:25,22:52:25,63,36,Estación de autobús Valladolid,0,0,0
 R32,22:55:31,22:55:31,37,37,Estación de autobús Valladolid,0,0,0
 R32,22:59:31,22:59:31,38,38,Estación de autobús Valladolid,0,0,0
-R32,23:02:37,23:02:37,39,39,Estación de autobús Valladolid,1,0,0
-R32,23:05:57,23:05:57,1,40,Estación de autobús Valladolid,1,0,0
+R32,23:02:37,23:02:37,39,39,Estación de autobús Valladolid,0,0,0
+R32,23:05:57,23:05:57,1,40,Estación de autobús Valladolid,0,0,0
 R33,22:30:08,22:30:08,1,1,CC Rio Shopping,0,0,0
 R33,22:33:53,22:33:53,2,2,CC Rio Shopping,0,0,0
 R33,22:37:11,22:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3703,13 +3703,13 @@ R33,23:14:08,23:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R33,23:15:38,23:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R33,23:16:14,23:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R33,23:18:38,23:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R33,23:19:53,23:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R33,23:20:30,23:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R33,23:21:33,23:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R33,23:24:53,23:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R33,23:28:30,23:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R33,23:30:26,23:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R33,23:33:41,23:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R33,23:19:53,23:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R33,23:20:30,23:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R33,23:21:33,23:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R33,23:24:53,23:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R33,23:28:30,23:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R33,23:30:26,23:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R33,23:33:41,23:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R34,08:30:48,08:31:48,1,1,CC Rio Shopping,0,0,1
 R34,08:34:36,08:34:36,2,2,CC Rio Shopping,0,0,0
 R34,08:38:18,08:38:18,3,3,CC Rio Shopping,0,0,0
@@ -3748,8 +3748,8 @@ R34,09:20:00,09:20:00,62,35,Estación de autobús Valladolid,0,0,0
 R34,09:22:25,09:22:25,63,36,Estación de autobús Valladolid,0,0,0
 R34,09:25:31,09:25:31,37,37,Estación de autobús Valladolid,0,0,0
 R34,09:29:31,09:29:31,38,38,Estación de autobús Valladolid,0,0,0
-R34,09:32:37,09:32:37,39,39,Estación de autobús Valladolid,1,0,0
-R34,09:35:57,09:35:57,1,40,Estación de autobús Valladolid,1,0,0
+R34,09:32:37,09:32:37,39,39,Estación de autobús Valladolid,0,0,0
+R34,09:35:57,09:35:57,1,40,Estación de autobús Valladolid,0,0,0
 R35,09:30:08,09:30:08,1,1,CC Rio Shopping,0,0,0
 R35,09:33:53,09:33:53,2,2,CC Rio Shopping,0,0,0
 R35,09:37:11,09:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3783,13 +3783,13 @@ R35,10:14:08,10:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R35,10:15:38,10:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R35,10:16:14,10:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R35,10:18:38,10:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R35,10:19:53,10:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R35,10:20:30,10:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R35,10:21:33,10:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R35,10:24:53,10:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R35,10:28:30,10:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R35,10:30:26,10:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R35,10:33:41,10:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R35,10:19:53,10:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R35,10:20:30,10:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R35,10:21:33,10:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R35,10:24:53,10:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R35,10:28:30,10:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R35,10:30:26,10:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R35,10:33:41,10:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R36,10:30:48,10:31:48,1,1,CC Rio Shopping,0,0,1
 R36,10:34:36,10:34:36,2,2,CC Rio Shopping,0,0,0
 R36,10:38:18,10:38:18,3,3,CC Rio Shopping,0,0,0
@@ -3828,8 +3828,8 @@ R36,11:20:00,11:20:00,62,35,Estación de autobús Valladolid,0,0,0
 R36,11:22:25,11:22:25,63,36,Estación de autobús Valladolid,0,0,0
 R36,11:25:31,11:25:31,37,37,Estación de autobús Valladolid,0,0,0
 R36,11:29:31,11:29:31,38,38,Estación de autobús Valladolid,0,0,0
-R36,11:32:37,11:32:37,39,39,Estación de autobús Valladolid,1,0,0
-R36,11:35:57,11:35:57,1,40,Estación de autobús Valladolid,1,0,0
+R36,11:32:37,11:32:37,39,39,Estación de autobús Valladolid,0,0,0
+R36,11:35:57,11:35:57,1,40,Estación de autobús Valladolid,0,0,0
 R37,11:30:08,11:30:08,1,1,CC Rio Shopping,0,0,0
 R37,11:33:53,11:33:53,2,2,CC Rio Shopping,0,0,0
 R37,11:37:11,11:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3863,13 +3863,13 @@ R37,12:14:08,12:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R37,12:15:38,12:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R37,12:16:14,12:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R37,12:18:38,12:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R37,12:19:53,12:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R37,12:20:30,12:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R37,12:21:33,12:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R37,12:24:53,12:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R37,12:28:30,12:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R37,12:30:26,12:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R37,12:33:41,12:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R37,12:19:53,12:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R37,12:20:30,12:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R37,12:21:33,12:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R37,12:24:53,12:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R37,12:28:30,12:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R37,12:30:26,12:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R37,12:33:41,12:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R38,12:30:48,12:31:48,1,1,CC Rio Shopping,0,0,1
 R38,12:34:36,12:34:36,2,2,CC Rio Shopping,0,0,0
 R38,12:38:18,12:38:18,3,3,CC Rio Shopping,0,0,0
@@ -3908,8 +3908,8 @@ R38,13:20:00,13:20:00,62,35,Estación de autobús Valladolid,0,0,0
 R38,13:22:25,13:22:25,63,36,Estación de autobús Valladolid,0,0,0
 R38,13:25:31,13:25:31,37,37,Estación de autobús Valladolid,0,0,0
 R38,13:29:31,13:29:31,38,38,Estación de autobús Valladolid,0,0,0
-R38,13:32:37,13:32:37,39,39,Estación de autobús Valladolid,1,0,0
-R38,13:35:57,13:35:57,1,40,Estación de autobús Valladolid,1,0,0
+R38,13:32:37,13:32:37,39,39,Estación de autobús Valladolid,0,0,0
+R38,13:35:57,13:35:57,1,40,Estación de autobús Valladolid,0,0,0
 R39,13:30:08,13:30:08,1,1,CC Rio Shopping,0,0,0
 R39,13:33:53,13:33:53,2,2,CC Rio Shopping,0,0,0
 R39,13:37:11,13:37:11,3,3,CC Rio Shopping,0,0,0
@@ -3943,13 +3943,13 @@ R39,14:14:08,14:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R39,14:15:38,14:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R39,14:16:14,14:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R39,14:18:38,14:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R39,14:19:53,14:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R39,14:20:30,14:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R39,14:21:33,14:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R39,14:24:53,14:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R39,14:28:30,14:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R39,14:30:26,14:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R39,14:33:41,14:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R39,14:19:53,14:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R39,14:20:30,14:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R39,14:21:33,14:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R39,14:24:53,14:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R39,14:28:30,14:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R39,14:30:26,14:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R39,14:33:41,14:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R40,14:30:48,14:31:48,1,1,CC Rio Shopping,0,0,1
 R40,14:34:36,14:34:36,2,2,CC Rio Shopping,0,0,0
 R40,14:38:18,14:38:18,3,3,CC Rio Shopping,0,0,0
@@ -3988,8 +3988,8 @@ R40,15:20:00,15:20:00,62,35,Estación de autobús Valladolid,0,0,0
 R40,15:22:25,15:22:25,63,36,Estación de autobús Valladolid,0,0,0
 R40,15:25:31,15:25:31,37,37,Estación de autobús Valladolid,0,0,0
 R40,15:29:31,15:29:31,38,38,Estación de autobús Valladolid,0,0,0
-R40,15:32:37,15:32:37,39,39,Estación de autobús Valladolid,1,0,0
-R40,15:35:57,15:35:57,1,40,Estación de autobús Valladolid,1,0,0
+R40,15:32:37,15:32:37,39,39,Estación de autobús Valladolid,0,0,0
+R40,15:35:57,15:35:57,1,40,Estación de autobús Valladolid,0,0,0
 R41,15:30:08,15:30:08,1,1,CC Rio Shopping,0,0,0
 R41,15:33:53,15:33:53,2,2,CC Rio Shopping,0,0,0
 R41,15:37:11,15:37:11,3,3,CC Rio Shopping,0,0,0
@@ -4023,13 +4023,13 @@ R41,16:14:08,16:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R41,16:15:38,16:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R41,16:16:14,16:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R41,16:18:38,16:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R41,16:19:53,16:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R41,16:20:30,16:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R41,16:21:33,16:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R41,16:24:53,16:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R41,16:28:30,16:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R41,16:30:26,16:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R41,16:33:41,16:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R41,16:19:53,16:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R41,16:20:30,16:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R41,16:21:33,16:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R41,16:24:53,16:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R41,16:28:30,16:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R41,16:30:26,16:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R41,16:33:41,16:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R42,16:30:48,16:31:48,1,1,CC Rio Shopping,0,0,1
 R42,16:34:36,16:34:36,2,2,CC Rio Shopping,0,0,0
 R42,16:38:18,16:38:18,3,3,CC Rio Shopping,0,0,0
@@ -4068,8 +4068,8 @@ R42,17:20:00,17:20:00,62,35,Estación de autobús Valladolid,0,0,0
 R42,17:22:25,17:22:25,63,36,Estación de autobús Valladolid,0,0,0
 R42,17:25:31,17:25:31,37,37,Estación de autobús Valladolid,0,0,0
 R42,17:29:31,17:29:31,38,38,Estación de autobús Valladolid,0,0,0
-R42,17:32:37,17:32:37,39,39,Estación de autobús Valladolid,1,0,0
-R42,17:35:57,17:35:57,1,40,Estación de autobús Valladolid,1,0,0
+R42,17:32:37,17:32:37,39,39,Estación de autobús Valladolid,0,0,0
+R42,17:35:57,17:35:57,1,40,Estación de autobús Valladolid,0,0,0
 R43,17:30:08,17:30:08,1,1,CC Rio Shopping,0,0,0
 R43,17:33:53,17:33:53,2,2,CC Rio Shopping,0,0,0
 R43,17:37:11,17:37:11,3,3,CC Rio Shopping,0,0,0
@@ -4103,13 +4103,13 @@ R43,18:14:08,18:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R43,18:15:38,18:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R43,18:16:14,18:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R43,18:18:38,18:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R43,18:19:53,18:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R43,18:20:30,18:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R43,18:21:33,18:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R43,18:24:53,18:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R43,18:28:30,18:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R43,18:30:26,18:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R43,18:33:41,18:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R43,18:19:53,18:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R43,18:20:30,18:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R43,18:21:33,18:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R43,18:24:53,18:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R43,18:28:30,18:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R43,18:30:26,18:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R43,18:33:41,18:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R44,18:30:48,18:31:48,1,1,CC Rio Shopping,0,0,1
 R44,18:34:36,18:34:36,2,2,CC Rio Shopping,0,0,0
 R44,18:38:18,18:38:18,3,3,CC Rio Shopping,0,0,0
@@ -4148,8 +4148,8 @@ R44,19:20:00,19:20:00,62,35,Estación de autobús Valladolid,0,0,0
 R44,19:22:25,19:22:25,63,36,Estación de autobús Valladolid,0,0,0
 R44,19:25:31,19:25:31,37,37,Estación de autobús Valladolid,0,0,0
 R44,19:29:31,19:29:31,38,38,Estación de autobús Valladolid,0,0,0
-R44,19:32:37,19:32:37,39,39,Estación de autobús Valladolid,1,0,0
-R44,19:35:57,19:35:57,1,40,Estación de autobús Valladolid,1,0,0
+R44,19:32:37,19:32:37,39,39,Estación de autobús Valladolid,0,0,0
+R44,19:35:57,19:35:57,1,40,Estación de autobús Valladolid,0,0,0
 R45,19:30:08,19:30:08,1,1,CC Rio Shopping,0,0,0
 R45,19:33:53,19:33:53,2,2,CC Rio Shopping,0,0,0
 R45,19:37:11,19:37:11,3,3,CC Rio Shopping,0,0,0
@@ -4183,13 +4183,13 @@ R45,20:14:08,20:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R45,20:15:38,20:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R45,20:16:14,20:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R45,20:18:38,20:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R45,20:19:53,20:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R45,20:20:30,20:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R45,20:21:33,20:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R45,20:24:53,20:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R45,20:28:30,20:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R45,20:30:26,20:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R45,20:33:41,20:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R45,20:19:53,20:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R45,20:20:30,20:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R45,20:21:33,20:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R45,20:24:53,20:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R45,20:28:30,20:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R45,20:30:26,20:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R45,20:33:41,20:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R46,20:30:48,20:31:48,1,1,CC Rio Shopping,0,0,1
 R46,20:34:36,20:34:36,2,2,CC Rio Shopping,0,0,0
 R46,20:38:18,20:38:18,3,3,CC Rio Shopping,0,0,0
@@ -4228,8 +4228,8 @@ R46,21:20:00,21:20:00,62,35,Estación de autobús Valladolid,0,0,0
 R46,21:22:25,21:22:25,63,36,Estación de autobús Valladolid,0,0,0
 R46,21:25:31,21:25:31,37,37,Estación de autobús Valladolid,0,0,0
 R46,21:29:31,21:29:31,38,38,Estación de autobús Valladolid,0,0,0
-R46,21:32:37,21:32:37,39,39,Estación de autobús Valladolid,1,0,0
-R46,21:35:57,21:35:57,1,40,Estación de autobús Valladolid,1,0,0
+R46,21:32:37,21:32:37,39,39,Estación de autobús Valladolid,0,0,0
+R46,21:35:57,21:35:57,1,40,Estación de autobús Valladolid,0,0,0
 R47,21:30:08,21:30:08,1,1,CC Rio Shopping,0,0,0
 R47,21:33:53,21:33:53,2,2,CC Rio Shopping,0,0,0
 R47,21:37:11,21:37:11,3,3,CC Rio Shopping,0,0,0
@@ -4263,13 +4263,13 @@ R47,22:14:08,22:14:08,57,33,Estación de autobús Valladolid,0,0,0
 R47,22:15:38,22:15:38,58,34,Estación de autobús Valladolid,0,0,0
 R47,22:16:14,22:16:14,59,35,Estación de autobús Valladolid,0,0,0
 R47,22:18:38,22:18:38,60,36,Estación de autobús Valladolid,0,0,0
-R47,22:19:53,22:19:53,61,37,Estación de autobús Valladolid,1,0,0
-R47,22:20:30,22:20:30,62,38,Estación de autobús Valladolid,1,0,0
-R47,22:21:33,22:21:33,63,39,Estación de autobús Valladolid,1,0,0
-R47,22:24:53,22:24:53,37,40,Estación de autobús Valladolid,1,0,0
-R47,22:28:30,22:28:53,38,41,Estación de autobús Valladolid,1,0,0
-R47,22:30:26,22:30:53,39,42,Estación de autobús Valladolid,1,0,0
-R47,22:33:41,22:33:53,1,43,Estación de autobús Valladolid,1,0,0
+R47,22:19:53,22:19:53,61,37,Estación de autobús Valladolid,0,0,0
+R47,22:20:30,22:20:30,62,38,Estación de autobús Valladolid,0,0,0
+R47,22:21:33,22:21:33,63,39,Estación de autobús Valladolid,0,0,0
+R47,22:24:53,22:24:53,37,40,Estación de autobús Valladolid,0,0,0
+R47,22:28:30,22:28:53,38,41,Estación de autobús Valladolid,0,0,0
+R47,22:30:26,22:30:53,39,42,Estación de autobús Valladolid,0,0,0
+R47,22:33:41,22:33:53,1,43,Estación de autobús Valladolid,0,0,0
 R48,22:30:48,22:31:48,1,1,CC Rio Shopping,0,0,1
 R48,22:34:36,22:34:36,2,2,CC Rio Shopping,0,0,0
 R48,22:38:18,22:38:18,3,3,CC Rio Shopping,0,0,0
@@ -4308,8 +4308,8 @@ R48,23:20:00,23:20:00,62,35,Estación de autobús Valladolid,0,0,0
 R48,23:22:25,23:22:25,63,36,Estación de autobús Valladolid,0,0,0
 R48,23:25:31,23:25:31,37,37,Estación de autobús Valladolid,0,0,0
 R48,23:29:31,23:29:31,38,38,Estación de autobús Valladolid,0,0,0
-R48,23:32:37,23:32:37,39,39,Estación de autobús Valladolid,1,0,0
-R48,23:35:57,23:35:57,1,40,Estación de autobús Valladolid,1,0,0
+R48,23:32:37,23:32:37,39,39,Estación de autobús Valladolid,0,0,0
+R48,23:35:57,23:35:57,1,40,Estación de autobús Valladolid,0,0,0
 R49,09:15:08,09:15:08,1,1,CC Rio Shopping,0,0,0
 R49,09:18:53,09:18:53,2,2,CC Rio Shopping,0,0,0
 R49,09:22:11,09:22:11,3,3,CC Rio Shopping,0,0,0
@@ -4343,13 +4343,13 @@ R49,09:59:08,09:59:08,57,33,Estación de autobús Valladolid,0,0,0
 R49,10:00:38,10:00:38,58,34,Estación de autobús Valladolid,0,0,0
 R49,10:01:14,10:01:14,59,35,Estación de autobús Valladolid,0,0,0
 R49,10:03:38,10:03:38,60,36,Estación de autobús Valladolid,0,0,0
-R49,10:04:53,10:04:53,61,37,Estación de autobús Valladolid,1,0,0
-R49,10:05:30,10:05:30,62,38,Estación de autobús Valladolid,1,0,0
-R49,10:06:33,10:06:33,63,39,Estación de autobús Valladolid,1,0,0
-R49,10:09:53,10:09:53,37,40,Estación de autobús Valladolid,1,0,0
-R49,10:13:30,10:13:53,38,41,Estación de autobús Valladolid,1,0,0
-R49,10:15:26,10:15:53,39,42,Estación de autobús Valladolid,1,0,0
-R49,10:18:41,10:18:53,1,43,Estación de autobús Valladolid,1,0,0
+R49,10:04:53,10:04:53,61,37,Estación de autobús Valladolid,0,0,0
+R49,10:05:30,10:05:30,62,38,Estación de autobús Valladolid,0,0,0
+R49,10:06:33,10:06:33,63,39,Estación de autobús Valladolid,0,0,0
+R49,10:09:53,10:09:53,37,40,Estación de autobús Valladolid,0,0,0
+R49,10:13:30,10:13:53,38,41,Estación de autobús Valladolid,0,0,0
+R49,10:15:26,10:15:53,39,42,Estación de autobús Valladolid,0,0,0
+R49,10:18:41,10:18:53,1,43,Estación de autobús Valladolid,0,0,0
 R50,12:15:48,12:16:48,1,1,CC Rio Shopping,0,0,1
 R50,12:19:36,12:19:36,2,2,CC Rio Shopping,0,0,0
 R50,12:23:18,12:23:18,3,3,CC Rio Shopping,0,0,0
@@ -4388,8 +4388,8 @@ R50,13:05:00,13:05:00,62,35,Estación de autobús Valladolid,0,0,0
 R50,13:07:25,13:07:25,63,36,Estación de autobús Valladolid,0,0,0
 R50,13:10:31,13:10:31,37,37,Estación de autobús Valladolid,0,0,0
 R50,13:14:31,13:14:31,38,38,Estación de autobús Valladolid,0,0,0
-R50,13:17:37,13:17:37,39,39,Estación de autobús Valladolid,1,0,0
-R50,13:20:57,13:20:57,1,40,Estación de autobús Valladolid,1,0,0
+R50,13:17:37,13:17:37,39,39,Estación de autobús Valladolid,0,0,0
+R50,13:20:57,13:20:57,1,40,Estación de autobús Valladolid,0,0,0
 R51,16:15:08,16:15:08,1,1,CC Rio Shopping,0,0,0
 R51,16:18:53,16:18:53,2,2,CC Rio Shopping,0,0,0
 R51,16:22:11,16:22:11,3,3,CC Rio Shopping,0,0,0
@@ -4423,13 +4423,13 @@ R51,16:59:08,16:59:08,57,33,Estación de autobús Valladolid,0,0,0
 R51,17:00:38,17:00:38,58,34,Estación de autobús Valladolid,0,0,0
 R51,17:01:14,17:01:14,59,35,Estación de autobús Valladolid,0,0,0
 R51,17:03:38,17:03:38,60,36,Estación de autobús Valladolid,0,0,0
-R51,17:04:53,17:04:53,61,37,Estación de autobús Valladolid,1,0,0
-R51,17:05:30,17:05:30,62,38,Estación de autobús Valladolid,1,0,0
-R51,17:06:33,17:06:33,63,39,Estación de autobús Valladolid,1,0,0
-R51,17:09:53,17:09:53,37,40,Estación de autobús Valladolid,1,0,0
-R51,17:13:30,17:13:53,38,41,Estación de autobús Valladolid,1,0,0
-R51,17:15:26,17:15:53,39,42,Estación de autobús Valladolid,1,0,0
-R51,17:18:41,17:18:53,1,43,Estación de autobús Valladolid,1,0,0
+R51,17:04:53,17:04:53,61,37,Estación de autobús Valladolid,0,0,0
+R51,17:05:30,17:05:30,62,38,Estación de autobús Valladolid,0,0,0
+R51,17:06:33,17:06:33,63,39,Estación de autobús Valladolid,0,0,0
+R51,17:09:53,17:09:53,37,40,Estación de autobús Valladolid,0,0,0
+R51,17:13:30,17:13:53,38,41,Estación de autobús Valladolid,0,0,0
+R51,17:15:26,17:15:53,39,42,Estación de autobús Valladolid,0,0,0
+R51,17:18:41,17:18:53,1,43,Estación de autobús Valladolid,0,0,0
 R52,19:15:48,19:16:48,1,1,CC Rio Shopping,0,0,1
 R52,19:19:36,19:19:36,2,2,CC Rio Shopping,0,0,0
 R52,19:23:18,19:23:18,3,3,CC Rio Shopping,0,0,0
@@ -4468,8 +4468,8 @@ R52,20:05:00,20:05:00,62,35,Estación de autobús Valladolid,0,0,0
 R52,20:07:25,20:07:25,63,36,Estación de autobús Valladolid,0,0,0
 R52,20:10:31,20:10:31,37,37,Estación de autobús Valladolid,0,0,0
 R52,20:14:31,20:14:31,38,38,Estación de autobús Valladolid,0,0,0
-R52,20:17:37,20:17:37,39,39,Estación de autobús Valladolid,1,0,0
-R52,20:20:57,20:20:57,1,40,Estación de autobús Valladolid,1,0,0
+R52,20:17:37,20:17:37,39,39,Estación de autobús Valladolid,0,0,0
+R52,20:20:57,20:20:57,1,40,Estación de autobús Valladolid,0,0,0
 R53,21:15:00,21:16:00,1,1,CC Rio Shopping,0,0,1
 R53,21:19:47,21:19:47,2,2,CC Rio Shopping,0,0,0
 R53,21:23:27,21:23:27,3,3,CC Rio Shopping,0,0,0
@@ -4507,9 +4507,9 @@ R53,22:06:37,22:06:37,61,34,Estación de autobús Valladolid,0,0,0
 R53,22:06:55,22:06:55,62,35,Estación de autobús Valladolid,0,0,0
 R53,22:09:20,22:09:20,63,36,Estación de autobús Valladolid,0,0,0
 R53,22:12:18,22:12:18,37,37,Estación de autobús Valladolid,0,0,0
-R53,22:13:30,22:13:30,38,38,Estación de autobús Valladolid,1,0,0
-R53,22:13:30,22:13:30,39,39,Estación de autobús Valladolid,1,0,0
-R53,22:13:30,22:13:30,1,40,Estación de autobús Valladolid,1,0,0
+R53,22:13:30,22:13:30,38,38,Estación de autobús Valladolid,0,0,0
+R53,22:13:30,22:13:30,39,39,Estación de autobús Valladolid,0,0,0
+R53,22:13:30,22:13:30,1,40,Estación de autobús Valladolid,0,0,0
 V1I,07:00:00,07:00:00,30,1,Plaza de la Magdalena (Facultad de F y L) Valladolid,0,0,1
 V1I,07:02:00,07:02:00,46,2,Plaza de la Magdalena (Facultad de F y L) Valladolid,0,0,0
 V1I,07:03:00,07:03:00,48,3,Plaza de la Magdalena (Facultad de F y L) Valladolid,0,0,0
