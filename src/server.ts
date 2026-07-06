@@ -71,10 +71,52 @@ export default {
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
-      return await normalizeCatastrophicSsrResponse(response);
+      const normalized = await normalizeCatastrophicSsrResponse(response);
+      return withPublicCors(request, normalized);
     } catch (error) {
       console.error(error);
       return brandedErrorResponse();
     }
   },
 };
+
+// Allow any external website to fetch our public data (GTFS static files,
+// GTFS-RT protobuf endpoints, JSON APIs) directly from the browser.
+function withPublicCors(request: Request, response: Response): Response {
+  const url = new URL(request.url);
+  const path = url.pathname;
+  const isPublicAsset =
+    path.startsWith("/gtfs/") ||
+    path.startsWith("/gtfs-static") ||
+    path.startsWith("/api/");
+
+  if (!isPublicAsset) return response;
+
+  const origin = request.headers.get("Origin") ?? "*";
+  const reqHeaders =
+    request.headers.get("Access-Control-Request-Headers") ??
+    "Content-Type, Authorization, X-Requested-With, Accept, Origin";
+
+  if (request.method === "OPTIONS") {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        "Access-Control-Allow-Origin": origin,
+        "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+        "Access-Control-Allow-Headers": reqHeaders,
+        "Access-Control-Max-Age": "86400",
+        Vary: "Origin",
+      },
+    });
+  }
+
+  const headers = new Headers(response.headers);
+  headers.set("Access-Control-Allow-Origin", origin);
+  headers.set("Access-Control-Expose-Headers", "*");
+  headers.append("Vary", "Origin");
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
