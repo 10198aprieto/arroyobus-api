@@ -66,9 +66,29 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
   return brandedErrorResponse();
 }
 
+type AssetsEnv = { ASSETS?: { fetch: (req: Request) => Promise<Response> } };
+
+function isStaticPublicPath(pathname: string): boolean {
+  return pathname.startsWith("/gtfs/") || pathname.startsWith("/gtfs-static");
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const url = new URL(request.url);
+      // Static public assets (GTFS files) — serve from ASSETS binding and
+      // wrap with CORS so external sites can fetch them from the browser.
+      if (isStaticPublicPath(url.pathname)) {
+        const assets = (env as AssetsEnv)?.ASSETS;
+        if (request.method === "OPTIONS") {
+          return withPublicCors(request, new Response(null, { status: 204 }));
+        }
+        if (assets) {
+          const assetResponse = await assets.fetch(request);
+          return withPublicCors(request, assetResponse);
+        }
+      }
+
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       const normalized = await normalizeCatastrophicSsrResponse(response);
