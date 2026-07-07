@@ -36,7 +36,7 @@
 35,Calle Camino de Zaratán 22,Arroyo de la Encomienda,41.62795547980966,-4.769927663436242,,
 36,Calle Camino de Zaratán 2,Arroyo de la Encomienda,41.6255792319001,-4.76682709180615,,
 37,Avenida de Medina del Campo 15 frente Centro de Salud Arturo Eyries,Valladolid,41.63350817439094,-4.74744076078037,,
-38,Paseo de Zorilla 65 frente El Corte Inglés,Valladolid,41.63699379460141, -4.738941465288063,,
+38,Paseo de Zorrilla 65 frente El Corte Inglés,Valladolid,41.63699379460141, -4.738941465288063,,
 39,Paseo de Filipinos frente Campo Grande,Valladolid,41.644697694817694,-4.732911245195897,,
 40,Calle Camino de Zaratán 2,Arroyo de la Encomienda,41.6255413899594,-4.76669989138099,,
 41,Calle Camino de Zaratán 22,Arroyo de la Encomienda,41.628020638431614,-4.769836468327265,,
