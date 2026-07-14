@@ -14,7 +14,7 @@ const ANDROID_PACKAGE = "com.geoactio.arroyo_encomienda";
 const ANDROID_CERT_SHA1 = "222E5B204DE7B52F04DBED2A8B7947D566B0C2CA";
 const FEED_ID = "arroyo";
 const STOPS_TTL_MS = 5 * 60_000;
-const FEED_TTL_MS = 20_000;
+const FEED_TTL_MS = 2_000;
 const FANOUT_CONCURRENCY = 8;
 
 const corsHeaders: Record<string, string> = {
@@ -299,7 +299,7 @@ Deno.serve(async (req) => {
           headers: {
             ...corsHeaders,
             "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": "public, max-age=20",
+            "Cache-Control": "public, max-age=1",
           },
         },
       );
@@ -311,7 +311,7 @@ Deno.serve(async (req) => {
         ...corsHeaders,
         "Content-Type": "application/x-protobuf",
         "Content-Disposition": 'inline; filename="trip-updates.pb"',
-        "Cache-Control": "public, max-age=20",
+        "Cache-Control": "public, max-age=1",
         "X-Trip-Count": String(byTrip.size),
         "X-Feed-Timestamp": String(feedTs),
       },

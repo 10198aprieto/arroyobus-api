@@ -28,7 +28,7 @@ const ALLOWED_POST = new Set([
 ]);
 
 const VEHICLE_SAMPLE_STOP_IDS = ["1", "12", "22", "43", "60", "10", "20", "29", "50", "33"];
-const VEHICLE_CACHE_MS = 10_000;
+const VEHICLE_CACHE_MS = 2_000;
 
 interface ArrivalWithVehicle {
   vehicleId?: string | null;
@@ -202,7 +202,7 @@ Deno.serve(async (req) => {
           headers: {
             ...cors,
             "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": "public, max-age=10",
+            "Cache-Control": "public, max-age=1",
           },
         });
       }
@@ -212,7 +212,7 @@ Deno.serve(async (req) => {
       headers: {
         ...cors,
         "Content-Type": r.headers.get("Content-Type") ?? "application/json",
-        "Cache-Control": req.method === "GET" ? "public, max-age=10" : "no-store",
+        "Cache-Control": req.method === "GET" ? "public, max-age=1" : "no-store",
       },
     });
   } catch (err) {
