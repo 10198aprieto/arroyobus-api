@@ -1,2 +1,2 @@
 ﻿feed_publisher_name,feed_publisher_url,feed_lang,default_lang,feed_start_date,feed_end_date,feed_version,feed_contact_email,feed_contact_url
-Ayuntamiento de Arroyo de la Encomienda,https://www.aytoarroyo.es/,es,es,20260623,20261231,20.5,transportes@aytoarroyo.es,https://www.aytoarroyo.es/index.php/donde-estamos
+Ayuntamiento de Arroyo de la Encomienda,https://www.aytoarroyo.es/,es,es,20260713,20261231,20.6,transportes@aytoarroyo.es,https://www.aytoarroyo.es/index.php/donde-estamos
