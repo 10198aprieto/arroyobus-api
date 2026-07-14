@@ -43,8 +43,10 @@ function StopsPage() {
       </p>
       <ul className="mt-3 divide-y divide-border rounded-lg border border-border bg-card">
         {filtered.map((s) => {
-          const lat = s.lat ?? s.stopLat;
-          const lon = s.lon ?? s.stopLon;
+          const latRaw = s.lat ?? s.stopLat;
+          const lonRaw = s.lon ?? s.stopLon;
+          const lat = latRaw != null ? Number(latRaw) : undefined;
+          const lon = lonRaw != null ? Number(lonRaw) : undefined;
           return (
             <li key={s.stopId} className="flex items-center justify-between gap-3 p-3">
               <div className="min-w-0">
@@ -52,7 +54,7 @@ function StopsPage() {
                 <div className="font-mono text-xs text-muted-foreground">
                   id={s.stopId}
                   {s.stopCode ? ` · code=${s.stopCode}` : ""}
-                  {lat && lon ? ` · ${lat.toFixed(5)}, ${lon.toFixed(5)}` : ""}
+                  {Number.isFinite(lat) && Number.isFinite(lon) ? ` · ${lat!.toFixed(5)}, ${lon!.toFixed(5)}` : ""}
                 </div>
               </div>
               <div className="flex shrink-0 gap-2">
