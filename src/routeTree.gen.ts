@@ -17,9 +17,12 @@ import { Route as RoutesRouteImport } from './routes/routes'
 import { Route as GtfsRtRouteImport } from './routes/gtfs-rt'
 import { Route as ExplorerRouteImport } from './routes/explorer'
 import { Route as AlertsRouteImport } from './routes/alerts'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as StopsStopIdRouteImport } from './routes/stops.$stopId'
 import { Route as ArrivalsStopIdRouteImport } from './routes/arrivals.$stopId'
+import { Route as ApiPublicInitAdminRouteImport } from './routes/api.public.init-admin'
+import { Route as ApiPublicAdsRouteImport } from './routes/api.public.ads'
 import { Route as ApiPublicGtfsStaticFileRouteImport } from './routes/api.public.gtfs-static.$file'
 
 const VehiclesRoute = VehiclesRouteImport.update({
@@ -62,6 +65,11 @@ const AlertsRoute = AlertsRouteImport.update({
   path: '/alerts',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -77,6 +85,16 @@ const ArrivalsStopIdRoute = ArrivalsStopIdRouteImport.update({
   path: '/arrivals/$stopId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicInitAdminRoute = ApiPublicInitAdminRouteImport.update({
+  id: '/api/public/init-admin',
+  path: '/api/public/init-admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicAdsRoute = ApiPublicAdsRouteImport.update({
+  id: '/api/public/ads',
+  path: '/api/public/ads',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicGtfsStaticFileRoute = ApiPublicGtfsStaticFileRouteImport.update({
   id: '/api/public/gtfs-static/$file',
   path: '/api/public/gtfs-static/$file',
@@ -85,6 +103,7 @@ const ApiPublicGtfsStaticFileRoute = ApiPublicGtfsStaticFileRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/alerts': typeof AlertsRoute
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
@@ -95,10 +114,13 @@ export interface FileRoutesByFullPath {
   '/vehicles': typeof VehiclesRoute
   '/arrivals/$stopId': typeof ArrivalsStopIdRoute
   '/stops/$stopId': typeof StopsStopIdRoute
+  '/api/public/ads': typeof ApiPublicAdsRoute
+  '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/alerts': typeof AlertsRoute
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
@@ -109,11 +131,14 @@ export interface FileRoutesByTo {
   '/vehicles': typeof VehiclesRoute
   '/arrivals/$stopId': typeof ArrivalsStopIdRoute
   '/stops/$stopId': typeof StopsStopIdRoute
+  '/api/public/ads': typeof ApiPublicAdsRoute
+  '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/alerts': typeof AlertsRoute
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
@@ -124,12 +149,15 @@ export interface FileRoutesById {
   '/vehicles': typeof VehiclesRoute
   '/arrivals/$stopId': typeof ArrivalsStopIdRoute
   '/stops/$stopId': typeof StopsStopIdRoute
+  '/api/public/ads': typeof ApiPublicAdsRoute
+  '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/admin'
     | '/alerts'
     | '/explorer'
     | '/gtfs-rt'
@@ -140,10 +168,13 @@ export interface FileRouteTypes {
     | '/vehicles'
     | '/arrivals/$stopId'
     | '/stops/$stopId'
+    | '/api/public/ads'
+    | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/admin'
     | '/alerts'
     | '/explorer'
     | '/gtfs-rt'
@@ -154,10 +185,13 @@ export interface FileRouteTypes {
     | '/vehicles'
     | '/arrivals/$stopId'
     | '/stops/$stopId'
+    | '/api/public/ads'
+    | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
   id:
     | '__root__'
     | '/'
+    | '/admin'
     | '/alerts'
     | '/explorer'
     | '/gtfs-rt'
@@ -168,11 +202,14 @@ export interface FileRouteTypes {
     | '/vehicles'
     | '/arrivals/$stopId'
     | '/stops/$stopId'
+    | '/api/public/ads'
+    | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
   AlertsRoute: typeof AlertsRoute
   ExplorerRoute: typeof ExplorerRoute
   GtfsRtRoute: typeof GtfsRtRoute
@@ -182,6 +219,8 @@ export interface RootRouteChildren {
   TadRoute: typeof TadRoute
   VehiclesRoute: typeof VehiclesRoute
   ArrivalsStopIdRoute: typeof ArrivalsStopIdRoute
+  ApiPublicAdsRoute: typeof ApiPublicAdsRoute
+  ApiPublicInitAdminRoute: typeof ApiPublicInitAdminRoute
   ApiPublicGtfsStaticFileRoute: typeof ApiPublicGtfsStaticFileRoute
 }
 
@@ -243,6 +282,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AlertsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -262,6 +308,20 @@ declare module '@tanstack/react-router' {
       path: '/arrivals/$stopId'
       fullPath: '/arrivals/$stopId'
       preLoaderRoute: typeof ArrivalsStopIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/init-admin': {
+      id: '/api/public/init-admin'
+      path: '/api/public/init-admin'
+      fullPath: '/api/public/init-admin'
+      preLoaderRoute: typeof ApiPublicInitAdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/ads': {
+      id: '/api/public/ads'
+      path: '/api/public/ads'
+      fullPath: '/api/public/ads'
+      preLoaderRoute: typeof ApiPublicAdsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/gtfs-static/$file': {
@@ -286,6 +346,7 @@ const StopsRouteWithChildren = StopsRoute._addFileChildren(StopsRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
   AlertsRoute: AlertsRoute,
   ExplorerRoute: ExplorerRoute,
   GtfsRtRoute: GtfsRtRoute,
@@ -295,8 +356,20 @@ const rootRouteChildren: RootRouteChildren = {
   TadRoute: TadRoute,
   VehiclesRoute: VehiclesRoute,
   ArrivalsStopIdRoute: ArrivalsStopIdRoute,
+  ApiPublicAdsRoute: ApiPublicAdsRoute,
+  ApiPublicInitAdminRoute: ApiPublicInitAdminRoute,
   ApiPublicGtfsStaticFileRoute: ApiPublicGtfsStaticFileRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
