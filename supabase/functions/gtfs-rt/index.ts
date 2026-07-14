@@ -13,7 +13,7 @@ const API_KEY = "AIzaSyCvtaF21g0lPX0cTgOiIcHZNZRQlw2TRVA";
 const ANDROID_PACKAGE = "com.geoactio.arroyo_encomienda";
 const ANDROID_CERT_SHA1 = "222E5B204DE7B52F04DBED2A8B7947D566B0C2CA";
 const FEED_ID = "arroyo";
-const FEED_TTL_MS = 10_000;
+const FEED_TTL_MS = 2_000;
 const STOPS_TTL_MS = 5 * 60_000;
 const FANOUT_CONCURRENCY = 3;
 const VEHICLE_SAMPLE_STOP_IDS = ["1", "12", "22", "43", "60", "10", "20", "29", "50", "33"];
@@ -303,7 +303,7 @@ Deno.serve(async (req) => {
           headers: {
             ...corsHeaders,
             "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": "public, max-age=5",
+            "Cache-Control": "public, max-age=1",
           },
         },
       );
@@ -315,7 +315,7 @@ Deno.serve(async (req) => {
         ...corsHeaders,
         "Content-Type": "application/x-protobuf",
         "Content-Disposition": 'inline; filename="vehicle-positions.pb"',
-        "Cache-Control": "public, max-age=5",
+        "Cache-Control": "public, max-age=1",
         "X-Vehicle-Count": String(samples.length),
         "X-Feed-Timestamp": String(feedTs),
         "X-Upstream-Status": samples.length === 0 ? "no-vehicles-assigned" : "ok",
