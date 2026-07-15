@@ -1,74 +1,68 @@
-﻿stop_id,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url
-1,Estación de Autobuses de Valladolid,Valladolid,41.64194417330925,-4.733347610184092,,
-2,Paseo de Zorrilla 130 junto El Corte Inglés,Valladolid,41.6370338099999,-4.73931514200001,,
-3,Avenida de Medina del Campo esquina Centro de Salud,Valladolid,41.63366909011777,-4.7475832405787095,,
-4,Avenida de Salamanca junto Cash IFA,Arroyo de la Encomienda,41.623899416773,-4.76992451628611,,
-5,Calle Federación de Fútbol,Arroyo de la Encomienda,41.621508177532114,-4.774297162996492,,
-6,Avenida de Colón 175 frente pistas polideportivas,Arroyo de la Encomienda,41.61887970605665,-4.775392756507474,,
-7,Avenida de Colón 132,Arroyo de la Encomienda,41.6171415750995,-4.779371732810723,,
-8,Avenida de Colón frente Multiusos de la Vega,Arroyo de la Encomienda,41.6126279999999,-4.783056,,
-9,Paseo de Juan Carlos I,Arroyo de la Encomienda,41.613303098481516,-4.785080535458864,,
-10,Avenida de José Luís Lasa 27,Arroyo de la Encomienda,41.61160728667115,-4.789513931916598,,
-11,Avenida Jose Luis Lasa junto Glorieta de la Flecha,Arroyo de la Encomienda,41.6111638064782,-4.79186348266942,,
-12,Calle Presentación junto La Vaca,Arroyo de la Encomienda,41.61112763974851,-4.7972101390006445,,
-13,Calle Ramón y Cajal frente edificio ADE,Arroyo de la Encomienda,41.6146942,-4.7986245,,
-14,Calle Ramón y Cajal Rotonda Alboroque,Arroyo de la Encomienda,41.6174116300152,-4.79675838768817,,
-15,Calle Juan de la Cierva,Arroyo de la Encomienda,41.6181894,-4.8007705,,
-16,Calle Juan de la Cierva frente Campos de Rugby,Arroyo de la Encomienda,41.6160882,-4.8037476,,
-17,Avenida de Valdezarce 1,Arroyo de la Encomienda,41.6182190093,-4.81198004863,,
-18,Calle Almazara 11,Arroyo de la Encomienda,41.6195616,-4.8144399,,
-19,Camino Viejo frente Campo de Golf,Arroyo de la Encomienda,41.6206782,-4.8088996,,
-20,Avenida Aguachales 15,Arroyo de la Encomienda,41.6219933,-4.8043753,,
-21,Calle Arnaldo Vilanova junto Centro Deportivo,Arroyo de la Encomienda,41.620315735967,-4.800949268094104,,
-22,Calle Arnaldo Vilanova frente CEIP Kantica,Arroyo de la Encomienda,41.62179055961883,-4.797791804390574,,
-23,Calle Ramón y Cajal junto Rotonda de los Olivos,Arroyo de la Encomienda,41.62266955552133,-4.7957194057007815,,
-24,Centro Comercial Rio Shopping,Arroyo de la Encomienda,41.63076537148553,-4.787954223322628,,
-25,Calle Ramón y Cajal frente Rotonda de los Olivos,Arroyo de la Encomienda,41.6226107692105,-4.795997925096869,,
-26,Avenida Aranzana 39,Arroyo de la Encomienda,41.618090621705676,-4.7958111217835615,,
-27,Avenida Aranzana 29,Arroyo de la Encomienda,41.61913662053054,-4.792795318501807,,
-28,Avenida Aranzana frente IESO Arroyo,Arroyo de la Encomienda,41.62160796212789,-4.78577188934151,,
-29,Avenida Aranzana 9,Arroyo de la Encomienda,41.6229227129358,-4.781976641715307,,
-30,Calle Picones 15 junto Glorieta del Cañazo,Arroyo de la Encomienda,41.624719135719246,-4.776705678167808,,
-31,Plaza de España esquina Ayuntamiento,Arroyo de la Encomienda,41.6256671414357,-4.77374731674537,,
-32,Calle Almendrera frente CEIP Raimundo de Blas,Arroyo de la Encomienda,41.62690139084925,-4.775647165150137,,
-33,Calle Almendrera 16 Casa de Cultura,Arroyo de la Encomienda,41.6294034378373,-4.7760184793868,,
-34,Calle Camino de Zaratán 40A,Arroyo de la Encomienda,41.6303636059439,-4.772080465965659,,
-35,Calle Camino de Zaratán 22,Arroyo de la Encomienda,41.62795547980966,-4.769927663436242,,
-36,Calle Camino de Zaratán 2,Arroyo de la Encomienda,41.6255792319001,-4.76682709180615,,
-37,Avenida de Medina del Campo 15 frente Centro de Salud Arturo Eyries,Valladolid,41.63350817439094,-4.74744076078037,,
-38,Paseo de Zorrilla 65 frente El Corte Inglés,Valladolid,41.63699379460141, -4.738941465288063,,
-39,Paseo de Filipinos frente Campo Grande,Valladolid,41.644697694817694,-4.732911245195897,,
-40,Calle Camino de Zaratán 2,Arroyo de la Encomienda,41.6255413899594,-4.76669989138099,,
-41,Calle Camino de Zaratán 22,Arroyo de la Encomienda,41.628020638431614,-4.769836468327265,,
-42,Calle Clavel 10,Arroyo de la Encomienda,41.6284799531758,-4.772180609951409,,
-43,Calle Clavel frente Casa de Cultura,Arroyo de la Encomienda,41.628248572152806,-4.775097606405461,,
-44,Calle Almendrera junto CEIP Raimundo de Blas,Arroyo de la Encomienda,41.626957185279224, -4.775775612741133,,
-45,Plaza de España frente Ayuntamiento,Arroyo de la Encomienda,41.625662881088985,-4.773932062094718,,
-46,Calle Picones 8 junto Farmacia,Arroyo de la Encomienda,41.62491010999743,-4.776759322344456,,
-47,Avenida Aranzana 9,Arroyo de la Encomienda,41.623159307002155,-4.781835155198987,,
-48,Avenida Aranzana junto IESO Arroyo,Arroyo de la Encomienda,41.62181949761841,-4.785730315109215,,
-49,Avenida Aranzana 29,Arroyo de la Encomienda,41.619256176696574,-4.793167357662091,,
-50,Avenida Aranzana 37,Arroyo de la Encomienda,41.618296153186385,-4.795925786211147,,
-51,Calle Arnaldo Vilanova frente Centro Deportivo,Arroyo de la Encomienda,41.62041983150107,-4.801114889095113,,
-52,Avenida de Valdezarce 1,Arroyo de la Encomienda,41.6182752,-4.8120507,,
-53,Calle Juan de la Cierva junto Campos de Rugby,Arroyo de la Encomienda,41.6158538,-4.8037428,,
-54,Cale Ramón y Cajal junto Rotonda Alboroque,Arroyo de la Encomienda,41.617533465692894, -4.796953500083343,,
-55,Calle Ramón y Cajal frente edificio ADE,Arroyo de la Encomienda,41.6147495,-4.7986346,,
-56,Avenida de José Luís Lasa junto Centro Deportivo La Vega,Arroyo de la Encomienda,41.6109561,-4.7910782,,
-57,Avenida de José Luís Lasa 16,Arroyo de la Encomienda,41.61158372333509,-4.789211512870745,,
-58,Paseo de Juan Carlos I,Arroyo de la Encomienda,41.61330109314556,-4.785326628128819,,
-59,Avenida de Colón 82 junto Multiusos de la Vega,Arroyo de la Encomienda,41.61245617973121,-4.78306888601516,,
-60,Avenida de Colón 132 esquina Calle Bartolomé de las Casas,Arroyo de la Encomienda,41.617036802379815,-4.779238963469687,,
-61,Avenida de Colón 175 junto pistas polideportivas,Arroyo de la Encomienda,41.618702822390745,-4.7756200339207915,,
-62,Calle Federación de Fútbol,Arroyo de la Encomienda,41.62176428419433,-4.774271943178186,,
-63,Avenida de Salamanca junto Hipercor,Arroyo de la Encomienda,41.6245375,-4.7674427,,
-64,Plaza del Poniente,Valladolid,41.65332633377535,-4.732087430634557,,
-65,Carretera de Segovia frente Universidad,Valladolid,41.62686046210941,-4.717611177303284,,
-66,Plaza de Santa Cruz,Valladolid,41.651057,-4.7199099999,,
-67,Paseo Prado de La Magdalena 18 Filosofía y Letras,Valladolid,41.65727708975689,-4.713803732604026,,
-68,Calle Arnaldo Vilanovajunto CEIP Kantica,Arroyo de la Encomienda,41.62194050398611, -4.797760359203861,,
-69,Avenida Aguachales 15 esquina Calle Estefanía,Arroyo de la Encomienda,41.62196342383126, -4.804114740105416,,
-70,Camino Viejo frente Campo de Golf,Arroyo de la Encomienda,41.62078368511606, -4.80889065333635,,
-71,Avenida Valdezarce esquina Calle Almazara,Arroyo de la Encomienda,41.61833626943672,-4.8120868606719815,,
-72,Calle Juan de la Cierva esquina Calle Torres Quevedo,Arroyo de la Encomienda,41.61819553732944, -4.800726122106995,,
-73,Calle Arnaldo Vilanova junto CEIP Kantica,Arroyo de la Encomienda,41.62194431565437, -4.79777715455277,,
+stop_id,stop_name,stop_lat,stop_lon
+1,Estación de autobus Valladolid,41.641407,-4.732529
+10,José Luís Lasa 27,41.61153,-4.789474
+11,Rotonda Glorieta de la Flecha,41.611164,-4.791863
+12,Calle Presentación (La Vaca),41.611128,-4.79721
+13,Calle Ramón y Cajal (Edificio ADE),41.614694,-4.798625
+14,Calle Ramón y Cajal (Rotonda Alboroque),41.617412,-4.796758
+15,Calle Juan de la Cierva (Campos de Rugby),41.616088,-4.803748
+16,Avenida de Valdezarce 1,41.618219,-4.81198
+17,Calle Almazara 11,41.619562,-4.81444
+18,Calle Pesqueras(Campo de Golf),41.620678,-4.8089
+19,Av. Aguáchales 15,41.621993,-4.804375
+2,Paseo de Zorrilla 130 (Corte Ingles),41.637034,-4.739315
+20,Calle Arnaldo Vilanova Centro Deportivo,41.620338,-4.801
+21,Calle Arnaldo Vilanova CEIP Kantica,41.621847,-4.797784
+22,Calle Ramón y Cajal  (Rotonda de los Olivos),41.622652,-4.795832
+23,CC Rioshopping,41.630848,-4.787998
+24,Calle Ramón y Cajal (Rotonda de los Olivos),41.622612,-4.795916
+25,Avenida de la Aranzana 39,41.618135,-4.795833
+26,Avenida de la Aranzana 29,41.619192,-4.792843
+27,Avenida de la Aranzana ( IESO Arroyo),41.621634,-4.785782
+28,Avenida Aranzana 9,41.622964,-4.781977
+29,Picones (Glorieta del Cañazo) Nº 15,41.62476,-4.776736
+3,Av. Medina del Campo (Centro de Salud),41.633669,-4.747583
+30,Plaza de España (Ayuntamiento),41.625667,-4.773747
+31,Calle Almendrera (CEIP Raimundo de Blas),41.626914,-4.775729
+32,Calle Almendrera 16 (Casa de Cultura),41.629403,-4.776018
+33,Camino de Zaratán 40A,41.630531,-4.772198
+34,Camino de Zaratán 22,41.627922,-4.769872
+35,Camino de Zaratán 2,41.625579,-4.766827
+36,Av. Medina del Campo 15 (Arturo Eyries),41.633585,-4.747532
+37,Paseo de Zorilla (frente El Corte Inglés),41.638292,-4.738566
+38,Paseo de Filipinos (Campo Grande),41.644681,-4.732845
+39,Camino de Zaratán 2,41.625541,-4.7667
+4,Avenida de Salamanca (Hipercor - IFA),41.623899,-4.769925
+40,Camino de Zaratán 22,41.628114,-4.769959
+41,Calle Clavel 10,41.628359,-4.772864
+42,Calle Clavel (Casa de Cultura),41.628182,-4.775128
+43,Plaza de España ( Ayuntamiento),41.625671,-4.773849
+44,Calle Picones 8,41.624832,-4.776818
+45,Avd de la Aranzana 9,41.623099,-4.781764
+46,Avenida de la Aranzana IESO Arroyo,41.621765,-4.785694
+47,Avenida de la Aranzana 29,41.619179,-4.793142
+48,Avd. de la Aranzana 37,41.618222,-4.795883
+49,Calle Arnaldo Vilanova (Centro Deportivo),41.620348,-4.801037
+5,Calle Federación de Fútbol,41.621352,-4.774197
+50,Avenida de Valdezarce con C/Almazara,41.618275,-4.812051
+51,Juan de la Cierva ( Campos de Rugby),41.615854,-4.803743
+52,Calle Juan de la Cierva,41.618189,-4.800771
+53,Cale Ramón y Cajal (Rotonda Olivos),41.617453,-4.796803
+54,Calle Ramón y Cajal (Edificio ADE),41.61475,-4.798635
+55,Avenida de José Luís Lasa (CD La Vega),41.610956,-4.791078
+56,Avenida José Luís Lasa 16,41.611611,-4.789249
+57,Plaza de Juan Carlos I,41.613329,-4.785296
+58,Avenida de Colón 82(Multiusos de la Vega),41.612473,-4.78316
+59,Avenida de Colón 132,41.617029,-4.779334
+6,Avenida de Colón 175,41.618848,-4.775369
+60,Avenida de Colón 175,41.61872,-4.775691
+61,Calle Federación de Fútbol,41.621771,-4.774397
+62,Avenida de Salamanca (Hipercor),41.624538,-4.767443
+63,Plaza del Poniente,41.653291,-4.732147
+64,Carretera de Segovia UEMC,41.626831,-4.717659
+65,Plaza de Santa Cruz,41.651057,-4.71991
+66,Plaza de la Magdalena (Facultad de Fy L),41.657796,-4.714353
+67,Camino del Cementerio nº 35 (Campus universitario),41.665094,-4.705815
+7,Av. de Colón 132,41.61709,-4.779314
+8,Avenida de Colón (Multiusos de la Vega),41.612628,-4.783056
+9,Plaza de Juan Carlos I,41.613405,-4.785302
