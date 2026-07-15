@@ -24,6 +24,7 @@ import { Route as ArrivalsStopIdRouteImport } from './routes/arrivals.$stopId'
 import { Route as ApiPublicInitAdminRouteImport } from './routes/api.public.init-admin'
 import { Route as ApiPublicAdsRouteImport } from './routes/api.public.ads'
 import { Route as ApiPublicGtfsStaticFileRouteImport } from './routes/api.public.gtfs-static.$file'
+import { Route as ApiPublicActiosaeGtfsFileRouteImport } from './routes/api.public.actiosae.gtfs.$file'
 
 const VehiclesRoute = VehiclesRouteImport.update({
   id: '/vehicles',
@@ -100,6 +101,12 @@ const ApiPublicGtfsStaticFileRoute = ApiPublicGtfsStaticFileRouteImport.update({
   path: '/api/public/gtfs-static/$file',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicActiosaeGtfsFileRoute =
+  ApiPublicActiosaeGtfsFileRouteImport.update({
+    id: '/api/public/actiosae/gtfs/$file',
+    path: '/api/public/actiosae/gtfs/$file',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -117,6 +124,7 @@ export interface FileRoutesByFullPath {
   '/api/public/ads': typeof ApiPublicAdsRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
+  '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -134,6 +142,7 @@ export interface FileRoutesByTo {
   '/api/public/ads': typeof ApiPublicAdsRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
+  '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -152,6 +161,7 @@ export interface FileRoutesById {
   '/api/public/ads': typeof ApiPublicAdsRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
+  '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -171,6 +181,7 @@ export interface FileRouteTypes {
     | '/api/public/ads'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
+    | '/api/public/actiosae/gtfs/$file'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -188,6 +199,7 @@ export interface FileRouteTypes {
     | '/api/public/ads'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
+    | '/api/public/actiosae/gtfs/$file'
   id:
     | '__root__'
     | '/'
@@ -205,6 +217,7 @@ export interface FileRouteTypes {
     | '/api/public/ads'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
+    | '/api/public/actiosae/gtfs/$file'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -222,6 +235,7 @@ export interface RootRouteChildren {
   ApiPublicAdsRoute: typeof ApiPublicAdsRoute
   ApiPublicInitAdminRoute: typeof ApiPublicInitAdminRoute
   ApiPublicGtfsStaticFileRoute: typeof ApiPublicGtfsStaticFileRoute
+  ApiPublicActiosaeGtfsFileRoute: typeof ApiPublicActiosaeGtfsFileRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -331,6 +345,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicGtfsStaticFileRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/actiosae/gtfs/$file': {
+      id: '/api/public/actiosae/gtfs/$file'
+      path: '/api/public/actiosae/gtfs/$file'
+      fullPath: '/api/public/actiosae/gtfs/$file'
+      preLoaderRoute: typeof ApiPublicActiosaeGtfsFileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -359,6 +380,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiPublicAdsRoute: ApiPublicAdsRoute,
   ApiPublicInitAdminRoute: ApiPublicInitAdminRoute,
   ApiPublicGtfsStaticFileRoute: ApiPublicGtfsStaticFileRoute,
+  ApiPublicActiosaeGtfsFileRoute: ApiPublicActiosaeGtfsFileRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
