@@ -129,6 +129,7 @@ function RootComponent() {
               ["/tad", "TAD"],
               ["/suggestion", "Sugerencias"],
               ["/gtfs-rt", "GTFS-RT"],
+              ["/actiosae", "GTFS ACTIOSAE"],
               ["/explorer", "Explorer"],
               ["/admin", "Admin"],
             ].map(([to, label]) => (
