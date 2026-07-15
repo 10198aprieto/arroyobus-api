@@ -1,2 +1,2 @@
-﻿agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_email,agency_fare_url,cemv_support
-laregional,La Regional,https://www.autocareslaregional.com/,Europe/Madrid,es,983308088,info@autocareslaregional.com,https://www.autocareslaregional.com/blog/viajar-gratis-por-castilla-y-leon-ya-es-posible-descubre-la-tarjeta-buscyl-2/,2
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone
+actio_arroyo,Arroyobus,https://arroyo.actiosae.com/,Europe/Madrid,es,
