@@ -15,6 +15,17 @@ function ActioSaePage() {
     { label: "stops.txt", file: "stops.txt" },
   ];
 
+  // Pre-generados desde la misma API de Actio (endpoints /api/feed/{feedId}/directions,
+  // trajectory, timetable, infoTrip/{tripId}). Se sirven estáticos porque
+  // reconstruirlos en vivo son cientos de peticiones al upstream por request.
+  const prebuiltFiles = [
+    { label: "gtfs-static.zip (bundle completo con shapes+trips+stop_times)", path: "/gtfs-static.zip" },
+    { label: "trips.txt", path: "/gtfs/trips.txt" },
+    { label: "stop_times.txt", path: "/gtfs/stop_times.txt" },
+    { label: "shapes.txt", path: "/gtfs/shapes.txt" },
+    { label: "calendar_dates.txt", path: "/gtfs/calendar_dates.txt" },
+  ];
+
   const realtime = [
     {
       title: "VehiclePositions",
@@ -48,8 +59,7 @@ function ActioSaePage() {
       <h2 className="mt-6 text-xl font-bold">GTFS estático (reconstruido)</h2>
       <p className="mt-1 text-sm text-muted-foreground">
         Generado on-demand desde <code>/route/list</code> y <code>/stop/list</code>. Incluye
-        agency, feed_info, calendar sintético, routes y stops. No hay trips ni
-        stop_times porque la API no los expone.
+        agency, feed_info, calendar sintético, routes y stops.
       </p>
       <div className="mt-3 rounded-lg border border-border bg-card p-4 text-sm">
         <ul className="space-y-1">
@@ -57,6 +67,30 @@ function ActioSaePage() {
             const url = `${origin}/api/public/actiosae/gtfs/${f.file}`;
             return (
               <li key={f.file}>
+                <span className="text-muted-foreground">{f.label}: </span>
+                <a className="font-mono text-primary hover:underline" href={url}>
+                  {url}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      <h2 className="mt-6 text-xl font-bold">GTFS estático (pre-generado)</h2>
+      <p className="mt-1 text-sm text-muted-foreground">
+        <code>trips</code>, <code>stop_times</code> y <code>shapes</code> se pre-generan desde los
+        endpoints ocultos <code>/api/feed/arroyo/directions</code>,{" "}
+        <code>trajectory</code>, <code>timetable</code> y{" "}
+        <code>infoTrip/&#123;tripId&#125;</code> (cientos de peticiones al upstream, imposible en
+        vivo por request). Servidos estáticos con CORS abierto.
+      </p>
+      <div className="mt-3 rounded-lg border border-border bg-card p-4 text-sm">
+        <ul className="space-y-1">
+          {prebuiltFiles.map((f) => {
+            const url = `${origin}${f.path}`;
+            return (
+              <li key={f.path}>
                 <span className="text-muted-foreground">{f.label}: </span>
                 <a className="font-mono text-primary hover:underline" href={url}>
                   {url}
