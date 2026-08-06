@@ -7,6 +7,16 @@ const MapView = lazy(() => import("@/components/explorer-map"));
 export const Route = createFileRoute("/explorer")({
   ssr: false,
   component: ExplorerPage,
+  head: () => ({
+    meta: [
+      { title: "Mapa interactivo — Arroyobus" },
+      { name: "description", content: "Mapa en vivo con las paradas de Arroyobus y la posición actual de los autobuses." },
+      { property: "og:title", content: "Mapa interactivo — Arroyobus" },
+      { property: "og:description", content: "Mapa en vivo con paradas y autobuses de Arroyobus." },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/explorer" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/explorer" }],
+  }),
 });
 
 type EndpointKey = "route/list" | "stop/list" | "arrivals" | "vehiclePosition" | "alert/list" | "stopInfo";
