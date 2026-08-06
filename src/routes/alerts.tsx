@@ -2,7 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { actioGet } from "@/lib/api";
 
-export const Route = createFileRoute("/alerts")({ component: AlertsPage });
+export const Route = createFileRoute("/alerts")({
+  component: AlertsPage,
+  head: () => ({
+    meta: [
+      { title: "Alertas de servicio — Arroyobus" },
+      { name: "description", content: "Incidencias, obras y avisos que afectan al servicio de Arroyobus, en tiempo real." },
+      { property: "og:title", content: "Alertas de servicio — Arroyobus" },
+      { property: "og:description", content: "Incidencias, obras y avisos que afectan al servicio de Arroyobus." },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/alerts" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/alerts" }],
+  }),
+});
 
 interface Alert {
   alertId: string;
