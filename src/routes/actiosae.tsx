@@ -1,6 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/actiosae")({ component: ActioSaePage });
+export const Route = createFileRoute("/actiosae")({
+  component: ActioSaePage,
+  head: () => ({
+    meta: [
+      { title: "GTFS desde Actio SAE — Arroyobus" },
+      { name: "description", content: "GTFS estático reconstruido en vivo desde la API de Actio SAE y feeds GTFS-Realtime del feed arroyo." },
+      { property: "og:title", content: "GTFS desde Actio SAE — Arroyobus" },
+      { property: "og:description", content: "GTFS estático y realtime generados desde la API de Actio SAE." },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/actiosae" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/actiosae" }],
+  }),
+});
 
 function ActioSaePage() {
   const origin = typeof window !== "undefined" ? window.location.origin : "";

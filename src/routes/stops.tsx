@@ -3,7 +3,19 @@ import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { actioGet } from "@/lib/api";
 
-export const Route = createFileRoute("/stops")({ component: StopsPage });
+export const Route = createFileRoute("/stops")({
+  component: StopsPage,
+  head: () => ({
+    meta: [
+      { title: "Paradas de Arroyobus — Buscador y coordenadas" },
+      { name: "description", content: "Todas las paradas de Arroyobus con nombre, identificador y coordenadas GPS, filtrables al instante." },
+      { property: "og:title", content: "Paradas de Arroyobus" },
+      { property: "og:description", content: "Todas las paradas de Arroyobus con nombre, identificador y coordenadas GPS." },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/stops" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/stops" }],
+  }),
+});
 
 interface Stop {
   stopId: string;

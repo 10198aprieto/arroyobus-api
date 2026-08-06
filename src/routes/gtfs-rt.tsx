@@ -1,6 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/gtfs-rt")({ component: GtfsRtPage });
+export const Route = createFileRoute("/gtfs-rt")({
+  component: GtfsRtPage,
+  head: () => ({
+    meta: [
+      { title: "Feeds GTFS y GTFS-Realtime — Arroyobus" },
+      { name: "description", content: "Descarga el GTFS estático (txt, json y zip) y consume los feeds GTFS-Realtime de Arroyobus: vehículos, trip updates y alertas." },
+      { property: "og:title", content: "Feeds GTFS y GTFS-Realtime — Arroyobus" },
+      { property: "og:description", content: "GTFS estático en txt, json y zip, más feeds GTFS-Realtime de Arroyobus." },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/gtfs-rt" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/gtfs-rt" }],
+  }),
+});
 
 function GtfsRtPage() {
   const base = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1`;
@@ -50,6 +62,11 @@ function GtfsRtPage() {
     { label: "stops.json", file: "stops" },
     { label: "trips.json", file: "trips" },
   ];
+
+  const staticJson = jsonFeeds.map((f) => ({
+    label: f.label,
+    url: `${staticBase}/gtfs/${f.file}.json`,
+  }));
 
   return (
     <div>
@@ -108,6 +125,21 @@ function GtfsRtPage() {
               </li>
             );
           })}
+        </ul>
+      </div>
+
+      <h2 className="mt-8 text-xl font-bold">GTFS estático en JSON (archivos)</h2>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Los mismos datos servidos como ficheros JSON estáticos, con CORS abierto.
+      </p>
+      <div className="mt-3 rounded-lg border border-border bg-card p-4 text-sm">
+        <ul className="space-y-1">
+          {staticJson.map((f) => (
+            <li key={f.url}>
+              <span className="text-muted-foreground">{f.label}: </span>
+              <a className="font-mono text-primary hover:underline" href={f.url}>{f.url}</a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

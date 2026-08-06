@@ -2,7 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { actioGet } from "@/lib/api";
 
-export const Route = createFileRoute("/routes")({ component: RoutesPage });
+export const Route = createFileRoute("/routes")({
+  component: RoutesPage,
+  head: () => ({
+    meta: [
+      { title: "Líneas de Arroyobus — Rutas y colores" },
+      { name: "description", content: "Listado de las líneas de Arroyobus con su identificador, nombre y color oficial." },
+      { property: "og:title", content: "Líneas de Arroyobus" },
+      { property: "og:description", content: "Listado de las líneas de Arroyobus con su identificador, nombre y color oficial." },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/routes" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/routes" }],
+  }),
+});
 
 interface BusRoute {
   routeId: string;

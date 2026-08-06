@@ -2,7 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { actioPost } from "@/lib/api";
 
-export const Route = createFileRoute("/suggestion")({ component: SuggestionPage });
+export const Route = createFileRoute("/suggestion")({
+  component: SuggestionPage,
+  head: () => ({
+    meta: [
+      { title: "Enviar sugerencias — Arroyobus" },
+      { name: "description", content: "Formulario para enviar sugerencias y quejas sobre el servicio de Arroyobus." },
+      { property: "og:title", content: "Enviar sugerencias — Arroyobus" },
+      { property: "og:description", content: "Formulario para enviar sugerencias sobre el servicio de Arroyobus." },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/suggestion" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/suggestion" }],
+  }),
+});
 
 function SuggestionPage() {
   const [name, setName] = useState("");

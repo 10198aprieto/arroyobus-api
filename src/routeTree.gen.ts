@@ -13,6 +13,7 @@ import { Route as VehiclesRouteImport } from './routes/vehicles'
 import { Route as TadRouteImport } from './routes/tad'
 import { Route as SuggestionRouteImport } from './routes/suggestion'
 import { Route as StopsRouteImport } from './routes/stops'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RoutesRouteImport } from './routes/routes'
 import { Route as GtfsRtRouteImport } from './routes/gtfs-rt'
 import { Route as ExplorerRouteImport } from './routes/explorer'
@@ -45,6 +46,11 @@ const SuggestionRoute = SuggestionRouteImport.update({
 const StopsRoute = StopsRouteImport.update({
   id: '/stops',
   path: '/stops',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RoutesRoute = RoutesRouteImport.update({
@@ -122,6 +128,7 @@ export interface FileRoutesByFullPath {
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
   '/routes': typeof RoutesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/stops': typeof StopsRouteWithChildren
   '/suggestion': typeof SuggestionRoute
   '/tad': typeof TadRoute
@@ -141,6 +148,7 @@ export interface FileRoutesByTo {
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
   '/routes': typeof RoutesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/stops': typeof StopsRouteWithChildren
   '/suggestion': typeof SuggestionRoute
   '/tad': typeof TadRoute
@@ -161,6 +169,7 @@ export interface FileRoutesById {
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
   '/routes': typeof RoutesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/stops': typeof StopsRouteWithChildren
   '/suggestion': typeof SuggestionRoute
   '/tad': typeof TadRoute
@@ -182,6 +191,7 @@ export interface FileRouteTypes {
     | '/explorer'
     | '/gtfs-rt'
     | '/routes'
+    | '/sitemap.xml'
     | '/stops'
     | '/suggestion'
     | '/tad'
@@ -201,6 +211,7 @@ export interface FileRouteTypes {
     | '/explorer'
     | '/gtfs-rt'
     | '/routes'
+    | '/sitemap.xml'
     | '/stops'
     | '/suggestion'
     | '/tad'
@@ -220,6 +231,7 @@ export interface FileRouteTypes {
     | '/explorer'
     | '/gtfs-rt'
     | '/routes'
+    | '/sitemap.xml'
     | '/stops'
     | '/suggestion'
     | '/tad'
@@ -240,6 +252,7 @@ export interface RootRouteChildren {
   ExplorerRoute: typeof ExplorerRoute
   GtfsRtRoute: typeof GtfsRtRoute
   RoutesRoute: typeof RoutesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   StopsRoute: typeof StopsRouteWithChildren
   SuggestionRoute: typeof SuggestionRoute
   TadRoute: typeof TadRoute
@@ -279,6 +292,13 @@ declare module '@tanstack/react-router' {
       path: '/stops'
       fullPath: '/stops'
       preLoaderRoute: typeof StopsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/routes': {
@@ -393,6 +413,7 @@ const rootRouteChildren: RootRouteChildren = {
   ExplorerRoute: ExplorerRoute,
   GtfsRtRoute: GtfsRtRoute,
   RoutesRoute: RoutesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   StopsRoute: StopsRouteWithChildren,
   SuggestionRoute: SuggestionRoute,
   TadRoute: TadRoute,

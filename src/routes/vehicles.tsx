@@ -2,7 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { actioGet } from "@/lib/api";
 
-export const Route = createFileRoute("/vehicles")({ component: VehiclesPage });
+export const Route = createFileRoute("/vehicles")({
+  component: VehiclesPage,
+  head: () => ({
+    meta: [
+      { title: "Vehículos en tiempo real — Arroyobus" },
+      { name: "description", content: "Posiciones GPS en vivo de los autobuses de Arroyobus, actualizadas cada pocos segundos." },
+      { property: "og:title", content: "Vehículos en tiempo real — Arroyobus" },
+      { property: "og:description", content: "Posiciones GPS en vivo de los autobuses de Arroyobus." },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/vehicles" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/vehicles" }],
+  }),
+});
 
 interface VPResp {
   gpsPositions: Array<Record<string, unknown>>;
