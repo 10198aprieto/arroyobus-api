@@ -2,7 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { actioPost } from "@/lib/api";
 
-export const Route = createFileRoute("/tad")({ component: TadPage });
+export const Route = createFileRoute("/tad")({
+  component: TadPage,
+  head: () => ({
+    meta: [
+      { title: "Transporte a demanda (TAD) — Arroyobus" },
+      { name: "description", content: "Envía peticiones de transporte a demanda de Arroyobus desde el endpoint público." },
+      { property: "og:title", content: "Transporte a demanda (TAD) — Arroyobus" },
+      { property: "og:description", content: "Envía peticiones de transporte a demanda de Arroyobus." },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/tad" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/tad" }],
+  }),
+});
 
 function TadPage() {
   const [body, setBody] = useState(
