@@ -5,6 +5,13 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/admin")({
   ssr: false,
   component: AdminPage,
+  head: () => ({
+    meta: [
+      { title: "Panel de publicidad — Arroyobus" },
+      { name: "description", content: "Gestión de anuncios para las pantallas embarcadas de Arroyobus." },
+      { name: "robots", content: "noindex, nofollow" },
+    ],
+  }),
 });
 
 type Ad = {
