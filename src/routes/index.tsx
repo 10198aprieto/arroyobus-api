@@ -1,6 +1,22 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/")({ component: Index });
+const TITLE = "Arroyobus Open Data — GTFS y API en tiempo real";
+const DESC =
+  "Datos abiertos de Arroyobus: GTFS estático, GTFS-Realtime, líneas, paradas, llegadas, vehículos y alertas.";
+
+export const Route = createFileRoute("/")({
+  component: Index,
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESC },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESC },
+      { property: "og:url", content: "https://arroyobus-api.lovable.app/" },
+    ],
+    links: [{ rel: "canonical", href: "https://arroyobus-api.lovable.app/" }],
+  }),
+});
 
 const SECTIONS: Array<[string, string, string]> = [
   ["/routes", "Líneas", "GET /bff/mobile/route/list"],
