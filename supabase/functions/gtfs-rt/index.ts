@@ -7,6 +7,10 @@
 //
 // GET /functions/v1/gtfs-rt              -> application/x-protobuf (GTFS-RT)
 // GET /functions/v1/gtfs-rt?format=json  -> JSON debug
+//
+// All identifiers are validated/normalized against the published static GTFS
+// (https://arroyobus-api.lovable.app/gtfs-static.zip) so trip_id, route_id,
+// stop_id and current_stop_sequence always match the schedule dataset.
 
 const BASE = "https://arroyo.actiosae.com";
 const API_KEY = "AIzaSyCvtaF21g0lPX0cTgOiIcHZNZRQlw2TRVA";
@@ -17,6 +21,75 @@ const FEED_TTL_MS = 2_000;
 const STOPS_TTL_MS = 5 * 60_000;
 const FANOUT_CONCURRENCY = 3;
 const VEHICLE_SAMPLE_STOP_IDS = ["1", "12", "22", "43", "60", "10", "20", "29", "50", "33"];
+
+// ---------- static GTFS reference ----------
+const STATIC_BASE = "https://arroyobus-api.lovable.app/gtfs";
+const STATIC_TTL_MS = 60 * 60_000;
+
+interface StaticTrip {
+  tripId: string;
+  routeId: string;
+  serviceId: string;
+  directionId?: number;
+  headsign?: string;
+}
+interface StaticGtfs {
+  routeIds: Set<string>;
+  stopIds: Set<string>;
+  trips: Map<string, StaticTrip>;
+  stopSequence: Map<string, number>;
+}
+
+let staticCache: { at: number; data: StaticGtfs } | null = null;
+async function fetchStaticJson(file: string): Promise<Record<string, string>[]> {
+  const r = await fetch(`${STATIC_BASE}/${file}.json`, { headers: { Accept: "application/json" } });
+  if (!r.ok) throw new Error(`static ${file} ${r.status}`);
+  const j = await r.json();
+  return Array.isArray(j) ? j as Record<string, string>[] : [];
+}
+async function getStaticGtfs(): Promise<StaticGtfs | null> {
+  if (staticCache && Date.now() - staticCache.at < STATIC_TTL_MS) return staticCache.data;
+  try {
+    const [routes, stops, trips, stopTimes] = await Promise.all([
+      fetchStaticJson("routes"),
+      fetchStaticJson("stops"),
+      fetchStaticJson("trips"),
+      fetchStaticJson("stop_times"),
+    ]);
+    const data: StaticGtfs = {
+      routeIds: new Set(routes.map((r) => r["route_id"]).filter(Boolean)),
+      stopIds: new Set(stops.map((s) => s["stop_id"]).filter(Boolean)),
+      trips: new Map(),
+      stopSequence: new Map(),
+    };
+    for (const t of trips) {
+      const id = t["trip_id"];
+      if (!id) continue;
+      const d = t["direction_id"];
+      const dn = d ? Number(d) : NaN;
+      data.trips.set(id, {
+        tripId: id,
+        routeId: t["route_id"] ?? "",
+        serviceId: t["service_id"] ?? "",
+        directionId: Number.isNaN(dn) ? undefined : dn,
+        headsign: t["trip_headsign"] || undefined,
+      });
+    }
+    for (const st of stopTimes) {
+      const tid = st["trip_id"], sid = st["stop_id"];
+      if (!tid || !sid) continue;
+      const seq = Number(st["stop_sequence"]);
+      if (Number.isNaN(seq)) continue;
+      const key = `${tid}|${sid}`;
+      if (!data.stopSequence.has(key)) data.stopSequence.set(key, seq);
+    }
+    staticCache = { at: Date.now(), data };
+    return data;
+  } catch (err) {
+    console.error("static gtfs load failed:", err instanceof Error ? err.message : err);
+    return staticCache?.data ?? null;
+  }
+}
 
 const corsHeaders: Record<string, string> = {
   "Access-Control-Allow-Origin": "*",
@@ -235,7 +308,10 @@ let feedCache: { at: number; samples: VehicleSample[] } | null = null;
 async function buildSamples(): Promise<VehicleSample[]> {
   if (feedCache && Date.now() - feedCache.at < FEED_TTL_MS) return feedCache.samples;
   const stopIds = await fetchStopIds();
-  const all = await pool(stopIds, FANOUT_CONCURRENCY, fetchArrivals);
+  const [all, gtfs] = await Promise.all([
+    pool(stopIds, FANOUT_CONCURRENCY, fetchArrivals),
+    getStaticGtfs(),
+  ]);
   const best = new Map<string, VehicleSample>();
   for (const arrivals of all) {
     for (const a of arrivals) {
@@ -245,16 +321,30 @@ async function buildSamples(): Promise<VehicleSample[]> {
       if (ts === null) continue;
       const cur = best.get(a.vehicleId);
       if (cur && cur.ts >= ts) continue;
+      // Normalize against the static GTFS: only reference ids that exist there.
+      const trip = a.tripId && gtfs ? gtfs.trips.get(a.tripId) : undefined;
+      const tripId = gtfs ? (trip ? trip.tripId : undefined) : a.tripId;
+      const routeId = gtfs
+        ? (trip?.routeId ??
+          (a.route?.routeId && gtfs.routeIds.has(a.route.routeId) ? a.route.routeId : undefined))
+        : a.route?.routeId;
+      const stopId = gtfs
+        ? (a.stopId && gtfs.stopIds.has(a.stopId) ? a.stopId : undefined)
+        : a.stopId;
+      const stopSequence = gtfs && tripId && stopId
+        ? gtfs.stopSequence.get(`${tripId}|${stopId}`)
+        : a.stopSequence;
+      const directionId = gtfs ? trip?.directionId : a.directionId;
       best.set(a.vehicleId, {
         vehicleId: a.vehicleId,
         lat: a.lat,
         lon: a.lon,
         ts,
-        tripId: a.tripId,
-        routeId: a.route?.routeId,
-        directionId: a.directionId,
-        stopId: a.stopId,
-        stopSequence: a.stopSequence,
+        tripId,
+        routeId,
+        directionId,
+        stopId,
+        stopSequence,
         isAproximated: a.isAproximated,
       });
     }

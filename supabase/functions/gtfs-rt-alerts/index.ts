@@ -2,13 +2,58 @@
 //
 // GET /functions/v1/gtfs-rt-alerts              -> application/x-protobuf
 // GET /functions/v1/gtfs-rt-alerts?format=json  -> JSON debug
+//
+// informed_entity route_id / stop_id values are validated against the
+// published static GTFS (https://arroyobus-api.lovable.app/gtfs-static.zip).
 
 const BASE = "https://arroyo.actiosae.com";
 const API_KEY = "AIzaSyCvtaF21g0lPX0cTgOiIcHZNZRQlw2TRVA";
 const ANDROID_PACKAGE = "com.geoactio.arroyo_encomienda";
 const ANDROID_CERT_SHA1 = "222E5B204DE7B52F04DBED2A8B7947D566B0C2CA";
 const FEED_ID = "arroyo";
+// agency_id as declared in the static GTFS agency.txt
+const AGENCY_ID = "laregional";
 const FEED_TTL_MS = 60_000;
+
+// ---------- static GTFS reference ----------
+const STATIC_BASE = "https://arroyobus-api.lovable.app/gtfs";
+const STATIC_TTL_MS = 60 * 60_000;
+
+interface StaticGtfs { routeIds: Set<string>; stopIds: Set<string>; }
+let staticCache: { at: number; data: StaticGtfs } | null = null;
+
+async function fetchStaticJson(file: string): Promise<Record<string, string>[]> {
+  const r = await fetch(`${STATIC_BASE}/${file}.json`, { headers: { Accept: "application/json" } });
+  if (!r.ok) throw new Error(`static ${file} ${r.status}`);
+  const j = await r.json();
+  return Array.isArray(j) ? j as Record<string, string>[] : [];
+}
+
+async function getStaticGtfs(): Promise<StaticGtfs | null> {
+  if (staticCache && Date.now() - staticCache.at < STATIC_TTL_MS) return staticCache.data;
+  try {
+    const [routes, stops] = await Promise.all([
+      fetchStaticJson("routes"),
+      fetchStaticJson("stops"),
+    ]);
+    const data: StaticGtfs = {
+      routeIds: new Set(routes.map((r) => r["route_id"]).filter(Boolean)),
+      stopIds: new Set(stops.map((s) => s["stop_id"]).filter(Boolean)),
+    };
+    staticCache = { at: Date.now(), data };
+    return data;
+  } catch (err) {
+    console.error("static gtfs load failed:", err instanceof Error ? err.message : err);
+    return staticCache?.data ?? null;
+  }
+}
+
+function idsOf(list: unknown[] | undefined, key: "routeId" | "stopId"): string[] {
+  if (!list) return [];
+  return list
+    .map((x) => (typeof x === "string" ? x : (x as Record<string, string | undefined>)?.[key]))
+    .filter((x): x is string => Boolean(x));
+}
 
 const corsHeaders: Record<string, string> = {
   "Access-Control-Allow-Origin": "*",
@@ -107,41 +152,37 @@ function encActivePeriod(start?: string, end?: string): Uint8Array {
   return w.bytes();
 }
 
-function encInformedEntity(
-  routes?: string[] | Array<{ routeId?: string }>,
-  stops?: string[] | Array<{ stopId?: string }>,
-): Uint8Array {
+/** One EntitySelector: a single route_id, a single stop_id, or the agency. */
+function encEntitySelector(sel: { routeId?: string; stopId?: string }): Uint8Array {
   const w = new PbWriter();
-  // If routes/stops are simple strings, use them; otherwise extract ids
-  if (routes && routes.length > 0) {
-    for (const r of routes) {
-      const rid = typeof r === "string" ? r : r.routeId;
-      if (rid) w.tagString(3, rid); // route_id (field 3)
-    }
-  }
-  if (stops && stops.length > 0) {
-    for (const s of stops) {
-      const sid = typeof s === "string" ? s : s.stopId;
-      if (sid) w.tagString(5, sid); // stop_id (field 5)
-    }
-  }
-  // If neither route nor stop informed, at least mark agency
-  if ((!routes || routes.length === 0) && (!stops || stops.length === 0)) {
-    w.tagString(1, FEED_ID); // agency_id
-  }
+  if (sel.routeId) w.tagString(3, sel.routeId); // route_id
+  else if (sel.stopId) w.tagString(5, sel.stopId); // stop_id
+  else w.tagString(1, AGENCY_ID); // agency_id (static GTFS agency)
   return w.bytes();
 }
 
-function encAlert(a: Alert): Uint8Array {
+/** Route/stop ids that exist in the static GTFS; falls back to agency-wide. */
+function selectorsFor(a: Alert, gtfs: StaticGtfs | null): Array<{ routeId?: string; stopId?: string }> {
+  const routeIds = idsOf(a.routes, "routeId").filter((id) => !gtfs || gtfs.routeIds.has(id));
+  const stopIds = idsOf(a.stops, "stopId").filter((id) => !gtfs || gtfs.stopIds.has(id));
+  const out = [
+    ...routeIds.map((routeId) => ({ routeId })),
+    ...stopIds.map((stopId) => ({ stopId })),
+  ];
+  return out.length > 0 ? out : [{}];
+}
+
+function encAlert(a: Alert, gtfs: StaticGtfs | null): Uint8Array {
   const w = new PbWriter();
 
   // active_period (field 1, repeated)
   const ap = encActivePeriod(a.startDate, a.endDate);
   if (ap.length > 0) w.tagMessage(1, ap);
 
-  // informed_entity (field 5, repeated)
-  const ie = encInformedEntity(a.routes, a.stops);
-  w.tagMessage(5, ie);
+  // informed_entity (field 5, repeated) — one selector per static id
+  for (const sel of selectorsFor(a, gtfs)) {
+    w.tagMessage(5, encEntitySelector(sel));
+  }
 
   // cause (field 6): default OTHER_CAUSE (1)
   w.tagVarint(6, 1);
@@ -174,11 +215,11 @@ function encFeedHeader(ts: number): Uint8Array {
   return w.bytes();
 }
 
-function encFeedMessage(alerts: Alert[], feedTs: number): Uint8Array {
+function encFeedMessage(alerts: Alert[], feedTs: number, gtfs: StaticGtfs | null): Uint8Array {
   const w = new PbWriter();
   w.tagMessage(1, encFeedHeader(feedTs));
   for (const a of alerts) {
-    w.tagMessage(2, encFeedEntity(a.alertId ?? a.id ?? "alert", encAlert(a)));
+    w.tagMessage(2, encFeedEntity(a.alertId ?? a.id ?? "alert", encAlert(a, gtfs)));
   }
   return w.bytes();
 }
@@ -212,7 +253,7 @@ Deno.serve(async (req) => {
   try {
     const url = new URL(req.url);
     const format = url.searchParams.get("format");
-    const alerts = await fetchAlerts();
+    const [alerts, gtfs] = await Promise.all([fetchAlerts(), getStaticGtfs()]);
     const feedTs = Math.floor(Date.now() / 1000);
 
     if (format === "json") {
@@ -222,13 +263,11 @@ Deno.serve(async (req) => {
           id: a.alertId ?? a.id,
           alert: {
             active_period: [{ start: parseTs(a.startDate), end: parseTs(a.endDate) }],
-            informed_entity: [
-              {
-                agency_id: (!a.routes?.length && !a.stops?.length) ? FEED_ID : undefined,
-                route_id: (a.routes?.length ? (typeof a.routes[0] === "string" ? a.routes[0] : (a.routes[0] as { routeId?: string }).routeId) : undefined),
-                stop_id: (a.stops?.length ? (typeof a.stops[0] === "string" ? a.stops[0] : (a.stops[0] as { stopId?: string }).stopId) : undefined),
-              },
-            ],
+            informed_entity: selectorsFor(a, gtfs).map((sel) => ({
+              agency_id: !sel.routeId && !sel.stopId ? AGENCY_ID : undefined,
+              route_id: sel.routeId,
+              stop_id: sel.stopId,
+            })),
             cause: "OTHER_CAUSE",
             effect: "UNKNOWN_EFFECT",
             url: a.url ? { translation: [{ text: a.url }] } : undefined,
@@ -252,7 +291,7 @@ Deno.serve(async (req) => {
       );
     }
 
-    const pb = encFeedMessage(alerts, feedTs);
+    const pb = encFeedMessage(alerts, feedTs, gtfs);
     return new Response(pb, {
       headers: {
         ...corsHeaders,
