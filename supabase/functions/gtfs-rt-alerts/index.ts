@@ -213,11 +213,11 @@ function encFeedHeader(ts: number): Uint8Array {
   return w.bytes();
 }
 
-function encFeedMessage(alerts: Alert[], feedTs: number): Uint8Array {
+function encFeedMessage(alerts: Alert[], feedTs: number, gtfs: StaticGtfs | null): Uint8Array {
   const w = new PbWriter();
   w.tagMessage(1, encFeedHeader(feedTs));
   for (const a of alerts) {
-    w.tagMessage(2, encFeedEntity(a.alertId ?? a.id ?? "alert", encAlert(a)));
+    w.tagMessage(2, encFeedEntity(a.alertId ?? a.id ?? "alert", encAlert(a, gtfs)));
   }
   return w.bytes();
 }
@@ -251,7 +251,7 @@ Deno.serve(async (req) => {
   try {
     const url = new URL(req.url);
     const format = url.searchParams.get("format");
-    const alerts = await fetchAlerts();
+    const [alerts, gtfs] = await Promise.all([fetchAlerts(), getStaticGtfs()]);
     const feedTs = Math.floor(Date.now() / 1000);
 
     if (format === "json") {
@@ -261,13 +261,11 @@ Deno.serve(async (req) => {
           id: a.alertId ?? a.id,
           alert: {
             active_period: [{ start: parseTs(a.startDate), end: parseTs(a.endDate) }],
-            informed_entity: [
-              {
-                agency_id: (!a.routes?.length && !a.stops?.length) ? FEED_ID : undefined,
-                route_id: (a.routes?.length ? (typeof a.routes[0] === "string" ? a.routes[0] : (a.routes[0] as { routeId?: string }).routeId) : undefined),
-                stop_id: (a.stops?.length ? (typeof a.stops[0] === "string" ? a.stops[0] : (a.stops[0] as { stopId?: string }).stopId) : undefined),
-              },
-            ],
+            informed_entity: selectorsFor(a, gtfs).map((sel) => ({
+              agency_id: !sel.routeId && !sel.stopId ? AGENCY_ID : undefined,
+              route_id: sel.routeId,
+              stop_id: sel.stopId,
+            })),
             cause: "OTHER_CAUSE",
             effect: "UNKNOWN_EFFECT",
             url: a.url ? { translation: [{ text: a.url }] } : undefined,
@@ -291,7 +289,7 @@ Deno.serve(async (req) => {
       );
     }
 
-    const pb = encFeedMessage(alerts, feedTs);
+    const pb = encFeedMessage(alerts, feedTs, gtfs);
     return new Response(pb, {
       headers: {
         ...corsHeaders,
