@@ -308,7 +308,10 @@ let feedCache: { at: number; samples: VehicleSample[] } | null = null;
 async function buildSamples(): Promise<VehicleSample[]> {
   if (feedCache && Date.now() - feedCache.at < FEED_TTL_MS) return feedCache.samples;
   const stopIds = await fetchStopIds();
-  const all = await pool(stopIds, FANOUT_CONCURRENCY, fetchArrivals);
+  const [all, gtfs] = await Promise.all([
+    pool(stopIds, FANOUT_CONCURRENCY, fetchArrivals),
+    getStaticGtfs(),
+  ]);
   const best = new Map<string, VehicleSample>();
   for (const arrivals of all) {
     for (const a of arrivals) {
@@ -318,16 +321,30 @@ async function buildSamples(): Promise<VehicleSample[]> {
       if (ts === null) continue;
       const cur = best.get(a.vehicleId);
       if (cur && cur.ts >= ts) continue;
+      // Normalize against the static GTFS: only reference ids that exist there.
+      const trip = a.tripId && gtfs ? gtfs.trips.get(a.tripId) : undefined;
+      const tripId = gtfs ? (trip ? trip.tripId : undefined) : a.tripId;
+      const routeId = gtfs
+        ? (trip?.routeId ??
+          (a.route?.routeId && gtfs.routeIds.has(a.route.routeId) ? a.route.routeId : undefined))
+        : a.route?.routeId;
+      const stopId = gtfs
+        ? (a.stopId && gtfs.stopIds.has(a.stopId) ? a.stopId : undefined)
+        : a.stopId;
+      const stopSequence = gtfs && tripId && stopId
+        ? gtfs.stopSequence.get(`${tripId}|${stopId}`)
+        : a.stopSequence;
+      const directionId = gtfs ? trip?.directionId : a.directionId;
       best.set(a.vehicleId, {
         vehicleId: a.vehicleId,
         lat: a.lat,
         lon: a.lon,
         ts,
-        tripId: a.tripId,
-        routeId: a.route?.routeId,
-        directionId: a.directionId,
-        stopId: a.stopId,
-        stopSequence: a.stopSequence,
+        tripId,
+        routeId,
+        directionId,
+        stopId,
+        stopSequence,
         isAproximated: a.isAproximated,
       });
     }
