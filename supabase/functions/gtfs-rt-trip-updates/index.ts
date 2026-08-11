@@ -157,6 +157,14 @@ interface Arrival {
   route?: { routeId?: string };
 }
 
+/** Values resolved from the static GTFS, attached to each arrival. */
+interface Normalized extends Arrival {
+  staticRouteId?: string;
+  staticDirectionId?: number;
+  staticStopSequence?: number;
+  startDate?: string;
+}
+
 // ---------- protobuf writer ----------
 class PbWriter {
   private chunks: number[] = [];
@@ -208,14 +216,14 @@ function encStopTimeEvent(ts: number): Uint8Array {
   return w.bytes();
 }
 
-function encStopTimeUpdate(a: Arrival): Uint8Array | null {
+function encStopTimeUpdate(a: Normalized): Uint8Array | null {
   const arrTs = parseTs(a.arrivalTime);
   const depTs = parseTs(a.departureTime);
   if (arrTs === null && depTs === null) return null;
   const w = new PbWriter();
-  // NOTE: stop_sequence intentionally omitted — upstream sequence numbers
-  // do not match the static GTFS, causing INVALID_STOP_STOP_ID /
-  // SOME_STU_NOT_MATCHED. Matching by stop_id is unambiguous here.
+  // stop_sequence comes from the static GTFS stop_times.txt (upstream
+  // sequence numbers do not match); omitted when the pair is unknown.
+  if (a.staticStopSequence !== undefined) w.tagVarint(1, a.staticStopSequence);
   if (arrTs !== null) w.tagMessage(2, encStopTimeEvent(arrTs)); // arrival
   if (depTs !== null) w.tagMessage(3, encStopTimeEvent(depTs)); // departure
   if (a.stopId) w.tagString(4, a.stopId); // stop_id
@@ -224,14 +232,14 @@ function encStopTimeUpdate(a: Arrival): Uint8Array | null {
   return w.bytes();
 }
 
-function encTripDescriptor(sample: Arrival): Uint8Array {
+function encTripDescriptor(sample: Normalized): Uint8Array {
   const w = new PbWriter();
   if (sample.tripId) w.tagString(1, sample.tripId); // trip_id
-  if (sample.route?.routeId) w.tagString(5, sample.route.routeId); // route_id
-  if (sample.directionId !== undefined && sample.directionId !== null) {
-    const n = Number(sample.directionId);
-    if (!Number.isNaN(n)) w.tagVarint(6, n); // direction_id (uint32)
-  }
+  if (sample.startDate) w.tagString(2, sample.startDate); // start_date (static service date)
+  w.tagVarint(4, 0); // schedule_relationship: SCHEDULED
+  const routeId = sample.staticRouteId ?? sample.route?.routeId;
+  if (routeId) w.tagString(5, routeId); // route_id (static)
+  if (sample.staticDirectionId !== undefined) w.tagVarint(6, sample.staticDirectionId);
   return w.bytes();
 }
 
@@ -241,18 +249,19 @@ function encVehicleDescriptor(vehicleId: string): Uint8Array {
   return w.bytes();
 }
 
-function encTripUpdate(arrivals: Arrival[], feedTs: number): Uint8Array {
+function encTripUpdate(arrivals: Normalized[], feedTs: number): Uint8Array {
   const sample = arrivals[0];
   const w = new PbWriter();
   w.tagMessage(1, encTripDescriptor(sample)); // trip
-  // Order by sequence then arrival time, then drop non-monotonic STUs
-  // (avoids STOP_TIME_UPDATE_PREMATURE_ARRIVAL).
+  // Order by the static stop_sequence, then arrival time, and drop
+  // non-monotonic STUs (avoids STOP_TIME_UPDATE_PREMATURE_ARRIVAL).
   const sorted = [...arrivals].sort((a, b) => {
-    const sa = Number(a.stopSequence ?? 0), sb = Number(b.stopSequence ?? 0);
+    const sa = a.staticStopSequence ?? Number(a.stopSequence ?? 0);
+    const sb = b.staticStopSequence ?? Number(b.stopSequence ?? 0);
     if (sa !== sb) return sa - sb;
     return (parseTs(a.arrivalTime) ?? 0) - (parseTs(b.arrivalTime) ?? 0);
   });
-  const monotonic: Arrival[] = [];
+  const monotonic: Normalized[] = [];
   let lastTs = -Infinity;
   const seenStops = new Set<string>();
   for (const a of sorted) {
@@ -292,7 +301,7 @@ function encFeedHeader(ts: number): Uint8Array {
   return w.bytes();
 }
 
-function encFeedMessage(byTrip: Map<string, Arrival[]>, ts: number): Uint8Array {
+function encFeedMessage(byTrip: Map<string, Normalized[]>, ts: number): Uint8Array {
   const w = new PbWriter();
   w.tagMessage(1, encFeedHeader(ts));
   for (const [tripId, arrivals] of byTrip) {
