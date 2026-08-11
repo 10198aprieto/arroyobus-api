@@ -7,6 +7,9 @@
 //
 // GET  /functions/v1/gtfs-rt-trip-updates              -> application/x-protobuf
 // GET  /functions/v1/gtfs-rt-trip-updates?format=json  -> JSON debug
+//
+// Trips, routes, stops and stop_sequence are validated against the published
+// static GTFS (https://arroyobus-api.lovable.app/gtfs-static.zip).
 
 const BASE = "https://arroyo.actiosae.com";
 const API_KEY = "AIzaSyCvtaF21g0lPX0cTgOiIcHZNZRQlw2TRVA";
@@ -16,6 +19,121 @@ const FEED_ID = "arroyo";
 const STOPS_TTL_MS = 5 * 60_000;
 const FEED_TTL_MS = 2_000;
 const FANOUT_CONCURRENCY = 8;
+
+// ---------- static GTFS reference ----------
+const STATIC_BASE = "https://arroyobus-api.lovable.app/gtfs";
+const STATIC_TTL_MS = 60 * 60_000;
+
+interface StaticTrip {
+  tripId: string;
+  routeId: string;
+  serviceId: string;
+  directionId?: number;
+  headsign?: string;
+}
+interface StaticGtfs {
+  routeIds: Set<string>;
+  stopIds: Set<string>;
+  trips: Map<string, StaticTrip>;
+  stopSequence: Map<string, number>;
+  services: Map<string, { days: number[]; start: string; end: string }>;
+  exceptions: Map<string, number>;
+}
+
+let staticCache: { at: number; data: StaticGtfs } | null = null;
+async function fetchStaticJson(file: string): Promise<Record<string, string>[]> {
+  const r = await fetch(`${STATIC_BASE}/${file}.json`, { headers: { Accept: "application/json" } });
+  if (!r.ok) throw new Error(`static ${file} ${r.status}`);
+  const j = await r.json();
+  return Array.isArray(j) ? j as Record<string, string>[] : [];
+}
+async function getStaticGtfs(): Promise<StaticGtfs | null> {
+  if (staticCache && Date.now() - staticCache.at < STATIC_TTL_MS) return staticCache.data;
+  try {
+    const [routes, stops, trips, stopTimes, calendar, calDates] = await Promise.all([
+      fetchStaticJson("routes"),
+      fetchStaticJson("stops"),
+      fetchStaticJson("trips"),
+      fetchStaticJson("stop_times"),
+      fetchStaticJson("calendar").catch(() => []),
+      fetchStaticJson("calendar_dates").catch(() => []),
+    ]);
+    const data: StaticGtfs = {
+      routeIds: new Set(routes.map((r) => r["route_id"]).filter(Boolean)),
+      stopIds: new Set(stops.map((s) => s["stop_id"]).filter(Boolean)),
+      trips: new Map(),
+      stopSequence: new Map(),
+      services: new Map(),
+      exceptions: new Map(),
+    };
+    for (const t of trips) {
+      const id = t["trip_id"];
+      if (!id) continue;
+      const d = t["direction_id"];
+      const dn = d ? Number(d) : NaN;
+      data.trips.set(id, {
+        tripId: id,
+        routeId: t["route_id"] ?? "",
+        serviceId: t["service_id"] ?? "",
+        directionId: Number.isNaN(dn) ? undefined : dn,
+        headsign: t["trip_headsign"] || undefined,
+      });
+    }
+    for (const st of stopTimes) {
+      const tid = st["trip_id"], sid = st["stop_id"];
+      if (!tid || !sid) continue;
+      const seq = Number(st["stop_sequence"]);
+      if (Number.isNaN(seq)) continue;
+      const key = `${tid}|${sid}`;
+      if (!data.stopSequence.has(key)) data.stopSequence.set(key, seq);
+    }
+    for (const c of calendar) {
+      const id = c["service_id"];
+      if (!id) continue;
+      data.services.set(id, {
+        days: [
+          Number(c["sunday"] ?? 0), Number(c["monday"] ?? 0), Number(c["tuesday"] ?? 0),
+          Number(c["wednesday"] ?? 0), Number(c["thursday"] ?? 0), Number(c["friday"] ?? 0),
+          Number(c["saturday"] ?? 0),
+        ],
+        start: c["start_date"] ?? "",
+        end: c["end_date"] ?? "",
+      });
+    }
+    for (const e of calDates) {
+      if (!e["service_id"] || !e["date"]) continue;
+      data.exceptions.set(`${e["service_id"]}|${e["date"]}`, Number(e["exception_type"] ?? 0));
+    }
+    staticCache = { at: Date.now(), data };
+    return data;
+  } catch (err) {
+    console.error("static gtfs load failed:", err instanceof Error ? err.message : err);
+    return staticCache?.data ?? null;
+  }
+}
+
+/** Service date (YYYYMMDD) in Europe/Madrid. */
+function serviceDate(now = new Date()): string {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/Madrid",
+    year: "numeric", month: "2-digit", day: "2-digit",
+  }).format(now).replaceAll("-", "");
+}
+function weekdayIndex(date: string): number {
+  return new Date(Date.UTC(
+    Number(date.slice(0, 4)), Number(date.slice(4, 6)) - 1, Number(date.slice(6, 8)),
+  )).getUTCDay();
+}
+function isServiceActive(g: StaticGtfs, serviceId: string, date: string): boolean {
+  const ex = g.exceptions.get(`${serviceId}|${date}`);
+  if (ex === 1) return true;
+  if (ex === 2) return false;
+  const svc = g.services.get(serviceId);
+  if (!svc) return true;
+  if (svc.start && date < svc.start) return false;
+  if (svc.end && date > svc.end) return false;
+  return svc.days[weekdayIndex(date)] === 1;
+}
 
 const corsHeaders: Record<string, string> = {
   "Access-Control-Allow-Origin": "*",
