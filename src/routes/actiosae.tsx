@@ -1,4 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
+import {
+  getActiosaeGateStatus,
+  lockActiosae,
+  unlockActiosae,
+} from "@/lib/actiosae-gate.functions";
 
 export const Route = createFileRoute("/actiosae")({
   component: ActioSaePage,
@@ -15,6 +22,21 @@ export const Route = createFileRoute("/actiosae")({
 });
 
 function ActioSaePage() {
+  const [unlocked, setUnlocked] = useState<boolean | null>(null);
+  const [user, setUser] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const checkGate = useServerFn(getActiosaeGateStatus);
+  const unlock = useServerFn(unlockActiosae);
+  const lock = useServerFn(lockActiosae);
+
+  useEffect(() => {
+    void checkGate()
+      .then((r) => setUnlocked(r.unlocked))
+      .catch(() => setUnlocked(false));
+  }, [checkGate]);
+
   const origin = typeof window !== "undefined" ? window.location.origin : "";
   const rtBase = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1`;
 
@@ -59,9 +81,80 @@ function ActioSaePage() {
     },
   ];
 
+  if (unlocked === null) {
+    return <p className="text-muted-foreground">Cargando…</p>;
+  }
+
+  if (!unlocked) {
+    return (
+      <div className="mx-auto max-w-sm">
+        <h1 className="text-2xl font-bold">GTFS ACTIOSAE</h1>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Esta sección es privada. Introduce tus credenciales para continuar.
+        </p>
+        <form
+          className="mt-6 space-y-3"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            setBusy(true);
+            setError(false);
+            try {
+              const res = await unlock({ data: { user, password } });
+              if (res.ok) setUnlocked(true);
+              else setError(true);
+            } catch {
+              setError(true);
+            } finally {
+              setBusy(false);
+            }
+          }}
+        >
+          <input
+            className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm"
+            placeholder="Usuario"
+            autoComplete="username"
+            value={user}
+            onChange={(e) => setUser(e.target.value)}
+          />
+          <input
+            className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm"
+            type="password"
+            placeholder="Contraseña"
+            autoComplete="current-password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          {error && (
+            <p className="text-sm text-destructive">Credenciales incorrectas</p>
+          )}
+          <button
+            type="submit"
+            disabled={busy}
+            className="w-full rounded-md bg-primary px-3 py-2 text-sm font-medium text-primary-foreground disabled:opacity-60"
+          >
+            {busy ? "Comprobando…" : "Entrar"}
+          </button>
+        </form>
+      </div>
+    );
+  }
+
   return (
     <div>
-      <h1 className="text-2xl font-bold">GTFS ACTIOSAE</h1>
+      <div className="flex items-center justify-between gap-4">
+        <h1 className="text-2xl font-bold">GTFS ACTIOSAE</h1>
+        <button
+          className="rounded-md border border-border px-3 py-1.5 text-sm"
+          onClick={async () => {
+            await lock();
+            setUnlocked(false);
+            setUser("");
+            setPassword("");
+          }}
+        >
+          Salir
+        </button>
+      </div>
       <p className="mt-2 text-muted-foreground">
         Feeds GTFS estáticos y realtime generados en vivo desde la API BFF de
         Actio SAE (feed <code>arroyo</code>). Los <code>route_id</code> y{" "}

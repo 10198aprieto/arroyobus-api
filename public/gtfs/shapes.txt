@@ -5803,2430 +5803,1405 @@ Buho,41.64137, -4.73154,1905
 Buho,41.641201, -4.731545,1906
 Buho,41.64114, -4.7325,1907
 Buho,41.641407, -4.732529,1908
-Verde_vuelta,41.65106,-4.7199,1
-Verde_vuelta,41.65165, -4.71901,2
-Verde_vuelta,41.65189, -4.71861,3
-Verde_vuelta,41.65213, -4.71832,4
-Verde_vuelta,41.65221, -4.71825,5
-Verde_vuelta,41.65225, -4.71823,6
-Verde_vuelta,41.65236, -4.71821,7
-Verde_vuelta,41.65242, -4.71819,8
-Verde_vuelta,41.65255, -4.71816,9
-Verde_vuelta,41.65284, -4.71806,10
-Verde_vuelta,41.65413, -4.71772,11
-Verde_vuelta,41.65414, -4.71761,12
-Verde_vuelta,41.65419, -4.71739,13
-Verde_vuelta,41.65428, -4.71716,14
-Verde_vuelta,41.65475, -4.7163,15
-Verde_vuelta,41.65607, -4.71373,16
-Verde_vuelta,41.65614, -4.71361,17
-Verde_vuelta,41.65618, -4.71356,18
-Verde_vuelta,41.65636, -4.71348,19
-Verde_vuelta,41.65649, -4.71345,20
-Verde_vuelta,41.65663, -4.71345,21
-Verde_vuelta,41.65673, -4.71347,22
-Verde_vuelta,41.65691, -4.71359,23
-Verde_vuelta,41.65874, -4.71521,24
-Verde_vuelta,41.65896, -4.71542,25
-Verde_vuelta,41.65957, -4.71409,26
-Verde_vuelta,41.66004, -4.71338,27
-Verde_vuelta,41.66025, -4.71302,28
-Verde_vuelta,41.66425, -4.70684,29
-Verde_vuelta,41.66433, -4.70673,30
-Verde_vuelta,41.66477, -4.70603,31
-Verde_vuelta,41.665, -4.70563,32
-Verde_vuelta,41.66542, -4.705,33
-Verde_vuelta,41.6656, -4.70468,34
-Verde_vuelta,41.66597, -4.7042,35
-Verde_vuelta,41.666, -4.70408,36
-Verde_vuelta,41.66606, -4.70398,37
-Verde_vuelta,41.66607, -4.70394,38
-Verde_vuelta,41.66608, -4.70384,39
-Verde_vuelta,41.6661, -4.70376,40
-Verde_vuelta,41.66607, -4.70365,41
-Verde_vuelta,41.666, -4.70353,42
-Verde_vuelta,41.66584, -4.70314,43
-Verde_vuelta,41.66526, -4.70242,44
-Verde_vuelta,41.66495, -4.70197,45
-Verde_vuelta,41.66467, -4.70152,46
-Verde_vuelta,41.66285, -4.6983,47
-Verde_vuelta,41.66277, -4.69818,48
-Verde_vuelta,41.66271, -4.69807,49
-Verde_vuelta,41.66196, -4.69695,50
-Verde_vuelta,41.66194, -4.69693,51
-Verde_vuelta,41.66188, -4.69684,52
-Verde_vuelta,41.66132, -4.69611,53
-Verde_vuelta,41.66081, -4.69551,54
-Verde_vuelta,41.66037, -4.69505,55
-Verde_vuelta,41.66027, -4.69497,56
-Verde_vuelta,41.66018, -4.69487,57
-Verde_vuelta,41.65982, -4.69452,58
-Verde_vuelta,41.65946, -4.69423,59
-Verde_vuelta,41.6587, -4.69368,60
-Verde_vuelta,41.65797, -4.69326,61
-Verde_vuelta,41.65792, -4.69324,62
-Verde_vuelta,41.65771, -4.69312,63
-Verde_vuelta,41.65745, -4.69301,64
-Verde_vuelta,41.65727, -4.69292,65
-Verde_vuelta,41.65712, -4.69287,66
-Verde_vuelta,41.65696, -4.6928,67
-Verde_vuelta,41.65674, -4.69272,68
-Verde_vuelta,41.65625, -4.69257,69
-Verde_vuelta,41.65624, -4.69257,70
-Verde_vuelta,41.65608, -4.69252,71
-Verde_vuelta,41.65572, -4.69243,72
-Verde_vuelta,41.65565, -4.69242,73
-Verde_vuelta,41.65553, -4.69239,74
-Verde_vuelta,41.65463, -4.69227,75
-Verde_vuelta,41.6538, -4.69225,76
-Verde_vuelta,41.65344, -4.69227,77
-Verde_vuelta,41.65327, -4.69229,78
-Verde_vuelta,41.65321, -4.69229,79
-Verde_vuelta,41.65317, -4.6923,80
-Verde_vuelta,41.65293, -4.69232,81
-Verde_vuelta,41.65226, -4.69244,82
-Verde_vuelta,41.65215, -4.69247,83
-Verde_vuelta,41.65214, -4.69247,84
-Verde_vuelta,41.6517, -4.69258,85
-Verde_vuelta,41.65138, -4.69268,86
-Verde_vuelta,41.65043, -4.69307,87
-Verde_vuelta,41.64998, -4.69329,88
-Verde_vuelta,41.6494, -4.69363,89
-Verde_vuelta,41.64843, -4.69425,90
-Verde_vuelta,41.64839, -4.69427,91
-Verde_vuelta,41.6455, -4.69611,92
-Verde_vuelta,41.64538, -4.6962,93
-Verde_vuelta,41.64509, -4.69645,94
-Verde_vuelta,41.64483, -4.69672,95
-Verde_vuelta,41.64467, -4.69693,96
-Verde_vuelta,41.64444, -4.69729,97
-Verde_vuelta,41.64421, -4.69779,98
-Verde_vuelta,41.64402, -4.69834,99
-Verde_vuelta,41.64376, -4.69921,100
-Verde_vuelta,41.64353, -4.69986,101
-Verde_vuelta,41.6433, -4.70037,102
-Verde_vuelta,41.6431, -4.70074,103
-Verde_vuelta,41.64288, -4.70108,104
-Verde_vuelta,41.64257, -4.70148,105
-Verde_vuelta,41.64247, -4.70159,106
-Verde_vuelta,41.64245, -4.70162,107
-Verde_vuelta,41.64236, -4.7017,108
-Verde_vuelta,41.64214, -4.70193,109
-Verde_vuelta,41.64198, -4.70207,110
-Verde_vuelta,41.64165, -4.70231,111
-Verde_vuelta,41.64132, -4.7025,112
-Verde_vuelta,41.6413, -4.70252,113
-Verde_vuelta,41.64078, -4.70275,114
-Verde_vuelta,41.64046, -4.70284,115
-Verde_vuelta,41.64035, -4.70286,116
-Verde_vuelta,41.64033, -4.70286,117
-Verde_vuelta,41.64026, -4.70288,118
-Verde_vuelta,41.63997, -4.70292,119
-Verde_vuelta,41.6397, -4.70293,120
-Verde_vuelta,41.63938, -4.70291,121
-Verde_vuelta,41.63898, -4.70285,122
-Verde_vuelta,41.63876, -4.70279,123
-Verde_vuelta,41.63865, -4.70277,124
-Verde_vuelta,41.63853, -4.70273,125
-Verde_vuelta,41.63831, -4.70268,126
-Verde_vuelta,41.6382, -4.70264,127
-Verde_vuelta,41.63644, -4.70214,128
-Verde_vuelta,41.63633, -4.70212,129
-Verde_vuelta,41.6361, -4.70206,130
-Verde_vuelta,41.63599, -4.70205,131
-Verde_vuelta,41.63588, -4.70203,132
-Verde_vuelta,41.63582, -4.70203,133
-Verde_vuelta,41.63578, -4.70202,134
-Verde_vuelta,41.63566, -4.70202,135
-Verde_vuelta,41.63554, -4.70201,136
-Verde_vuelta,41.63521, -4.70204,137
-Verde_vuelta,41.63492, -4.70209,138
-Verde_vuelta,41.63455, -4.70221,139
-Verde_vuelta,41.63423, -4.70236,140
-Verde_vuelta,41.63422, -4.70237,141
-Verde_vuelta,41.63401, -4.70249,142
-Verde_vuelta,41.63362, -4.70279,143
-Verde_vuelta,41.63334, -4.70306,144
-Verde_vuelta,41.63303, -4.70344,145
-Verde_vuelta,41.6329, -4.70394,146
-Verde_vuelta,41.6329, -4.70398,147
-Verde_vuelta,41.63289, -4.70402,148
-Verde_vuelta,41.63286, -4.70409,149
-Verde_vuelta,41.63286, -4.70413,150
-Verde_vuelta,41.63287, -4.70416,151
-Verde_vuelta,41.63287, -4.70425,152
-Verde_vuelta,41.63286, -4.70428,153
-Verde_vuelta,41.633, -4.7046,154
-Verde_vuelta,41.63313, -4.70479,155
-Verde_vuelta,41.63333, -4.70496,156
-Verde_vuelta,41.63348, -4.70507,157
-Verde_vuelta,41.63416, -4.70572,158
-Verde_vuelta,41.63436, -4.70593,159
-Verde_vuelta,41.63471, -4.70622,160
-Verde_vuelta,41.63474, -4.70619,161
-Verde_vuelta,41.63476, -4.70618,162
-Verde_vuelta,41.63478, -4.70616,163
-Verde_vuelta,41.6348, -4.70616,164
-Verde_vuelta,41.63482, -4.70615,165
-Verde_vuelta,41.63484, -4.70615,166
-Verde_vuelta,41.63486, -4.70614,167
-Verde_vuelta,41.63487, -4.70614,168
-Verde_vuelta,41.63488, -4.70615,169
-Verde_vuelta,41.6349, -4.70615,170
-Verde_vuelta,41.63497, -4.70618,171
-Verde_vuelta,41.63498, -4.7062,172
-Verde_vuelta,41.635, -4.70621,173
-Verde_vuelta,41.63501, -4.70623,174
-Verde_vuelta,41.63502, -4.70624,175
-Verde_vuelta,41.63503, -4.70626,176
-Verde_vuelta,41.63503, -4.70627,177
-Verde_vuelta,41.63504, -4.70628,178
-Verde_vuelta,41.63506, -4.70632,179
-Verde_vuelta,41.63506, -4.70634,180
-Verde_vuelta,41.63507, -4.70637,181
-Verde_vuelta,41.63507, -4.70642,182
-Verde_vuelta,41.63508, -4.70644,183
-Verde_vuelta,41.63507, -4.70647,184
-Verde_vuelta,41.63507, -4.70651,185
-Verde_vuelta,41.63506, -4.70653,186
-Verde_vuelta,41.63506, -4.70655,187
-Verde_vuelta,41.63505, -4.70656,188
-Verde_vuelta,41.63505, -4.70658,189
-Verde_vuelta,41.63504, -4.70659,190
-Verde_vuelta,41.63502, -4.70663,191
-Verde_vuelta,41.63497, -4.70669,192
-Verde_vuelta,41.63491, -4.70672,193
-Verde_vuelta,41.63489, -4.70672,194
-Verde_vuelta,41.63488, -4.70673,195
-Verde_vuelta,41.63466, -4.70706,196
-Verde_vuelta,41.63317, -4.71051,197
-Verde_vuelta,41.63209, -4.71285,198
-Verde_vuelta,41.6321, -4.71285,199
-Verde_vuelta,41.6321, -4.71286,200
-Verde_vuelta,41.63212, -4.71288,201
-Verde_vuelta,41.63212, -4.71289,202
-Verde_vuelta,41.63213, -4.71289,203
-Verde_vuelta,41.63213, -4.7129,204
-Verde_vuelta,41.63214, -4.71291,205
-Verde_vuelta,41.63214, -4.71293,206
-Verde_vuelta,41.63215, -4.71294,207
-Verde_vuelta,41.63215, -4.71305,208
-Verde_vuelta,41.63214, -4.71305,209
-Verde_vuelta,41.63214, -4.71307,210
-Verde_vuelta,41.63213, -4.71308,211
-Verde_vuelta,41.63213, -4.71309,212
-Verde_vuelta,41.63212, -4.71309,213
-Verde_vuelta,41.63212, -4.71311,214
-Verde_vuelta,41.63211, -4.71311,215
-Verde_vuelta,41.63211, -4.71312,216
-Verde_vuelta,41.6321, -4.71313,217
-Verde_vuelta,41.63209, -4.71313,218
-Verde_vuelta,41.63209, -4.71314,219
-Verde_vuelta,41.63208, -4.71314,220
-Verde_vuelta,41.63207, -4.71315,221
-Verde_vuelta,41.63204, -4.71315,222
-Verde_vuelta,41.63204, -4.71316,223
-Verde_vuelta,41.63202, -4.71316,224
-Verde_vuelta,41.63201, -4.71315,225
-Verde_vuelta,41.63199, -4.71315,226
-Verde_vuelta,41.63198, -4.71314,227
-Verde_vuelta,41.63197, -4.71314,228
-Verde_vuelta,41.63196, -4.71313,229
-Verde_vuelta,41.63156, -4.71402,230
-Verde_vuelta,41.63157, -4.71405,231
-Verde_vuelta,41.63158, -4.71411,232
-Verde_vuelta,41.63015, -4.71734,233
-Verde_vuelta,41.63008, -4.71741,234
-Verde_vuelta,41.62953, -4.71859,235
-Verde_vuelta,41.62941, -4.71891,236
-Verde_vuelta,41.62943, -4.71892,237
-Verde_vuelta,41.62949, -4.71898,238
-Verde_vuelta,41.62953, -4.71905,239
-Verde_vuelta,41.62956, -4.71918,240
-Verde_vuelta,41.62956, -4.71923,241
-Verde_vuelta,41.62955, -4.71931,242
-Verde_vuelta,41.62951, -4.71941,243
-Verde_vuelta,41.62909, -4.71908,244
-Verde_vuelta,41.62887, -4.71894,245
-Verde_vuelta,41.62808, -4.71856,246
-Verde_vuelta,41.62681, -4.71806,247
-Verde_vuelta,41.62679, -4.71812,248
-Verde_vuelta,41.62677, -4.71815,249
-Verde_vuelta,41.62675, -4.71817,250
-Verde_vuelta,41.62674, -4.7182,251
-Verde_vuelta,41.62668, -4.71826,252
-Verde_vuelta,41.62664, -4.71826,253
-Verde_vuelta,41.62663, -4.71827,254
-Verde_vuelta,41.62659, -4.71827,255
-Verde_vuelta,41.62655, -4.71826,256
-Verde_vuelta,41.62652, -4.71826,257
-Verde_vuelta,41.62643, -4.7182,258
-Verde_vuelta,41.6264, -4.71817,259
-Verde_vuelta,41.62636, -4.71811,260
-Verde_vuelta,41.62634, -4.71807,261
-Verde_vuelta,41.62631, -4.71794,262
-Verde_vuelta,41.62631, -4.71786,263
-Verde_vuelta,41.62632, -4.71784,264
-Verde_vuelta,41.62632, -4.7178,265
-Verde_vuelta,41.62633, -4.71778,266
-Verde_vuelta,41.62633, -4.71775,267
-Verde_vuelta,41.62634, -4.71774,268
-Verde_vuelta,41.62637, -4.71767,269
-Verde_vuelta,41.6264, -4.71764,270
-Verde_vuelta,41.62642, -4.71761,271
-Verde_vuelta,41.62647, -4.71756,272
-Verde_vuelta,41.6265, -4.71754,273
-Verde_vuelta,41.62653, -4.71753,274
-Verde_vuelta,41.62654, -4.71753,275
-Verde_vuelta,41.62655, -4.71752,276
-Verde_vuelta,41.62658, -4.71752,277
-Verde_vuelta,41.62659, -4.71751,278
-Verde_vuelta,41.62665, -4.71751,279
-Verde_vuelta,41.6267, -4.71753,280
-Verde_vuelta,41.62672, -4.71755,281
-Verde_vuelta,41.62674, -4.71756,282
-Verde_vuelta,41.62676, -4.71758,283
-Verde_vuelta,41.62678, -4.71761,284
-Verde_vuelta,41.6268, -4.71763,285
-Verde_vuelta,41.62681, -4.71766,286
-Verde_vuelta,41.62682, -4.71767,287
-Verde_vuelta,41.62684, -4.71772,288
-Verde_vuelta,41.62684, -4.71775,289
-Verde_vuelta,41.62685, -4.71779,290
-Verde_vuelta,41.62685, -4.71789,291
-Verde_vuelta,41.62684, -4.71794,292
-Verde_vuelta,41.62684, -4.71797,293
-Verde_vuelta,41.62683, -4.71798,294
-Verde_vuelta,41.62683, -4.718,295
-Verde_vuelta,41.62682, -4.71801,296
-Verde_vuelta,41.62682, -4.71804,297
-Verde_vuelta,41.62681, -4.71806,298
-Verde_vuelta,41.62448, -4.71714,299
-Verde_vuelta,41.62379, -4.71681,300
-Verde_vuelta,41.62322, -4.71658,301
-Verde_vuelta,41.6232, -4.71658,302
-Verde_vuelta,41.62265, -4.71636,303
-Verde_vuelta,41.6221, -4.71618,304
-Verde_vuelta,41.62183, -4.71615,305
-Verde_vuelta,41.62175, -4.71615,306
-Verde_vuelta,41.62151, -4.71618,307
-Verde_vuelta,41.62105, -4.71628,308
-Verde_vuelta,41.62102, -4.71632,309
-Verde_vuelta,41.62094, -4.71638,310
-Verde_vuelta,41.62082, -4.71644,311
-Verde_vuelta,41.62077, -4.71645,312
-Verde_vuelta,41.62073, -4.71645,313
-Verde_vuelta,41.62069, -4.71646,314
-Verde_vuelta,41.62052, -4.71642,315
-Verde_vuelta,41.62041, -4.71634,316
-Verde_vuelta,41.62035, -4.71628,317
-Verde_vuelta,41.62034, -4.71626,318
-Verde_vuelta,41.62033, -4.71625,319
-Verde_vuelta,41.62025, -4.71605,320
-Verde_vuelta,41.62025, -4.71603,321
-Verde_vuelta,41.62024, -4.71602,322
-Verde_vuelta,41.62024, -4.716,323
-Verde_vuelta,41.62023, -4.71598,324
-Verde_vuelta,41.62023, -4.71595,325
-Verde_vuelta,41.62022, -4.71593,326
-Verde_vuelta,41.62022, -4.71591,327
-Verde_vuelta,41.62011, -4.7158,328
-Verde_vuelta,41.62005, -4.71578,329
-Verde_vuelta,41.61997, -4.71577,330
-Verde_vuelta,41.61962, -4.71578,331
-Verde_vuelta,41.61942, -4.71577,332
-Verde_vuelta,41.61914, -4.71573,333
-Verde_vuelta,41.619, -4.7157,334
-Verde_vuelta,41.61896, -4.7157,335
-Verde_vuelta,41.61862, -4.71559,336
-Verde_vuelta,41.61847, -4.71553,337
-Verde_vuelta,41.61814, -4.71537,338
-Verde_vuelta,41.6178, -4.71517,339
-Verde_vuelta,41.61641, -4.71416,340
-Verde_vuelta,41.61551, -4.71359,341
-Verde_vuelta,41.6154, -4.71354,342
-Verde_vuelta,41.6152, -4.71342,343
-Verde_vuelta,41.61517, -4.71341,344
-Verde_vuelta,41.61508, -4.71336,345
-Verde_vuelta,41.61477, -4.71322,346
-Verde_vuelta,41.6144, -4.71311,347
-Verde_vuelta,41.61434, -4.71311,348
-Verde_vuelta,41.61423, -4.71309,349
-Verde_vuelta,41.6141, -4.71309,350
-Verde_vuelta,41.61399, -4.7131,351
-Verde_vuelta,41.61389, -4.7131,352
-Verde_vuelta,41.61357, -4.71315,353
-Verde_vuelta,41.61356, -4.71316,354
-Verde_vuelta,41.61322, -4.7132,355
-Verde_vuelta,41.61316, -4.7132,356
-Verde_vuelta,41.613, -4.71318,357
-Verde_vuelta,41.61296, -4.71328,358
-Verde_vuelta,41.61293, -4.71333,359
-Verde_vuelta,41.61286, -4.7134,360
-Verde_vuelta,41.61278, -4.71346,361
-Verde_vuelta,41.61274, -4.71348,362
-Verde_vuelta,41.61267, -4.71359,363
-Verde_vuelta,41.61261, -4.71371,364
-Verde_vuelta,41.61261, -4.71372,365
-Verde_vuelta,41.61231, -4.71486,366
-Verde_vuelta,41.61227, -4.71505,367
-Verde_vuelta,41.61221, -4.71526,368
-Verde_vuelta,41.61179, -4.71704,369
-Verde_vuelta,41.61172, -4.71713,370
-Verde_vuelta,41.61157, -4.71798,371
-Verde_vuelta,41.61156, -4.71801,372
-Verde_vuelta,41.61128, -4.71947,373
-Verde_vuelta,41.61105, -4.72048,374
-Verde_vuelta,41.61044, -4.72274,375
-Verde_vuelta,41.6102, -4.72348,376
-Verde_vuelta,41.61019, -4.72354,377
-Verde_vuelta,41.60958, -4.72535,378
-Verde_vuelta,41.60952, -4.72548,379
-Verde_vuelta,41.6078, -4.73015,380
-Verde_vuelta,41.60704, -4.73255,381
-Verde_vuelta,41.60645, -4.73484,382
-Verde_vuelta,41.60632, -4.73542,383
-Verde_vuelta,41.60601, -4.73703,384
-Verde_vuelta,41.60574, -4.73877,385
-Verde_vuelta,41.60559, -4.74053,386
-Verde_vuelta,41.60555, -4.74184,387
-Verde_vuelta,41.60556, -4.74269,388
-Verde_vuelta,41.6056, -4.74348,389
-Verde_vuelta,41.60566, -4.74413,390
-Verde_vuelta,41.60584, -4.74547,391
-Verde_vuelta,41.60607, -4.74663,392
-Verde_vuelta,41.60636, -4.7478,393
-Verde_vuelta,41.60777, -4.75277,394
-Verde_vuelta,41.608, -4.75372,395
-Verde_vuelta,41.60816, -4.75451,396
-Verde_vuelta,41.60835, -4.75592,397
-Verde_vuelta,41.60841, -4.75682,398
-Verde_vuelta,41.60842, -4.75822,399
-Verde_vuelta,41.60838, -4.75988,400
-Verde_vuelta,41.6084, -4.7612,401
-Verde_vuelta,41.60846, -4.76226,402
-Verde_vuelta,41.60852, -4.76286,403
-Verde_vuelta,41.60866, -4.76384,404
-Verde_vuelta,41.60881, -4.76463,405
-Verde_vuelta,41.60909, -4.76576,406
-Verde_vuelta,41.60932, -4.76651,407
-Verde_vuelta,41.60959, -4.76729,408
-Verde_vuelta,41.61002, -4.76832,409
-Verde_vuelta,41.61077, -4.76982,410
-Verde_vuelta,41.61135, -4.7708,411
-Verde_vuelta,41.61211, -4.77197,412
-Verde_vuelta,41.61266, -4.77276,413
-Verde_vuelta,41.61332, -4.77359,414
-Verde_vuelta,41.61424, -4.77461,415
-Verde_vuelta,41.61529, -4.77567,416
-Verde_vuelta,41.6153, -4.77567,417
-Verde_vuelta,41.61747, -4.77793,418
-Verde_vuelta,41.61766, -4.77803,419
-Verde_vuelta,41.61791, -4.77825,420
-Verde_vuelta,41.61793, -4.77828,421
-Verde_vuelta,41.6181, -4.77842,422
-Verde_vuelta,41.61862, -4.7789,423
-Verde_vuelta,41.6187, -4.77899,424
-Verde_vuelta,41.61891, -4.77918,425
-Verde_vuelta,41.61957, -4.77985,426
-Verde_vuelta,41.61969, -4.77993,427
-Verde_vuelta,41.61989, -4.77999,428
-Verde_vuelta,41.61999, -4.78,429
-Verde_vuelta,41.62008, -4.77996,430
-Verde_vuelta,41.62028, -4.77984,431
-Verde_vuelta,41.62191, -4.77517,432
-Verde_vuelta,41.62191, -4.77516,433
-Verde_vuelta,41.62197, -4.77495,434
-Verde_vuelta,41.62198, -4.77487,435
-Verde_vuelta,41.62198, -4.77472,436
-Verde_vuelta,41.62197, -4.77471,437
-Verde_vuelta,41.62196, -4.77471,438
-Verde_vuelta,41.62192, -4.77467,439
-Verde_vuelta,41.62192, -4.77466,440
-Verde_vuelta,41.62191, -4.77464,441
-Verde_vuelta,41.62191, -4.77463,442
-Verde_vuelta,41.6219, -4.77462,443
-Verde_vuelta,41.6219, -4.77456,444
-Verde_vuelta,41.62194, -4.77442,445
-Verde_vuelta,41.62194, -4.7744,446
-Verde_vuelta,41.62195, -4.77438,447
-Verde_vuelta,41.62196, -4.77437,448
-Verde_vuelta,41.62196, -4.77436,449
-Verde_vuelta,41.62199, -4.77433,450
-Verde_vuelta,41.622, -4.77433,451
-Verde_vuelta,41.62201, -4.77432,452
-Verde_vuelta,41.62202, -4.77432,453
-Verde_vuelta,41.62203, -4.77431,454
-Verde_vuelta,41.62209, -4.77431,455
-Verde_vuelta,41.62211, -4.77432,456
-Verde_vuelta,41.62212, -4.77432,457
-Verde_vuelta,41.62214, -4.77433,458
-Verde_vuelta,41.62215, -4.77435,459
-Verde_vuelta,41.62222, -4.77422,460
-Verde_vuelta,41.62306, -4.77184,461
-Verde_vuelta,41.62309, -4.77173,462
-Verde_vuelta,41.62397, -4.76922,463
-Verde_vuelta,41.62411, -4.76889,464
-Verde_vuelta,41.62409, -4.76886,465
-Verde_vuelta,41.62406, -4.76883,466
-Verde_vuelta,41.62402, -4.76877,467
-Verde_vuelta,41.62398, -4.76861,468
-Verde_vuelta,41.62398, -4.76858,469
-Verde_vuelta,41.62399, -4.76855,470
-Verde_vuelta,41.62399, -4.76852,471
-Verde_vuelta,41.62401, -4.76847,472
-Verde_vuelta,41.62403, -4.76845,473
-Verde_vuelta,41.62405, -4.76841,474
-Verde_vuelta,41.62409, -4.76837,475
-Verde_vuelta,41.62416, -4.76833,476
-Verde_vuelta,41.62425, -4.76833,477
-Verde_vuelta,41.62428, -4.76834,478
-Verde_vuelta,41.62429, -4.76834,479
-Verde_vuelta,41.6243, -4.76835,480
-Verde_vuelta,41.62431, -4.76835,481
-Verde_vuelta,41.62432, -4.76836,482
-Verde_vuelta,41.62433, -4.76836,483
-Verde_vuelta,41.62435, -4.76838,484
-Verde_vuelta,41.62436, -4.76838,485
-Verde_vuelta,41.62439, -4.76841,486
-Verde_vuelta,41.6244, -4.76843,487
-Verde_vuelta,41.62442, -4.76845,488
-Verde_vuelta,41.62443, -4.76848,489
-Verde_vuelta,41.62445, -4.76851,490
-Verde_vuelta,41.62446, -4.76854,491
-Verde_vuelta,41.62446, -4.76857,492
-Verde_vuelta,41.62447, -4.7686,493
-Verde_vuelta,41.62447, -4.76864,494
-Verde_vuelta,41.62448, -4.76867,495
-Verde_vuelta,41.62448, -4.76872,496
-Verde_vuelta,41.62447, -4.76874,497
-Verde_vuelta,41.62447, -4.76876,498
-Verde_vuelta,41.62446, -4.76878,499
-Verde_vuelta,41.62446, -4.76879,500
-Verde_vuelta,41.62445, -4.76881,501
-Verde_vuelta,41.62444, -4.76882,502
-Verde_vuelta,41.62441, -4.76887,503
-Verde_vuelta,41.62439, -4.76889,504
-Verde_vuelta,41.62437, -4.7689,505
-Verde_vuelta,41.62435, -4.76892,506
-Verde_vuelta,41.6243, -4.76894,507
-Verde_vuelta,41.62428, -4.76894,508
-Verde_vuelta,41.62426, -4.76895,509
-Verde_vuelta,41.62424, -4.76895,510
-Verde_vuelta,41.62421, -4.76894,511
-Verde_vuelta,41.62419, -4.76894,512
-Verde_vuelta,41.62407, -4.76922,513
-Verde_vuelta,41.62406, -4.76926,514
-Verde_vuelta,41.62406, -4.76928,515
-Verde_vuelta,41.62407, -4.7693,516
-Verde_vuelta,41.62407, -4.76945,517
-Verde_vuelta,41.62404, -4.76956,518
-Verde_vuelta,41.62307, -4.77224,519
-Verde_vuelta,41.62423, -4.7729,520
-Verde_vuelta,41.6243, -4.77293,521
-Verde_vuelta,41.62454, -4.77328,522
-Verde_vuelta,41.6246, -4.77335,523
-Verde_vuelta,41.62484, -4.77373,524
-Verde_vuelta,41.6249, -4.77375,525
-Verde_vuelta,41.62551, -4.77383,526
-Verde_vuelta,41.62538, -4.77478,527
-Verde_vuelta,41.62538, -4.77481,528
-Verde_vuelta,41.62531, -4.77529,529
-Verde_vuelta,41.62508, -4.776,530
-Verde_vuelta,41.62506, -4.77612,531
-Verde_vuelta,41.62509, -4.77614,532
-Verde_vuelta,41.62511, -4.77617,533
-Verde_vuelta,41.62514, -4.77628,534
-Verde_vuelta,41.62514, -4.77636,535
-Verde_vuelta,41.62513, -4.7764,536
-Verde_vuelta,41.62509, -4.77647,537
-Verde_vuelta,41.62507, -4.77649,538
-Verde_vuelta,41.62504, -4.77651,539
-Verde_vuelta,41.62502, -4.77653,540
-Verde_vuelta,41.62499, -4.77654,541
-Verde_vuelta,41.62496, -4.77654,542
-Verde_vuelta,41.62493, -4.77653,543
-Verde_vuelta,41.6245, -4.7778,544
-Verde_vuelta,41.62412, -4.77876,545
-Verde_vuelta,41.62403, -4.77902,546
-Verde_vuelta,41.62388, -4.7796,547
-Verde_vuelta,41.62389, -4.77961,548
-Verde_vuelta,41.6239, -4.77963,549
-Verde_vuelta,41.62391, -4.77964,550
-Verde_vuelta,41.62392, -4.77966,551
-Verde_vuelta,41.62392, -4.77968,552
-Verde_vuelta,41.62393, -4.7797,553
-Verde_vuelta,41.62393, -4.77972,554
-Verde_vuelta,41.62394, -4.77974,555
-Verde_vuelta,41.62394, -4.77981,556
-Verde_vuelta,41.62393, -4.77983,557
-Verde_vuelta,41.62393, -4.77985,558
-Verde_vuelta,41.62392, -4.77987,559
-Verde_vuelta,41.62392, -4.77989,560
-Verde_vuelta,41.62391, -4.7799,561
-Verde_vuelta,41.6239, -4.77992,562
-Verde_vuelta,41.62389, -4.77993,563
-Verde_vuelta,41.62388, -4.77995,564
-Verde_vuelta,41.62386, -4.77997,565
-Verde_vuelta,41.62384, -4.77998,566
-Verde_vuelta,41.62383, -4.77998,567
-Verde_vuelta,41.62382, -4.77999,568
-Verde_vuelta,41.62374, -4.77999,569
-Verde_vuelta,41.62362, -4.78027,570
-Verde_vuelta,41.62316, -4.78157,571
-Verde_vuelta,41.62295, -4.78225,572
-Verde_vuelta,41.62261, -4.78322,573
-Verde_vuelta,41.62261, -4.78323,574
-Verde_vuelta,41.62237, -4.78398,575
-Verde_vuelta,41.62236, -4.784,576
-Verde_vuelta,41.62197, -4.78516,577
-Verde_vuelta,41.62176, -4.78569,578
-Verde_vuelta,41.62165, -4.78607,579
-Verde_vuelta,41.62027, -4.79,580
-Verde_vuelta,41.62026, -4.79001,581
-Verde_vuelta,41.61813, -4.79615,582
-Verde_vuelta,41.6181, -4.79622,583
-Verde_vuelta,41.61811, -4.79623,584
-Verde_vuelta,41.61811, -4.79624,585
-Verde_vuelta,41.61813, -4.79626,586
-Verde_vuelta,41.61813, -4.79627,587
-Verde_vuelta,41.61814, -4.79628,588
-Verde_vuelta,41.61814, -4.79629,589
-Verde_vuelta,41.61815, -4.7963,590
-Verde_vuelta,41.61815, -4.79636,591
-Verde_vuelta,41.61816, -4.79637,592
-Verde_vuelta,41.61815, -4.7964,593
-Verde_vuelta,41.61815, -4.79644,594
-Verde_vuelta,41.61814, -4.79645,595
-Verde_vuelta,41.61814, -4.79648,596
-Verde_vuelta,41.61812, -4.7965,597
-Verde_vuelta,41.61812, -4.79651,598
-Verde_vuelta,41.6181, -4.79653,599
-Verde_vuelta,41.6181, -4.79654,600
-Verde_vuelta,41.61809, -4.79654,601
-Verde_vuelta,41.61807, -4.79656,602
-Verde_vuelta,41.61806, -4.79656,603
-Verde_vuelta,41.61808, -4.79742,604
-Verde_vuelta,41.61815, -4.79774,605
-Verde_vuelta,41.6182, -4.79789,606
-Verde_vuelta,41.61913, -4.79945,607
-Verde_vuelta,41.61913, -4.79944,608
-Verde_vuelta,41.61919, -4.79944,609
-Verde_vuelta,41.6192, -4.79945,610
-Verde_vuelta,41.61921, -4.79945,611
-Verde_vuelta,41.61921, -4.79946,612
-Verde_vuelta,41.61922, -4.79946,613
-Verde_vuelta,41.61926, -4.7995,614
-Verde_vuelta,41.61926, -4.79952,615
-Verde_vuelta,41.61927, -4.79952,616
-Verde_vuelta,41.61927, -4.79954,617
-Verde_vuelta,41.61928, -4.79955,618
-Verde_vuelta,41.61928, -4.79967,619
-Verde_vuelta,41.61927, -4.79967,620
-Verde_vuelta,41.61927, -4.79969,621
-Verde_vuelta,41.61926, -4.7997,622
-Verde_vuelta,41.61926, -4.79971,623
-Verde_vuelta,41.61925, -4.79971,624
-Verde_vuelta,41.61925, -4.79972,625
-Verde_vuelta,41.61924, -4.79973,626
-Verde_vuelta,41.62054, -4.80179,627
-Verde_vuelta,41.62061, -4.80187,628
-Verde_vuelta,41.62063, -4.80186,629
-Verde_vuelta,41.62065, -4.80186,630
-Verde_vuelta,41.62066, -4.80187,631
-Verde_vuelta,41.62069, -4.80187,632
-Verde_vuelta,41.6207, -4.80188,633
-Verde_vuelta,41.62071, -4.80188,634
-Verde_vuelta,41.62072, -4.80189,635
-Verde_vuelta,41.62073, -4.80189,636
-Verde_vuelta,41.62075, -4.80191,637
-Verde_vuelta,41.62075, -4.80192,638
-Verde_vuelta,41.62076, -4.80193,639
-Verde_vuelta,41.62077, -4.80195,640
-Verde_vuelta,41.62078, -4.80196,641
-Verde_vuelta,41.62078, -4.80197,642
-Verde_vuelta,41.62079, -4.80199,643
-Verde_vuelta,41.62079, -4.802,644
-Verde_vuelta,41.6208, -4.80202,645
-Verde_vuelta,41.6208, -4.80206,646
-Verde_vuelta,41.62081, -4.80208,647
-Verde_vuelta,41.62081, -4.80209,648
-Verde_vuelta,41.6208, -4.80211,649
-Verde_vuelta,41.6208, -4.80215,650
-Verde_vuelta,41.62079, -4.80217,651
-Verde_vuelta,41.62079, -4.80218,652
-Verde_vuelta,41.62078, -4.80219,653
-Verde_vuelta,41.6208, -4.80224,654
-Verde_vuelta,41.62082, -4.80227,655
-Verde_vuelta,41.62084, -4.80235,656
-Verde_vuelta,41.62199, -4.80438,657
-Verde_vuelta,41.6222, -4.80476,658
-Verde_vuelta,41.62222, -4.80475,659
-Verde_vuelta,41.62223, -4.80474,660
-Verde_vuelta,41.62224, -4.80474,661
-Verde_vuelta,41.62225, -4.80473,662
-Verde_vuelta,41.62226, -4.80473,663
-Verde_vuelta,41.62227, -4.80473,664
-Verde_vuelta,41.62228, -4.80473,665
-Verde_vuelta,41.62229, -4.80473,666
-Verde_vuelta,41.6223, -4.80473,667
-Verde_vuelta,41.62231, -4.80473,668
-Verde_vuelta,41.62232, -4.80474,669
-Verde_vuelta,41.62233, -4.80474,670
-Verde_vuelta,41.62234, -4.80475,671
-Verde_vuelta,41.62235, -4.80475,672
-Verde_vuelta,41.62236, -4.80476,673
-Verde_vuelta,41.62237, -4.80477,674
-Verde_vuelta,41.62238, -4.80477,675
-Verde_vuelta,41.62238, -4.80478,676
-Verde_vuelta,41.62239, -4.80479,677
-Verde_vuelta,41.6224, -4.8048,678
-Verde_vuelta,41.6224, -4.80481,679
-Verde_vuelta,41.62241, -4.80483,680
-Verde_vuelta,41.62242, -4.80484,681
-Verde_vuelta,41.62242, -4.80485,682
-Verde_vuelta,41.62242, -4.80487,683
-Verde_vuelta,41.62243, -4.80488,684
-Verde_vuelta,41.62243, -4.80489,685
-Verde_vuelta,41.62243, -4.80491,686
-Verde_vuelta,41.62243, -4.80492,687
-Verde_vuelta,41.62243, -4.80493,688
-Verde_vuelta,41.62243, -4.80495,689
-Verde_vuelta,41.62243, -4.80496,690
-Verde_vuelta,41.62243, -4.80498,691
-Verde_vuelta,41.62243, -4.80499,692
-Verde_vuelta,41.62242, -4.805,693
-Verde_vuelta,41.62242, -4.80502,694
-Verde_vuelta,41.62242, -4.80503,695
-Verde_vuelta,41.62241, -4.80504,696
-Verde_vuelta,41.62241, -4.80505,697
-Verde_vuelta,41.6224, -4.80506,698
-Verde_vuelta,41.62239, -4.80507,699
-Verde_vuelta,41.62239, -4.80508,700
-Verde_vuelta,41.62238, -4.80509,701
-Verde_vuelta,41.62237, -4.8051,702
-Verde_vuelta,41.62236, -4.80511,703
-Verde_vuelta,41.62235, -4.80512,704
-Verde_vuelta,41.62234, -4.80512,705
-Verde_vuelta,41.62233, -4.80513,706
-Verde_vuelta,41.62232, -4.80513,707
-Verde_vuelta,41.62231, -4.80513,708
-Verde_vuelta,41.6223, -4.80514,709
-Verde_vuelta,41.62229, -4.80514,710
-Verde_vuelta,41.62228, -4.80514,711
-Verde_vuelta,41.62227, -4.80514,712
-Verde_vuelta,41.62226, -4.80514,713
-Verde_vuelta,41.62225, -4.80513,714
-Verde_vuelta,41.62224, -4.80513,715
-Verde_vuelta,41.62223, -4.80513,716
-Verde_vuelta,41.62222, -4.80512,717
-Verde_vuelta,41.62221, -4.80512,718
-Verde_vuelta,41.6222, -4.80511,719
-Verde_vuelta,41.6222, -4.8051,720
-Verde_vuelta,41.62218, -4.80509,721
-Verde_vuelta,41.62209, -4.80526,722
-Verde_vuelta,41.62199, -4.80545,723
-Verde_vuelta,41.62188, -4.80565,724
-Verde_vuelta,41.62167, -4.80604,725
-Verde_vuelta,41.62148, -4.80639,726
-Verde_vuelta,41.62146, -4.80643,727
-Verde_vuelta,41.62139, -4.80654,728
-Verde_vuelta,41.62133, -4.80665,729
-Verde_vuelta,41.62123, -4.80683,730
-Verde_vuelta,41.62069, -4.80774,731
-Verde_vuelta,41.62056, -4.80798,732
-Verde_vuelta,41.62037, -4.8083,733
-Verde_vuelta,41.62038, -4.80831,734
-Verde_vuelta,41.62039, -4.80831,735
-Verde_vuelta,41.62039, -4.80833,736
-Verde_vuelta,41.6204, -4.80833,737
-Verde_vuelta,41.6204, -4.80835,738
-Verde_vuelta,41.62041, -4.80836,739
-Verde_vuelta,41.62041, -4.80837,740
-Verde_vuelta,41.62042, -4.80838,741
-Verde_vuelta,41.62042, -4.80839,742
-Verde_vuelta,41.62043, -4.8084,743
-Verde_vuelta,41.62043, -4.80842,744
-Verde_vuelta,41.62043, -4.80843,745
-Verde_vuelta,41.62043, -4.80844,746
-Verde_vuelta,41.62043, -4.80845,747
-Verde_vuelta,41.62043, -4.80847,748
-Verde_vuelta,41.62043, -4.80848,749
-Verde_vuelta,41.62043, -4.80849,750
-Verde_vuelta,41.62043, -4.80851,751
-Verde_vuelta,41.62043, -4.80852,752
-Verde_vuelta,41.62042, -4.80853,753
-Verde_vuelta,41.62042, -4.80854,754
-Verde_vuelta,41.62042, -4.80855,755
-Verde_vuelta,41.62041, -4.80857,756
-Verde_vuelta,41.6204, -4.80858,757
-Verde_vuelta,41.6204, -4.80859,758
-Verde_vuelta,41.62039, -4.8086,759
-Verde_vuelta,41.62039, -4.80861,760
-Verde_vuelta,41.62038, -4.80862,761
-Verde_vuelta,41.62037, -4.80862,762
-Verde_vuelta,41.62036, -4.80863,763
-Verde_vuelta,41.62036, -4.80864,764
-Verde_vuelta,41.62035, -4.80864,765
-Verde_vuelta,41.62034, -4.80865,766
-Verde_vuelta,41.62033, -4.80865,767
-Verde_vuelta,41.62032, -4.80866,768
-Verde_vuelta,41.62031, -4.80866,769
-Verde_vuelta,41.6203, -4.80866,770
-Verde_vuelta,41.62029, -4.80866,771
-Verde_vuelta,41.62028, -4.80866,772
-Verde_vuelta,41.62027, -4.80866,773
-Verde_vuelta,41.62026, -4.80866,774
-Verde_vuelta,41.62025, -4.80866,775
-Verde_vuelta,41.62024, -4.80865,776
-Verde_vuelta,41.62023, -4.80865,777
-Verde_vuelta,41.62022, -4.80864,778
-Verde_vuelta,41.62021, -4.80864,779
-Verde_vuelta,41.6202, -4.80863,780
-Verde_vuelta,41.6202, -4.80862,781
-Verde_vuelta,41.62019, -4.80861,782
-Verde_vuelta,41.62004, -4.80888,783
-Verde_vuelta,41.61947, -4.80988,784
-Verde_vuelta,41.61924, -4.81029,785
-Verde_vuelta,41.61909, -4.81056,786
-Verde_vuelta,41.61856, -4.81153,787
-Verde_vuelta,41.61857, -4.81154,788
-Verde_vuelta,41.61858, -4.81155,789
-Verde_vuelta,41.61858, -4.81156,790
-Verde_vuelta,41.61859, -4.81157,791
-Verde_vuelta,41.6186, -4.81158,792
-Verde_vuelta,41.61861, -4.8116,793
-Verde_vuelta,41.61862, -4.81162,794
-Verde_vuelta,41.61862, -4.81163,795
-Verde_vuelta,41.61863, -4.81164,796
-Verde_vuelta,41.61863, -4.81166,797
-Verde_vuelta,41.61863, -4.81167,798
-Verde_vuelta,41.61864, -4.81169,799
-Verde_vuelta,41.61864, -4.8117,800
-Verde_vuelta,41.61864, -4.81171,801
-Verde_vuelta,41.61864, -4.81173,802
-Verde_vuelta,41.61864, -4.81175,803
-Verde_vuelta,41.61864, -4.81176,804
-Verde_vuelta,41.61864, -4.81177,805
-Verde_vuelta,41.61863, -4.81179,806
-Verde_vuelta,41.61863, -4.8118,807
-Verde_vuelta,41.61863, -4.81182,808
-Verde_vuelta,41.61862, -4.81183,809
-Verde_vuelta,41.61862, -4.81185,810
-Verde_vuelta,41.61861, -4.81186,811
-Verde_vuelta,41.6186, -4.81187,812
-Verde_vuelta,41.6186, -4.81188,813
-Verde_vuelta,41.61859, -4.81189,814
-Verde_vuelta,41.61858, -4.81191,815
-Verde_vuelta,41.61857, -4.81191,816
-Verde_vuelta,41.61856, -4.81192,817
-Verde_vuelta,41.61855, -4.81193,818
-Verde_vuelta,41.61854, -4.81194,819
-Verde_vuelta,41.61853, -4.81195,820
-Verde_vuelta,41.61851, -4.81195,821
-Verde_vuelta,41.6185, -4.81196,822
-Verde_vuelta,41.61849, -4.81196,823
-Verde_vuelta,41.61847, -4.81196,824
-Verde_vuelta,41.61846, -4.81197,825
-Verde_vuelta,41.61845, -4.81196,826
-Verde_vuelta,41.61843, -4.81196,827
-Verde_vuelta,41.61842, -4.81196,828
-Verde_vuelta,41.61841, -4.81195,829
-Verde_vuelta,41.6184, -4.81195,830
-Verde_vuelta,41.61839, -4.81194,831
-Verde_vuelta,41.61837, -4.81193,832
-Verde_vuelta,41.61836, -4.81193,833
-Verde_vuelta,41.61835, -4.81191,834
-Verde_vuelta,41.61828, -4.81205,835
-Verde_vuelta,41.61814, -4.8123,836
-Verde_vuelta,41.61808, -4.81245,837
-Verde_vuelta,41.61806, -4.81277,838
-Verde_vuelta,41.61807, -4.81279,839
-Verde_vuelta,41.61807, -4.81281,840
-Verde_vuelta,41.61808, -4.81282,841
-Verde_vuelta,41.61808, -4.81284,842
-Verde_vuelta,41.61808, -4.81286,843
-Verde_vuelta,41.61808, -4.81288,844
-Verde_vuelta,41.61808, -4.81289,845
-Verde_vuelta,41.61808, -4.81291,846
-Verde_vuelta,41.61808, -4.81293,847
-Verde_vuelta,41.61807, -4.81294,848
-Verde_vuelta,41.61807, -4.81296,849
-Verde_vuelta,41.61806, -4.81298,850
-Verde_vuelta,41.61806, -4.81299,851
-Verde_vuelta,41.61805, -4.81301,852
-Verde_vuelta,41.61804, -4.81302,853
-Verde_vuelta,41.61803, -4.81304,854
-Verde_vuelta,41.61803, -4.81305,855
-Verde_vuelta,41.61802, -4.81306,856
-Verde_vuelta,41.61801, -4.81307,857
-Verde_vuelta,41.61799, -4.81308,858
-Verde_vuelta,41.61798, -4.81308,859
-Verde_vuelta,41.61797, -4.81309,860
-Verde_vuelta,41.61796, -4.8131,861
-Verde_vuelta,41.61795, -4.8131,862
-Verde_vuelta,41.61793, -4.81311,863
-Verde_vuelta,41.61791, -4.81311,864
-Verde_vuelta,41.6179, -4.81311,865
-Verde_vuelta,41.61789, -4.8131,866
-Verde_vuelta,41.61787, -4.8131,867
-Verde_vuelta,41.61786, -4.8131,868
-Verde_vuelta,41.61785, -4.81309,869
-Verde_vuelta,41.61784, -4.81308,870
-Verde_vuelta,41.61783, -4.81308,871
-Verde_vuelta,41.61781, -4.81307,872
-Verde_vuelta,41.61779, -4.81305,873
-Verde_vuelta,41.61778, -4.81303,874
-Verde_vuelta,41.61777, -4.81301,875
-Verde_vuelta,41.61777, -4.813,876
-Verde_vuelta,41.61776, -4.81298,877
-Verde_vuelta,41.61775, -4.81297,878
-Verde_vuelta,41.61775, -4.81295,879
-Verde_vuelta,41.61774, -4.81293,880
-Verde_vuelta,41.61774, -4.81292,881
-Verde_vuelta,41.61774, -4.81289,882
-Verde_vuelta,41.61774, -4.81287,883
-Verde_vuelta,41.61774, -4.81286,884
-Verde_vuelta,41.61774, -4.81284,885
-Verde_vuelta,41.61774, -4.81282,886
-Verde_vuelta,41.61775, -4.81281,887
-Verde_vuelta,41.61775, -4.81279,888
-Verde_vuelta,41.61776, -4.81277,889
-Verde_vuelta,41.6177, -4.81251,890
-Verde_vuelta,41.6177, -4.8125,891
-Verde_vuelta,41.61764, -4.81227,892
-Verde_vuelta,41.61763, -4.81224,893
-Verde_vuelta,41.61756, -4.81205,894
-Verde_vuelta,41.61749, -4.81183,895
-Verde_vuelta,41.6172, -4.81095,896
-Verde_vuelta,41.61665, -4.80938,897
-Verde_vuelta,41.61656, -4.80913,898
-Verde_vuelta,41.61641, -4.8087,899
-Verde_vuelta,41.61622, -4.80813,900
-Verde_vuelta,41.61591, -4.80715,901
-Verde_vuelta,41.61558, -4.80612,902
-Verde_vuelta,41.61547, -4.80579,903
-Verde_vuelta,41.61547, -4.80578,904
-Verde_vuelta,41.61536, -4.80549,905
-Verde_vuelta,41.6153, -4.80536,906
-Verde_vuelta,41.61522, -4.80524,907
-Verde_vuelta,41.61514, -4.80526,908
-Verde_vuelta,41.61508, -4.80527,909
-Verde_vuelta,41.61503, -4.80526,910
-Verde_vuelta,41.61498, -4.80524,911
-Verde_vuelta,41.61493, -4.80521,912
-Verde_vuelta,41.61489, -4.80518,913
-Verde_vuelta,41.61489, -4.80517,914
-Verde_vuelta,41.61485, -4.80513,915
-Verde_vuelta,41.61481, -4.80507,916
-Verde_vuelta,41.61479, -4.80501,917
-Verde_vuelta,41.61477, -4.80495,918
-Verde_vuelta,41.61476, -4.80488,919
-Verde_vuelta,41.61475, -4.80481,920
-Verde_vuelta,41.61475, -4.80474,921
-Verde_vuelta,41.61477, -4.80467,922
-Verde_vuelta,41.61479, -4.8046,923
-Verde_vuelta,41.61481, -4.80454,924
-Verde_vuelta,41.61482, -4.80453,925
-Verde_vuelta,41.6148, -4.80442,926
-Verde_vuelta,41.6148, -4.80438,927
-Verde_vuelta,41.61479, -4.80434,928
-Verde_vuelta,41.61477, -4.80428,929
-Verde_vuelta,41.61474, -4.80421,930
-Verde_vuelta,41.6147, -4.80414,931
-Verde_vuelta,41.61466, -4.80406,932
-Verde_vuelta,41.61458, -4.80396,933
-Verde_vuelta,41.61442, -4.80374,934
-Verde_vuelta,41.6144, -4.80371,935
-Verde_vuelta,41.61429, -4.80357,936
-Verde_vuelta,41.61416, -4.8034,937
-Verde_vuelta,41.61402, -4.80323,938
-Verde_vuelta,41.61378, -4.8029,939
-Verde_vuelta,41.61356, -4.8026,940
-Verde_vuelta,41.61334, -4.80228,941
-Verde_vuelta,41.61328, -4.80219,942
-Verde_vuelta,41.61328, -4.80218,943
-Verde_vuelta,41.61323, -4.80209,944
-Verde_vuelta,41.61318, -4.80201,945
-Verde_vuelta,41.61318, -4.802,946
-Verde_vuelta,41.61314, -4.8019,947
-Verde_vuelta,41.61309, -4.80179,948
-Verde_vuelta,41.61303, -4.80165,949
-Verde_vuelta,41.61291, -4.80137,950
-Verde_vuelta,41.61281, -4.80112,951
-Verde_vuelta,41.61274, -4.80095,952
-Verde_vuelta,41.61272, -4.80091,953
-Verde_vuelta,41.61268, -4.8008,954
-Verde_vuelta,41.61267, -4.80073,955
-Verde_vuelta,41.61265, -4.80068,956
-Verde_vuelta,41.61258, -4.80027,957
-Verde_vuelta,41.61255, -4.80024,958
-Verde_vuelta,41.61254, -4.80021,959
-Verde_vuelta,41.61252, -4.80018,960
-Verde_vuelta,41.61251, -4.80015,961
-Verde_vuelta,41.61249, -4.80011,962
-Verde_vuelta,41.61249, -4.80008,963
-Verde_vuelta,41.61248, -4.80004,964
-Verde_vuelta,41.61248, -4.8,965
-Verde_vuelta,41.61248, -4.79997,966
-Verde_vuelta,41.61249, -4.79993,967
-Verde_vuelta,41.61249, -4.79989,968
-Verde_vuelta,41.6125, -4.79986,969
-Verde_vuelta,41.61252, -4.79983,970
-Verde_vuelta,41.61255, -4.79977,971
-Verde_vuelta,41.61257, -4.79959,972
-Verde_vuelta,41.6126, -4.79946,973
-Verde_vuelta,41.61261, -4.79942,974
-Verde_vuelta,41.61262, -4.79937,975
-Verde_vuelta,41.61265, -4.79929,976
-Verde_vuelta,41.6127, -4.79921,977
-Verde_vuelta,41.61307, -4.79847,978
-Verde_vuelta,41.61308, -4.79846,979
-Verde_vuelta,41.61346, -4.79768,980
-Verde_vuelta,41.61347, -4.79766,981
-Verde_vuelta,41.61362, -4.79738,982
-Verde_vuelta,41.61371, -4.79717,983
-Verde_vuelta,41.61374, -4.79707,984
-Verde_vuelta,41.61376, -4.79701,985
-Verde_vuelta,41.61377, -4.79694,986
-Verde_vuelta,41.61378, -4.7969,987
-Verde_vuelta,41.61379, -4.79679,988
-Verde_vuelta,41.61378, -4.7967,989
-Verde_vuelta,41.61378, -4.79659,990
-Verde_vuelta,41.61376, -4.79651,991
-Verde_vuelta,41.61374, -4.79642,992
-Verde_vuelta,41.61372, -4.79638,993
-Verde_vuelta,41.61367, -4.79629,994
-Verde_vuelta,41.61362, -4.79621,995
-Verde_vuelta,41.6136, -4.79619,996
-Verde_vuelta,41.61358, -4.79615,997
-Verde_vuelta,41.61351, -4.79606,998
-Verde_vuelta,41.61331, -4.79586,999
-Verde_vuelta,41.61317, -4.79573,1000
-Verde_vuelta,41.61313, -4.79569,1001
-Verde_vuelta,41.61292, -4.79551,1002
-Verde_vuelta,41.61283, -4.79544,1003
-Verde_vuelta,41.61276, -4.79538,1004
-Verde_vuelta,41.61267, -4.79531,1005
-Verde_vuelta,41.6126, -4.79525,1006
-Verde_vuelta,41.61244, -4.7951,1007
-Verde_vuelta,41.61233, -4.795,1008
-Verde_vuelta,41.61226, -4.79497,1009
-Verde_vuelta,41.6121, -4.79483,1010
-Verde_vuelta,41.61204, -4.79475,1011
-Verde_vuelta,41.61203, -4.79475,1012
-Verde_vuelta,41.61202, -4.79475,1013
-Verde_vuelta,41.61201, -4.79475,1014
-Verde_vuelta,41.612, -4.79475,1015
-Verde_vuelta,41.61199, -4.79474,1016
-Verde_vuelta,41.61198, -4.79473,1017
-Verde_vuelta,41.61197, -4.79472,1018
-Verde_vuelta,41.61172, -4.79468,1019
-Verde_vuelta,41.61162, -4.79468,1020
-Verde_vuelta,41.61159, -4.79469,1021
-Verde_vuelta,41.61151, -4.79471,1022
-Verde_vuelta,41.61145, -4.79474,1023
-Verde_vuelta,41.61143, -4.79475,1024
-Verde_vuelta,41.61139, -4.79477,1025
-Verde_vuelta,41.61135, -4.7948,1026
-Verde_vuelta,41.6113, -4.79484,1027
-Verde_vuelta,41.61125, -4.79488,1028
-Verde_vuelta,41.6112, -4.79492,1029
-Verde_vuelta,41.61116, -4.79498,1030
-Verde_vuelta,41.61111, -4.79504,1031
-Verde_vuelta,41.61108, -4.79509,1032
-Verde_vuelta,41.61108, -4.7951,1033
-Verde_vuelta,41.61104, -4.79517,1034
-Verde_vuelta,41.61101, -4.79524,1035
-Verde_vuelta,41.61099, -4.7953,1036
-Verde_vuelta,41.61096, -4.79539,1037
-Verde_vuelta,41.61094, -4.79548,1038
-Verde_vuelta,41.61093, -4.79556,1039
-Verde_vuelta,41.61092, -4.79565,1040
-Verde_vuelta,41.61092, -4.79574,1041
-Verde_vuelta,41.61092, -4.79584,1042
-Verde_vuelta,41.61094, -4.79593,1043
-Verde_vuelta,41.61095, -4.79602,1044
-Verde_vuelta,41.61097, -4.79609,1045
-Verde_vuelta,41.61101, -4.79624,1046
-Verde_vuelta,41.61109, -4.79647,1047
-Verde_vuelta,41.61118, -4.79679,1048
-Verde_vuelta,41.61121, -4.79688,1049
-Verde_vuelta,41.61122, -4.79687,1050
-Verde_vuelta,41.61123, -4.79687,1051
-Verde_vuelta,41.61123, -4.79686,1052
-Verde_vuelta,41.61124, -4.79686,1053
-Verde_vuelta,41.61125, -4.79685,1054
-Verde_vuelta,41.61126, -4.79685,1055
-Verde_vuelta,41.61127, -4.79685,1056
-Verde_vuelta,41.61128, -4.79685,1057
-Verde_vuelta,41.61128, -4.79684,1058
-Verde_vuelta,41.61129, -4.79684,1059
-Verde_vuelta,41.6113, -4.79685,1060
-Verde_vuelta,41.61131, -4.79685,1061
-Verde_vuelta,41.61132, -4.79685,1062
-Verde_vuelta,41.61132, -4.79686,1063
-Verde_vuelta,41.61133, -4.79686,1064
-Verde_vuelta,41.61134, -4.79686,1065
-Verde_vuelta,41.61134, -4.79687,1066
-Verde_vuelta,41.61135, -4.79687,1067
-Verde_vuelta,41.61135, -4.79688,1068
-Verde_vuelta,41.61136, -4.79688,1069
-Verde_vuelta,41.61136, -4.79689,1070
-Verde_vuelta,41.61137, -4.79689,1071
-Verde_vuelta,41.61137, -4.7969,1072
-Verde_vuelta,41.61137, -4.79691,1073
-Verde_vuelta,41.61138, -4.79692,1074
-Verde_vuelta,41.61138, -4.79693,1075
-Verde_vuelta,41.61138, -4.79694,1076
-Verde_vuelta,41.61139, -4.79695,1077
-Verde_vuelta,41.61139, -4.79696,1078
-Verde_vuelta,41.61139, -4.79697,1079
-Verde_vuelta,41.61139, -4.79698,1080
-Verde_vuelta,41.61139, -4.79699,1081
-Verde_vuelta,41.61139, -4.797,1082
-Verde_vuelta,41.61139, -4.79701,1083
-Verde_vuelta,41.61139, -4.79702,1084
-Verde_vuelta,41.61139, -4.79703,1085
-Verde_vuelta,41.61138, -4.79703,1086
-Verde_vuelta,41.61138, -4.79704,1087
-Verde_vuelta,41.61138, -4.79705,1088
-Verde_vuelta,41.61138, -4.79706,1089
-Verde_vuelta,41.61137, -4.79706,1090
-Verde_vuelta,41.61137, -4.79707,1091
-Verde_vuelta,41.61137, -4.79708,1092
-Verde_vuelta,41.61136, -4.79708,1093
-Verde_vuelta,41.61136, -4.79709,1094
-Verde_vuelta,41.61135, -4.79709,1095
-Verde_vuelta,41.61135, -4.7971,1096
-Verde_vuelta,41.61134, -4.79711,1097
-Verde_vuelta,41.61133, -4.79712,1098
-Verde_vuelta,41.61132, -4.79712,1099
-Verde_vuelta,41.61131, -4.79712,1100
-Verde_vuelta,41.61131, -4.79713,1101
-Verde_vuelta,41.6113, -4.79713,1102
-Verde_vuelta,41.61129, -4.79713,1103
-Verde_vuelta,41.61128, -4.79713,1104
-Verde_vuelta,41.61127, -4.79713,1105
-Verde_vuelta,41.61126, -4.79713,1106
-Verde_vuelta,41.61126, -4.79712,1107
-Verde_vuelta,41.61125, -4.79712,1108
-Verde_vuelta,41.61124, -4.79712,1109
-Verde_vuelta,41.61123, -4.79711,1110
-Verde_vuelta,41.61122, -4.79711,1111
-Verde_vuelta,41.61122, -4.7971,1112
-Verde_vuelta,41.61121, -4.79709,1113
-Verde_vuelta,41.61117, -4.79711,1114
-Verde_vuelta,41.61121, -4.79709,1115
-Verde_vuelta,41.61121, -4.79708,1116
-Verde_vuelta,41.6112, -4.79708,1117
-Verde_vuelta,41.6112, -4.79707,1118
-Verde_vuelta,41.61119, -4.79706,1119
-Verde_vuelta,41.61119, -4.79705,1120
-Verde_vuelta,41.61119, -4.79704,1121
-Verde_vuelta,41.61118, -4.79704,1122
-Verde_vuelta,41.61118, -4.79703,1123
-Verde_vuelta,41.61118, -4.79702,1124
-Verde_vuelta,41.61118, -4.79701,1125
-Verde_vuelta,41.61118, -4.797,1126
-Verde_vuelta,41.61118, -4.79699,1127
-Verde_vuelta,41.61118, -4.79698,1128
-Verde_vuelta,41.61118, -4.79697,1129
-Verde_vuelta,41.61118, -4.79696,1130
-Verde_vuelta,41.61118, -4.79695,1131
-Verde_vuelta,41.61118, -4.79694,1132
-Verde_vuelta,41.61119, -4.79693,1133
-Verde_vuelta,41.61119, -4.79692,1134
-Verde_vuelta,41.61119, -4.79691,1135
-Verde_vuelta,41.6112, -4.79691,1136
-Verde_vuelta,41.6112, -4.7969,1137
-Verde_vuelta,41.6112, -4.79689,1138
-Verde_vuelta,41.61121, -4.79689,1139
-Verde_vuelta,41.61121, -4.79688,1140
-Verde_vuelta,41.61118, -4.79679,1141
-Verde_vuelta,41.61109, -4.79647,1142
-Verde_vuelta,41.61101, -4.79624,1143
-Verde_vuelta,41.61097, -4.79609,1144
-Verde_vuelta,41.61095, -4.79602,1145
-Verde_vuelta,41.61094, -4.79593,1146
-Verde_vuelta,41.61092, -4.79584,1147
-Verde_vuelta,41.61092, -4.79574,1148
-Verde_vuelta,41.61092, -4.79565,1149
-Verde_vuelta,41.61093, -4.79556,1150
-Verde_vuelta,41.61094, -4.79548,1151
-Verde_vuelta,41.61096, -4.79539,1152
-Verde_vuelta,41.61099, -4.7953,1153
-Verde_vuelta,41.61101, -4.79524,1154
-Verde_vuelta,41.61104, -4.79517,1155
-Verde_vuelta,41.61108, -4.7951,1156
-Verde_vuelta,41.61108, -4.79509,1157
-Verde_vuelta,41.61111, -4.79504,1158
-Verde_vuelta,41.61116, -4.79498,1159
-Verde_vuelta,41.6112, -4.79492,1160
-Verde_vuelta,41.61125, -4.79488,1161
-Verde_vuelta,41.6113, -4.79484,1162
-Verde_vuelta,41.61135, -4.7948,1163
-Verde_vuelta,41.61139, -4.79477,1164
-Verde_vuelta,41.61143, -4.79475,1165
-Verde_vuelta,41.61145, -4.79474,1166
-Verde_vuelta,41.61151, -4.79471,1167
-Verde_vuelta,41.61159, -4.79469,1168
-Verde_vuelta,41.61162, -4.79468,1169
-Verde_vuelta,41.61164, -4.79461,1170
-Verde_vuelta,41.61165, -4.79457,1171
-Verde_vuelta,41.61166, -4.79454,1172
-Verde_vuelta,41.61166, -4.79451,1173
-Verde_vuelta,41.61166, -4.79448,1174
-Verde_vuelta,41.61165, -4.79437,1175
-Verde_vuelta,41.61158, -4.79434,1176
-Verde_vuelta,41.61151, -4.7943,1177
-Verde_vuelta,41.61142, -4.79423,1178
-Verde_vuelta,41.61136, -4.79418,1179
-Verde_vuelta,41.61127, -4.79409,1180
-Verde_vuelta,41.61126, -4.7941,1181
-Verde_vuelta,41.61124, -4.79411,1182
-Verde_vuelta,41.61123, -4.79411,1183
-Verde_vuelta,41.61122, -4.79412,1184
-Verde_vuelta,41.61121, -4.79412,1185
-Verde_vuelta,41.6112, -4.79412,1186
-Verde_vuelta,41.61118, -4.79412,1187
-Verde_vuelta,41.61117, -4.79412,1188
-Verde_vuelta,41.61116, -4.79412,1189
-Verde_vuelta,41.61115, -4.79412,1190
-Verde_vuelta,41.61113, -4.79411,1191
-Verde_vuelta,41.61112, -4.79411,1192
-Verde_vuelta,41.61111, -4.7941,1193
-Verde_vuelta,41.6111, -4.79409,1194
-Verde_vuelta,41.61109, -4.79408,1195
-Verde_vuelta,41.61108, -4.79407,1196
-Verde_vuelta,41.61107, -4.79406,1197
-Verde_vuelta,41.61106, -4.79405,1198
-Verde_vuelta,41.61105, -4.79404,1199
-Verde_vuelta,41.61105, -4.79403,1200
-Verde_vuelta,41.61104, -4.79401,1201
-Verde_vuelta,41.61103, -4.794,1202
-Verde_vuelta,41.61103, -4.79398,1203
-Verde_vuelta,41.61102, -4.79396,1204
-Verde_vuelta,41.61102, -4.79395,1205
-Verde_vuelta,41.61102, -4.79393,1206
-Verde_vuelta,41.61102, -4.79391,1207
-Verde_vuelta,41.61102, -4.7939,1208
-Verde_vuelta,41.61102, -4.79388,1209
-Verde_vuelta,41.61102, -4.79386,1210
-Verde_vuelta,41.61102, -4.79385,1211
-Verde_vuelta,41.61102, -4.79383,1212
-Verde_vuelta,41.61103, -4.79382,1213
-Verde_vuelta,41.61103, -4.7938,1214
-Verde_vuelta,41.61104, -4.79379,1215
-Verde_vuelta,41.61104, -4.79377,1216
-Verde_vuelta,41.61105, -4.79376,1217
-Verde_vuelta,41.61106, -4.79375,1218
-Verde_vuelta,41.61107, -4.79373,1219
-Verde_vuelta,41.61108, -4.79372,1220
-Verde_vuelta,41.61109, -4.79371,1221
-Verde_vuelta,41.6111, -4.7937,1222
-Verde_vuelta,41.61111, -4.7937,1223
-Verde_vuelta,41.61112, -4.79369,1224
-Verde_vuelta,41.61111, -4.79352,1225
-Verde_vuelta,41.61109, -4.79328,1226
-Verde_vuelta,41.61105, -4.79256,1227
-Verde_vuelta,41.61103, -4.79232,1228
-Verde_vuelta,41.61101, -4.79232,1229
-Verde_vuelta,41.611, -4.79232,1230
-Verde_vuelta,41.61098, -4.79231,1231
-Verde_vuelta,41.61097, -4.79231,1232
-Verde_vuelta,41.61095, -4.7923,1233
-Verde_vuelta,41.61094, -4.7923,1234
-Verde_vuelta,41.61092, -4.79229,1235
-Verde_vuelta,41.61091, -4.79228,1236
-Verde_vuelta,41.6109, -4.79226,1237
-Verde_vuelta,41.61089, -4.79225,1238
-Verde_vuelta,41.61087, -4.79223,1239
-Verde_vuelta,41.61086, -4.79222,1240
-Verde_vuelta,41.61086, -4.7922,1241
-Verde_vuelta,41.61085, -4.79218,1242
-Verde_vuelta,41.61084, -4.79216,1243
-Verde_vuelta,41.61084, -4.79214,1244
-Verde_vuelta,41.61083, -4.79212,1245
-Verde_vuelta,41.61083, -4.7921,1246
-Verde_vuelta,41.61083, -4.79208,1247
-Verde_vuelta,41.61083, -4.79206,1248
-Verde_vuelta,41.61083, -4.79204,1249
-Verde_vuelta,41.61083, -4.79201,1250
-Verde_vuelta,41.61083, -4.79199,1251
-Verde_vuelta,41.61084, -4.79197,1252
-Verde_vuelta,41.61085, -4.79196,1253
-Verde_vuelta,41.61085, -4.79194,1254
-Verde_vuelta,41.61086, -4.79192,1255
-Verde_vuelta,41.61087, -4.7919,1256
-Verde_vuelta,41.61088, -4.79189,1257
-Verde_vuelta,41.61089, -4.79187,1258
-Verde_vuelta,41.61091, -4.79186,1259
-Verde_vuelta,41.61092, -4.79185,1260
-Verde_vuelta,41.61093, -4.79184,1261
-Verde_vuelta,41.61095, -4.79183,1262
-Verde_vuelta,41.61096, -4.79182,1263
-Verde_vuelta,41.61098, -4.79182,1264
-Verde_vuelta,41.61099, -4.79182,1265
-Verde_vuelta,41.61101, -4.79182,1266
-Verde_vuelta,41.61096, -4.79118,1267
-Verde_vuelta,41.61095, -4.79094,1268
-Verde_vuelta,41.61094, -4.79087,1269
-Verde_vuelta,41.61094, -4.79082,1270
-Verde_vuelta,41.61095, -4.79077,1271
-Verde_vuelta,41.61097, -4.7907,1272
-Verde_vuelta,41.61115, -4.79029,1273
-Verde_vuelta,41.61142, -4.78968,1274
-Verde_vuelta,41.61225, -4.7878,1275
-Verde_vuelta,41.61235, -4.7876,1276
-Verde_vuelta,41.61245, -4.78736,1277
-Verde_vuelta,41.61245, -4.78735,1278
-Verde_vuelta,41.6126, -4.787,1279
-Verde_vuelta,41.61278, -4.78662,1280
-Verde_vuelta,41.61279, -4.78659,1281
-Verde_vuelta,41.61289, -4.78636,1282
-Verde_vuelta,41.613, -4.78612,1283
-Verde_vuelta,41.61302, -4.78609,1284
-Verde_vuelta,41.61305, -4.78606,1285
-Verde_vuelta,41.61311, -4.78599,1286
-Verde_vuelta,41.61332, -4.78579,1287
-Verde_vuelta,41.61349, -4.78564,1288
-Verde_vuelta,41.61333, -4.7853,1289
-Verde_vuelta,41.61304, -4.78469,1290
-Verde_vuelta,41.61298, -4.78473,1291
-Verde_vuelta,41.61297, -4.78474,1292
-Verde_vuelta,41.61286, -4.78479,1293
-Verde_vuelta,41.61281, -4.78482,1294
-Verde_vuelta,41.61274, -4.78485,1295
-Verde_vuelta,41.61265, -4.78484,1296
-Verde_vuelta,41.61258, -4.78482,1297
-Verde_vuelta,41.61255, -4.78481,1298
-Verde_vuelta,41.61245, -4.78478,1299
-Verde_vuelta,41.61243, -4.78478,1300
-Verde_vuelta,41.61238, -4.78475,1301
-Verde_vuelta,41.61237, -4.78475,1302
-Verde_vuelta,41.61184, -4.78432,1303
-Verde_vuelta,41.61194, -4.78408,1304
-Verde_vuelta,41.61216, -4.78359,1305
-Verde_vuelta,41.61219, -4.78354,1306
-Verde_vuelta,41.61227, -4.78341,1307
-Verde_vuelta,41.61235, -4.7833,1308
-Verde_vuelta,41.61242, -4.78322,1309
-Verde_vuelta,41.6125, -4.78313,1310
-Verde_vuelta,41.61279, -4.78288,1311
-Verde_vuelta,41.61293, -4.78277,1312
-Verde_vuelta,41.61372, -4.78209,1313
-Verde_vuelta,41.61433, -4.78158,1314
-Verde_vuelta,41.61525, -4.78081,1315
-Verde_vuelta,41.61603, -4.78017,1316
-Verde_vuelta,41.61667, -4.77963,1317
-Verde_vuelta,41.61686, -4.77947,1318
-Verde_vuelta,41.61703, -4.77933,1319
-Verde_vuelta,41.61717, -4.77922,1320
-Verde_vuelta,41.61736, -4.77905,1321
-Verde_vuelta,41.61739, -4.77903,1322
-Verde_vuelta,41.61744, -4.77898,1323
-Verde_vuelta,41.6175, -4.77893,1324
-Verde_vuelta,41.61752, -4.77891,1325
-Verde_vuelta,41.61759, -4.77882,1326
-Verde_vuelta,41.61771, -4.77866,1327
-Verde_vuelta,41.61772, -4.77865,1328
-Verde_vuelta,41.61773, -4.77863,1329
-Verde_vuelta,41.61777, -4.77857,1330
-Verde_vuelta,41.61777, -4.77855,1331
-Verde_vuelta,41.61778, -4.77852,1332
-Verde_vuelta,41.6178, -4.77843,1333
-Verde_vuelta,41.61781, -4.77842,1334
-Verde_vuelta,41.61784, -4.7783,1335
-Verde_vuelta,41.61787, -4.77823,1336
-Verde_vuelta,41.61787, -4.77821,1337
-Verde_vuelta,41.61794, -4.77798,1338
-Verde_vuelta,41.61796, -4.77795,1339
-Verde_vuelta,41.61806, -4.77763,1340
-Verde_vuelta,41.61844, -4.77653,1341
-Verde_vuelta,41.61853, -4.77627,1342
-Verde_vuelta,41.61863, -4.77594,1343
-Verde_vuelta,41.61872, -4.77569,1344
-Verde_ida,41.62566,-4.7738,1
-Verde_ida,41.62551, -4.77383,2
-Verde_ida,41.62531, -4.77529,3
-Verde_ida,41.62508, -4.776,4
-Verde_ida,41.62506, -4.77612,5
-Verde_ida,41.62509, -4.77614,6
-Verde_ida,41.62511, -4.77617,7
-Verde_ida,41.62514, -4.77628,8
-Verde_ida,41.62514, -4.77636,9
-Verde_ida,41.62513, -4.7764,10
-Verde_ida,41.62509, -4.77647,11
-Verde_ida,41.62502, -4.77653,12
-Verde_ida,41.62499, -4.77654,13
-Verde_ida,41.62496, -4.77654,14
-Verde_ida,41.62493, -4.77653,15
-Verde_ida,41.6245, -4.7778,16
-Verde_ida,41.62403, -4.77902,17
-Verde_ida,41.62388, -4.7796,18
-Verde_ida,41.62392, -4.77966,19
-Verde_ida,41.62392, -4.77968,20
-Verde_ida,41.62393, -4.7797,21
-Verde_ida,41.62393, -4.77972,22
-Verde_ida,41.62394, -4.77974,23
-Verde_ida,41.62394, -4.77981,24
-Verde_ida,41.62393, -4.77983,25
-Verde_ida,41.62393, -4.77985,26
-Verde_ida,41.62392, -4.77987,27
-Verde_ida,41.62392, -4.77989,28
-Verde_ida,41.62391, -4.7799,29
-Verde_ida,41.6239, -4.77992,30
-Verde_ida,41.62389, -4.77993,31
-Verde_ida,41.62388, -4.77995,32
-Verde_ida,41.62386, -4.77997,33
-Verde_ida,41.62384, -4.77998,34
-Verde_ida,41.62383, -4.77998,35
-Verde_ida,41.62382, -4.77999,36
-Verde_ida,41.62374, -4.77999,37
-Verde_ida,41.62362, -4.78027,38
-Verde_ida,41.62261, -4.78322,39
-Verde_ida,41.62261, -4.78323,40
-Verde_ida,41.62197, -4.78516,41
-Verde_ida,41.62176, -4.78569,42
-Verde_ida,41.62165, -4.78607,43
-Verde_ida,41.62027, -4.79,44
-Verde_ida,41.62026, -4.79001,45
-Verde_ida,41.6181, -4.79622,46
-Verde_ida,41.61811, -4.79623,47
-Verde_ida,41.61811, -4.79624,48
-Verde_ida,41.61813, -4.79626,49
-Verde_ida,41.61813, -4.79627,50
-Verde_ida,41.61814, -4.79628,51
-Verde_ida,41.61814, -4.79629,52
-Verde_ida,41.61815, -4.7963,53
-Verde_ida,41.61815, -4.79636,54
-Verde_ida,41.61816, -4.79637,55
-Verde_ida,41.61815, -4.7964,56
-Verde_ida,41.61815, -4.79644,57
-Verde_ida,41.61814, -4.79645,58
-Verde_ida,41.61814, -4.79648,59
-Verde_ida,41.61812, -4.7965,60
-Verde_ida,41.61812, -4.79651,61
-Verde_ida,41.6181, -4.79653,62
-Verde_ida,41.6181, -4.79654,63
-Verde_ida,41.61809, -4.79654,64
-Verde_ida,41.61807, -4.79656,65
-Verde_ida,41.61806, -4.79656,66
-Verde_ida,41.61808, -4.79742,67
-Verde_ida,41.61815, -4.79774,68
-Verde_ida,41.6182, -4.79789,69
-Verde_ida,41.61913, -4.79945,70
-Verde_ida,41.61913, -4.79944,71
-Verde_ida,41.61919, -4.79944,72
-Verde_ida,41.6192, -4.79945,73
-Verde_ida,41.61921, -4.79945,74
-Verde_ida,41.61921, -4.79946,75
-Verde_ida,41.61922, -4.79946,76
-Verde_ida,41.61926, -4.7995,77
-Verde_ida,41.61926, -4.79952,78
-Verde_ida,41.61927, -4.79952,79
-Verde_ida,41.61927, -4.79954,80
-Verde_ida,41.61928, -4.79955,81
-Verde_ida,41.61928, -4.79967,82
-Verde_ida,41.61927, -4.79967,83
-Verde_ida,41.61927, -4.79969,84
-Verde_ida,41.61926, -4.7997,85
-Verde_ida,41.61926, -4.79971,86
-Verde_ida,41.61925, -4.79971,87
-Verde_ida,41.61925, -4.79972,88
-Verde_ida,41.61924, -4.79973,89
-Verde_ida,41.62054, -4.80179,90
-Verde_ida,41.62061, -4.80187,91
-Verde_ida,41.62063, -4.80186,92
-Verde_ida,41.62065, -4.80186,93
-Verde_ida,41.62066, -4.80187,94
-Verde_ida,41.62069, -4.80187,95
-Verde_ida,41.6207, -4.80188,96
-Verde_ida,41.62071, -4.80188,97
-Verde_ida,41.62072, -4.80189,98
-Verde_ida,41.62073, -4.80189,99
-Verde_ida,41.62075, -4.80191,100
-Verde_ida,41.62075, -4.80192,101
-Verde_ida,41.62076, -4.80193,102
-Verde_ida,41.62077, -4.80195,103
-Verde_ida,41.62078, -4.80196,104
-Verde_ida,41.62078, -4.80197,105
-Verde_ida,41.62079, -4.80199,106
-Verde_ida,41.62079, -4.802,107
-Verde_ida,41.6208, -4.80202,108
-Verde_ida,41.6208, -4.80206,109
-Verde_ida,41.62081, -4.80208,110
-Verde_ida,41.62081, -4.80209,111
-Verde_ida,41.6208, -4.80211,112
-Verde_ida,41.6208, -4.80215,113
-Verde_ida,41.62079, -4.80217,114
-Verde_ida,41.62079, -4.80218,115
-Verde_ida,41.62078, -4.80219,116
-Verde_ida,41.6208, -4.80224,117
-Verde_ida,41.62082, -4.80227,118
-Verde_ida,41.62084, -4.80235,119
-Verde_ida,41.6222, -4.80476,120
-Verde_ida,41.62222, -4.80475,121
-Verde_ida,41.62223, -4.80474,122
-Verde_ida,41.62224, -4.80474,123
-Verde_ida,41.62225, -4.80473,124
-Verde_ida,41.62231, -4.80473,125
-Verde_ida,41.62232, -4.80474,126
-Verde_ida,41.62233, -4.80474,127
-Verde_ida,41.62234, -4.80475,128
-Verde_ida,41.62235, -4.80475,129
-Verde_ida,41.62237, -4.80477,130
-Verde_ida,41.62238, -4.80477,131
-Verde_ida,41.62238, -4.80478,132
-Verde_ida,41.6224, -4.8048,133
-Verde_ida,41.6224, -4.80481,134
-Verde_ida,41.62241, -4.80483,135
-Verde_ida,41.62242, -4.80484,136
-Verde_ida,41.62242, -4.80487,137
-Verde_ida,41.62243, -4.80488,138
-Verde_ida,41.62243, -4.80499,139
-Verde_ida,41.62242, -4.805,140
-Verde_ida,41.62242, -4.80503,141
-Verde_ida,41.62241, -4.80504,142
-Verde_ida,41.62241, -4.80505,143
-Verde_ida,41.62239, -4.80507,144
-Verde_ida,41.62239, -4.80508,145
-Verde_ida,41.62235, -4.80512,146
-Verde_ida,41.62234, -4.80512,147
-Verde_ida,41.62233, -4.80513,148
-Verde_ida,41.62231, -4.80513,149
-Verde_ida,41.6223, -4.80514,150
-Verde_ida,41.62226, -4.80514,151
-Verde_ida,41.62225, -4.80513,152
-Verde_ida,41.62223, -4.80513,153
-Verde_ida,41.62222, -4.80512,154
-Verde_ida,41.62221, -4.80512,155
-Verde_ida,41.6222, -4.80511,156
-Verde_ida,41.6222, -4.8051,157
-Verde_ida,41.62218, -4.80509,158
-Verde_ida,41.62146, -4.80643,159
-Verde_ida,41.62037, -4.8083,160
-Verde_ida,41.62038, -4.80831,161
-Verde_ida,41.62039, -4.80831,162
-Verde_ida,41.62039, -4.80833,163
-Verde_ida,41.6204, -4.80833,164
-Verde_ida,41.6204, -4.80835,165
-Verde_ida,41.62041, -4.80836,166
-Verde_ida,41.62041, -4.80837,167
-Verde_ida,41.62042, -4.80838,168
-Verde_ida,41.62042, -4.80839,169
-Verde_ida,41.62043, -4.8084,170
-Verde_ida,41.62043, -4.80852,171
-Verde_ida,41.62042, -4.80853,172
-Verde_ida,41.62042, -4.80855,173
-Verde_ida,41.62041, -4.80857,174
-Verde_ida,41.6204, -4.80858,175
-Verde_ida,41.6204, -4.80859,176
-Verde_ida,41.62039, -4.8086,177
-Verde_ida,41.62039, -4.80861,178
-Verde_ida,41.62038, -4.80862,179
-Verde_ida,41.62037, -4.80862,180
-Verde_ida,41.62036, -4.80863,181
-Verde_ida,41.62036, -4.80864,182
-Verde_ida,41.62035, -4.80864,183
-Verde_ida,41.62034, -4.80865,184
-Verde_ida,41.62033, -4.80865,185
-Verde_ida,41.62032, -4.80866,186
-Verde_ida,41.62025, -4.80866,187
-Verde_ida,41.62024, -4.80865,188
-Verde_ida,41.62023, -4.80865,189
-Verde_ida,41.62022, -4.80864,190
-Verde_ida,41.62021, -4.80864,191
-Verde_ida,41.6202, -4.80863,192
-Verde_ida,41.6202, -4.80862,193
-Verde_ida,41.62019, -4.80861,194
-Verde_ida,41.61856, -4.81153,195
-Verde_ida,41.61858, -4.81155,196
-Verde_ida,41.61858, -4.81156,197
-Verde_ida,41.6186, -4.81158,198
-Verde_ida,41.61862, -4.81162,199
-Verde_ida,41.61862, -4.81163,200
-Verde_ida,41.61863, -4.81164,201
-Verde_ida,41.61863, -4.81167,202
-Verde_ida,41.61864, -4.81169,203
-Verde_ida,41.61864, -4.81177,204
-Verde_ida,41.61863, -4.81179,205
-Verde_ida,41.61863, -4.81182,206
-Verde_ida,41.61862, -4.81183,207
-Verde_ida,41.61862, -4.81185,208
-Verde_ida,41.6186, -4.81187,209
-Verde_ida,41.6186, -4.81188,210
-Verde_ida,41.61858, -4.81191,211
-Verde_ida,41.61857, -4.81191,212
-Verde_ida,41.61853, -4.81195,213
-Verde_ida,41.61851, -4.81195,214
-Verde_ida,41.6185, -4.81196,215
-Verde_ida,41.61847, -4.81196,216
-Verde_ida,41.61846, -4.81197,217
-Verde_ida,41.61845, -4.81196,218
-Verde_ida,41.61842, -4.81196,219
-Verde_ida,41.61841, -4.81195,220
-Verde_ida,41.6184, -4.81195,221
-Verde_ida,41.61837, -4.81193,222
-Verde_ida,41.61836, -4.81193,223
-Verde_ida,41.61835, -4.81191,224
-Verde_ida,41.61814, -4.8123,225
-Verde_ida,41.61808, -4.81245,226
-Verde_ida,41.61806, -4.81277,227
-Verde_ida,41.61807, -4.81279,228
-Verde_ida,41.61807, -4.81281,229
-Verde_ida,41.61808, -4.81282,230
-Verde_ida,41.61808, -4.81293,231
-Verde_ida,41.61807, -4.81294,232
-Verde_ida,41.61807, -4.81296,233
-Verde_ida,41.61806, -4.81298,234
-Verde_ida,41.61806, -4.81299,235
-Verde_ida,41.61803, -4.81304,236
-Verde_ida,41.61803, -4.81305,237
-Verde_ida,41.61801, -4.81307,238
-Verde_ida,41.61799, -4.81308,239
-Verde_ida,41.61798, -4.81308,240
-Verde_ida,41.61796, -4.8131,241
-Verde_ida,41.61795, -4.8131,242
-Verde_ida,41.61793, -4.81311,243
-Verde_ida,41.6179, -4.81311,244
-Verde_ida,41.61789, -4.8131,245
-Verde_ida,41.61786, -4.8131,246
-Verde_ida,41.61784, -4.81308,247
-Verde_ida,41.61783, -4.81308,248
-Verde_ida,41.61781, -4.81307,249
-Verde_ida,41.61779, -4.81305,250
-Verde_ida,41.61777, -4.81301,251
-Verde_ida,41.61777, -4.813,252
-Verde_ida,41.61776, -4.81298,253
-Verde_ida,41.61775, -4.81297,254
-Verde_ida,41.61775, -4.81295,255
-Verde_ida,41.61774, -4.81293,256
-Verde_ida,41.61774, -4.81282,257
-Verde_ida,41.61775, -4.81281,258
-Verde_ida,41.61775, -4.81279,259
-Verde_ida,41.61776, -4.81277,260
-Verde_ida,41.61764, -4.81227,261
-Verde_ida,41.61547, -4.80579,262
-Verde_ida,41.61547, -4.80578,263
-Verde_ida,41.6153, -4.80536,264
-Verde_ida,41.61522, -4.80524,265
-Verde_ida,41.61508, -4.80527,266
-Verde_ida,41.61498, -4.80524,267
-Verde_ida,41.61489, -4.80518,268
-Verde_ida,41.61489, -4.80517,269
-Verde_ida,41.61485, -4.80513,270
-Verde_ida,41.61481, -4.80507,271
-Verde_ida,41.61477, -4.80495,272
-Verde_ida,41.61475, -4.80481,273
-Verde_ida,41.61475, -4.80474,274
-Verde_ida,41.61481, -4.80454,275
-Verde_ida,41.61482, -4.80453,276
-Verde_ida,41.6148, -4.80442,277
-Verde_ida,41.6148, -4.80438,278
-Verde_ida,41.61477, -4.80428,279
-Verde_ida,41.61466, -4.80406,280
-Verde_ida,41.61328, -4.80219,281
-Verde_ida,41.61328, -4.80218,282
-Verde_ida,41.61318, -4.80201,283
-Verde_ida,41.61318, -4.802,284
-Verde_ida,41.61268, -4.8008,285
-Verde_ida,41.61267, -4.80073,286
-Verde_ida,41.61265, -4.80068,287
-Verde_ida,41.61258, -4.80027,288
-Verde_ida,41.61255, -4.80024,289
-Verde_ida,41.61249, -4.80011,290
-Verde_ida,41.61249, -4.80008,291
-Verde_ida,41.61248, -4.80004,292
-Verde_ida,41.61248, -4.79997,293
-Verde_ida,41.61249, -4.79993,294
-Verde_ida,41.61249, -4.79989,295
-Verde_ida,41.61255, -4.79977,296
-Verde_ida,41.61257, -4.79959,297
-Verde_ida,41.61262, -4.79937,298
-Verde_ida,41.61265, -4.79929,299
-Verde_ida,41.61307, -4.79847,300
-Verde_ida,41.61308, -4.79846,301
-Verde_ida,41.61371, -4.79717,302
-Verde_ida,41.61376, -4.79701,303
-Verde_ida,41.61379, -4.79679,304
-Verde_ida,41.61378, -4.79659,305
-Verde_ida,41.61374, -4.79642,306
-Verde_ida,41.61362, -4.79621,307
-Verde_ida,41.6136, -4.79619,308
-Verde_ida,41.61358, -4.79615,309
-Verde_ida,41.61351, -4.79606,310
-Verde_ida,41.61313, -4.79569,311
-Verde_ida,41.61233, -4.795,312
-Verde_ida,41.61226, -4.79497,313
-Verde_ida,41.6121, -4.79483,314
-Verde_ida,41.61204, -4.79475,315
-Verde_ida,41.612, -4.79475,316
-Verde_ida,41.61197, -4.79472,317
-Verde_ida,41.61172, -4.79468,318
-Verde_ida,41.61162, -4.79468,319
-Verde_ida,41.61151, -4.79471,320
-Verde_ida,41.61139, -4.79477,321
-Verde_ida,41.6112, -4.79492,322
-Verde_ida,41.61108, -4.79509,323
-Verde_ida,41.61108, -4.7951,324
-Verde_ida,41.61104, -4.79517,325
-Verde_ida,41.61096, -4.79539,326
-Verde_ida,41.61092, -4.79565,327
-Verde_ida,41.61092, -4.79584,328
-Verde_ida,41.61095, -4.79602,329
-Verde_ida,41.61121, -4.79688,330
-Verde_ida,41.61122, -4.79687,331
-Verde_ida,41.61123, -4.79687,332
-Verde_ida,41.61123, -4.79686,333
-Verde_ida,41.61124, -4.79686,334
-Verde_ida,41.61125, -4.79685,335
-Verde_ida,41.61128, -4.79685,336
-Verde_ida,41.61128, -4.79684,337
-Verde_ida,41.61129, -4.79684,338
-Verde_ida,41.6113, -4.79685,339
-Verde_ida,41.61132, -4.79685,340
-Verde_ida,41.61132, -4.79686,341
-Verde_ida,41.61134, -4.79686,342
-Verde_ida,41.61134, -4.79687,343
-Verde_ida,41.61135, -4.79687,344
-Verde_ida,41.61135, -4.79688,345
-Verde_ida,41.61136, -4.79688,346
-Verde_ida,41.61136, -4.79689,347
-Verde_ida,41.61137, -4.79689,348
-Verde_ida,41.61137, -4.79691,349
-Verde_ida,41.61138, -4.79692,350
-Verde_ida,41.61138, -4.79694,351
-Verde_ida,41.61139, -4.79695,352
-Verde_ida,41.61139, -4.79703,353
-Verde_ida,41.61138, -4.79703,354
-Verde_ida,41.61138, -4.79706,355
-Verde_ida,41.61137, -4.79706,356
-Verde_ida,41.61137, -4.79708,357
-Verde_ida,41.61136, -4.79708,358
-Verde_ida,41.61136, -4.79709,359
-Verde_ida,41.61135, -4.79709,360
-Verde_ida,41.61135, -4.7971,361
-Verde_ida,41.61133, -4.79712,362
-Verde_ida,41.61131, -4.79712,363
-Verde_ida,41.61131, -4.79713,364
-Verde_ida,41.61126, -4.79713,365
-Verde_ida,41.61126, -4.79712,366
-Verde_ida,41.61124, -4.79712,367
-Verde_ida,41.61123, -4.79711,368
-Verde_ida,41.61122, -4.79711,369
-Verde_ida,41.61122, -4.7971,370
-Verde_ida,41.61121, -4.79709,371
-Verde_ida,41.61117, -4.79711,372
-Verde_ida,41.61121, -4.79709,373
-Verde_ida,41.61121, -4.79708,374
-Verde_ida,41.6112, -4.79708,375
-Verde_ida,41.6112, -4.79707,376
-Verde_ida,41.61119, -4.79706,377
-Verde_ida,41.61119, -4.79704,378
-Verde_ida,41.61118, -4.79704,379
-Verde_ida,41.61118, -4.79694,380
-Verde_ida,41.61119, -4.79693,381
-Verde_ida,41.61119, -4.79691,382
-Verde_ida,41.6112, -4.79691,383
-Verde_ida,41.6112, -4.79689,384
-Verde_ida,41.61121, -4.79689,385
-Verde_ida,41.61095, -4.79602,386
-Verde_ida,41.61092, -4.79584,387
-Verde_ida,41.61092, -4.79565,388
-Verde_ida,41.61096, -4.79539,389
-Verde_ida,41.61104, -4.79517,390
-Verde_ida,41.61108, -4.7951,391
-Verde_ida,41.61108, -4.79509,392
-Verde_ida,41.6112, -4.79492,393
-Verde_ida,41.61139, -4.79477,394
-Verde_ida,41.61151, -4.79471,395
-Verde_ida,41.61162, -4.79468,396
-Verde_ida,41.61166, -4.79454,397
-Verde_ida,41.61165, -4.79437,398
-Verde_ida,41.61151, -4.7943,399
-Verde_ida,41.61136, -4.79418,400
-Verde_ida,41.61127, -4.79409,401
-Verde_ida,41.61124, -4.79411,402
-Verde_ida,41.61123, -4.79411,403
-Verde_ida,41.61122, -4.79412,404
-Verde_ida,41.61115, -4.79412,405
-Verde_ida,41.61113, -4.79411,406
-Verde_ida,41.61112, -4.79411,407
-Verde_ida,41.61105, -4.79404,408
-Verde_ida,41.61105, -4.79403,409
-Verde_ida,41.61103, -4.794,410
-Verde_ida,41.61103, -4.79398,411
-Verde_ida,41.61102, -4.79396,412
-Verde_ida,41.61102, -4.79383,413
-Verde_ida,41.61103, -4.79382,414
-Verde_ida,41.61103, -4.7938,415
-Verde_ida,41.61104, -4.79379,416
-Verde_ida,41.61104, -4.79377,417
-Verde_ida,41.61106, -4.79375,418
-Verde_ida,41.61107, -4.79373,419
-Verde_ida,41.6111, -4.7937,420
-Verde_ida,41.61111, -4.7937,421
-Verde_ida,41.61112, -4.79369,422
-Verde_ida,41.61103, -4.79232,423
-Verde_ida,41.611, -4.79232,424
-Verde_ida,41.61098, -4.79231,425
-Verde_ida,41.61097, -4.79231,426
-Verde_ida,41.61095, -4.7923,427
-Verde_ida,41.61094, -4.7923,428
-Verde_ida,41.61092, -4.79229,429
-Verde_ida,41.61086, -4.79222,430
-Verde_ida,41.61086, -4.7922,431
-Verde_ida,41.61084, -4.79216,432
-Verde_ida,41.61084, -4.79214,433
-Verde_ida,41.61083, -4.79212,434
-Verde_ida,41.61083, -4.79199,435
-Verde_ida,41.61085, -4.79196,436
-Verde_ida,41.61085, -4.79194,437
-Verde_ida,41.61089, -4.79187,438
-Verde_ida,41.61096, -4.79182,439
-Verde_ida,41.61101, -4.79182,440
-Verde_ida,41.61094, -4.79082,441
-Verde_ida,41.61097, -4.7907,442
-Verde_ida,41.61245, -4.78736,443
-Verde_ida,41.61245, -4.78735,444
-Verde_ida,41.613, -4.78612,445
-Verde_ida,41.61311, -4.78599,446
-Verde_ida,41.61349, -4.78564,447
-Verde_ida,41.61304, -4.78469,448
-Verde_ida,41.61313, -4.7846,449
-Verde_ida,41.61322, -4.78446,450
-Verde_ida,41.6133, -4.7843,451
-Verde_ida,41.61333, -4.78419,452
-Verde_ida,41.61336, -4.7838,453
-Verde_ida,41.6133, -4.78358,454
-Verde_ida,41.61293, -4.78277,455
-Verde_ida,41.61752, -4.77891,456
-Verde_ida,41.61777, -4.77857,457
-Verde_ida,41.61777, -4.77855,458
-Verde_ida,41.6178, -4.77843,459
-Verde_ida,41.61781, -4.77842,460
-Verde_ida,41.61784, -4.7783,461
-Verde_ida,41.61787, -4.77823,462
-Verde_ida,41.61787, -4.77821,463
-Verde_ida,41.61794, -4.77798,464
-Verde_ida,41.61796, -4.77795,465
-Verde_ida,41.61895, -4.77503,466
-Verde_ida,41.61903, -4.77473,467
-Verde_ida,41.61905, -4.77471,468
-Verde_ida,41.61905, -4.7747,469
-Verde_ida,41.61906, -4.77469,470
-Verde_ida,41.61908, -4.77469,471
-Verde_ida,41.62099, -4.77401,472
-Verde_ida,41.62108, -4.77399,473
-Verde_ida,41.6211, -4.774,474
-Verde_ida,41.62112, -4.774,475
-Verde_ida,41.62115, -4.77401,476
-Verde_ida,41.6218, -4.77442,477
-Verde_ida,41.62194, -4.77442,478
-Verde_ida,41.62194, -4.7744,479
-Verde_ida,41.62196, -4.77437,480
-Verde_ida,41.62196, -4.77436,481
-Verde_ida,41.62199, -4.77433,482
-Verde_ida,41.622, -4.77433,483
-Verde_ida,41.62201, -4.77432,484
-Verde_ida,41.62202, -4.77432,485
-Verde_ida,41.62203, -4.77431,486
-Verde_ida,41.62209, -4.77431,487
-Verde_ida,41.62211, -4.77432,488
-Verde_ida,41.62212, -4.77432,489
-Verde_ida,41.62214, -4.77433,490
-Verde_ida,41.62215, -4.77435,491
-Verde_ida,41.62222, -4.77422,492
-Verde_ida,41.62397, -4.76922,493
-Verde_ida,41.62411, -4.76889,494
-Verde_ida,41.62402, -4.76877,495
-Verde_ida,41.62398, -4.76861,496
-Verde_ida,41.62398, -4.76858,497
-Verde_ida,41.62399, -4.76855,498
-Verde_ida,41.62399, -4.76852,499
-Verde_ida,41.62401, -4.76847,500
-Verde_ida,41.62403, -4.76845,501
-Verde_ida,41.62405, -4.76841,502
-Verde_ida,41.62409, -4.76837,503
-Verde_ida,41.62416, -4.76833,504
-Verde_ida,41.62425, -4.76833,505
-Verde_ida,41.62428, -4.76834,506
-Verde_ida,41.62435, -4.76814,507
-Verde_ida,41.62435, -4.768,508
-Verde_ida,41.62454, -4.76744,509
-Verde_ida,41.62465, -4.76711,510
-Verde_ida,41.62466, -4.76709,511
-Verde_ida,41.62467, -4.76706,512
-Verde_ida,41.62469, -4.76702,513
-Verde_ida,41.62471, -4.76699,514
-Verde_ida,41.62478, -4.7669,515
-Verde_ida,41.62488, -4.7666,516
-Verde_ida,41.62499, -4.76628,517
-Verde_ida,41.625, -4.76623,518
-Verde_ida,41.62502, -4.76618,519
-Verde_ida,41.62517, -4.76577,520
-Verde_ida,41.6254, -4.76504,521
-Verde_ida,41.62608, -4.76309,522
-Verde_ida,41.6263, -4.76242,523
-Verde_ida,41.62633, -4.76233,524
-Verde_ida,41.6266, -4.76155,525
-Verde_ida,41.62693, -4.7606,526
-Verde_ida,41.62694, -4.76058,527
-Verde_ida,41.62725, -4.75972,528
-Verde_ida,41.62724, -4.75968,529
-Verde_ida,41.62722, -4.75964,530
-Verde_ida,41.62721, -4.75958,531
-Verde_ida,41.62722, -4.7595,532
-Verde_ida,41.62722, -4.75944,533
-Verde_ida,41.62723, -4.75939,534
-Verde_ida,41.62724, -4.75932,535
-Verde_ida,41.62728, -4.75917,536
-Verde_ida,41.62726, -4.75914,537
-Verde_ida,41.62724, -4.75907,538
-Verde_ida,41.62723, -4.759,539
-Verde_ida,41.62722, -4.75892,540
-Verde_ida,41.62723, -4.75886,541
-Verde_ida,41.62715, -4.75871,542
-Verde_ida,41.62712, -4.75863,543
-Verde_ida,41.62711, -4.7586,544
-Verde_ida,41.62707, -4.7585,545
-Verde_ida,41.62702, -4.75842,546
-Verde_ida,41.62701, -4.75838,547
-Verde_ida,41.62695, -4.75829,548
-Verde_ida,41.62681, -4.75811,549
-Verde_ida,41.6253, -4.75623,550
-Verde_ida,41.62509, -4.75598,551
-Verde_ida,41.62498, -4.75586,552
-Verde_ida,41.62467, -4.7555,553
-Verde_ida,41.62433, -4.75504,554
-Verde_ida,41.6242, -4.75486,555
-Verde_ida,41.62401, -4.75458,556
-Verde_ida,41.62377, -4.75414,557
-Verde_ida,41.62368, -4.75398,558
-Verde_ida,41.62353, -4.75371,559
-Verde_ida,41.6235, -4.75363,560
-Verde_ida,41.62335, -4.7533,561
-Verde_ida,41.62324, -4.75298,562
-Verde_ida,41.62315, -4.75268,563
-Verde_ida,41.62312, -4.75256,564
-Verde_ida,41.62309, -4.75247,565
-Verde_ida,41.62301, -4.75216,566
-Verde_ida,41.62292, -4.75182,567
-Verde_ida,41.62289, -4.75167,568
-Verde_ida,41.62286, -4.75152,569
-Verde_ida,41.62284, -4.75142,570
-Verde_ida,41.6228, -4.75116,571
-Verde_ida,41.62277, -4.75095,572
-Verde_ida,41.62274, -4.75076,573
-Verde_ida,41.6227, -4.75049,574
-Verde_ida,41.62268, -4.75035,575
-Verde_ida,41.62265, -4.75015,576
-Verde_ida,41.62262, -4.74996,577
-Verde_ida,41.62258, -4.74964,578
-Verde_ida,41.62255, -4.74944,579
-Verde_ida,41.62251, -4.74911,580
-Verde_ida,41.6225, -4.74904,581
-Verde_ida,41.62249, -4.74896,582
-Verde_ida,41.62247, -4.74886,583
-Verde_ida,41.62244, -4.74874,584
-Verde_ida,41.62242, -4.74862,585
-Verde_ida,41.62236, -4.74837,586
-Verde_ida,41.62234, -4.74827,587
-Verde_ida,41.62231, -4.74816,588
-Verde_ida,41.62229, -4.74806,589
-Verde_ida,41.62227, -4.74795,590
-Verde_ida,41.62226, -4.74784,591
-Verde_ida,41.62225, -4.74773,592
-Verde_ida,41.62225, -4.74756,593
-Verde_ida,41.62223, -4.74733,594
-Verde_ida,41.62221, -4.74717,595
-Verde_ida,41.62221, -4.74716,596
-Verde_ida,41.62221, -4.74712,597
-Verde_ida,41.62221, -4.74706,598
-Verde_ida,41.62219, -4.74694,599
-Verde_ida,41.62193, -4.74517,600
-Verde_ida,41.62184, -4.74455,601
-Verde_ida,41.62174, -4.74385,602
-Verde_ida,41.62159, -4.74291,603
-Verde_ida,41.62154, -4.74259,604
-Verde_ida,41.62153, -4.74251,605
-Verde_ida,41.62149, -4.74234,606
-Verde_ida,41.62143, -4.74204,607
-Verde_ida,41.62142, -4.74197,608
-Verde_ida,41.6214, -4.74188,609
-Verde_ida,41.62133, -4.74157,610
-Verde_ida,41.62132, -4.74151,611
-Verde_ida,41.62128, -4.74134,612
-Verde_ida,41.62127, -4.74128,613
-Verde_ida,41.62121, -4.74109,614
-Verde_ida,41.62118, -4.74095,615
-Verde_ida,41.62114, -4.74083,616
-Verde_ida,41.62108, -4.7406,617
-Verde_ida,41.62098, -4.74023,618
-Verde_ida,41.62097, -4.74018,619
-Verde_ida,41.62094, -4.74008,620
-Verde_ida,41.62079, -4.73964,621
-Verde_ida,41.62078, -4.73962,622
-Verde_ida,41.62073, -4.73948,623
-Verde_ida,41.62072, -4.73946,624
-Verde_ida,41.62071, -4.73942,625
-Verde_ida,41.6206, -4.7391,626
-Verde_ida,41.62055, -4.73898,627
-Verde_ida,41.62036, -4.7385,628
-Verde_ida,41.62029, -4.73836,629
-Verde_ida,41.62023, -4.73823,630
-Verde_ida,41.6201, -4.73794,631
-Verde_ida,41.62006, -4.73784,632
-Verde_ida,41.61988, -4.73745,633
-Verde_ida,41.61983, -4.73732,634
-Verde_ida,41.61968, -4.73694,635
-Verde_ida,41.61955, -4.73662,636
-Verde_ida,41.61953, -4.73657,637
-Verde_ida,41.61953, -4.73654,638
-Verde_ida,41.61949, -4.73645,639
-Verde_ida,41.61947, -4.73638,640
-Verde_ida,41.61944, -4.73631,641
-Verde_ida,41.61919, -4.73562,642
-Verde_ida,41.61918, -4.73558,643
-Verde_ida,41.61912, -4.73541,644
-Verde_ida,41.61906, -4.73526,645
-Verde_ida,41.6187, -4.73428,646
-Verde_ida,41.61866, -4.73419,647
-Verde_ida,41.61862, -4.73405,648
-Verde_ida,41.6186, -4.734,649
-Verde_ida,41.61858, -4.73393,650
-Verde_ida,41.61856, -4.73383,651
-Verde_ida,41.61843, -4.7333,652
-Verde_ida,41.61836, -4.73306,653
-Verde_ida,41.61833, -4.7329,654
-Verde_ida,41.61828, -4.73259,655
-Verde_ida,41.61821, -4.73226,656
-Verde_ida,41.61819, -4.73213,657
-Verde_ida,41.61817, -4.73201,658
-Verde_ida,41.61814, -4.7318,659
-Verde_ida,41.61812, -4.73159,660
-Verde_ida,41.61809, -4.73125,661
-Verde_ida,41.61807, -4.73097,662
-Verde_ida,41.61806, -4.73082,663
-Verde_ida,41.61802, -4.73014,664
-Verde_ida,41.61799, -4.72971,665
-Verde_ida,41.61797, -4.72929,666
-Verde_ida,41.6179, -4.72822,667
-Verde_ida,41.61787, -4.72768,668
-Verde_ida,41.61784, -4.72733,669
-Verde_ida,41.61781, -4.72697,670
-Verde_ida,41.6178, -4.7266,671
-Verde_ida,41.61774, -4.72593,672
-Verde_ida,41.61769, -4.72553,673
-Verde_ida,41.61768, -4.72544,674
-Verde_ida,41.61759, -4.72456,675
-Verde_ida,41.61758, -4.72451,676
-Verde_ida,41.6175, -4.72376,677
-Verde_ida,41.61746, -4.72328,678
-Verde_ida,41.61745, -4.72279,679
-Verde_ida,41.61747, -4.72242,680
-Verde_ida,41.6175, -4.72214,681
-Verde_ida,41.61754, -4.72184,682
-Verde_ida,41.61758, -4.72159,683
-Verde_ida,41.61772, -4.72108,684
-Verde_ida,41.61785, -4.72072,685
-Verde_ida,41.61798, -4.72039,686
-Verde_ida,41.61805, -4.72025,687
-Verde_ida,41.61828, -4.71983,688
-Verde_ida,41.61865, -4.71913,689
-Verde_ida,41.619, -4.71845,690
-Verde_ida,41.61909, -4.71827,691
-Verde_ida,41.61946, -4.71761,692
-Verde_ida,41.61947, -4.71758,693
-Verde_ida,41.61956, -4.71744,694
-Verde_ida,41.61957, -4.71743,695
-Verde_ida,41.61957, -4.71742,696
-Verde_ida,41.6196, -4.71738,697
-Verde_ida,41.6197, -4.71719,698
-Verde_ida,41.61993, -4.71679,699
-Verde_ida,41.61997, -4.71671,700
-Verde_ida,41.62003, -4.71663,701
-Verde_ida,41.62009, -4.71655,702
-Verde_ida,41.62022, -4.71639,703
-Verde_ida,41.62033, -4.71625,704
-Verde_ida,41.62032, -4.71623,705
-Verde_ida,41.62031, -4.7162,706
-Verde_ida,41.6203, -4.71618,707
-Verde_ida,41.62029, -4.71616,708
-Verde_ida,41.62028, -4.71613,709
-Verde_ida,41.62027, -4.7161,710
-Verde_ida,41.62026, -4.71608,711
-Verde_ida,41.62025, -4.71605,712
-Verde_ida,41.62025, -4.71603,713
-Verde_ida,41.62024, -4.71602,714
-Verde_ida,41.62024, -4.716,715
-Verde_ida,41.62023, -4.71598,716
-Verde_ida,41.62023, -4.71596,717
-Verde_ida,41.62023, -4.71595,718
-Verde_ida,41.62022, -4.71593,719
-Verde_ida,41.62022, -4.71591,720
-Verde_ida,41.62022, -4.71586,721
-Verde_ida,41.62021, -4.71581,722
-Verde_ida,41.62021, -4.71576,723
-Verde_ida,41.62022, -4.71571,724
-Verde_ida,41.62022, -4.71565,725
-Verde_ida,41.62023, -4.7156,726
-Verde_ida,41.62025, -4.71556,727
-Verde_ida,41.62026, -4.71551,728
-Verde_ida,41.62027, -4.71548,729
-Verde_ida,41.62028, -4.71546,730
-Verde_ida,41.62029, -4.71543,731
-Verde_ida,41.62031, -4.71541,732
-Verde_ida,41.62032, -4.71538,733
-Verde_ida,41.62033, -4.71536,734
-Verde_ida,41.62035, -4.71533,735
-Verde_ida,41.62036, -4.71531,736
-Verde_ida,41.62039, -4.71528,737
-Verde_ida,41.62041, -4.71525,738
-Verde_ida,41.62044, -4.71523,739
-Verde_ida,41.62047, -4.71521,740
-Verde_ida,41.6205, -4.71519,741
-Verde_ida,41.62053, -4.71518,742
-Verde_ida,41.62057, -4.71517,743
-Verde_ida,41.6206, -4.71516,744
-Verde_ida,41.62062, -4.71515,745
-Verde_ida,41.62064, -4.71515,746
-Verde_ida,41.62067, -4.71515,747
-Verde_ida,41.62069, -4.71515,748
-Verde_ida,41.62071, -4.71515,749
-Verde_ida,41.62073, -4.71515,750
-Verde_ida,41.62076, -4.71516,751
-Verde_ida,41.62078, -4.71516,752
-Verde_ida,41.62083, -4.71518,753
-Verde_ida,41.62088, -4.7152,754
-Verde_ida,41.62093, -4.71523,755
-Verde_ida,41.62097, -4.71527,756
-Verde_ida,41.62101, -4.71531,757
-Verde_ida,41.62105, -4.71536,758
-Verde_ida,41.62109, -4.71541,759
-Verde_ida,41.62112, -4.71547,760
-Verde_ida,41.62112, -4.71548,761
-Verde_ida,41.62113, -4.71549,762
-Verde_ida,41.62114, -4.71551,763
-Verde_ida,41.62115, -4.71552,764
-Verde_ida,41.62116, -4.71554,765
-Verde_ida,41.62116, -4.71555,766
-Verde_ida,41.62117, -4.71557,767
-Verde_ida,41.62118, -4.71558,768
-Verde_ida,41.62119, -4.71562,769
-Verde_ida,41.62119, -4.71566,770
-Verde_ida,41.6212, -4.7157,771
-Verde_ida,41.6212, -4.71574,772
-Verde_ida,41.6212, -4.71579,773
-Verde_ida,41.6212, -4.71583,774
-Verde_ida,41.6212, -4.71587,775
-Verde_ida,41.6212, -4.71591,776
-Verde_ida,41.62138, -4.71607,777
-Verde_ida,41.62164, -4.71604,778
-Verde_ida,41.62176, -4.71605,779
-Verde_ida,41.6218, -4.71605,780
-Verde_ida,41.6222, -4.7161,781
-Verde_ida,41.62256, -4.71621,782
-Verde_ida,41.62297, -4.71636,783
-Verde_ida,41.6233, -4.71649,784
-Verde_ida,41.62334, -4.71651,785
-Verde_ida,41.62411, -4.71682,786
-Verde_ida,41.62429, -4.7169,787
-Verde_ida,41.62445, -4.71697,788
-Verde_ida,41.62462, -4.71704,789
-Verde_ida,41.6253, -4.71733,790
-Verde_ida,41.62634, -4.71774,791
-Verde_ida,41.62636, -4.7177,792
-Verde_ida,41.62637, -4.71767,793
-Verde_ida,41.6264, -4.71764,794
-Verde_ida,41.62642, -4.71761,795
-Verde_ida,41.62645, -4.71758,796
-Verde_ida,41.62647, -4.71756,797
-Verde_ida,41.6265, -4.71754,798
-Verde_ida,41.62653, -4.71753,799
-Verde_ida,41.62654, -4.71753,800
-Verde_ida,41.62655, -4.71752,801
-Verde_ida,41.62656, -4.71752,802
-Verde_ida,41.62658, -4.71752,803
-Verde_ida,41.62659, -4.71751,804
-Verde_ida,41.6266, -4.71751,805
-Verde_ida,41.62661, -4.71751,806
-Verde_ida,41.62662, -4.71751,807
-Verde_ida,41.62665, -4.71751,808
-Verde_ida,41.62667, -4.71752,809
-Verde_ida,41.6267, -4.71753,810
-Verde_ida,41.62672, -4.71755,811
-Verde_ida,41.62674, -4.71756,812
-Verde_ida,41.62676, -4.71758,813
-Verde_ida,41.62678, -4.71761,814
-Verde_ida,41.6268, -4.71763,815
-Verde_ida,41.62681, -4.71766,816
-Verde_ida,41.62682, -4.71767,817
-Verde_ida,41.62683, -4.71769,818
-Verde_ida,41.62684, -4.71772,819
-Verde_ida,41.62684, -4.71775,820
-Verde_ida,41.62685, -4.71779,821
-Verde_ida,41.62685, -4.71782,822
-Verde_ida,41.62685, -4.71785,823
-Verde_ida,41.62685, -4.71789,824
-Verde_ida,41.62684, -4.71794,825
-Verde_ida,41.62821, -4.71848,826
-Verde_ida,41.62822, -4.71849,827
-Verde_ida,41.62838, -4.71855,828
-Verde_ida,41.62859, -4.71865,829
-Verde_ida,41.62871, -4.71871,830
-Verde_ida,41.62895, -4.71885,831
-Verde_ida,41.62902, -4.71889,832
-Verde_ida,41.62911, -4.71894,833
-Verde_ida,41.62913, -4.71892,834
-Verde_ida,41.62915, -4.71891,835
-Verde_ida,41.62918, -4.71889,836
-Verde_ida,41.6292, -4.71888,837
-Verde_ida,41.62923, -4.71887,838
-Verde_ida,41.62925, -4.71886,839
-Verde_ida,41.62928, -4.71886,840
-Verde_ida,41.6293, -4.71886,841
-Verde_ida,41.62934, -4.71887,842
-Verde_ida,41.62937, -4.71888,843
-Verde_ida,41.6294, -4.7189,844
-Verde_ida,41.62941, -4.71891,845
-Verde_ida,41.62953, -4.71859,846
-Verde_ida,41.62959, -4.71845,847
-Verde_ida,41.63008, -4.71741,848
-Verde_ida,41.63007, -4.71729,849
-Verde_ida,41.63025, -4.71684,850
-Verde_ida,41.63036, -4.71659,851
-Verde_ida,41.631, -4.71513,852
-Verde_ida,41.63113, -4.71486,853
-Verde_ida,41.6313, -4.71448,854
-Verde_ida,41.6315, -4.71405,855
-Verde_ida,41.63154, -4.71403,856
-Verde_ida,41.63156, -4.71402,857
-Verde_ida,41.63196, -4.71313,858
-Verde_ida,41.63195, -4.71312,859
-Verde_ida,41.63195, -4.71311,860
-Verde_ida,41.63194, -4.71311,861
-Verde_ida,41.63194, -4.7131,862
-Verde_ida,41.63193, -4.7131,863
-Verde_ida,41.63193, -4.71309,864
-Verde_ida,41.63192, -4.71308,865
-Verde_ida,41.63192, -4.71307,866
-Verde_ida,41.63191, -4.71306,867
-Verde_ida,41.63191, -4.71305,868
-Verde_ida,41.63191, -4.71304,869
-Verde_ida,41.63191, -4.71303,870
-Verde_ida,41.63191, -4.71302,871
-Verde_ida,41.63191, -4.71301,872
-Verde_ida,41.6319, -4.71301,873
-Verde_ida,41.6319, -4.713,874
-Verde_ida,41.6319, -4.71299,875
-Verde_ida,41.6319, -4.71298,876
-Verde_ida,41.6319, -4.71297,877
-Verde_ida,41.63191, -4.71296,878
-Verde_ida,41.63191, -4.71295,879
-Verde_ida,41.63191, -4.71294,880
-Verde_ida,41.63191, -4.71293,881
-Verde_ida,41.63192, -4.71292,882
-Verde_ida,41.63192, -4.71291,883
-Verde_ida,41.63192, -4.7129,884
-Verde_ida,41.63193, -4.71289,885
-Verde_ida,41.63193, -4.71288,886
-Verde_ida,41.63194, -4.71287,887
-Verde_ida,41.63195, -4.71286,888
-Verde_ida,41.63196, -4.71285,889
-Verde_ida,41.63197, -4.71285,890
-Verde_ida,41.63197, -4.71284,891
-Verde_ida,41.63198, -4.71284,892
-Verde_ida,41.63198, -4.71283,893
-Verde_ida,41.63199, -4.71283,894
-Verde_ida,41.632, -4.71283,895
-Verde_ida,41.63201, -4.71283,896
-Verde_ida,41.63202, -4.71283,897
-Verde_ida,41.63202, -4.71282,898
-Verde_ida,41.63203, -4.71282,899
-Verde_ida,41.63204, -4.71283,900
-Verde_ida,41.63205, -4.71283,901
-Verde_ida,41.63206, -4.71283,902
-Verde_ida,41.63207, -4.71284,903
-Verde_ida,41.63208, -4.71284,904
-Verde_ida,41.63209, -4.71285,905
-Verde_ida,41.63254, -4.71188,906
-Verde_ida,41.63315, -4.71055,907
-Verde_ida,41.63317, -4.71051,908
-Verde_ida,41.63402, -4.70854,909
-Verde_ida,41.6343, -4.70788,910
-Verde_ida,41.63466, -4.70706,911
-Verde_ida,41.63468, -4.70661,912
-Verde_ida,41.63468, -4.7066,913
-Verde_ida,41.63467, -4.70657,914
-Verde_ida,41.63466, -4.70655,915
-Verde_ida,41.63465, -4.70652,916
-Verde_ida,41.63464, -4.70649,917
-Verde_ida,41.63464, -4.70647,918
-Verde_ida,41.63464, -4.70645,919
-Verde_ida,41.63464, -4.70644,920
-Verde_ida,41.63464, -4.70641,921
-Verde_ida,41.63464, -4.70638,922
-Verde_ida,41.63465, -4.70635,923
-Verde_ida,41.63466, -4.70633,924
-Verde_ida,41.63466, -4.70631,925
-Verde_ida,41.63467, -4.7063,926
-Verde_ida,41.63467, -4.70629,927
-Verde_ida,41.63468, -4.70627,928
-Verde_ida,41.63468, -4.70626,929
-Verde_ida,41.63469, -4.70625,930
-Verde_ida,41.6347, -4.70624,931
-Verde_ida,41.63471, -4.70622,932
-Verde_ida,41.63487, -4.70637,933
-Verde_ida,41.63507, -4.70651,934
-Verde_ida,41.63517, -4.7066,935
-Verde_ida,41.63576, -4.70706,936
-Verde_ida,41.63619, -4.70742,937
-Verde_ida,41.63693, -4.70799,938
-Verde_ida,41.6375, -4.70845,939
-Verde_ida,41.63773, -4.70862,940
-Verde_ida,41.63776, -4.70864,941
-Verde_ida,41.63794, -4.70877,942
-Verde_ida,41.6382, -4.70891,943
-Verde_ida,41.63837, -4.70903,944
-Verde_ida,41.63852, -4.70912,945
-Verde_ida,41.63888, -4.70937,946
-Verde_ida,41.63902, -4.70947,947
-Verde_ida,41.63916, -4.70957,948
-Verde_ida,41.63917, -4.70959,949
-Verde_ida,41.6394, -4.70979,950
-Verde_ida,41.63952, -4.7099,951
-Verde_ida,41.63966, -4.71003,952
-Verde_ida,41.63971, -4.71008,953
-Verde_ida,41.6402, -4.71052,954
-Verde_ida,41.64031, -4.71063,955
-Verde_ida,41.64069, -4.71099,956
-Verde_ida,41.64193, -4.71216,957
-Verde_ida,41.64198, -4.7122,958
-Verde_ida,41.642, -4.71222,959
-Verde_ida,41.64204, -4.71226,960
-Verde_ida,41.64225, -4.71243,961
-Verde_ida,41.64237, -4.71254,962
-Verde_ida,41.64248, -4.71265,963
-Verde_ida,41.64256, -4.71273,964
-Verde_ida,41.64286, -4.71302,965
-Verde_ida,41.6429, -4.71306,966
-Verde_ida,41.64322, -4.71334,967
-Verde_ida,41.64337, -4.71351,968
-Verde_ida,41.64356, -4.71368,969
-Verde_ida,41.64399, -4.71404,970
-Verde_ida,41.64425, -4.71423,971
-Verde_ida,41.64446, -4.71444,972
-Verde_ida,41.64459, -4.71455,973
-Verde_ida,41.64472, -4.71467,974
-Verde_ida,41.64499, -4.71492,975
-Verde_ida,41.64514, -4.71506,976
-Verde_ida,41.64526, -4.71517,977
-Verde_ida,41.64569, -4.71557,978
-Verde_ida,41.64575, -4.71563,979
-Verde_ida,41.64594, -4.7158,980
-Verde_ida,41.64598, -4.71584,981
-Verde_ida,41.64612, -4.71597,982
-Verde_ida,41.64656, -4.71638,983
-Verde_ida,41.64662, -4.71644,984
-Verde_ida,41.64676, -4.71658,985
-Verde_ida,41.64689, -4.71669,986
-Verde_ida,41.64696, -4.71675,987
-Verde_ida,41.64699, -4.71672,988
-Verde_ida,41.64701, -4.71669,989
-Verde_ida,41.64703, -4.71667,990
-Verde_ida,41.64704, -4.71666,991
-Verde_ida,41.64707, -4.71663,992
-Verde_ida,41.64711, -4.71661,993
-Verde_ida,41.64714, -4.71659,994
-Verde_ida,41.64717, -4.71658,995
-Verde_ida,41.64721, -4.71657,996
-Verde_ida,41.64724, -4.71657,997
-Verde_ida,41.64726, -4.71656,998
-Verde_ida,41.64729, -4.71656,999
-Verde_ida,41.64732, -4.71656,1000
-Verde_ida,41.64735, -4.71657,1001
-Verde_ida,41.64738, -4.71658,1002
-Verde_ida,41.64741, -4.71659,1003
-Verde_ida,41.64743, -4.7166,1004
-Verde_ida,41.64745, -4.71661,1005
-Verde_ida,41.64748, -4.71662,1006
-Verde_ida,41.6475, -4.71664,1007
-Verde_ida,41.64752, -4.71666,1008
-Verde_ida,41.64753, -4.71667,1009
-Verde_ida,41.64755, -4.71669,1010
-Verde_ida,41.64757, -4.71671,1011
-Verde_ida,41.64759, -4.71673,1012
-Verde_ida,41.64761, -4.71676,1013
-Verde_ida,41.64763, -4.7168,1014
-Verde_ida,41.64765, -4.71683,1015
-Verde_ida,41.64766, -4.71687,1016
-Verde_ida,41.64768, -4.71691,1017
-Verde_ida,41.64769, -4.71695,1018
-Verde_ida,41.6477, -4.71699,1019
-Verde_ida,41.64771, -4.71703,1020
-Verde_ida,41.64771, -4.71708,1021
-Verde_ida,41.64771, -4.71712,1022
-Verde_ida,41.64771, -4.71717,1023
-Verde_ida,41.64771, -4.71721,1024
-Verde_ida,41.6477, -4.71726,1025
-Verde_ida,41.64769, -4.7173,1026
-Verde_ida,41.64768, -4.71735,1027
-Verde_ida,41.64767, -4.71739,1028
-Verde_ida,41.64837, -4.71808,1029
-Verde_ida,41.64885, -4.71855,1030
-Verde_ida,41.64888, -4.71858,1031
-Verde_ida,41.64895, -4.71865,1032
-Verde_ida,41.64906, -4.71872,1033
-Verde_ida,41.64952, -4.71917,1034
-Verde_ida,41.64955, -4.71919,1035
-Verde_ida,41.64978, -4.71943,1036
-Verde_ida,41.65057, -4.72018,1037
-Verde_ida,41.6508, -4.72036,1038
-Verde_ida,41.65084, -4.72028,1039
-Verde_ida,41.65099, -4.72003,1040
-Verde_ida,41.65106, -4.71992,1041
-Verde_ida,41.65129, -4.71956,1042
-Verde_ida,41.65165, -4.71901,1043
-Verde_ida,41.65189, -4.71861,1044
-Verde_ida,41.65202, -4.71846,1045
-Verde_ida,41.65209, -4.71837,1046
-Verde_ida,41.65213, -4.71832,1047
-Verde_ida,41.65218, -4.71828,1048
-Verde_ida,41.65221, -4.71825,1049
-Verde_ida,41.65225, -4.71823,1050
-Verde_ida,41.65236, -4.71821,1051
-Verde_ida,41.65242, -4.71819,1052
-Verde_ida,41.65255, -4.71816,1053
-Verde_ida,41.65284, -4.71806,1054
-Verde_ida,41.65363, -4.71786,1055
-Verde_ida,41.6538, -4.71781,1056
-Verde_ida,41.65406, -4.71774,1057
-Verde_ida,41.65413, -4.71772,1058
-Verde_ida,41.65414, -4.71761,1059
-Verde_ida,41.65416, -4.71751,1060
-Verde_ida,41.65419, -4.71739,1061
-Verde_ida,41.65423, -4.71728,1062
-Verde_ida,41.65428, -4.71716,1063
-Verde_ida,41.65475, -4.7163,1064
-Verde_ida,41.65506, -4.71571,1065
-Verde_ida,41.65537, -4.71511,1066
-Verde_ida,41.65607, -4.71373,1067
-Verde_ida,41.65614, -4.71361,1068
-Verde_ida,41.65618, -4.71356,1069
-Verde_ida,41.65627, -4.71352,1070
-Verde_ida,41.65636, -4.71348,1071
-Verde_ida,41.65644, -4.71346,1072
-Verde_ida,41.65649, -4.71345,1073
-Verde_ida,41.65655, -4.71345,1074
-Verde_ida,41.65663, -4.71345,1075
-Verde_ida,41.65673, -4.71347,1076
-Verde_ida,41.65679, -4.71351,1077
-Verde_ida,41.65684, -4.71354,1078
-Verde_ida,41.65691, -4.71359,1079
-Verde_ida,41.65706, -4.71372,1080
-Verde_ida,41.6572, -4.71385,1081
-Verde_ida,41.65742, -4.71405,1082
-Verde_ida,41.6578, -4.71439,1083
+Verde_vuelta,41.651072,-4.7198717,0
+Verde_vuelta,41.651342,-4.7194613,1
+Verde_vuelta,41.6516767,-4.7189383,2
+Verde_vuelta,41.6519553,-4.7185252,3
+Verde_vuelta,41.6521457,-4.7182785,4
+Verde_vuelta,41.6522459,-4.7182007,5
+Verde_vuelta,41.6523922,-4.7181953,6
+Verde_vuelta,41.6525946,-4.7181283,7
+Verde_vuelta,41.653771,-4.7178064,8
+Verde_vuelta,41.6541077,-4.717734,9
+Verde_vuelta,41.6541338,-4.7176348,10
+Verde_vuelta,41.6541638,-4.7174443,11
+Verde_vuelta,41.6542239,-4.71727,12
+Verde_vuelta,41.6543201,-4.7170769,13
+Verde_vuelta,41.6544604,-4.7168328,14
+Verde_vuelta,41.654733,-4.7163097,15
+Verde_vuelta,41.6550256,-4.7157411,16
+Verde_vuelta,41.6560196,-4.7138126,17
+Verde_vuelta,41.6561137,-4.7136356,18
+Verde_vuelta,41.6561779,-4.7135578,19
+Verde_vuelta,41.6562761,-4.7135042,20
+Verde_vuelta,41.6564224,-4.7134505,21
+Verde_vuelta,41.6565526,-4.7134317,22
+Verde_vuelta,41.6566929,-4.7134505,23
+Verde_vuelta,41.6567971,-4.7134854,24
+Verde_vuelta,41.6568993,-4.7135578,25
+Verde_vuelta,41.65726,-4.7138931,26
+Verde_vuelta,41.6581057,-4.7146387,27
+Verde_vuelta,41.6589473,-4.7153871,28
+Verde_vuelta,41.6589994,-4.7153012,29
+Verde_vuelta,41.6591257,-4.7150116,30
+Verde_vuelta,41.6595465,-4.7141157,31
+Verde_vuelta,41.6596347,-4.7139789,32
+Verde_vuelta,41.6604002,-4.7127558,33
+Verde_vuelta,41.6606547,-4.7123615,34
+Verde_vuelta,41.66137,-4.7112565,35
+Verde_vuelta,41.6619972,-4.7103123,36
+Verde_vuelta,41.6630633,-4.7086762,37
+Verde_vuelta,41.6635261,-4.7079547,38
+Verde_vuelta,41.6644659,-4.7064955,39
+Verde_vuelta,41.665061,-4.7055165,40
+Verde_vuelta,41.6659607,-4.7041567,41
+Verde_vuelta,41.6660228,-4.7040386,42
+Verde_vuelta,41.6660609,-4.7039206,43
+Verde_vuelta,41.6660829,-4.7037838,44
+Verde_vuelta,41.6660448,-4.7036417,45
+Verde_vuelta,41.6659727,-4.7034727,46
+Verde_vuelta,41.6659166,-4.7033037,47
+Verde_vuelta,41.6658445,-4.7031696,48
+Verde_vuelta,41.665047,-4.7021021,49
+Verde_vuelta,41.6635802,-4.6996344,50
+Verde_vuelta,41.6625463,-4.6977891,51
+Verde_vuelta,41.6620253,-4.6970273,52
+Verde_vuelta,41.6614081,-4.6962012,53
+Verde_vuelta,41.6609432,-4.6957077,54
+Verde_vuelta,41.6604222,-4.6951283,55
+Verde_vuelta,41.6599493,-4.6946563,56
+Verde_vuelta,41.6597168,-4.6944631,57
+Verde_vuelta,41.6595205,-4.6943129,58
+Verde_vuelta,41.659268,-4.6940769,59
+Verde_vuelta,41.658958,-4.6938827,60
+Verde_vuelta,41.6583165,-4.6934526,61
+Verde_vuelta,41.6575951,-4.6930664,62
+Verde_vuelta,41.6571302,-4.692884,63
+Verde_vuelta,41.656545,-4.6926587,64
+Verde_vuelta,41.6561683,-4.6925407,65
+Verde_vuelta,41.6554388,-4.692369,66
+Verde_vuelta,41.6548376,-4.6922939,67
+Verde_vuelta,41.6541322,-4.692251,68
+Verde_vuelta,41.6535951,-4.6922725,69
+Verde_vuelta,41.65309,-4.6923261,70
+Verde_vuelta,41.6527533,-4.6923797,71
+Verde_vuelta,41.652116,-4.6924924,72
+Verde_vuelta,41.6517112,-4.6925943,73
+Verde_vuelta,41.651391,-4.6926666,74
+Verde_vuelta,41.6508298,-4.6929241,75
+Verde_vuelta,41.6501804,-4.6932245,76
+Verde_vuelta,41.6496112,-4.6935142,77
+Verde_vuelta,41.6489539,-4.6939219,78
+Verde_vuelta,41.6482403,-4.6943618,79
+Verde_vuelta,41.6470057,-4.6951557,80
+Verde_vuelta,41.6464445,-4.6954991,81
+Verde_vuelta,41.6458192,-4.695896,82
+Verde_vuelta,41.6452098,-4.6963574,83
+Verde_vuelta,41.6450816,-4.6964539,84
+Verde_vuelta,41.6448651,-4.6966792,85
+Verde_vuelta,41.6446406,-4.6969904,86
+Verde_vuelta,41.6444402,-4.6972908,87
+Verde_vuelta,41.6443921,-4.6974302,88
+Verde_vuelta,41.6442237,-4.6977414,89
+Verde_vuelta,41.6440473,-4.6982886,90
+Verde_vuelta,41.6437507,-4.6992649,91
+Verde_vuelta,41.6435582,-4.6998442,92
+Verde_vuelta,41.6433498,-4.7002734,93
+Verde_vuelta,41.6431012,-4.700724,94
+Verde_vuelta,41.6428767,-4.7010995,95
+Verde_vuelta,41.6426523,-4.7013999,96
+Verde_vuelta,41.6424117,-4.7016681,97
+Verde_vuelta,41.6421231,-4.7019578,98
+Verde_vuelta,41.6418264,-4.7022046,99
+Verde_vuelta,41.6414656,-4.7024406,100
+Verde_vuelta,41.6411529,-4.7026123,101
+Verde_vuelta,41.6408001,-4.7027625,102
+Verde_vuelta,41.6404714,-4.7028698,103
+Verde_vuelta,41.6399342,-4.7029234,104
+Verde_vuelta,41.639405,-4.7029341,105
+Verde_vuelta,41.6387796,-4.7028161,106
+Verde_vuelta,41.6380339,-4.7025908,107
+Verde_vuelta,41.6375448,-4.7024621,108
+Verde_vuelta,41.6368071,-4.7022368,109
+Verde_vuelta,41.6363019,-4.7020973,110
+Verde_vuelta,41.6359692,-4.7020436,111
+Verde_vuelta,41.6357126,-4.7020222,112
+Verde_vuelta,41.6354319,-4.7020544,113
+Verde_vuelta,41.6351272,-4.7020651,114
+Verde_vuelta,41.6346461,-4.7021831,115
+Verde_vuelta,41.6342692,-4.7023226,116
+Verde_vuelta,41.6339404,-4.7025372,117
+Verde_vuelta,41.6334914,-4.7029127,118
+Verde_vuelta,41.6331896,-4.7032315,119
+Verde_vuelta,41.6329972,-4.703489,120
+Verde_vuelta,41.6329731,-4.7037196,121
+Verde_vuelta,41.6328969,-4.7040737,122
+Verde_vuelta,41.6328889,-4.7043258,123
+Verde_vuelta,41.6330132,-4.7046369,124
+Verde_vuelta,41.6332698,-4.704873,125
+Verde_vuelta,41.6339995,-4.705565,126
+Verde_vuelta,41.6346731,-4.706198,127
+Verde_vuelta,41.6347533,-4.7061712,128
+Verde_vuelta,41.6348455,-4.7061336,129
+Verde_vuelta,41.6349578,-4.7061765,130
+Verde_vuelta,41.635042,-4.7062516,131
+Verde_vuelta,41.635074,-4.7063535,132
+Verde_vuelta,41.6350781,-4.7064984,133
+Verde_vuelta,41.635042,-4.7066218,134
+Verde_vuelta,41.6349498,-4.7067237,135
+Verde_vuelta,41.6348615,-4.7067773,136
+Verde_vuelta,41.6347733,-4.7069222,137
+Verde_vuelta,41.6346691,-4.7071207,138
+Verde_vuelta,41.6345288,-4.7073728,139
+Verde_vuelta,41.6343243,-4.7078341,140
+Verde_vuelta,41.6333904,-4.7100184,141
+Verde_vuelta,41.6330697,-4.7107801,142
+Verde_vuelta,41.632801,-4.711338,143
+Verde_vuelta,41.6326046,-4.7117779,144
+Verde_vuelta,41.6321234,-4.7127864,145
+Verde_vuelta,41.6321094,-4.7128427,146
+Verde_vuelta,41.6321395,-4.7128883,147
+Verde_vuelta,41.6321635,-4.7129769,148
+Verde_vuelta,41.6321595,-4.7130466,149
+Verde_vuelta,41.6321375,-4.713111,150
+Verde_vuelta,41.6320914,-4.7131619,151
+Verde_vuelta,41.6320613,-4.7131727,152
+Verde_vuelta,41.6320112,-4.71317,153
+Verde_vuelta,41.6319691,-4.7131619,154
+Verde_vuelta,41.631939,-4.7132129,155
+Verde_vuelta,41.6318929,-4.7132987,156
+Verde_vuelta,41.6315902,-4.7139773,157
+Verde_vuelta,41.6315741,-4.7140471,158
+Verde_vuelta,41.6315821,-4.7141275,159
+Verde_vuelta,41.6305757,-4.7163859,160
+Verde_vuelta,41.6301547,-4.7173408,161
+Verde_vuelta,41.6301146,-4.7173945,162
+Verde_vuelta,41.6300745,-4.7174427,163
+Verde_vuelta,41.6295372,-4.7186712,164
+Verde_vuelta,41.6295132,-4.7188107,165
+Verde_vuelta,41.6295012,-4.7189501,166
+Verde_vuelta,41.6295292,-4.7189984,167
+Verde_vuelta,41.6295693,-4.7191138,168
+Verde_vuelta,41.6295854,-4.7192184,169
+Verde_vuelta,41.6295653,-4.7193176,170
+Verde_vuelta,41.6295132,-4.7194115,171
+Verde_vuelta,41.629423,-4.7194839,172
+Verde_vuelta,41.6293408,-4.7194812,173
+Verde_vuelta,41.6292325,-4.7194463,174
+Verde_vuelta,41.6291824,-4.7193927,175
+Verde_vuelta,41.6291182,-4.7192908,176
+Verde_vuelta,41.6291002,-4.7192103,177
+Verde_vuelta,41.6290882,-4.7191218,178
+Verde_vuelta,41.6290501,-4.7190682,179
+Verde_vuelta,41.6289438,-4.7190252,180
+Verde_vuelta,41.6283504,-4.71869,181
+Verde_vuelta,41.6280817,-4.7185719,182
+Verde_vuelta,41.6275965,-4.7183681,183
+Verde_vuelta,41.627356,-4.7182662,184
+Verde_vuelta,41.6270472,-4.7181428,185
+Verde_vuelta,41.6268527,-4.7182125,186
+Verde_vuelta,41.6267605,-4.7182689,187
+Verde_vuelta,41.6267024,-4.7182501,188
+Verde_vuelta,41.6266201,-4.7182689,189
+Verde_vuelta,41.6265199,-4.7182474,190
+Verde_vuelta,41.6264618,-4.7182179,191
+Verde_vuelta,41.6264197,-4.7181696,192
+Verde_vuelta,41.6263375,-4.7180811,193
+Verde_vuelta,41.6263174,-4.7179819,194
+Verde_vuelta,41.6263194,-4.7178236,195
+Verde_vuelta,41.6263475,-4.7176949,196
+Verde_vuelta,41.6263976,-4.7176064,197
+Verde_vuelta,41.6264838,-4.7175447,198
+Verde_vuelta,41.626572,-4.7175152,199
+Verde_vuelta,41.6266602,-4.7175125,200
+Verde_vuelta,41.6267605,-4.7175742,201
+Verde_vuelta,41.6268206,-4.7176466,202
+Verde_vuelta,41.6268547,-4.7177244,203
+Verde_vuelta,41.6268768,-4.7178853,204
+Verde_vuelta,41.6268728,-4.718006,205
+Verde_vuelta,41.6268487,-4.7180704,206
+Verde_vuelta,41.6267966,-4.7180596,207
+Verde_vuelta,41.6267003,-4.7180221,208
+Verde_vuelta,41.6265881,-4.7179658,209
+Verde_vuelta,41.6264197,-4.7179041,210
+Verde_vuelta,41.6262833,-4.7178397,211
+Verde_vuelta,41.6259645,-4.7177083,212
+Verde_vuelta,41.6256077,-4.7175447,213
+Verde_vuelta,41.6252982,-4.7174204,214
+Verde_vuelta,41.6251197,-4.7173506,215
+Verde_vuelta,41.6249573,-4.7172863,216
+Verde_vuelta,41.6247044,-4.7171812,217
+Verde_vuelta,41.6244999,-4.7170954,218
+Verde_vuelta,41.6242613,-4.7169988,219
+Verde_vuelta,41.6240267,-4.7169022,220
+Verde_vuelta,41.62371,-4.7167735,221
+Verde_vuelta,41.6231886,-4.7165535,222
+Verde_vuelta,41.6227736,-4.716398,223
+Verde_vuelta,41.622521,-4.7163095,224
+Verde_vuelta,41.6223646,-4.7162558,225
+Verde_vuelta,41.6222503,-4.7162236,226
+Verde_vuelta,41.622124,-4.7161968,227
+Verde_vuelta,41.6219977,-4.716178,228
+Verde_vuelta,41.621743,-4.7161673,229
+Verde_vuelta,41.6215024,-4.7161861,230
+Verde_vuelta,41.62133,-4.7162236,231
+Verde_vuelta,41.6211435,-4.7162558,232
+Verde_vuelta,41.6210312,-4.7163229,233
+Verde_vuelta,41.620933,-4.7163846,234
+Verde_vuelta,41.6208006,-4.7164382,235
+Verde_vuelta,41.6206482,-4.716465,236
+Verde_vuelta,41.6204878,-4.7163953,237
+Verde_vuelta,41.6203154,-4.7162505,238
+Verde_vuelta,41.6202552,-4.7160466,239
+Verde_vuelta,41.620175,-4.7158749,240
+Verde_vuelta,41.6200627,-4.7157891,241
+Verde_vuelta,41.6198702,-4.7157784,242
+Verde_vuelta,41.6196296,-4.7157891,243
+Verde_vuelta,41.619377,-4.7157677,244
+Verde_vuelta,41.6189198,-4.7156657,245
+Verde_vuelta,41.6185549,-4.7155477,246
+Verde_vuelta,41.6182862,-4.7154404,247
+Verde_vuelta,41.6177929,-4.7151508,248
+Verde_vuelta,41.617452,-4.7149094,249
+Verde_vuelta,41.6171272,-4.7146626,250
+Verde_vuelta,41.6168785,-4.7144963,251
+Verde_vuelta,41.6163892,-4.7141637,252
+Verde_vuelta,41.6161446,-4.7139759,253
+Verde_vuelta,41.615908,-4.7138311,254
+Verde_vuelta,41.615519,-4.7136112,255
+Verde_vuelta,41.6152021,-4.7134395,256
+Verde_vuelta,41.6149495,-4.7133215,257
+Verde_vuelta,41.6147409,-4.7132142,258
+Verde_vuelta,41.6145484,-4.7131552,259
+Verde_vuelta,41.6144,-4.7131176,260
+Verde_vuelta,41.6142356,-4.7131015,261
+Verde_vuelta,41.6140431,-4.7131015,262
+Verde_vuelta,41.6138866,-4.7131069,263
+Verde_vuelta,41.6136941,-4.7131391,264
+Verde_vuelta,41.6134615,-4.7131659,265
+Verde_vuelta,41.613277,-4.7131927,266
+Verde_vuelta,41.6130725,-4.7131981,267
+Verde_vuelta,41.6129762,-4.713241,268
+Verde_vuelta,41.6129,-4.713359,269
+Verde_vuelta,41.6127757,-4.713461,270
+Verde_vuelta,41.6126875,-4.7135575,271
+Verde_vuelta,41.6125992,-4.7137238,272
+Verde_vuelta,41.612531,-4.7140081,273
+Verde_vuelta,41.6123706,-4.7146197,274
+Verde_vuelta,41.6122423,-4.7151561,275
+Verde_vuelta,41.6120899,-4.7157998,276
+Verde_vuelta,41.6119214,-4.7165294,277
+Verde_vuelta,41.6118492,-4.7168137,278
+Verde_vuelta,41.611761,-4.7170122,279
+Verde_vuelta,41.6116527,-4.7175326,280
+Verde_vuelta,41.611412,-4.7188468,281
+Verde_vuelta,41.6112195,-4.7198017,282
+Verde_vuelta,41.6109227,-4.7210409,283
+Verde_vuelta,41.610654,-4.7219797,284
+Verde_vuelta,41.6104294,-4.7227468,285
+Verde_vuelta,41.6095911,-4.7253056,286
+Verde_vuelta,41.60919,-4.7263892,287
+Verde_vuelta,41.6086087,-4.7279012,288
+Verde_vuelta,41.6082597,-4.7288668,289
+Verde_vuelta,41.607995,-4.7295964,290
+Verde_vuelta,41.6077182,-4.7304118,291
+Verde_vuelta,41.6074455,-4.7312916,292
+Verde_vuelta,41.6071607,-4.7321445,293
+Verde_vuelta,41.6068719,-4.733153,294
+Verde_vuelta,41.606567,-4.7342795,295
+Verde_vuelta,41.6063424,-4.7352451,296
+Verde_vuelta,41.6061499,-4.7361785,297
+Verde_vuelta,41.6060295,-4.7368974,298
+Verde_vuelta,41.6058611,-4.7379381,299
+Verde_vuelta,41.6057568,-4.7386354,300
+Verde_vuelta,41.6056846,-4.7392041,301
+Verde_vuelta,41.6055963,-4.7403628,302
+Verde_vuelta,41.6055402,-4.7417253,303
+Verde_vuelta,41.6055643,-4.7430021,304
+Verde_vuelta,41.6056284,-4.7439462,305
+Verde_vuelta,41.6057247,-4.7447402,306
+Verde_vuelta,41.605837,-4.7455663,307
+Verde_vuelta,41.6060055,-4.746489,308
+Verde_vuelta,41.6065149,-4.7484416,309
+Verde_vuelta,41.6068639,-4.7495896,310
+Verde_vuelta,41.6074214,-4.7515369,311
+Verde_vuelta,41.6077784,-4.7527975,312
+Verde_vuelta,41.607999,-4.7536826,313
+Verde_vuelta,41.6081715,-4.7545624,314
+Verde_vuelta,41.6082717,-4.7552169,315
+Verde_vuelta,41.6083439,-4.7558552,316
+Verde_vuelta,41.6083921,-4.7563863,317
+Verde_vuelta,41.6084241,-4.7578615,318
+Verde_vuelta,41.6084201,-4.7584999,319
+Verde_vuelta,41.6084161,-4.7594547,320
+Verde_vuelta,41.6084001,-4.760195,321
+Verde_vuelta,41.6084001,-4.7609729,322
+Verde_vuelta,41.6084322,-4.7616971,323
+Verde_vuelta,41.6084643,-4.7624052,324
+Verde_vuelta,41.6085766,-4.7632045,325
+Verde_vuelta,41.6086528,-4.7637302,326
+Verde_vuelta,41.6087851,-4.7645241,327
+Verde_vuelta,41.6089656,-4.7653181,328
+Verde_vuelta,41.6091622,-4.765994,329
+Verde_vuelta,41.6092785,-4.7663695,330
+Verde_vuelta,41.6093908,-4.7666913,331
+Verde_vuelta,41.6095312,-4.7670883,332
+Verde_vuelta,41.6096916,-4.7675228,333
+Verde_vuelta,41.6099002,-4.768011,334
+Verde_vuelta,41.6101168,-4.7685099,335
+Verde_vuelta,41.6103374,-4.7689766,336
+Verde_vuelta,41.6106261,-4.7695023,337
+Verde_vuelta,41.6112759,-4.7706503,338
+Verde_vuelta,41.6118214,-4.771573,339
+Verde_vuelta,41.6126235,-4.7726888,340
+Verde_vuelta,41.6130407,-4.7732359,341
+Verde_vuelta,41.6132973,-4.773531,342
+Verde_vuelta,41.6136182,-4.7739548,343
+Verde_vuelta,41.6140714,-4.7744268,344
+Verde_vuelta,41.6147412,-4.7751028,345
+Verde_vuelta,41.6152505,-4.7756285,346
+Verde_vuelta,41.6159403,-4.7763366,347
+Verde_vuelta,41.6164055,-4.7767926,348
+Verde_vuelta,41.6170191,-4.777447,349
+Verde_vuelta,41.6174001,-4.7778547,350
+Verde_vuelta,41.6176688,-4.7780747,351
+Verde_vuelta,41.6178734,-4.7782034,352
+Verde_vuelta,41.6180719,-4.7783831,353
+Verde_vuelta,41.6184569,-4.7787452,354
+Verde_vuelta,41.6186634,-4.7789356,355
+Verde_vuelta,41.6187777,-4.7790402,356
+Verde_vuelta,41.6189842,-4.7792629,357
+Verde_vuelta,41.6195016,-4.7797644,358
+Verde_vuelta,41.619662,-4.7799012,359
+Verde_vuelta,41.6197542,-4.7799442,360
+Verde_vuelta,41.6198845,-4.7799763,361
+Verde_vuelta,41.620051,-4.779979,362
+Verde_vuelta,41.6202014,-4.7799093,363
+Verde_vuelta,41.6202595,-4.7798449,364
+Verde_vuelta,41.6203377,-4.7796545,365
+Verde_vuelta,41.6205101,-4.7791529,366
+Verde_vuelta,41.6207568,-4.7784716,367
+Verde_vuelta,41.6213583,-4.7767175,368
+Verde_vuelta,41.6218656,-4.7752583,369
+Verde_vuelta,41.6219297,-4.7750545,370
+Verde_vuelta,41.6219398,-4.7749794,371
+Verde_vuelta,41.6219598,-4.7748533,372
+Verde_vuelta,41.6219598,-4.7747594,373
+Verde_vuelta,41.6219358,-4.7746897,374
+Verde_vuelta,41.6218977,-4.7746227,375
+Verde_vuelta,41.6218977,-4.7745288,376
+Verde_vuelta,41.6219257,-4.7744322,377
+Verde_vuelta,41.6219678,-4.774341,378
+Verde_vuelta,41.622024,-4.7743008,379
+Verde_vuelta,41.6221042,-4.7742954,380
+Verde_vuelta,41.6221924,-4.7742606,381
+Verde_vuelta,41.6222907,-4.7740674,382
+Verde_vuelta,41.6223909,-4.773759,383
+Verde_vuelta,41.6228481,-4.7724474,384
+Verde_vuelta,41.6235278,-4.7704813,385
+Verde_vuelta,41.6239067,-4.769387,386
+Verde_vuelta,41.6240651,-4.7689766,387
+Verde_vuelta,41.6240872,-4.7689203,388
+Verde_vuelta,41.6240591,-4.7688505,389
+Verde_vuelta,41.624011,-4.7687728,390
+Verde_vuelta,41.6239849,-4.7686977,391
+Verde_vuelta,41.6239588,-4.768593,392
+Verde_vuelta,41.6239829,-4.7685018,393
+Verde_vuelta,41.624025,-4.7684107,394
+Verde_vuelta,41.6240852,-4.7683382,395
+Verde_vuelta,41.6241794,-4.7682953,396
+Verde_vuelta,41.6242656,-4.7682953,397
+Verde_vuelta,41.6243719,-4.7683382,398
+Verde_vuelta,41.624434,-4.7684133,399
+Verde_vuelta,41.6244862,-4.7685555,400
+Verde_vuelta,41.6244962,-4.7687164,401
+Verde_vuelta,41.6244641,-4.7688291,402
+Verde_vuelta,41.62441,-4.7688881,403
+Verde_vuelta,41.6243298,-4.7689364,404
+Verde_vuelta,41.6242115,-4.7689793,405
+Verde_vuelta,41.6241553,-4.7690276,406
+Verde_vuelta,41.6240892,-4.7692368,407
+Verde_vuelta,41.6240671,-4.7693387,408
+Verde_vuelta,41.6240811,-4.7694058,409
+Verde_vuelta,41.6240591,-4.7695184,410
+Verde_vuelta,41.624013,-4.7696606,411
+Verde_vuelta,41.6238786,-4.7699878,412
+Verde_vuelta,41.6231528,-4.772045,413
+Verde_vuelta,41.6230987,-4.7722113,414
+Verde_vuelta,41.6231127,-4.7722489,415
+Verde_vuelta,41.6231789,-4.7722864,416
+Verde_vuelta,41.6234035,-4.7724206,417
+Verde_vuelta,41.6237062,-4.7726003,418
+Verde_vuelta,41.6239689,-4.7727451,419
+Verde_vuelta,41.6242756,-4.7729141,420
+Verde_vuelta,41.6243478,-4.7729919,421
+Verde_vuelta,41.6245082,-4.7732252,422
+Verde_vuelta,41.6246506,-4.7734157,423
+Verde_vuelta,41.6247909,-4.7736302,424
+Verde_vuelta,41.624841,-4.773708,425
+Verde_vuelta,41.6248831,-4.7737348,426
+Verde_vuelta,41.6249613,-4.7737429,427
+Verde_vuelta,41.6253082,-4.7737938,428
+Verde_vuelta,41.6254947,-4.7738153,429
+Verde_vuelta,41.6255107,-4.7738582,430
+Verde_vuelta,41.6255087,-4.7739387,431
+Verde_vuelta,41.6253282,-4.7752503,432
+Verde_vuelta,41.6250656,-4.7760871,433
+Verde_vuelta,41.6250957,-4.7761408,434
+Verde_vuelta,41.6251318,-4.7762078,435
+Verde_vuelta,41.6251418,-4.7762508,436
+Verde_vuelta,41.6251498,-4.7763366,437
+Verde_vuelta,41.6251318,-4.7764224,438
+Verde_vuelta,41.6250997,-4.7764814,439
+Verde_vuelta,41.6250455,-4.776519,440
+Verde_vuelta,41.6249774,-4.7765485,441
+Verde_vuelta,41.6249273,-4.7765485,442
+Verde_vuelta,41.6247989,-4.7769294,443
+Verde_vuelta,41.6244882,-4.777844,444
+Verde_vuelta,41.6239488,-4.7793594,445
+Verde_vuelta,41.6238867,-4.7795686,446
+Verde_vuelta,41.6239127,-4.7796142,447
+Verde_vuelta,41.6239448,-4.779684,448
+Verde_vuelta,41.6239608,-4.7797564,449
+Verde_vuelta,41.6239608,-4.7798154,450
+Verde_vuelta,41.6239388,-4.7798905,451
+Verde_vuelta,41.6239027,-4.7799442,452
+Verde_vuelta,41.6238566,-4.7799951,453
+Verde_vuelta,41.6238025,-4.7800139,454
+Verde_vuelta,41.6237523,-4.7800112,455
+Verde_vuelta,41.6237202,-4.7800434,456
+Verde_vuelta,41.623638,-4.7802741,457
+Verde_vuelta,41.622812,-4.7826612,458
+Verde_vuelta,41.622046,-4.7848714,459
+Verde_vuelta,41.6218696,-4.7853703,460
+Verde_vuelta,41.6217734,-4.7856412,461
+Verde_vuelta,41.6217132,-4.7858531,462
+Verde_vuelta,41.621623,-4.7861293,463
+Verde_vuelta,41.6215488,-4.78636,464
+Verde_vuelta,41.6210856,-4.7876931,465
+Verde_vuelta,41.6209693,-4.7880256,466
+Verde_vuelta,41.6202595,-4.7900158,467
+Verde_vuelta,41.6199046,-4.7910619,468
+Verde_vuelta,41.6191186,-4.7933042,469
+Verde_vuelta,41.618124,-4.7961822,470
+Verde_vuelta,41.6181401,-4.7962413,471
+Verde_vuelta,41.6181661,-4.7963217,472
+Verde_vuelta,41.6181701,-4.7964076,473
+Verde_vuelta,41.6181481,-4.7964773,474
+Verde_vuelta,41.618108,-4.7965551,475
+Verde_vuelta,41.6180679,-4.7966302,476
+Verde_vuelta,41.6180679,-4.7967401,477
+Verde_vuelta,41.6180759,-4.7971747,478
+Verde_vuelta,41.6180899,-4.7973517,479
+Verde_vuelta,41.618102,-4.7974965,480
+Verde_vuelta,41.6181401,-4.7976655,481
+Verde_vuelta,41.6181882,-4.7978479,482
+Verde_vuelta,41.6182684,-4.7979954,483
+Verde_vuelta,41.6184047,-4.7982449,484
+Verde_vuelta,41.6191025,-4.7994036,485
+Verde_vuelta,41.6191266,-4.7994304,486
+Verde_vuelta,41.6191747,-4.7994331,487
+Verde_vuelta,41.6192249,-4.7994572,488
+Verde_vuelta,41.619269,-4.7994948,489
+Verde_vuelta,41.619291,-4.7995565,490
+Verde_vuelta,41.619291,-4.7996289,491
+Verde_vuelta,41.619277,-4.7997067,492
+Verde_vuelta,41.6192609,-4.7997684,493
+Verde_vuelta,41.6196239,-4.8003424,494
+Verde_vuelta,41.6198485,-4.800691,495
+Verde_vuelta,41.620055,-4.8010183,496
+Verde_vuelta,41.6205442,-4.8017907,497
+Verde_vuelta,41.6205903,-4.8018283,498
+Verde_vuelta,41.6206465,-4.8018551,499
+Verde_vuelta,41.6207026,-4.8018712,500
+Verde_vuelta,41.6207508,-4.801898,501
+Verde_vuelta,41.6207909,-4.8019463,502
+Verde_vuelta,41.6208149,-4.8020134,503
+Verde_vuelta,41.6208229,-4.8020777,504
+Verde_vuelta,41.6208069,-4.8021528,505
+Verde_vuelta,41.6208009,-4.8022065,506
+Verde_vuelta,41.620829,-4.8022816,507
+Verde_vuelta,41.6209092,-4.8024586,508
+Verde_vuelta,41.6209934,-4.8026061,509
+Verde_vuelta,41.6213964,-4.8033303,510
+Verde_vuelta,41.6219979,-4.8043415,511
+Verde_vuelta,41.6221944,-4.8047117,512
+Verde_vuelta,41.6222405,-4.8047197,513
+Verde_vuelta,41.6222987,-4.804717,514
+Verde_vuelta,41.6223448,-4.8047278,515
+Verde_vuelta,41.6223849,-4.8047626,516
+Verde_vuelta,41.622417,-4.8047895,517
+Verde_vuelta,41.622441,-4.8048404,518
+Verde_vuelta,41.6224531,-4.8049075,519
+Verde_vuelta,41.6224511,-4.8049745,520
+Verde_vuelta,41.622431,-4.8050335,521
+Verde_vuelta,41.6224009,-4.8050979,522
+Verde_vuelta,41.6223689,-4.8051301,523
+Verde_vuelta,41.6223107,-4.8051516,524
+Verde_vuelta,41.6222566,-4.8051516,525
+Verde_vuelta,41.6222185,-4.8051381,526
+Verde_vuelta,41.6221844,-4.8051274,527
+Verde_vuelta,41.6221523,-4.8051676,528
+Verde_vuelta,41.622034,-4.8053661,529
+Verde_vuelta,41.6210074,-4.8072169,530
+Verde_vuelta,41.6204079,-4.8082549,531
+Verde_vuelta,41.6203979,-4.8083031,532
+Verde_vuelta,41.6204199,-4.8083514,533
+Verde_vuelta,41.6204339,-4.8084051,534
+Verde_vuelta,41.620444,-4.8084721,535
+Verde_vuelta,41.62044,-4.8085285,536
+Verde_vuelta,41.6204279,-4.8085741,537
+Verde_vuelta,41.6204019,-4.8086196,538
+Verde_vuelta,41.6203578,-4.8086545,539
+Verde_vuelta,41.6203116,-4.8086787,540
+Verde_vuelta,41.6202675,-4.8086813,541
+Verde_vuelta,41.6202234,-4.8086599,542
+Verde_vuelta,41.6201913,-4.8086411,543
+Verde_vuelta,41.6201352,-4.8087323,544
+Verde_vuelta,41.6190604,-4.810634,545
+Verde_vuelta,41.6186093,-4.8114279,546
+Verde_vuelta,41.6186012,-4.8114789,547
+Verde_vuelta,41.6186413,-4.8115352,548
+Verde_vuelta,41.6186614,-4.8115996,549
+Verde_vuelta,41.6186634,-4.8116854,550
+Verde_vuelta,41.6186574,-4.8117471,551
+Verde_vuelta,41.6186413,-4.8117981,552
+Verde_vuelta,41.6186113,-4.8118571,553
+Verde_vuelta,41.6185692,-4.8118973,554
+Verde_vuelta,41.618517,-4.8119107,555
+Verde_vuelta,41.6184448,-4.8119,556
+Verde_vuelta,41.6183887,-4.8118785,557
+Verde_vuelta,41.6183586,-4.8118571,558
+Verde_vuelta,41.6181701,-4.8121924,559
+Verde_vuelta,41.618122,-4.8122809,560
+Verde_vuelta,41.618116,-4.8123908,561
+Verde_vuelta,41.618126,-4.8124874,562
+Verde_vuelta,41.61813,-4.8125759,563
+Verde_vuelta,41.6180919,-4.8127207,564
+Verde_vuelta,41.6181,-4.812828,565
+Verde_vuelta,41.6180919,-4.8129514,566
+Verde_vuelta,41.6180779,-4.813048,567
+Verde_vuelta,41.6180278,-4.8130882,568
+Verde_vuelta,41.6179656,-4.8131258,569
+Verde_vuelta,41.6178854,-4.8131311,570
+Verde_vuelta,41.6178212,-4.8130828,571
+Verde_vuelta,41.6177711,-4.8130346,572
+Verde_vuelta,41.617741,-4.8129568,573
+Verde_vuelta,41.617733,-4.81282,574
+Verde_vuelta,41.617739,-4.812702,575
+Verde_vuelta,41.6176608,-4.8124552,576
+Verde_vuelta,41.6175766,-4.8121092,577
+Verde_vuelta,41.6174743,-4.8117471,578
+Verde_vuelta,41.6173861,-4.8114735,579
+Verde_vuelta,41.6170131,-4.8104328,580
+Verde_vuelta,41.6168006,-4.8098025,581
+Verde_vuelta,41.6161148,-4.8077721,582
+Verde_vuelta,41.6156415,-4.8062834,583
+Verde_vuelta,41.615451,-4.8057095,584
+Verde_vuelta,41.6153869,-4.8055083,585
+Verde_vuelta,41.6153207,-4.8053903,586
+Verde_vuelta,41.6152565,-4.8053152,587
+Verde_vuelta,41.6151843,-4.8052749,588
+Verde_vuelta,41.6151242,-4.8052696,589
+Verde_vuelta,41.6150339,-4.8052588,590
+Verde_vuelta,41.6149758,-4.8052374,591
+Verde_vuelta,41.6149076,-4.8051891,592
+Verde_vuelta,41.6148475,-4.8051274,593
+Verde_vuelta,41.6147993,-4.8050443,594
+Verde_vuelta,41.6147753,-4.8049316,595
+Verde_vuelta,41.6147652,-4.8048243,596
+Verde_vuelta,41.6147753,-4.8047063,597
+Verde_vuelta,41.6147953,-4.8046232,598
+Verde_vuelta,41.6148174,-4.8045373,599
+Verde_vuelta,41.6148114,-4.80443,600
+Verde_vuelta,41.6147953,-4.8043013,601
+Verde_vuelta,41.6147512,-4.8042128,602
+Verde_vuelta,41.614665,-4.8040974,603
+Verde_vuelta,41.6145567,-4.8039311,604
+Verde_vuelta,41.6142419,-4.803502,605
+Verde_vuelta,41.613935,-4.8031238,606
+Verde_vuelta,41.6135741,-4.8026303,607
+Verde_vuelta,41.6134197,-4.8024077,608
+Verde_vuelta,41.6132231,-4.8021689,609
+Verde_vuelta,41.6129945,-4.8015601,610
+Verde_vuelta,41.6128261,-4.8011417,611
+Verde_vuelta,41.6126998,-4.8008681,612
+Verde_vuelta,41.6126476,-4.8006642,613
+Verde_vuelta,41.6126256,-4.8004416,614
+Verde_vuelta,41.6126115,-4.8003424,615
+Verde_vuelta,41.6125353,-4.8002404,616
+Verde_vuelta,41.6124872,-4.8001466,617
+Verde_vuelta,41.6124651,-4.8000259,618
+Verde_vuelta,41.6124752,-4.7999105,619
+Verde_vuelta,41.6125153,-4.7997898,620
+Verde_vuelta,41.6125554,-4.7996369,621
+Verde_vuelta,41.6126095,-4.7994116,622
+Verde_vuelta,41.6126817,-4.7992641,623
+Verde_vuelta,41.6127719,-4.7990468,624
+Verde_vuelta,41.6133535,-4.7978613,625
+Verde_vuelta,41.6135019,-4.7975636,626
+Verde_vuelta,41.6135861,-4.797408,627
+Verde_vuelta,41.6137044,-4.7971076,628
+Verde_vuelta,41.6137485,-4.7969574,629
+Verde_vuelta,41.6137686,-4.7968179,630
+Verde_vuelta,41.6137746,-4.7967187,631
+Verde_vuelta,41.6137706,-4.7966141,632
+Verde_vuelta,41.6137586,-4.7965283,633
+Verde_vuelta,41.6137265,-4.7964156,634
+Verde_vuelta,41.6136583,-4.7962627,635
+Verde_vuelta,41.6136022,-4.7961742,636
+Verde_vuelta,41.613534,-4.7960964,637
+Verde_vuelta,41.6134397,-4.7960052,638
+Verde_vuelta,41.613149,-4.7957477,639
+Verde_vuelta,41.6128903,-4.7955278,640
+Verde_vuelta,41.6126576,-4.7953347,641
+Verde_vuelta,41.6124631,-4.7951442,642
+Verde_vuelta,41.6123348,-4.795053,643
+Verde_vuelta,41.6122345,-4.7949806,644
+Verde_vuelta,41.6121082,-4.7948385,645
+Verde_vuelta,41.6119477,-4.7947473,646
+Verde_vuelta,41.6117993,-4.7946963,647
+Verde_vuelta,41.6117011,-4.7946936,648
+Verde_vuelta,41.6115427,-4.7947151,649
+Verde_vuelta,41.6114143,-4.7947687,650
+Verde_vuelta,41.6113201,-4.7948331,651
+Verde_vuelta,41.6112499,-4.7948921,652
+Verde_vuelta,41.6111636,-4.7949806,653
+Verde_vuelta,41.6110954,-4.7950879,654
+Verde_vuelta,41.6110353,-4.7952086,655
+Verde_vuelta,41.6109791,-4.7953588,656
+Verde_vuelta,41.6109531,-4.795501,657
+Verde_vuelta,41.610935,-4.7956834,658
+Verde_vuelta,41.610943,-4.7958738,659
+Verde_vuelta,41.6109571,-4.7959891,660
+Verde_vuelta,41.6110052,-4.7961501,661
+Verde_vuelta,41.6110754,-4.7964022,662
+Verde_vuelta,41.6111356,-4.796606,663
+Verde_vuelta,41.6112158,-4.7968233,664
+Verde_vuelta,41.6112559,-4.7968582,665
+Verde_vuelta,41.611306,-4.7968448,666
+Verde_vuelta,41.6113541,-4.7968769,667
+Verde_vuelta,41.6113943,-4.796952,668
+Verde_vuelta,41.6113943,-4.7970298,669
+Verde_vuelta,41.6113762,-4.7971022,670
+Verde_vuelta,41.6113361,-4.7971371,671
+Verde_vuelta,41.611292,-4.7971559,672
+Verde_vuelta,41.6112358,-4.7971425,673
+Verde_vuelta,41.6112037,-4.7971049,674
+Verde_vuelta,41.6111737,-4.7970486,675
+Verde_vuelta,41.6111636,-4.7969681,676
+Verde_vuelta,41.6111877,-4.7969172,677
+Verde_vuelta,41.6111897,-4.7968474,678
+Verde_vuelta,41.6111576,-4.7967401,679
+Verde_vuelta,41.6111055,-4.796606,680
+Verde_vuelta,41.6109872,-4.7962278,681
+Verde_vuelta,41.6109531,-4.796075,682
+Verde_vuelta,41.610911,-4.7959328,683
+Verde_vuelta,41.6108969,-4.7957719,684
+Verde_vuelta,41.6109029,-4.7956324,685
+Verde_vuelta,41.610919,-4.7954956,686
+Verde_vuelta,41.610947,-4.7953427,687
+Verde_vuelta,41.6109872,-4.7952408,688
+Verde_vuelta,41.6110533,-4.7950906,689
+Verde_vuelta,41.6111215,-4.7949833,690
+Verde_vuelta,41.6111917,-4.7948814,691
+Verde_vuelta,41.611288,-4.7948063,692
+Verde_vuelta,41.6113802,-4.794758,693
+Verde_vuelta,41.6115086,-4.7946909,694
+Verde_vuelta,41.6115888,-4.7946507,695
+Verde_vuelta,41.6116209,-4.7946427,696
+Verde_vuelta,41.6116309,-4.7945917,697
+Verde_vuelta,41.6116529,-4.794522,698
+Verde_vuelta,41.6116449,-4.7944388,699
+Verde_vuelta,41.6116309,-4.7943771,700
+Verde_vuelta,41.6115808,-4.7943369,701
+Verde_vuelta,41.6114905,-4.7942886,702
+Verde_vuelta,41.6113782,-4.7942055,703
+Verde_vuelta,41.611306,-4.7941491,704
+Verde_vuelta,41.6112779,-4.7941169,705
+Verde_vuelta,41.6112358,-4.7941277,706
+Verde_vuelta,41.6111717,-4.7941384,707
+Verde_vuelta,41.6111376,-4.794125,708
+Verde_vuelta,41.6110914,-4.7941009,709
+Verde_vuelta,41.6110513,-4.7940526,710
+Verde_vuelta,41.6110233,-4.7939989,711
+Verde_vuelta,41.6110092,-4.7939426,712
+Verde_vuelta,41.6110092,-4.7938702,713
+Verde_vuelta,41.6110212,-4.7938031,714
+Verde_vuelta,41.6110473,-4.7937548,715
+Verde_vuelta,41.6110934,-4.7936958,716
+Verde_vuelta,41.6111155,-4.7936556,717
+Verde_vuelta,41.6111155,-4.7935912,718
+Verde_vuelta,41.6110353,-4.7923681,719
+Verde_vuelta,41.6110212,-4.7923225,720
+Verde_vuelta,41.6109631,-4.7923065,721
+Verde_vuelta,41.610915,-4.7922904,722
+Verde_vuelta,41.6108789,-4.7922474,723
+Verde_vuelta,41.6108508,-4.7921992,724
+Verde_vuelta,41.6108307,-4.7921536,725
+Verde_vuelta,41.6108227,-4.7921026,726
+Verde_vuelta,41.6108247,-4.7920409,727
+Verde_vuelta,41.6108287,-4.7919631,728
+Verde_vuelta,41.6108728,-4.791888,729
+Verde_vuelta,41.610921,-4.7918371,730
+Verde_vuelta,41.6109751,-4.7918049,731
+Verde_vuelta,41.6110112,-4.79177,732
+Verde_vuelta,41.610945,-4.7908447,733
+Verde_vuelta,41.610947,-4.7907749,734
+Verde_vuelta,41.6109611,-4.790681,735
+Verde_vuelta,41.6110273,-4.790563,736
+Verde_vuelta,41.6111696,-4.7902358,737
+Verde_vuelta,41.6113662,-4.7897798,738
+Verde_vuelta,41.6115406,-4.7893882,739
+Verde_vuelta,41.6123107,-4.7876689,740
+Verde_vuelta,41.6128782,-4.7863627,741
+Verde_vuelta,41.6129845,-4.7861401,742
+Verde_vuelta,41.6130427,-4.7860489,743
+Verde_vuelta,41.613149,-4.7859469,744
+Verde_vuelta,41.6133996,-4.7857189,745
+Verde_vuelta,41.6134598,-4.7856465,746
+Verde_vuelta,41.6134678,-4.7856117,747
+Verde_vuelta,41.6132352,-4.7851235,748
+Verde_vuelta,41.6130768,-4.7847775,749
+Verde_vuelta,41.6130346,-4.7847051,750
+Verde_vuelta,41.6130848,-4.7846514,751
+Verde_vuelta,41.6131469,-4.7845844,752
+Verde_vuelta,41.6132231,-4.7844878,753
+Verde_vuelta,41.6132592,-4.7843832,754
+Verde_vuelta,41.6133234,-4.7841981,755
+Verde_vuelta,41.6133635,-4.783938,756
+Verde_vuelta,41.6133555,-4.7837797,757
+Verde_vuelta,41.6133194,-4.7835785,758
+Verde_vuelta,41.6132292,-4.7834015,759
+Verde_vuelta,41.6130788,-4.7830743,760
+Verde_vuelta,41.6129264,-4.7827819,761
+Verde_vuelta,41.6130748,-4.7826371,762
+Verde_vuelta,41.6139972,-4.7818593,763
+Verde_vuelta,41.6152846,-4.7807864,764
+Verde_vuelta,41.6166502,-4.7796411,765
+Verde_vuelta,41.6171976,-4.7791797,766
+Verde_vuelta,41.6174422,-4.7789786,767
+Verde_vuelta,41.6175646,-4.7788525,768
+Verde_vuelta,41.6176909,-4.7786755,769
+Verde_vuelta,41.6177129,-4.7786433,770
+Verde_vuelta,41.6178012,-4.7784019,771
+Verde_vuelta,41.6179656,-4.7778923,772
+Verde_vuelta,41.6187218,-4.7756257,773
+Verde_ida,41.625671,-4.7738703,0
+Verde_ida,41.6255137,-4.7738515,1
+Verde_ida,41.6253232,-4.775257,2
+Verde_ida,41.6250665,-4.7760804,3
+Verde_ida,41.6251066,-4.7761582,4
+Verde_ida,41.6251407,-4.7762414,5
+Verde_ida,41.6251467,-4.7763004,6
+Verde_ida,41.6251407,-4.7763648,7
+Verde_ida,41.6251127,-4.7764479,8
+Verde_ida,41.6250505,-4.7765176,9
+Verde_ida,41.6249623,-4.7765418,10
+Verde_ida,41.6249142,-4.7765525,11
+Verde_ida,41.6243568,-4.7782235,12
+Verde_ida,41.6238936,-4.7795405,13
+Verde_ida,41.6238936,-4.7795807,14
+Verde_ida,41.6239257,-4.7796451,15
+Verde_ida,41.6239438,-4.7797148,16
+Verde_ida,41.6239558,-4.7797792,17
+Verde_ida,41.6239498,-4.7798677,18
+Verde_ida,41.6239217,-4.7799294,19
+Verde_ida,41.6238515,-4.7799723,20
+Verde_ida,41.6238074,-4.7799965,21
+Verde_ida,41.6237332,-4.780026,22
+Verde_ida,41.6235668,-4.7804793,23
+Verde_ida,41.6229833,-4.7821691,24
+Verde_ida,41.622458,-4.7836765,25
+Verde_ida,41.6217683,-4.7857015,26
+Verde_ida,41.6198975,-4.7910874,27
+Verde_ida,41.6188067,-4.7942095,28
+Verde_ida,41.618151,-4.7960924,29
+Verde_ida,41.618127,-4.796189,30
+Verde_ida,41.618143,-4.7962614,31
+Verde_ida,41.6181671,-4.7963392,32
+Verde_ida,41.6181671,-4.7964196,33
+Verde_ida,41.618129,-4.7965269,34
+Verde_ida,41.6180708,-4.7965859,35
+Verde_ida,41.6180628,-4.7968193,36
+Verde_ida,41.6180708,-4.7970902,37
+Verde_ida,41.6180788,-4.7973021,38
+Verde_ida,41.6180949,-4.7974737,39
+Verde_ida,41.618141,-4.7976856,40
+Verde_ida,41.6181992,-4.7978814,41
+Verde_ida,41.6183375,-4.7981175,42
+Verde_ida,41.6191055,-4.799421,43
+Verde_ida,41.6191436,-4.7994237,44
+Verde_ida,41.6191957,-4.7994371,45
+Verde_ida,41.6192539,-4.7994639,46
+Verde_ida,41.619284,-4.7995229,47
+Verde_ida,41.619294,-4.7996249,48
+Verde_ida,41.6192699,-4.799708,49
+Verde_ida,41.6192659,-4.799767,50
+Verde_ida,41.6193762,-4.7999601,51
+Verde_ida,41.6195226,-4.8001935,52
+Verde_ida,41.62007,-4.8010572,53
+Verde_ida,41.6203667,-4.8015105,54
+Verde_ida,41.6205853,-4.8018404,55
+Verde_ida,41.6206354,-4.8018431,56
+Verde_ida,41.6206956,-4.8018591,57
+Verde_ida,41.6207557,-4.8019021,58
+Verde_ida,41.6207938,-4.8019718,59
+Verde_ida,41.6208139,-4.802055,60
+Verde_ida,41.6208139,-4.8021274,61
+Verde_ida,41.6207998,-4.8022293,62
+Verde_ida,41.6208279,-4.802299,63
+Verde_ida,41.6209462,-4.8025136,64
+Verde_ida,41.6209903,-4.8026048,65
+Verde_ida,41.6211708,-4.802932,66
+Verde_ida,41.6218345,-4.8040693,67
+Verde_ida,41.622049,-4.8044502,68
+Verde_ida,41.6221934,-4.8047184,69
+Verde_ida,41.6222435,-4.8047184,70
+Verde_ida,41.6223117,-4.8047237,71
+Verde_ida,41.6223858,-4.8047479,72
+Verde_ida,41.62243,-4.8048203,73
+Verde_ida,41.622442,-4.804933,74
+Verde_ida,41.622434,-4.8050376,75
+Verde_ida,41.6223818,-4.8051207,76
+Verde_ida,41.6223056,-4.8051502,77
+Verde_ida,41.6222034,-4.8051395,78
+Verde_ida,41.6221372,-4.8051556,79
+Verde_ida,41.6219908,-4.8054453,80
+Verde_ida,41.6205191,-4.8080658,81
+Verde_ida,41.6203928,-4.8082723,82
+Verde_ida,41.6204028,-4.808326,83
+Verde_ida,41.6204329,-4.8083903,84
+Verde_ida,41.6204329,-4.8084601,85
+Verde_ida,41.6204309,-4.8085459,86
+Verde_ida,41.6203727,-4.8086156,87
+Verde_ida,41.6202845,-4.8086693,88
+Verde_ida,41.6202344,-4.8086693,89
+Verde_ida,41.6201802,-4.8086532,90
+Verde_ida,41.6201101,-4.8087712,91
+Verde_ida,41.6187125,-4.8112469,92
+Verde_ida,41.6186022,-4.8114373,93
+Verde_ida,41.6186222,-4.8115017,94
+Verde_ida,41.6186543,-4.8115795,95
+Verde_ida,41.6186603,-4.8116653,96
+Verde_ida,41.6186483,-4.8117592,97
+Verde_ida,41.6186182,-4.8118289,98
+Verde_ida,41.6185601,-4.8118879,99
+Verde_ida,41.6184979,-4.8119067,100
+Verde_ida,41.6184217,-4.8119094,101
+Verde_ida,41.6183696,-4.8118692,102
+Verde_ida,41.6182493,-4.8120515,103
+Verde_ida,41.6181611,-4.8121937,104
+Verde_ida,41.6181049,-4.812309,105
+Verde_ida,41.6181069,-4.8124136,106
+Verde_ida,41.618121,-4.8125612,107
+Verde_ida,41.6181109,-4.812647,108
+Verde_ida,41.6180909,-4.8127167,109
+Verde_ida,41.6180889,-4.8128428,110
+Verde_ida,41.6180808,-4.8130064,111
+Verde_ida,41.6180347,-4.8130788,112
+Verde_ida,41.6179605,-4.813111,113
+Verde_ida,41.6178743,-4.8131083,114
+Verde_ida,41.6177821,-4.8130547,115
+Verde_ida,41.61774,-4.8129501,116
+Verde_ida,41.617738,-4.8128374,117
+Verde_ida,41.61774,-4.8127328,118
+Verde_ida,41.6176818,-4.8125209,119
+Verde_ida,41.6174532,-4.8117297,120
+Verde_ida,41.61698,-4.8103457,121
+Verde_ida,41.6164386,-4.8088114,122
+Verde_ida,41.6157668,-4.8067622,123
+Verde_ida,41.6154741,-4.8057644,124
+Verde_ida,41.6153798,-4.8055391,125
+Verde_ida,41.6152856,-4.8053621,126
+Verde_ida,41.6152094,-4.8052951,127
+Verde_ida,41.6151111,-4.8052682,128
+Verde_ida,41.6149908,-4.8052495,129
+Verde_ida,41.6149046,-4.8051905,130
+Verde_ida,41.6148023,-4.8050671,131
+Verde_ida,41.6147582,-4.8049383,132
+Verde_ida,41.6147461,-4.8047881,133
+Verde_ida,41.6147722,-4.8046621,134
+Verde_ida,41.6148083,-4.8045065,135
+Verde_ida,41.6148043,-4.8043965,136
+Verde_ida,41.6147481,-4.8042329,137
+Verde_ida,41.6143912,-4.8037045,138
+Verde_ida,41.6138538,-4.8030098,139
+Verde_ida,41.6136252,-4.8026933,140
+Verde_ida,41.6133885,-4.8023634,141
+Verde_ida,41.6132421,-4.8021381,142
+Verde_ida,41.6131379,-4.8019182,143
+Verde_ida,41.6130236,-4.8016419,144
+Verde_ida,41.6127849,-4.8010599,145
+Verde_ida,41.6126746,-4.8007889,146
+Verde_ida,41.6126365,-4.8005824,147
+Verde_ida,41.6126065,-4.8003571,148
+Verde_ida,41.6125964,-4.8003115,149
+Verde_ida,41.6125483,-4.8002525,150
+Verde_ida,41.6124881,-4.8001345,151
+Verde_ida,41.6124681,-4.8000245,152
+Verde_ida,41.6124701,-4.7999628,153
+Verde_ida,41.6124942,-4.7998529,154
+Verde_ida,41.6125403,-4.7997429,155
+Verde_ida,41.6125704,-4.7995632,156
+Verde_ida,41.6126305,-4.7993352,157
+Verde_ida,41.6128431,-4.7988926,158
+Verde_ida,41.6131178,-4.798324,159
+Verde_ida,41.6133745,-4.797809,160
+Verde_ida,41.613561,-4.7974657,161
+Verde_ida,41.6136532,-4.7972189,162
+Verde_ida,41.6137254,-4.7970231,163
+Verde_ida,41.6137535,-4.7968729,164
+Verde_ida,41.6137615,-4.7967361,165
+Verde_ida,41.6137495,-4.7965698,166
+Verde_ida,41.6137234,-4.7964384,167
+Verde_ida,41.6136974,-4.7963499,168
+Verde_ida,41.6136312,-4.7962265,169
+Verde_ida,41.6135429,-4.7961165,170
+Verde_ida,41.6134447,-4.7960307,171
+Verde_ida,41.6133524,-4.7959341,172
+Verde_ida,41.6132401,-4.7958242,173
+Verde_ida,41.6131359,-4.7957491,174
+Verde_ida,41.6130356,-4.7956579,175
+Verde_ida,41.6129353,-4.7955667,176
+Verde_ida,41.6128391,-4.7954916,177
+Verde_ida,41.6127569,-4.7954245,178
+Verde_ida,41.6126586,-4.795336,179
+Verde_ida,41.6124881,-4.7951939,180
+Verde_ida,41.6123377,-4.7950624,181
+Verde_ida,41.6121974,-4.7949578,182
+Verde_ida,41.6120951,-4.79488,183
+Verde_ida,41.6119487,-4.7947486,184
+Verde_ida,41.6118284,-4.7947191,185
+Verde_ida,41.6116559,-4.7946896,186
+Verde_ida,41.6115055,-4.7947137,187
+Verde_ida,41.6113411,-4.7948049,188
+Verde_ida,41.6112308,-4.7949149,189
+Verde_ida,41.6111285,-4.7950329,190
+Verde_ida,41.6110222,-4.7952448,191
+Verde_ida,41.6110001,-4.7953065,192
+Verde_ida,41.610952,-4.7954809,193
+Verde_ida,41.610936,-4.795682,194
+Verde_ida,41.610944,-4.7958832,195
+Verde_ida,41.6109841,-4.7961031,196
+Verde_ida,41.6112067,-4.7968246,197
+Verde_ida,41.6112548,-4.7968381,198
+Verde_ida,41.611305,-4.7968354,199
+Verde_ida,41.6113531,-4.7968568,200
+Verde_ida,41.6113872,-4.7969051,201
+Verde_ida,41.6114072,-4.7969748,202
+Verde_ida,41.6114012,-4.7970499,203
+Verde_ida,41.6113691,-4.797109,204
+Verde_ida,41.611337,-4.7971331,205
+Verde_ida,41.6112809,-4.7971385,206
+Verde_ida,41.6112187,-4.7971224,207
+Verde_ida,41.6111907,-4.7970875,208
+Verde_ida,41.6111646,-4.7970124,209
+Verde_ida,41.6111746,-4.7969373,210
+Verde_ida,41.6111846,-4.7968702,211
+Verde_ida,41.6111646,-4.7967844,212
+Verde_ida,41.6110984,-4.7965752,213
+Verde_ida,41.6110543,-4.796433,214
+Verde_ida,41.6110082,-4.7962909,215
+Verde_ida,41.610964,-4.7961219,216
+Verde_ida,41.6109259,-4.7959502,217
+Verde_ida,41.6109039,-4.7958295,218
+Verde_ida,41.6109019,-4.7956981,219
+Verde_ida,41.6109019,-4.795564,220
+Verde_ida,41.6109279,-4.7954245,221
+Verde_ida,41.6109761,-4.7952609,222
+Verde_ida,41.6110342,-4.7951241,223
+Verde_ida,41.6111024,-4.7950195,224
+Verde_ida,41.6111726,-4.794923,225
+Verde_ida,41.6112608,-4.7948291,226
+Verde_ida,41.6113511,-4.7947593,227
+Verde_ida,41.6114313,-4.7947191,228
+Verde_ida,41.6115536,-4.7946655,229
+Verde_ida,41.6116078,-4.7945984,230
+Verde_ida,41.6116338,-4.7945045,231
+Verde_ida,41.6116218,-4.7944133,232
+Verde_ida,41.6115777,-4.7943436,233
+Verde_ida,41.6114955,-4.79429,234
+Verde_ida,41.6113431,-4.7941907,235
+Verde_ida,41.6112889,-4.7941344,236
+Verde_ida,41.6111846,-4.794129,237
+Verde_ida,41.6111165,-4.7941317,238
+Verde_ida,41.6110563,-4.7940566,239
+Verde_ida,41.6110162,-4.7939761,240
+Verde_ida,41.6110082,-4.7938608,241
+Verde_ida,41.6110443,-4.7937642,242
+Verde_ida,41.6111064,-4.7936918,243
+Verde_ida,41.6110182,-4.7923319,244
+Verde_ida,41.610948,-4.7923132,245
+Verde_ida,41.6108638,-4.7922461,246
+Verde_ida,41.6108357,-4.7921549,247
+Verde_ida,41.6108237,-4.7920423,248
+Verde_ida,41.6108357,-4.7919484,249
+Verde_ida,41.6108818,-4.7918277,250
+Verde_ida,41.610952,-4.7917982,251
+Verde_ida,41.6110001,-4.7917526,252
+Verde_ida,41.610944,-4.7910096,253
+Verde_ida,41.6109336,-4.7908195,254
+Verde_ida,41.6109677,-4.790688,255
+Verde_ida,41.6110399,-4.7905056,256
+Verde_ida,41.6113888,-4.789701,257
+Verde_ida,41.6120365,-4.7882526,258
+Verde_ida,41.6122732,-4.7877161,259
+Verde_ida,41.6126722,-4.786823,260
+Verde_ida,41.6128728,-4.7863509,261
+Verde_ida,41.6130071,-4.7860746,262
+Verde_ida,41.6131355,-4.7859405,263
+Verde_ida,41.6134082,-4.7856991,264
+Verde_ida,41.6134644,-4.7856455,265
+Verde_ida,41.6134644,-4.7855999,266
+Verde_ida,41.6133962,-4.7854658,267
+Verde_ida,41.6133019,-4.7852861,268
+Verde_ida,41.6130392,-4.7847255,269
+Verde_ida,41.6130533,-4.7846799,270
+Verde_ida,41.6131094,-4.7846209,271
+Verde_ida,41.6132077,-4.7844841,272
+Verde_ida,41.6132779,-4.7843205,273
+Verde_ida,41.613346,-4.7841032,274
+Verde_ida,41.6133621,-4.7838323,275
+Verde_ida,41.613338,-4.7836526,276
+Verde_ida,41.6132498,-4.7834326,277
+Verde_ida,41.6131094,-4.7831376,278
+Verde_ida,41.6129851,-4.7828667,279
+Verde_ida,41.6129329,-4.7827889,280
+Verde_ida,41.612953,-4.7827353,281
+Verde_ida,41.6130553,-4.7826548,282
+Verde_ida,41.6135726,-4.7822042,283
+Verde_ida,41.6141261,-4.781759,284
+Verde_ida,41.6151488,-4.7809006,285
+Verde_ida,41.6156,-4.7805144,286
+Verde_ida,41.6159248,-4.7802435,287
+Verde_ida,41.6165745,-4.7796963,288
+Verde_ida,41.6170658,-4.7792806,289
+Verde_ida,41.6174165,-4.7789888,290
+Verde_ida,41.6176652,-4.7787072,291
+Verde_ida,41.6177113,-4.7786348,292
+Verde_ida,41.6178136,-4.7783719,293
+Verde_ida,41.617982,-4.7778274,294
+Verde_ida,41.6187139,-4.7756414,295
+Verde_ida,41.6190026,-4.7747938,296
+Verde_ida,41.6189866,-4.7747563,297
+Verde_ida,41.6190127,-4.7747187,298
+Verde_ida,41.6190648,-4.7746758,299
+Verde_ida,41.619905,-4.7743674,300
+Verde_ida,41.6209757,-4.7739972,301
+Verde_ida,41.6210579,-4.7739784,302
+Verde_ida,41.621094,-4.7739784,303
+Verde_ida,41.6211301,-4.7739838,304
+Verde_ida,41.6212043,-4.7740187,305
+Verde_ida,41.6215251,-4.7742279,306
+Verde_ida,41.6218138,-4.7744049,307
+Verde_ida,41.621894,-4.7743995,308
+Verde_ida,41.6219481,-4.7743405,309
+Verde_ida,41.6219802,-4.7742976,310
+Verde_ida,41.6220083,-4.7742869,311
+Verde_ida,41.6220624,-4.7742708,312
+Verde_ida,41.6221186,-4.7742815,313
+Verde_ida,41.6221767,-4.7742628,314
+Verde_ida,41.6222289,-4.7741769,315
+Verde_ida,41.622285,-4.7740267,316
+Verde_ida,41.6224013,-4.7736807,317
+Verde_ida,41.6233497,-4.7709529,318
+Verde_ida,41.6240434,-4.7690164,319
+Verde_ida,41.6240755,-4.7689413,320
+Verde_ida,41.6240755,-4.7688957,321
+Verde_ida,41.6240454,-4.7688474,322
+Verde_ida,41.6240133,-4.7687776,323
+Verde_ida,41.6239873,-4.7686918,324
+Verde_ida,41.6239853,-4.7686006,325
+Verde_ida,41.6239933,-4.7684745,326
+Verde_ida,41.6240434,-4.768378,327
+Verde_ida,41.6241236,-4.7683243,328
+Verde_ida,41.6242058,-4.7683002,329
+Verde_ida,41.624284,-4.7682653,330
+Verde_ida,41.6243422,-4.7681178,331
+Verde_ida,41.6243562,-4.7680159,332
+Verde_ida,41.6245366,-4.7674741,333
+Verde_ida,41.6246249,-4.7671871,334
+Verde_ida,41.6247171,-4.7669779,335
+Verde_ida,41.6247933,-4.7668491,336
+Verde_ida,41.6248514,-4.7666855,337
+Verde_ida,41.6256574,-4.7642554,338
+Verde_ida,41.6265917,-4.7615571,339
+Verde_ida,41.6272132,-4.7597654,340
+Verde_ida,41.6272092,-4.7596823,341
+Verde_ida,41.6271972,-4.759583,342
+Verde_ida,41.6272052,-4.7594543,343
+Verde_ida,41.6272253,-4.7593443,344
+Verde_ida,41.6272433,-4.7591968,345
+Verde_ida,41.6272413,-4.7590975,346
+Verde_ida,41.6272173,-4.7589929,347
+Verde_ida,41.6272112,-4.7588749,348
+Verde_ida,41.6271491,-4.7587274,349
+Verde_ida,41.6270829,-4.7585557,350
+Verde_ida,41.6269686,-4.7583438,351
+Verde_ida,41.6268423,-4.7581454,352
+Verde_ida,41.6265115,-4.7577618,353
+Verde_ida,41.6257897,-4.7568606,354
+Verde_ida,41.6252745,-4.7561954,355
+Verde_ida,41.6251061,-4.7560157,356
+Verde_ida,41.6248895,-4.7557716,357
+Verde_ida,41.624689,-4.7555812,358
+Verde_ida,41.6243803,-4.7551252,359
+Verde_ida,41.6241116,-4.754739,360
+Verde_ida,41.6239512,-4.7544868,361
+Verde_ida,41.6238008,-4.7542213,362
+Verde_ida,41.6236444,-4.7539209,363
+Verde_ida,41.623468,-4.7535507,364
+Verde_ida,41.6234038,-4.7534005,365
+Verde_ida,41.6233236,-4.7532047,366
+Verde_ida,41.6232434,-4.7529821,367
+Verde_ida,41.6231432,-4.7526522,368
+Verde_ida,41.6230489,-4.7523411,369
+Verde_ida,41.6229667,-4.7520031,370
+Verde_ida,41.6229066,-4.7517188,371
+Verde_ida,41.6228244,-4.7512548,372
+Verde_ida,41.6227602,-4.7507505,373
+Verde_ida,41.6227061,-4.750383,374
+Verde_ida,41.6226499,-4.7500156,375
+Verde_ida,41.6225497,-4.749404,376
+Verde_ida,41.6224586,-4.7488402,377
+Verde_ida,41.6223644,-4.7484137,378
+Verde_ida,41.6222802,-4.7480784,379
+Verde_ida,41.6222421,-4.7477619,380
+Verde_ida,41.62223,-4.7473918,381
+Verde_ida,41.622204,-4.7470404,382
+Verde_ida,41.6220376,-4.7459488,383
+Verde_ida,41.6217508,-4.744031,384
+Verde_ida,41.6215283,-4.7424967,385
+Verde_ida,41.6215042,-4.7423492,386
+Verde_ida,41.6214461,-4.7420408,387
+Verde_ida,41.6213618,-4.7415607,388
+Verde_ida,41.6212375,-4.741094,389
+Verde_ida,41.6211333,-4.7407265,390
+Verde_ida,41.621027,-4.7403403,391
+Verde_ida,41.6209267,-4.7400157,392
+Verde_ida,41.6207804,-4.7395812,393
+Verde_ida,41.6204215,-4.7386344,394
+Verde_ida,41.6201869,-4.738114,395
+Verde_ida,41.6199442,-4.7375883,396
+Verde_ida,41.6197818,-4.7372021,397
+Verde_ida,41.6194871,-4.736435,398
+Verde_ida,41.6191622,-4.7355901,399
+Verde_ida,41.6190359,-4.7352092,400
+Verde_ida,41.6185747,-4.7338949,401
+Verde_ida,41.6184704,-4.7334765,402
+Verde_ida,41.6183682,-4.7330715,403
+Verde_ida,41.6183582,-4.7328998,404
+Verde_ida,41.61829,-4.7326155,405
+Verde_ida,41.6181617,-4.7320871,406
+Verde_ida,41.6181115,-4.7315802,407
+Verde_ida,41.6180353,-4.7304751,408
+Verde_ida,41.6179892,-4.7296919,409
+Verde_ida,41.617897,-4.7282462,410
+Verde_ida,41.6177887,-4.7267307,411
+Verde_ida,41.6176904,-4.7255881,412
+Verde_ida,41.6176102,-4.7246574,413
+Verde_ida,41.6174859,-4.7237776,414
+Verde_ida,41.6174638,-4.7233833,415
+Verde_ida,41.6174518,-4.7233029,416
+Verde_ida,41.6174438,-4.7230481,417
+Verde_ida,41.6174518,-4.7227611,418
+Verde_ida,41.6174658,-4.7223909,419
+Verde_ida,41.61751,-4.7220664,420
+Verde_ida,41.6175541,-4.7217606,421
+Verde_ida,41.6175962,-4.7215514,422
+Verde_ida,41.6176523,-4.72131,423
+Verde_ida,41.6177666,-4.720964,424
+Verde_ida,41.6178529,-4.7207226,425
+Verde_ida,41.617917,-4.7205134,426
+Verde_ida,41.6180453,-4.7202451,427
+Verde_ida,41.6181436,-4.7200172,428
+Verde_ida,41.6183622,-4.7196443,429
+Verde_ida,41.6192063,-4.7180618,430
+Verde_ida,41.6199984,-4.7166644,431
+Verde_ida,41.6200445,-4.7165571,432
+Verde_ida,41.6200726,-4.71649,433
+Verde_ida,41.6201608,-4.716372,434
+Verde_ida,41.620235,-4.7162326,435
+Verde_ida,41.620251,-4.7161253,436
+Verde_ida,41.6202109,-4.7159375,437
+Verde_ida,41.6202029,-4.7156934,438
+Verde_ida,41.620241,-4.7155271,439
+Verde_ida,41.6203392,-4.7153018,440
+Verde_ida,41.6204676,-4.7151892,441
+Verde_ida,41.6205939,-4.7151516,442
+Verde_ida,41.6207443,-4.7151436,443
+Verde_ida,41.6208786,-4.7151892,444
+Verde_ida,41.621031,-4.7152991,445
+Verde_ida,41.6211273,-4.7154467,446
+Verde_ida,41.6211974,-4.7156291,447
+Verde_ida,41.6212255,-4.7158463,448
+Verde_ida,41.6212696,-4.7159617,449
+Verde_ida,41.6213238,-4.7160314,450
+Verde_ida,41.6213959,-4.7160663,451
+Verde_ida,41.6214822,-4.7160582,452
+Verde_ida,41.6217007,-4.7160448,453
+Verde_ida,41.6218471,-4.7160421,454
+Verde_ida,41.6219814,-4.7160609,455
+Verde_ida,41.6222,-4.7160984,456
+Verde_ida,41.6224927,-4.7161789,457
+Verde_ida,41.6227834,-4.7162808,458
+Verde_ida,41.6230822,-4.7163908,459
+Verde_ida,41.6232887,-4.7164766,460
+Verde_ida,41.6236797,-4.7166268,461
+Verde_ida,41.6241188,-4.716828,462
+Verde_ida,41.6251473,-4.7172411,463
+Verde_ida,41.625418,-4.7173537,464
+Verde_ida,41.6261117,-4.71763,465
+Verde_ida,41.6261759,-4.7176488,466
+Verde_ida,41.6262481,-4.7176246,467
+Verde_ida,41.6263363,-4.7176085,468
+Verde_ida,41.6264064,-4.7176005,469
+Verde_ida,41.6265007,-4.7175468,470
+Verde_ida,41.6265829,-4.7175173,471
+Verde_ida,41.6266891,-4.7175334,472
+Verde_ida,41.6267914,-4.7176058,473
+Verde_ida,41.6268415,-4.717697,474
+Verde_ida,41.6269057,-4.7177802,475
+Verde_ida,41.6269879,-4.7178821,476
+Verde_ida,41.6270981,-4.7180028,477
+Verde_ida,41.6271242,-4.7180484,478
+Verde_ida,41.6273688,-4.718153,479
+Verde_ida,41.6282109,-4.718499,480
+Verde_ida,41.6284214,-4.7185902,481
+Verde_ida,41.6286399,-4.7186948,482
+Verde_ida,41.6288183,-4.718778,483
+Verde_ida,41.6289787,-4.7188584,484
+Verde_ida,41.6290529,-4.718845,485
+Verde_ida,41.6291471,-4.7188397,486
+Verde_ida,41.6292414,-4.7188558,487
+Verde_ida,41.6293075,-4.7188584,488
+Verde_ida,41.6293657,-4.718837,489
+Verde_ida,41.6294318,-4.7187699,490
+Verde_ida,41.629524,-4.7186305,491
+Verde_ida,41.6296303,-4.7184186,492
+Verde_ida,41.6298288,-4.7179572,493
+Verde_ida,41.6300673,-4.7174208,494
+Verde_ida,41.6300673,-4.7173644,495
+Verde_ida,41.6300754,-4.7172813,496
+Verde_ida,41.6301074,-4.7171955,497
+Verde_ida,41.630747,-4.7156908,498
+Verde_ida,41.6313745,-4.7143067,499
+Verde_ida,41.6314707,-4.7141002,500
+Verde_ida,41.6315088,-4.7140358,501
+Verde_ida,41.6315469,-4.7140117,502
+Verde_ida,41.6315895,-4.7139406,503
+Verde_ida,41.6316696,-4.7137716,504
+Verde_ida,41.631826,-4.7134149,505
+Verde_ida,41.6319202,-4.7132057,506
+Verde_ida,41.6319503,-4.7131467,507
+Verde_ida,41.6319323,-4.7131065,508
+Verde_ida,41.6319122,-4.7130609,509
+Verde_ida,41.6318962,-4.7130179,510
+Verde_ida,41.6319022,-4.7129536,511
+Verde_ida,41.6319102,-4.7128865,512
+Verde_ida,41.6319503,-4.7128409,513
+Verde_ida,41.6320024,-4.7128087,514
+Verde_ida,41.6320566,-4.7128168,515
+Verde_ida,41.6321167,-4.7127739,516
+Verde_ida,41.6322109,-4.71257,517
+Verde_ida,41.6327462,-4.7114167,518
+Verde_ida,41.6333356,-4.7100943,519
+Verde_ida,41.6338548,-4.7088793,520
+Verde_ida,41.6340392,-4.7084394,521
+Verde_ida,41.6346025,-4.7071895,522
+Verde_ida,41.6346346,-4.7070822,523
+Verde_ida,41.6346747,-4.7069669,524
+Verde_ida,41.6346887,-4.7068381,525
+Verde_ida,41.6346928,-4.7067201,526
+Verde_ida,41.6346847,-4.7066396,527
+Verde_ida,41.6346446,-4.7064707,528
+Verde_ida,41.6346547,-4.7063714,529
+Verde_ida,41.6346827,-4.7062588,530
+Verde_ida,41.6347128,-4.7062212,531
+Verde_ida,41.6347589,-4.706248,532
+Verde_ida,41.6349594,-4.7064117,533
+Verde_ida,41.6360018,-4.707278,534
+Verde_ida,41.6367375,-4.7078601,535
+Verde_ida,41.6376877,-4.7085896,536
+Verde_ida,41.6382028,-4.7089356,537
+Verde_ida,41.6386298,-4.7092012,538
+Verde_ida,41.6389806,-4.7094104,539
+Verde_ida,41.6393795,-4.7097644,540
+Verde_ida,41.6397744,-4.7101399,541
+Verde_ida,41.640051,-4.7104135,542
+Verde_ida,41.6410673,-4.7113335,543
+Verde_ida,41.6417428,-4.7119558,544
+Verde_ida,41.6424844,-4.7126558,545
+Verde_ida,41.6434626,-4.7135758,546
+Verde_ida,41.6446472,-4.7146031,547
+Verde_ida,41.6450861,-4.7150162,548
+Verde_ida,41.6453507,-4.715271,549
+Verde_ida,41.6456714,-4.7155634,550
+Verde_ida,41.646417,-4.7162393,551
+Verde_ida,41.6469321,-4.7167248,552
+Verde_ida,41.6469662,-4.7166818,553
+Verde_ida,41.6470323,-4.7166121,554
+Verde_ida,41.6471085,-4.7165531,555
+Verde_ida,41.6471907,-4.7165102,556
+Verde_ida,41.6472769,-4.7164994,557
+Verde_ida,41.6473711,-4.7165102,558
+Verde_ida,41.6474613,-4.716545,559
+Verde_ida,41.6475535,-4.7166175,560
+Verde_ida,41.6476316,-4.7167033,561
+Verde_ida,41.6476938,-4.7168213,562
+Verde_ida,41.6477378,-4.7169688,563
+Verde_ida,41.6477579,-4.7171244,564
+Verde_ida,41.6477439,-4.7172987,565
+Verde_ida,41.6477118,-4.7174141,566
+Verde_ida,41.6477439,-4.7174704,567
+Verde_ida,41.6478401,-4.7175831,568
+Verde_ida,41.6488021,-4.718487,569
+Verde_ida,41.6491709,-4.7188276,570
+Verde_ida,41.6500648,-4.7196671,571
+Verde_ida,41.6505217,-4.7201097,572
+Verde_ida,41.6506861,-4.7202545,573
+Verde_ida,41.6507983,-4.7203538,574
+Verde_ida,41.6509105,-4.7201419,575
+Verde_ida,41.6510248,-4.7199541,576
+Verde_ida,41.651147,-4.7197664,577
+Verde_ida,41.6514997,-4.7192246,578
+Verde_ida,41.6517242,-4.7188813,579
+Verde_ida,41.6518284,-4.7187364,580
+Verde_ida,41.6520469,-4.7184199,581
+Verde_ida,41.6521711,-4.7182724,582
+Verde_ida,41.6522653,-4.7182053,583
+Verde_ida,41.6523615,-4.7182053,584
+Verde_ida,41.6526561,-4.7181302,585
+Verde_ida,41.6528044,-4.7180659,586
+Verde_ida,41.6530289,-4.7180149,587
+Verde_ida,41.6537023,-4.7178191,588
+Verde_ida,41.6541091,-4.7177225,589
+Verde_ida,41.6541371,-4.7176555,590
+Verde_ida,41.6541472,-4.7175321,591
+Verde_ida,41.6542093,-4.7173122,592
+Verde_ida,41.6543055,-4.7171083,593
+Verde_ida,41.6544338,-4.716875,594
+Verde_ida,41.6546662,-4.7164217,595
+Verde_ida,41.6548386,-4.7161347,596
+Verde_ida,41.6550109,-4.715794,597
+Verde_ida,41.6557664,-4.7143081,598
+Verde_ida,41.6560771,-4.7136992,599
+Verde_ida,41.6561572,-4.7135758,600
+Verde_ida,41.6562254,-4.7135302,601
+Verde_ida,41.6563135,-4.7134873,602
+Verde_ida,41.6564558,-4.7134471,603
+Verde_ida,41.656554,-4.7134364,604
+Verde_ida,41.6566602,-4.7134417,605
+Verde_ida,41.6567865,-4.7134846,606
+Verde_ida,41.6568987,-4.7135597,607
+Verde_ida,41.6572534,-4.7138709,608
+Verde_ida,41.6574658,-4.7140747,609
+Verde_ida,41.6578245,-4.7143859,610
+Verde_ida,41.6587002,-4.7151637,611
+Verde_ida,41.6589347,-4.7153971,612
+Verde_ida,41.6589688,-4.7153756,613
+Verde_ida,41.6591832,-4.7148928,614
+Verde_ida,41.6594377,-4.7143537,615
+Verde_ida,41.659598,-4.7140238,616
+Verde_ida,41.6598044,-4.7137207,617
+Verde_ida,41.6599787,-4.7134364,618
+Verde_ida,41.6601551,-4.7131655,619
+Verde_ida,41.6607242,-4.7122455,620
+Verde_ida,41.6609286,-4.7119343,621
+Verde_ida,41.6616079,-4.7109017,622
+Verde_ida,41.6622311,-4.7099763,623
+Verde_ida,41.6627961,-4.70911,624
+Verde_ida,41.6634874,-4.7080183,625
+Verde_ida,41.6645675,-4.7063285,626
+Verde_ida,41.6649863,-4.7056392,627
