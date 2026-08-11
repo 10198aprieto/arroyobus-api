@@ -355,23 +355,42 @@ async function pool<T, R>(items: T[], n: number, fn: (t: T) => Promise<R>): Prom
   return out;
 }
 
-let feedCache: { at: number; byTrip: Map<string, Arrival[]> } | null = null;
-async function buildByTrip(): Promise<Map<string, Arrival[]>> {
+let feedCache: { at: number; byTrip: Map<string, Normalized[]> } | null = null;
+async function buildByTrip(): Promise<Map<string, Normalized[]>> {
   if (feedCache && Date.now() - feedCache.at < FEED_TTL_MS) return feedCache.byTrip;
   const stopIds = await fetchStopIds();
-  const all = await pool(stopIds, FANOUT_CONCURRENCY, fetchArrivals);
-  const byTrip = new Map<string, Arrival[]>();
+  const [all, gtfs] = await Promise.all([
+    pool(stopIds, FANOUT_CONCURRENCY, fetchArrivals),
+    getStaticGtfs(),
+  ]);
+  const today = serviceDate();
+  const byTrip = new Map<string, Normalized[]>();
   for (const arrivals of all) {
     for (const a of arrivals) {
       if (!a.tripId) continue;
+      // Only expose trips/stops that exist in the static GTFS.
+      const trip = gtfs?.trips.get(a.tripId);
+      if (gtfs && !trip) continue;
+      if (gtfs && a.stopId && !gtfs.stopIds.has(a.stopId)) continue;
       // Skip purely-approximated predictions (no real-time GPS / no estimate).
       // These hourly placeholders cause TRIP_UPDATE_SUSPICIOUS_DELAY because
       // their times differ from the static schedule by many hours.
       const isRealtime = a.isEstimated === true ||
         (a.vehicleId != null && a.isAproximated !== true);
       if (!isRealtime) continue;
+      const startDate = gtfs && trip && isServiceActive(gtfs, trip.serviceId, today)
+        ? today
+        : undefined;
       const list = byTrip.get(a.tripId) ?? [];
-      list.push(a);
+      list.push({
+        ...a,
+        staticRouteId: trip?.routeId,
+        staticDirectionId: trip?.directionId,
+        staticStopSequence: gtfs && a.stopId
+          ? gtfs.stopSequence.get(`${a.tripId}|${a.stopId}`)
+          : undefined,
+        startDate,
+      });
       byTrip.set(a.tripId, list);
     }
   }
@@ -399,18 +418,22 @@ Deno.serve(async (req) => {
           trip_update: {
             trip: {
               trip_id: tripId,
-              route_id: sample.route?.routeId,
-              direction_id: sample.directionId,
+              route_id: sample.staticRouteId ?? sample.route?.routeId,
+              direction_id: sample.staticDirectionId,
+              start_date: sample.startDate,
+              schedule_relationship: "SCHEDULED",
             },
             vehicle: arrivals.find((a) => a.vehicleId)?.vehicleId
               ? { id: arrivals.find((a) => a.vehicleId)!.vehicleId }
               : undefined,
             timestamp: feedTs,
             stop_time_update: [...arrivals]
-              .sort((a, b) => Number(a.stopSequence ?? 0) - Number(b.stopSequence ?? 0))
+              .sort((a, b) =>
+                (a.staticStopSequence ?? Number(a.stopSequence ?? 0)) -
+                (b.staticStopSequence ?? Number(b.stopSequence ?? 0)))
               .map((a) => ({
                 stop_id: a.stopId,
-                stop_sequence: a.stopSequence,
+                stop_sequence: a.staticStopSequence,
                 arrival: { time: parseTs(a.arrivalTime) },
                 departure: a.departureTime ? { time: parseTs(a.departureTime) } : undefined,
               })),
