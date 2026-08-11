@@ -11,6 +11,8 @@ const API_KEY = "AIzaSyCvtaF21g0lPX0cTgOiIcHZNZRQlw2TRVA";
 const ANDROID_PACKAGE = "com.geoactio.arroyo_encomienda";
 const ANDROID_CERT_SHA1 = "222E5B204DE7B52F04DBED2A8B7947D566B0C2CA";
 const FEED_ID = "arroyo";
+// agency_id as declared in the static GTFS agency.txt
+const AGENCY_ID = "laregional";
 const FEED_TTL_MS = 60_000;
 
 // ---------- static GTFS reference ----------
