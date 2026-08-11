@@ -150,41 +150,37 @@ function encActivePeriod(start?: string, end?: string): Uint8Array {
   return w.bytes();
 }
 
-function encInformedEntity(
-  routes?: string[] | Array<{ routeId?: string }>,
-  stops?: string[] | Array<{ stopId?: string }>,
-): Uint8Array {
+/** One EntitySelector: a single route_id, a single stop_id, or the agency. */
+function encEntitySelector(sel: { routeId?: string; stopId?: string }): Uint8Array {
   const w = new PbWriter();
-  // If routes/stops are simple strings, use them; otherwise extract ids
-  if (routes && routes.length > 0) {
-    for (const r of routes) {
-      const rid = typeof r === "string" ? r : r.routeId;
-      if (rid) w.tagString(3, rid); // route_id (field 3)
-    }
-  }
-  if (stops && stops.length > 0) {
-    for (const s of stops) {
-      const sid = typeof s === "string" ? s : s.stopId;
-      if (sid) w.tagString(5, sid); // stop_id (field 5)
-    }
-  }
-  // If neither route nor stop informed, at least mark agency
-  if ((!routes || routes.length === 0) && (!stops || stops.length === 0)) {
-    w.tagString(1, FEED_ID); // agency_id
-  }
+  if (sel.routeId) w.tagString(3, sel.routeId); // route_id
+  else if (sel.stopId) w.tagString(5, sel.stopId); // stop_id
+  else w.tagString(1, AGENCY_ID); // agency_id (static GTFS agency)
   return w.bytes();
 }
 
-function encAlert(a: Alert): Uint8Array {
+/** Route/stop ids that exist in the static GTFS; falls back to agency-wide. */
+function selectorsFor(a: Alert, gtfs: StaticGtfs | null): Array<{ routeId?: string; stopId?: string }> {
+  const routeIds = idsOf(a.routes, "routeId").filter((id) => !gtfs || gtfs.routeIds.has(id));
+  const stopIds = idsOf(a.stops, "stopId").filter((id) => !gtfs || gtfs.stopIds.has(id));
+  const out = [
+    ...routeIds.map((routeId) => ({ routeId })),
+    ...stopIds.map((stopId) => ({ stopId })),
+  ];
+  return out.length > 0 ? out : [{}];
+}
+
+function encAlert(a: Alert, gtfs: StaticGtfs | null): Uint8Array {
   const w = new PbWriter();
 
   // active_period (field 1, repeated)
   const ap = encActivePeriod(a.startDate, a.endDate);
   if (ap.length > 0) w.tagMessage(1, ap);
 
-  // informed_entity (field 5, repeated)
-  const ie = encInformedEntity(a.routes, a.stops);
-  w.tagMessage(5, ie);
+  // informed_entity (field 5, repeated) — one selector per static id
+  for (const sel of selectorsFor(a, gtfs)) {
+    w.tagMessage(5, encEntitySelector(sel));
+  }
 
   // cause (field 6): default OTHER_CAUSE (1)
   w.tagVarint(6, 1);
