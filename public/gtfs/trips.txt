@@ -1,116 +1,116 @@
 ﻿route_id,service_id,trip_id,trip_headsign,direction_id,shape_id,wheelchair_accessible,bikes_allowed
-Azul,laborales,A1,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A2,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A3,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A4,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A5,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A6,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A7,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A8,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A9,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A10,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A11,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A12,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A13,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A14,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A15,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A16,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A17,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A18,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A19,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A20,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A21,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A22,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A23,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A24,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A25,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A26,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A27,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A28,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A29,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A30,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A31,Est Autobuses Valladolid,,Azul,1,2
-Azul,laborales,A32,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A33,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A34,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A35,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A36,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A37,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A38,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A39,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A40,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A41,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A42,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A43,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A44,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A45,Est Autobuses Valladolid,,Azul,1,2
-Azul,sabados,A46,Est Autobuses Valladolid,,Azul,1,2
-Azul,domingos_y_festivos,A47,Est Autobuses Valladolid,,Azul,1,2
-Azul,domingos_y_festivos,A48,Est Autobuses Valladolid,,Azul,1,2
-Azul,domingos_y_festivos,A49,Est Autobuses Valladolid,,Azul,1,2
-Azul,domingos_y_festivos,A50,Est Autobuses Valladolid,,Azul,1,2
-Azul,domingos_y_festivos,A51,Est Autobuses Valladolid,,Azul,1,2
-Buho,sabados,B1,Est de Autobuses Valladolid,,Buho,1,2
-Buho,sabados,B2,Est de Autobuses Valladolid,,Buho,1,2
-Buho,sabados,B3,Est de Autobuses Valladolid,,Buho,1,2
-Buho,sabados,B4,Est de Autobuses Valladolid,,Buho,1,2
-Buho,domingos_y_festivos,B5,Est de Autobuses Valladolid,,Buho,1,2
-Buho,domingos_y_festivos,B6,Est de Autobuses Valladolid,,Buho,1,2
-Buho,domingos_y_festivos,B7,Est de Autobuses Valladolid,,Buho,1,2
-Buho,domingos_y_festivos,B8,Est de Autobuses Valladolid,,Buho,1,2
-Buho,domingos_y_festivos,B9,Est de Autobuses Valladolid,,Buho,1,2
-Roja,laborales,R1,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R2,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R3,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R4,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R5,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R6,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R7,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R8,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R9,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R10,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R11,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R12,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R13,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R14,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R15,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R16,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R17,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R18,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R19,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R20,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R21,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R22,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R23,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R24,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R25,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R26,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R27,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R28,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R29,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R30,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R31,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R32,Est de Autobuses Valladolid,,Roja,1,2
-Roja,laborales,R33,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R34,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R35,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R36,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R37,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R38,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R39,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R40,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R41,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R42,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R43,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R44,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R45,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R46,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R47,Est de Autobuses Valladolid,,Roja,1,2
-Roja,sabados,R48,Est de Autobuses Valladolid,,Roja,1,2
-Roja,domingos_y_festivos,R49,Est de Autobuses Valladolid,,Roja,1,2
-Roja,domingos_y_festivos,R50,Est de Autobuses Valladolid,,Roja,1,2
-Roja,domingos_y_festivos,R51,Est de Autobuses Valladolid,,Roja,1,2
-Roja,domingos_y_festivos,R52,Est de Autobuses Valladolid,,Roja,1,2
-Roja,domingos_y_festivos,R53,Est de Autobuses Valladolid,,Roja,1,2
-Verde,laborales,V1I,Pl Magdalena (Facultad de F y L),0,Verde_ida,1,2
-Verde,laborales,V1V,Av Colón 175,1,Verde_vuelta,1,2
+Azul,laborales,A1,La Vega,,Azul,1,2
+Azul,laborales,A2,La Vega,,Azul,1,2
+Azul,laborales,A3,La Vega,,Azul,1,2
+Azul,laborales,A4,La Vega,,Azul,1,2
+Azul,laborales,A5,La Vega,,Azul,1,2
+Azul,laborales,A6,La Vega,,Azul,1,2
+Azul,laborales,A7,La Vega,,Azul,1,2
+Azul,laborales,A8,La Vega,,Azul,1,2
+Azul,laborales,A9,La Vega,,Azul,1,2
+Azul,laborales,A10,La Vega,,Azul,1,2
+Azul,laborales,A11,La Vega,,Azul,1,2
+Azul,laborales,A12,La Vega,,Azul,1,2
+Azul,laborales,A13,La Vega,,Azul,1,2
+Azul,laborales,A14,La Vega,,Azul,1,2
+Azul,laborales,A15,La Vega,,Azul,1,2
+Azul,laborales,A16,La Vega,,Azul,1,2
+Azul,laborales,A17,La Vega,,Azul,1,2
+Azul,laborales,A18,La Vega,,Azul,1,2
+Azul,laborales,A19,La Vega,,Azul,1,2
+Azul,laborales,A20,La Vega,,Azul,1,2
+Azul,laborales,A21,La Vega,,Azul,1,2
+Azul,laborales,A22,La Vega,,Azul,1,2
+Azul,laborales,A23,La Vega,,Azul,1,2
+Azul,laborales,A24,La Vega,,Azul,1,2
+Azul,laborales,A25,La Vega,,Azul,1,2
+Azul,laborales,A26,La Vega,,Azul,1,2
+Azul,laborales,A27,La Vega,,Azul,1,2
+Azul,laborales,A28,La Vega,,Azul,1,2
+Azul,laborales,A29,La Vega,,Azul,1,2
+Azul,laborales,A30,La Vega,,Azul,1,2
+Azul,laborales,A31,La Vega,,Azul,1,2
+Azul,laborales,A32,La Vega,,Azul,1,2
+Azul,sabados,A33,La Vega,,Azul,1,2
+Azul,sabados,A34,La Vega,,Azul,1,2
+Azul,sabados,A35,La Vega,,Azul,1,2
+Azul,sabados,A36,La Vega,,Azul,1,2
+Azul,sabados,A37,La Vega,,Azul,1,2
+Azul,sabados,A38,La Vega,,Azul,1,2
+Azul,sabados,A39,La Vega,,Azul,1,2
+Azul,sabados,A40,La Vega,,Azul,1,2
+Azul,sabados,A41,La Vega,,Azul,1,2
+Azul,sabados,A42,La Vega,,Azul,1,2
+Azul,sabados,A43,La Vega,,Azul,1,2
+Azul,sabados,A44,La Vega,,Azul,1,2
+Azul,sabados,A45,La Vega,,Azul,1,2
+Azul,sabados,A46,La Vega,,Azul,1,2
+Azul,domingos_y_festivos,A47,La Vega,,Azul,1,2
+Azul,domingos_y_festivos,A48,La Vega,,Azul,1,2
+Azul,domingos_y_festivos,A49,La Vega,,Azul,1,2
+Azul,domingos_y_festivos,A50,La Vega,,Azul,1,2
+Azul,domingos_y_festivos,A51,La Vega,,Azul,1,2
+Buho,sabados,B1,La Flecha,,Buho,1,2
+Buho,sabados,B2,La Flecha,,Buho,1,2
+Buho,sabados,B3,La Flecha,,Buho,1,2
+Buho,sabados,B4,La Flecha,,Buho,1,2
+Buho,domingos_y_festivos,B5,La Flecha,,Buho,1,2
+Buho,domingos_y_festivos,B6,La Flecha,,Buho,1,2
+Buho,domingos_y_festivos,B7,La Flecha,,Buho,1,2
+Buho,domingos_y_festivos,B8,La Flecha,,Buho,1,2
+Buho,domingos_y_festivos,B9,La Flecha,,Buho,1,2
+Roja,laborales,R1,La Flecha,,Roja,1,2
+Roja,laborales,R2,La Flecha,,Roja,1,2
+Roja,laborales,R3,La Flecha,,Roja,1,2
+Roja,laborales,R4,La Flecha,,Roja,1,2
+Roja,laborales,R5,La Flecha,,Roja,1,2
+Roja,laborales,R6,La Flecha,,Roja,1,2
+Roja,laborales,R7,La Flecha,,Roja,1,2
+Roja,laborales,R8,La Flecha,,Roja,1,2
+Roja,laborales,R9,La Flecha,,Roja,1,2
+Roja,laborales,R10,La Flecha,,Roja,1,2
+Roja,laborales,R11,La Flecha,,Roja,1,2
+Roja,laborales,R12,La Flecha,,Roja,1,2
+Roja,laborales,R13,La Flecha,,Roja,1,2
+Roja,laborales,R14,La Flecha,,Roja,1,2
+Roja,laborales,R15,La Flecha,,Roja,1,2
+Roja,laborales,R16,La Flecha,,Roja,1,2
+Roja,laborales,R17,La Flecha,,Roja,1,2
+Roja,laborales,R18,La Flecha,,Roja,1,2
+Roja,laborales,R19,La Flecha,,Roja,1,2
+Roja,laborales,R20,La Flecha,,Roja,1,2
+Roja,laborales,R21,La Flecha,,Roja,1,2
+Roja,laborales,R22,La Flecha,,Roja,1,2
+Roja,laborales,R23,La Flecha,,Roja,1,2
+Roja,laborales,R24,La Flecha,,Roja,1,2
+Roja,laborales,R25,La Flecha,,Roja,1,2
+Roja,laborales,R26,La Flecha,,Roja,1,2
+Roja,laborales,R27,La Flecha,,Roja,1,2
+Roja,laborales,R28,La Flecha,,Roja,1,2
+Roja,laborales,R29,La Flecha,,Roja,1,2
+Roja,laborales,R30,La Flecha,,Roja,1,2
+Roja,laborales,R31,La Flecha,,Roja,1,2
+Roja,laborales,R32,La Flecha,,Roja,1,2
+Roja,laborales,R33,La Flecha,,Roja,1,2
+Roja,sabados,R34,La Flecha,,Roja,1,2
+Roja,sabados,R35,La Flecha,,Roja,1,2
+Roja,sabados,R36,La Flecha,,Roja,1,2
+Roja,sabados,R37,La Flecha,,Roja,1,2
+Roja,sabados,R38,La Flecha,,Roja,1,2
+Roja,sabados,R39,La Flecha,,Roja,1,2
+Roja,sabados,R40,La Flecha,,Roja,1,2
+Roja,sabados,R41,La Flecha,,Roja,1,2
+Roja,sabados,R42,La Flecha,,Roja,1,2
+Roja,sabados,R43,La Flecha,,Roja,1,2
+Roja,sabados,R44,La Flecha,,Roja,1,2
+Roja,sabados,R45,La Flecha,,Roja,1,2
+Roja,sabados,R46,La Flecha,,Roja,1,2
+Roja,sabados,R47,La Flecha,,Roja,1,2
+Roja,sabados,R48,La Flecha,,Roja,1,2
+Roja,domingos_y_festivos,R49,La Flecha,,Roja,1,2
+Roja,domingos_y_festivos,R50,La Flecha,,Roja,1,2
+Roja,domingos_y_festivos,R51,La Flecha,,Roja,1,2
+Roja,domingos_y_festivos,R52,La Flecha,,Roja,1,2
+Roja,domingos_y_festivos,R53,La Flecha,,Roja,1,2
+Verde,laborales,V1I,Camino del Cementerio 35 junto Campus,0,Verde_ida,1,2
+Verde,laborales,V1V,Avenida de Colón 175,1,Verde_vuelta,1,2
