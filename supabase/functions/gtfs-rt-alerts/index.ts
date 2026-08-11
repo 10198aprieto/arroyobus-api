@@ -2,6 +2,9 @@
 //
 // GET /functions/v1/gtfs-rt-alerts              -> application/x-protobuf
 // GET /functions/v1/gtfs-rt-alerts?format=json  -> JSON debug
+//
+// informed_entity route_id / stop_id values are validated against the
+// published static GTFS (https://arroyobus-api.lovable.app/gtfs-static.zip).
 
 const BASE = "https://arroyo.actiosae.com";
 const API_KEY = "AIzaSyCvtaF21g0lPX0cTgOiIcHZNZRQlw2TRVA";
@@ -9,6 +12,46 @@ const ANDROID_PACKAGE = "com.geoactio.arroyo_encomienda";
 const ANDROID_CERT_SHA1 = "222E5B204DE7B52F04DBED2A8B7947D566B0C2CA";
 const FEED_ID = "arroyo";
 const FEED_TTL_MS = 60_000;
+
+// ---------- static GTFS reference ----------
+const STATIC_BASE = "https://arroyobus-api.lovable.app/gtfs";
+const STATIC_TTL_MS = 60 * 60_000;
+
+interface StaticGtfs { routeIds: Set<string>; stopIds: Set<string>; }
+let staticCache: { at: number; data: StaticGtfs } | null = null;
+
+async function fetchStaticJson(file: string): Promise<Record<string, string>[]> {
+  const r = await fetch(`${STATIC_BASE}/${file}.json`, { headers: { Accept: "application/json" } });
+  if (!r.ok) throw new Error(`static ${file} ${r.status}`);
+  const j = await r.json();
+  return Array.isArray(j) ? j as Record<string, string>[] : [];
+}
+
+async function getStaticGtfs(): Promise<StaticGtfs | null> {
+  if (staticCache && Date.now() - staticCache.at < STATIC_TTL_MS) return staticCache.data;
+  try {
+    const [routes, stops] = await Promise.all([
+      fetchStaticJson("routes"),
+      fetchStaticJson("stops"),
+    ]);
+    const data: StaticGtfs = {
+      routeIds: new Set(routes.map((r) => r["route_id"]).filter(Boolean)),
+      stopIds: new Set(stops.map((s) => s["stop_id"]).filter(Boolean)),
+    };
+    staticCache = { at: Date.now(), data };
+    return data;
+  } catch (err) {
+    console.error("static gtfs load failed:", err instanceof Error ? err.message : err);
+    return staticCache?.data ?? null;
+  }
+}
+
+function idsOf(list: unknown[] | undefined, key: "routeId" | "stopId"): string[] {
+  if (!list) return [];
+  return list
+    .map((x) => (typeof x === "string" ? x : (x as Record<string, string | undefined>)?.[key]))
+    .filter((x): x is string => Boolean(x));
+}
 
 const corsHeaders: Record<string, string> = {
   "Access-Control-Allow-Origin": "*",
