@@ -38,6 +38,51 @@ export type Database = {
         }
         Relationships: []
       }
+      alerts: {
+        Row: {
+          activo: boolean
+          cause: number
+          created_at: string
+          description: string
+          effect: number
+          end_at: string | null
+          header: string
+          id: string
+          route_ids: string[]
+          start_at: string
+          stop_ids: string[]
+          url: string | null
+        }
+        Insert: {
+          activo?: boolean
+          cause?: number
+          created_at?: string
+          description?: string
+          effect?: number
+          end_at?: string | null
+          header: string
+          id?: string
+          route_ids?: string[]
+          start_at?: string
+          stop_ids?: string[]
+          url?: string | null
+        }
+        Update: {
+          activo?: boolean
+          cause?: number
+          created_at?: string
+          description?: string
+          effect?: number
+          end_at?: string | null
+          header?: string
+          id?: string
+          route_ids?: string[]
+          start_at?: string
+          stop_ids?: string[]
+          url?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
