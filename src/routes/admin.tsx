@@ -94,6 +94,7 @@ function Login() {
 }
 
 function Dashboard({ email }: { email: string }) {
+  const [tab, setTab] = useState<"ads" | "alerts">("ads");
   const [ads, setAds] = useState<Ad[]>([]);
   const [loading, setLoading] = useState(true);
   const [newUrl, setNewUrl] = useState("");
@@ -167,6 +168,24 @@ function Dashboard({ email }: { email: string }) {
         </button>
       </div>
 
+      <div className="flex gap-2 border-b border-border">
+        {(["ads", "alerts"] as const).map((t) => (
+          <button
+            key={t}
+            onClick={() => setTab(t)}
+            className={`-mb-px border-b-2 px-3 py-2 text-sm ${
+              tab === t ? "border-primary font-medium text-foreground" : "border-transparent text-muted-foreground"
+            }`}
+          >
+            {t === "ads" ? "Publicidad" : "Incidencias"}
+          </button>
+        ))}
+      </div>
+
+      {tab === "alerts" ? (
+        <AlertsPanel />
+      ) : (
+      <>
       <form onSubmit={addAd} className="flex gap-2 rounded-lg border border-border bg-card p-4">
         <input
           type="url"
