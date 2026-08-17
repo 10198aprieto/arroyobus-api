@@ -24,6 +24,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as StopsStopIdRouteImport } from './routes/stops.$stopId'
 import { Route as ArrivalsStopIdRouteImport } from './routes/arrivals.$stopId'
 import { Route as ApiPublicInitAdminRouteImport } from './routes/api.public.init-admin'
+import { Route as ApiPublicAlertsRouteImport } from './routes/api.public.alerts'
 import { Route as ApiPublicAdsRouteImport } from './routes/api.public.ads'
 import { Route as ApiPublicGtfsStaticFileRouteImport } from './routes/api.public.gtfs-static.$file'
 import { Route as ApiPublicActiosaeGtfsFileRouteImport } from './routes/api.public.actiosae.gtfs.$file'
@@ -103,6 +104,11 @@ const ApiPublicInitAdminRoute = ApiPublicInitAdminRouteImport.update({
   path: '/api/public/init-admin',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicAlertsRoute = ApiPublicAlertsRouteImport.update({
+  id: '/api/public/alerts',
+  path: '/api/public/alerts',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicAdsRoute = ApiPublicAdsRouteImport.update({
   id: '/api/public/ads',
   path: '/api/public/ads',
@@ -136,6 +142,7 @@ export interface FileRoutesByFullPath {
   '/arrivals/$stopId': typeof ArrivalsStopIdRoute
   '/stops/$stopId': typeof StopsStopIdRoute
   '/api/public/ads': typeof ApiPublicAdsRoute
+  '/api/public/alerts': typeof ApiPublicAlertsRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
   '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
@@ -156,6 +163,7 @@ export interface FileRoutesByTo {
   '/arrivals/$stopId': typeof ArrivalsStopIdRoute
   '/stops/$stopId': typeof StopsStopIdRoute
   '/api/public/ads': typeof ApiPublicAdsRoute
+  '/api/public/alerts': typeof ApiPublicAlertsRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
   '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
@@ -177,6 +185,7 @@ export interface FileRoutesById {
   '/arrivals/$stopId': typeof ArrivalsStopIdRoute
   '/stops/$stopId': typeof StopsStopIdRoute
   '/api/public/ads': typeof ApiPublicAdsRoute
+  '/api/public/alerts': typeof ApiPublicAlertsRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
   '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
@@ -199,6 +208,7 @@ export interface FileRouteTypes {
     | '/arrivals/$stopId'
     | '/stops/$stopId'
     | '/api/public/ads'
+    | '/api/public/alerts'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
     | '/api/public/actiosae/gtfs/$file'
@@ -219,6 +229,7 @@ export interface FileRouteTypes {
     | '/arrivals/$stopId'
     | '/stops/$stopId'
     | '/api/public/ads'
+    | '/api/public/alerts'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
     | '/api/public/actiosae/gtfs/$file'
@@ -239,6 +250,7 @@ export interface FileRouteTypes {
     | '/arrivals/$stopId'
     | '/stops/$stopId'
     | '/api/public/ads'
+    | '/api/public/alerts'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
     | '/api/public/actiosae/gtfs/$file'
@@ -259,6 +271,7 @@ export interface RootRouteChildren {
   VehiclesRoute: typeof VehiclesRoute
   ArrivalsStopIdRoute: typeof ArrivalsStopIdRoute
   ApiPublicAdsRoute: typeof ApiPublicAdsRoute
+  ApiPublicAlertsRoute: typeof ApiPublicAlertsRoute
   ApiPublicInitAdminRoute: typeof ApiPublicInitAdminRoute
   ApiPublicGtfsStaticFileRoute: typeof ApiPublicGtfsStaticFileRoute
   ApiPublicActiosaeGtfsFileRoute: typeof ApiPublicActiosaeGtfsFileRoute
@@ -371,6 +384,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicInitAdminRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/alerts': {
+      id: '/api/public/alerts'
+      path: '/api/public/alerts'
+      fullPath: '/api/public/alerts'
+      preLoaderRoute: typeof ApiPublicAlertsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/ads': {
       id: '/api/public/ads'
       path: '/api/public/ads'
@@ -420,6 +440,7 @@ const rootRouteChildren: RootRouteChildren = {
   VehiclesRoute: VehiclesRoute,
   ArrivalsStopIdRoute: ArrivalsStopIdRoute,
   ApiPublicAdsRoute: ApiPublicAdsRoute,
+  ApiPublicAlertsRoute: ApiPublicAlertsRoute,
   ApiPublicInitAdminRoute: ApiPublicInitAdminRoute,
   ApiPublicGtfsStaticFileRoute: ApiPublicGtfsStaticFileRoute,
   ApiPublicActiosaeGtfsFileRoute: ApiPublicActiosaeGtfsFileRoute,
