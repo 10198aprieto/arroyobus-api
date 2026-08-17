@@ -272,6 +272,8 @@ function Dashboard({ email }: { email: string }) {
           })}
         </div>
       )}
+      </>
+      )}
     </div>
   );
 }
