@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { CAUSES, EFFECTS } from "@/lib/gtfs-pb";
 
 export const Route = createFileRoute("/admin")({
   ssr: false,
