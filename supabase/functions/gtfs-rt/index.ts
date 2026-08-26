@@ -382,8 +382,12 @@ Deno.serve(async (req) => {
   try {
     const url = new URL(req.url);
     const format = url.searchParams.get("format");
-    const samples = await buildSamples();
     const feedTs = Math.floor(Date.now() / 1000);
+    // The upstream GPS sample time can jump backwards between stop queries and
+    // becomes stale while a vehicle remains assigned. Use the generation time
+    // as the GTFS-RT observation timestamp; coordinates remain the latest GPS
+    // coordinates returned by the source.
+    const samples = (await buildSamples()).map((sample) => ({ ...sample, ts: feedTs }));
 
     if (format === "json") {
       return new Response(
