@@ -30,6 +30,7 @@ interface StaticTrip {
   tripId: string;
   routeId: string;
   serviceId: string;
+  startTime?: string;
   directionId?: number;
   headsign?: string;
 }
@@ -82,6 +83,12 @@ async function getStaticGtfs(): Promise<StaticGtfs | null> {
       if (Number.isNaN(seq)) continue;
       const key = `${tid}|${sid}`;
       if (!data.stopSequence.has(key)) data.stopSequence.set(key, seq);
+      const trip = data.trips.get(tid);
+      const departure = st["departure_time"] || st["arrival_time"];
+      if (trip && departure && (!trip.startTime || seq < (data.stopSequence.get(`${tid}|__first`) ?? Infinity))) {
+        trip.startTime = departure;
+        data.stopSequence.set(`${tid}|__first`, seq);
+      }
     }
     staticCache = { at: Date.now(), data };
     return data;
@@ -123,6 +130,8 @@ interface VehicleSample {
   stopId?: string;
   stopSequence?: string | number;
   isAproximated?: boolean;
+  startTime?: string;
+  startDate?: string;
 }
 
 // ---------- tiny protobuf writer ----------
@@ -187,6 +196,9 @@ function encodeTripDescriptor(s: VehicleSample): Uint8Array | null {
   if (!s.tripId && !s.routeId && s.directionId === undefined) return null;
   const w = new PbWriter();
   if (s.tripId) w.tagString(1, s.tripId); // trip_id
+  if (s.startTime) w.tagString(2, s.startTime); // start_time (HH:MM:SS)
+  if (s.startDate) w.tagString(3, s.startDate); // start_date (YYYYMMDD)
+  w.tagVarint(4, 0); // schedule_relationship = SCHEDULED
   if (s.routeId) w.tagString(5, s.routeId); // route_id
   if (s.directionId !== undefined && s.directionId !== null) {
     const n = Number(s.directionId);
@@ -346,6 +358,11 @@ async function buildSamples(): Promise<VehicleSample[]> {
         stopId,
         stopSequence,
         isAproximated: a.isAproximated,
+        startTime: trip?.startTime,
+        startDate: trip ? new Intl.DateTimeFormat("en-CA", {
+          timeZone: "Europe/Madrid",
+          year: "numeric", month: "2-digit", day: "2-digit",
+        }).format(new Date()).replaceAll("-", "") : undefined,
       });
     }
   }
@@ -379,11 +396,18 @@ Deno.serve(async (req) => {
           entity: samples.map((s) => ({
             id: s.vehicleId,
             vehicle: {
-              trip: { trip_id: s.tripId, route_id: s.routeId, direction_id: s.directionId },
+              trip: {
+                trip_id: s.tripId,
+                start_time: s.startTime,
+                start_date: s.startDate,
+                schedule_relationship: "SCHEDULED",
+                route_id: s.routeId,
+                direction_id: s.directionId,
+              },
               position: { latitude: s.lat, longitude: s.lon },
               current_stop_sequence: s.stopSequence,
               stop_id: s.stopId,
-              timestamp: s.ts,
+              timestamp: feedTs,
               vehicle: { id: s.vehicleId, label: s.vehicleId },
               is_approximated: s.isAproximated,
             },

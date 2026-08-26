@@ -235,7 +235,7 @@ function encStopTimeUpdate(a: Normalized): Uint8Array | null {
 function encTripDescriptor(sample: Normalized): Uint8Array {
   const w = new PbWriter();
   if (sample.tripId) w.tagString(1, sample.tripId); // trip_id
-  if (sample.startDate) w.tagString(2, sample.startDate); // start_date (static service date)
+  if (sample.startDate) w.tagString(3, sample.startDate); // start_date (YYYYMMDD)
   w.tagVarint(4, 0); // schedule_relationship: SCHEDULED
   const routeId = sample.staticRouteId ?? sample.route?.routeId;
   if (routeId) w.tagString(5, routeId); // route_id (static)
@@ -367,28 +367,31 @@ async function buildByTrip(): Promise<Map<string, Normalized[]>> {
   const byTrip = new Map<string, Normalized[]>();
   for (const arrivals of all) {
     for (const a of arrivals) {
-      if (!a.tripId) continue;
+      if (!a.tripId || !a.stopId) continue;
       // Only expose trips/stops that exist in the static GTFS.
       const trip = gtfs?.trips.get(a.tripId);
       if (gtfs && !trip) continue;
-      if (gtfs && a.stopId && !gtfs.stopIds.has(a.stopId)) continue;
+      if (gtfs && !gtfs.stopIds.has(a.stopId)) continue;
       // Skip purely-approximated predictions (no real-time GPS / no estimate).
       // These hourly placeholders cause TRIP_UPDATE_SUSPICIOUS_DELAY because
       // their times differ from the static schedule by many hours.
       const isRealtime = a.isEstimated === true ||
         (a.vehicleId != null && a.isAproximated !== true);
       if (!isRealtime) continue;
-      const startDate = gtfs && trip && isServiceActive(gtfs, trip.serviceId, today)
-        ? today
+      if (gtfs && trip && !isServiceActive(gtfs, trip.serviceId, today)) continue;
+      const staticStopSequence = gtfs
+        ? gtfs.stopSequence.get(`${a.tripId}|${a.stopId}`)
         : undefined;
+      // A stop can exist globally but not belong to this particular trip.
+      // Emitting it would produce INVALID_STOP_STOP_ID / STU_NOT_MATCHED.
+      if (gtfs && staticStopSequence === undefined) continue;
+      const startDate = gtfs && trip ? today : undefined;
       const list = byTrip.get(a.tripId) ?? [];
       list.push({
         ...a,
         staticRouteId: trip?.routeId,
         staticDirectionId: trip?.directionId,
-        staticStopSequence: gtfs && a.stopId
-          ? gtfs.stopSequence.get(`${a.tripId}|${a.stopId}`)
-          : undefined,
+        staticStopSequence,
         startDate,
       });
       byTrip.set(a.tripId, list);
