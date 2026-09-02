@@ -25,7 +25,7 @@ function VehiclesPage() {
   const { data, isLoading, error, refetch, isFetching } = useQuery({
     queryKey: ["vehiclePosition"],
     queryFn: () => actioGet<VPResp>("vehiclePosition"),
-    refetchInterval: 10_000,
+    refetchInterval: 1_000,
   });
 
   return (
