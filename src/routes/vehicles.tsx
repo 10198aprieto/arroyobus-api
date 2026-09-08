@@ -51,7 +51,18 @@ function VehiclesPage() {
             <strong>{data.gpsPositions?.length ?? 0}</strong> vehículo(s)
             {data.message ? ` · ${data.message}` : ""}
           </p>
-          <pre className="mt-2 overflow-auto rounded-lg border border-border bg-card p-4 text-xs">
+          {(data.gpsPositions?.length ?? 0) === 0 && (
+            <div className="mt-4 rounded-lg border border-border bg-muted p-4">
+              <p className="font-medium text-foreground">No hay buses reportando ahora mismo</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                El operador no está devolviendo posiciones GPS en este momento.
+                Esto suele ocurrir cuando los conductores no han iniciado sesión en el sistema de a bordo
+                o el servidor del operador tiene los equipos desconectados.
+                En cuanto vuelvan a reportar, esta página se actualizará sola.
+              </p>
+            </div>
+          )}
+          <pre className="mt-4 overflow-auto rounded-lg border border-border bg-card p-4 text-xs">
             {JSON.stringify(data, null, 2)}
           </pre>
         </>
