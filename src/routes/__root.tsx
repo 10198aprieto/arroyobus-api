@@ -131,6 +131,7 @@ function RootComponent() {
               ["/gtfs-rt", "GTFS-RT"],
               ["/actiosae", "GTFS ACTIOSAE"],
               ["/explorer", "Explorer"],
+              ["/status", "Estado"],
               ["/admin", "Admin"],
             ].map(([to, label]) => (
               <Link

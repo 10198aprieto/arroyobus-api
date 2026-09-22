@@ -13,6 +13,7 @@ import { Route as VehiclesRouteImport } from './routes/vehicles'
 import { Route as TadRouteImport } from './routes/tad'
 import { Route as SuggestionRouteImport } from './routes/suggestion'
 import { Route as StopsRouteImport } from './routes/stops'
+import { Route as StatusRouteImport } from './routes/status'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RoutesRouteImport } from './routes/routes'
 import { Route as GtfsRtRouteImport } from './routes/gtfs-rt'
@@ -24,6 +25,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as StopsStopIdRouteImport } from './routes/stops.$stopId'
 import { Route as ArrivalsStopIdRouteImport } from './routes/arrivals.$stopId'
 import { Route as ApiPublicInitAdminRouteImport } from './routes/api.public.init-admin'
+import { Route as ApiPublicHealthRouteImport } from './routes/api.public.health'
 import { Route as ApiPublicAlertsRouteImport } from './routes/api.public.alerts'
 import { Route as ApiPublicAdsRouteImport } from './routes/api.public.ads'
 import { Route as ApiPublicGtfsStaticFileRouteImport } from './routes/api.public.gtfs-static.$file'
@@ -47,6 +49,11 @@ const SuggestionRoute = SuggestionRouteImport.update({
 const StopsRoute = StopsRouteImport.update({
   id: '/stops',
   path: '/stops',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StatusRoute = StatusRouteImport.update({
+  id: '/status',
+  path: '/status',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -104,6 +111,11 @@ const ApiPublicInitAdminRoute = ApiPublicInitAdminRouteImport.update({
   path: '/api/public/init-admin',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicHealthRoute = ApiPublicHealthRouteImport.update({
+  id: '/api/public/health',
+  path: '/api/public/health',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicAlertsRoute = ApiPublicAlertsRouteImport.update({
   id: '/api/public/alerts',
   path: '/api/public/alerts',
@@ -135,6 +147,7 @@ export interface FileRoutesByFullPath {
   '/gtfs-rt': typeof GtfsRtRoute
   '/routes': typeof RoutesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/status': typeof StatusRoute
   '/stops': typeof StopsRouteWithChildren
   '/suggestion': typeof SuggestionRoute
   '/tad': typeof TadRoute
@@ -143,6 +156,7 @@ export interface FileRoutesByFullPath {
   '/stops/$stopId': typeof StopsStopIdRoute
   '/api/public/ads': typeof ApiPublicAdsRoute
   '/api/public/alerts': typeof ApiPublicAlertsRoute
+  '/api/public/health': typeof ApiPublicHealthRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
   '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
@@ -156,6 +170,7 @@ export interface FileRoutesByTo {
   '/gtfs-rt': typeof GtfsRtRoute
   '/routes': typeof RoutesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/status': typeof StatusRoute
   '/stops': typeof StopsRouteWithChildren
   '/suggestion': typeof SuggestionRoute
   '/tad': typeof TadRoute
@@ -164,6 +179,7 @@ export interface FileRoutesByTo {
   '/stops/$stopId': typeof StopsStopIdRoute
   '/api/public/ads': typeof ApiPublicAdsRoute
   '/api/public/alerts': typeof ApiPublicAlertsRoute
+  '/api/public/health': typeof ApiPublicHealthRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
   '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
@@ -178,6 +194,7 @@ export interface FileRoutesById {
   '/gtfs-rt': typeof GtfsRtRoute
   '/routes': typeof RoutesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/status': typeof StatusRoute
   '/stops': typeof StopsRouteWithChildren
   '/suggestion': typeof SuggestionRoute
   '/tad': typeof TadRoute
@@ -186,6 +203,7 @@ export interface FileRoutesById {
   '/stops/$stopId': typeof StopsStopIdRoute
   '/api/public/ads': typeof ApiPublicAdsRoute
   '/api/public/alerts': typeof ApiPublicAlertsRoute
+  '/api/public/health': typeof ApiPublicHealthRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
   '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
@@ -201,6 +219,7 @@ export interface FileRouteTypes {
     | '/gtfs-rt'
     | '/routes'
     | '/sitemap.xml'
+    | '/status'
     | '/stops'
     | '/suggestion'
     | '/tad'
@@ -209,6 +228,7 @@ export interface FileRouteTypes {
     | '/stops/$stopId'
     | '/api/public/ads'
     | '/api/public/alerts'
+    | '/api/public/health'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
     | '/api/public/actiosae/gtfs/$file'
@@ -222,6 +242,7 @@ export interface FileRouteTypes {
     | '/gtfs-rt'
     | '/routes'
     | '/sitemap.xml'
+    | '/status'
     | '/stops'
     | '/suggestion'
     | '/tad'
@@ -230,6 +251,7 @@ export interface FileRouteTypes {
     | '/stops/$stopId'
     | '/api/public/ads'
     | '/api/public/alerts'
+    | '/api/public/health'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
     | '/api/public/actiosae/gtfs/$file'
@@ -243,6 +265,7 @@ export interface FileRouteTypes {
     | '/gtfs-rt'
     | '/routes'
     | '/sitemap.xml'
+    | '/status'
     | '/stops'
     | '/suggestion'
     | '/tad'
@@ -251,6 +274,7 @@ export interface FileRouteTypes {
     | '/stops/$stopId'
     | '/api/public/ads'
     | '/api/public/alerts'
+    | '/api/public/health'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
     | '/api/public/actiosae/gtfs/$file'
@@ -265,6 +289,7 @@ export interface RootRouteChildren {
   GtfsRtRoute: typeof GtfsRtRoute
   RoutesRoute: typeof RoutesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  StatusRoute: typeof StatusRoute
   StopsRoute: typeof StopsRouteWithChildren
   SuggestionRoute: typeof SuggestionRoute
   TadRoute: typeof TadRoute
@@ -272,6 +297,7 @@ export interface RootRouteChildren {
   ArrivalsStopIdRoute: typeof ArrivalsStopIdRoute
   ApiPublicAdsRoute: typeof ApiPublicAdsRoute
   ApiPublicAlertsRoute: typeof ApiPublicAlertsRoute
+  ApiPublicHealthRoute: typeof ApiPublicHealthRoute
   ApiPublicInitAdminRoute: typeof ApiPublicInitAdminRoute
   ApiPublicGtfsStaticFileRoute: typeof ApiPublicGtfsStaticFileRoute
   ApiPublicActiosaeGtfsFileRoute: typeof ApiPublicActiosaeGtfsFileRoute
@@ -305,6 +331,13 @@ declare module '@tanstack/react-router' {
       path: '/stops'
       fullPath: '/stops'
       preLoaderRoute: typeof StopsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/status': {
+      id: '/status'
+      path: '/status'
+      fullPath: '/status'
+      preLoaderRoute: typeof StatusRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -384,6 +417,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicInitAdminRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/health': {
+      id: '/api/public/health'
+      path: '/api/public/health'
+      fullPath: '/api/public/health'
+      preLoaderRoute: typeof ApiPublicHealthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/alerts': {
       id: '/api/public/alerts'
       path: '/api/public/alerts'
@@ -434,6 +474,7 @@ const rootRouteChildren: RootRouteChildren = {
   GtfsRtRoute: GtfsRtRoute,
   RoutesRoute: RoutesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  StatusRoute: StatusRoute,
   StopsRoute: StopsRouteWithChildren,
   SuggestionRoute: SuggestionRoute,
   TadRoute: TadRoute,
@@ -441,6 +482,7 @@ const rootRouteChildren: RootRouteChildren = {
   ArrivalsStopIdRoute: ArrivalsStopIdRoute,
   ApiPublicAdsRoute: ApiPublicAdsRoute,
   ApiPublicAlertsRoute: ApiPublicAlertsRoute,
+  ApiPublicHealthRoute: ApiPublicHealthRoute,
   ApiPublicInitAdminRoute: ApiPublicInitAdminRoute,
   ApiPublicGtfsStaticFileRoute: ApiPublicGtfsStaticFileRoute,
   ApiPublicActiosaeGtfsFileRoute: ApiPublicActiosaeGtfsFileRoute,
