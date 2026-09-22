@@ -176,7 +176,13 @@ export const Route = createFileRoute("/api/public/health")({
     handlers: {
       OPTIONS: async () => new Response(null, { status: 204, headers: CORS }),
       GET: async ({ request }) => {
-        const origin = new URL(request.url).origin;
+        const reqUrl = new URL(request.url);
+        const host = request.headers.get("x-forwarded-host") ?? request.headers.get("host") ?? reqUrl.host;
+        const isLocal = host.startsWith("localhost") || host.startsWith("127.0.0.1");
+        const proto = isLocal
+          ? "http"
+          : (request.headers.get("x-forwarded-proto") ?? reqUrl.protocol.replace(":", ""));
+        const origin = `${proto}://${host}`;
         const started = Date.now();
 
         const checks = await Promise.all([
