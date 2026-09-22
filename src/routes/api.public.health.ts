@@ -73,9 +73,10 @@ async function checkRealtime(
   if (!res) return { ...base, note: error ?? "sin respuesta" };
   if (!res.ok) return { ...base, note: `HTTP ${res.status}` };
 
-  let body: { header?: { timestamp?: number | string }; entity?: unknown[] } | null = null;
+  type RtBody = { header?: { timestamp?: number | string }; entity?: unknown[] };
+  let body: RtBody | null = null;
   try {
-    body = (await res.json()) as typeof body;
+    body = (await res.json()) as RtBody;
   } catch {
     return { ...base, status: "degraded", note: "respuesta no parseable" };
   }
