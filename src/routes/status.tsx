@@ -98,9 +98,10 @@ function StatusPage() {
           /api/public/health
         </a>
         <p className="mt-2 text-muted-foreground">
-          Devuelve JSON con el estado de cada comprobación. Código{" "}
-          <code>200</code> si todo responde, <code>503</code> si algo está caído.
-          Cabecera <code>X-Health-Status</code> con el estado global.
+          Devuelve JSON con el estado de cada comprobación (siempre código{" "}
+          <code>200</code>; el estado real va en el campo <code>status</code> y en la
+          cabecera <code>X-Health-Status</code>). Para monitores de uptime usa{" "}
+          <code>?strict=1</code>: responde <code>503</code> si algo está caído.
         </p>
       </div>
 
