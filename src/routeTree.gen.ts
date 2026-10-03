@@ -9,81 +9,31 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as ActiosaeRouteImport } from './routes/actiosae'
-import { Route as AdminRouteImport } from './routes/admin'
-import { Route as AlertsRouteImport } from './routes/alerts'
-import { Route as ExplorerRouteImport } from './routes/explorer'
-import { Route as GtfsRtRouteImport } from './routes/gtfs-rt'
-import { Route as RoutesRouteImport } from './routes/routes'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as StatusRouteImport } from './routes/status'
-import { Route as StopsRouteImport } from './routes/stops'
-import { Route as SuggestionRouteImport } from './routes/suggestion'
-import { Route as TadRouteImport } from './routes/tad'
 import { Route as VehiclesRouteImport } from './routes/vehicles'
-import { Route as ArrivalsStopIdRouteImport } from './routes/arrivals.$stopId'
+import { Route as TadRouteImport } from './routes/tad'
+import { Route as SuggestionRouteImport } from './routes/suggestion'
+import { Route as StopsRouteImport } from './routes/stops'
+import { Route as StatusRouteImport } from './routes/status'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as RoutesRouteImport } from './routes/routes'
+import { Route as GtfsRtRouteImport } from './routes/gtfs-rt'
+import { Route as ExplorerRouteImport } from './routes/explorer'
+import { Route as AlertsRouteImport } from './routes/alerts'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as ActiosaeRouteImport } from './routes/actiosae'
+import { Route as IndexRouteImport } from './routes/index'
 import { Route as StopsStopIdRouteImport } from './routes/stops.$stopId'
-import { Route as ApiPublicAdsRouteImport } from './routes/api.public.ads'
-import { Route as ApiPublicAlertsRouteImport } from './routes/api.public.alerts'
-import { Route as ApiPublicHealthRouteImport } from './routes/api.public.health'
+import { Route as ArrivalsStopIdRouteImport } from './routes/arrivals.$stopId'
 import { Route as ApiPublicInitAdminRouteImport } from './routes/api.public.init-admin'
+import { Route as ApiPublicHealthRouteImport } from './routes/api.public.health'
+import { Route as ApiPublicAlertsRouteImport } from './routes/api.public.alerts'
+import { Route as ApiPublicAdsRouteImport } from './routes/api.public.ads'
 import { Route as ApiPublicGtfsStaticFileRouteImport } from './routes/api.public.gtfs-static.$file'
 import { Route as ApiPublicActiosaeGtfsFileRouteImport } from './routes/api.public.actiosae.gtfs.$file'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ActiosaeRoute = ActiosaeRouteImport.update({
-  id: '/actiosae',
-  path: '/actiosae',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminRoute = AdminRouteImport.update({
-  id: '/admin',
-  path: '/admin',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AlertsRoute = AlertsRouteImport.update({
-  id: '/alerts',
-  path: '/alerts',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ExplorerRoute = ExplorerRouteImport.update({
-  id: '/explorer',
-  path: '/explorer',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GtfsRtRoute = GtfsRtRouteImport.update({
-  id: '/gtfs-rt',
-  path: '/gtfs-rt',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RoutesRoute = RoutesRouteImport.update({
-  id: '/routes',
-  path: '/routes',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StatusRoute = StatusRouteImport.update({
-  id: '/status',
-  path: '/status',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StopsRoute = StopsRouteImport.update({
-  id: '/stops',
-  path: '/stops',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SuggestionRoute = SuggestionRouteImport.update({
-  id: '/suggestion',
-  path: '/suggestion',
+const VehiclesRoute = VehiclesRouteImport.update({
+  id: '/vehicles',
+  path: '/vehicles',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TadRoute = TadRouteImport.update({
@@ -91,14 +41,59 @@ const TadRoute = TadRouteImport.update({
   path: '/tad',
   getParentRoute: () => rootRouteImport,
 } as any)
-const VehiclesRoute = VehiclesRouteImport.update({
-  id: '/vehicles',
-  path: '/vehicles',
+const SuggestionRoute = SuggestionRouteImport.update({
+  id: '/suggestion',
+  path: '/suggestion',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ArrivalsStopIdRoute = ArrivalsStopIdRouteImport.update({
-  id: '/arrivals/$stopId',
-  path: '/arrivals/$stopId',
+const StopsRoute = StopsRouteImport.update({
+  id: '/stops',
+  path: '/stops',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StatusRoute = StatusRouteImport.update({
+  id: '/status',
+  path: '/status',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoutesRoute = RoutesRouteImport.update({
+  id: '/routes',
+  path: '/routes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GtfsRtRoute = GtfsRtRouteImport.update({
+  id: '/gtfs-rt',
+  path: '/gtfs-rt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExplorerRoute = ExplorerRouteImport.update({
+  id: '/explorer',
+  path: '/explorer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AlertsRoute = AlertsRouteImport.update({
+  id: '/alerts',
+  path: '/alerts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ActiosaeRoute = ActiosaeRouteImport.update({
+  id: '/actiosae',
+  path: '/actiosae',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const StopsStopIdRoute = StopsStopIdRouteImport.update({
@@ -106,14 +101,14 @@ const StopsStopIdRoute = StopsStopIdRouteImport.update({
   path: '/$stopId',
   getParentRoute: () => StopsRoute,
 } as any)
-const ApiPublicAdsRoute = ApiPublicAdsRouteImport.update({
-  id: '/api/public/ads',
-  path: '/api/public/ads',
+const ArrivalsStopIdRoute = ArrivalsStopIdRouteImport.update({
+  id: '/arrivals/$stopId',
+  path: '/arrivals/$stopId',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicAlertsRoute = ApiPublicAlertsRouteImport.update({
-  id: '/api/public/alerts',
-  path: '/api/public/alerts',
+const ApiPublicInitAdminRoute = ApiPublicInitAdminRouteImport.update({
+  id: '/api/public/init-admin',
+  path: '/api/public/init-admin',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicHealthRoute = ApiPublicHealthRouteImport.update({
@@ -121,9 +116,14 @@ const ApiPublicHealthRoute = ApiPublicHealthRouteImport.update({
   path: '/api/public/health',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicInitAdminRoute = ApiPublicInitAdminRouteImport.update({
-  id: '/api/public/init-admin',
-  path: '/api/public/init-admin',
+const ApiPublicAlertsRoute = ApiPublicAlertsRouteImport.update({
+  id: '/api/public/alerts',
+  path: '/api/public/alerts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicAdsRoute = ApiPublicAdsRouteImport.update({
+  id: '/api/public/ads',
+  path: '/api/public/ads',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicGtfsStaticFileRoute = ApiPublicGtfsStaticFileRouteImport.update({
@@ -305,81 +305,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/actiosae': {
-      id: '/actiosae'
-      path: '/actiosae'
-      fullPath: '/actiosae'
-      preLoaderRoute: typeof ActiosaeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin': {
-      id: '/admin'
-      path: '/admin'
-      fullPath: '/admin'
-      preLoaderRoute: typeof AdminRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/alerts': {
-      id: '/alerts'
-      path: '/alerts'
-      fullPath: '/alerts'
-      preLoaderRoute: typeof AlertsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/explorer': {
-      id: '/explorer'
-      path: '/explorer'
-      fullPath: '/explorer'
-      preLoaderRoute: typeof ExplorerRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gtfs-rt': {
-      id: '/gtfs-rt'
-      path: '/gtfs-rt'
-      fullPath: '/gtfs-rt'
-      preLoaderRoute: typeof GtfsRtRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/routes': {
-      id: '/routes'
-      path: '/routes'
-      fullPath: '/routes'
-      preLoaderRoute: typeof RoutesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/status': {
-      id: '/status'
-      path: '/status'
-      fullPath: '/status'
-      preLoaderRoute: typeof StatusRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/stops': {
-      id: '/stops'
-      path: '/stops'
-      fullPath: '/stops'
-      preLoaderRoute: typeof StopsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/suggestion': {
-      id: '/suggestion'
-      path: '/suggestion'
-      fullPath: '/suggestion'
-      preLoaderRoute: typeof SuggestionRouteImport
+    '/vehicles': {
+      id: '/vehicles'
+      path: '/vehicles'
+      fullPath: '/vehicles'
+      preLoaderRoute: typeof VehiclesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tad': {
@@ -389,18 +319,81 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TadRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/vehicles': {
-      id: '/vehicles'
-      path: '/vehicles'
-      fullPath: '/vehicles'
-      preLoaderRoute: typeof VehiclesRouteImport
+    '/suggestion': {
+      id: '/suggestion'
+      path: '/suggestion'
+      fullPath: '/suggestion'
+      preLoaderRoute: typeof SuggestionRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/arrivals/$stopId': {
-      id: '/arrivals/$stopId'
-      path: '/arrivals/$stopId'
-      fullPath: '/arrivals/$stopId'
-      preLoaderRoute: typeof ArrivalsStopIdRouteImport
+    '/stops': {
+      id: '/stops'
+      path: '/stops'
+      fullPath: '/stops'
+      preLoaderRoute: typeof StopsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/status': {
+      id: '/status'
+      path: '/status'
+      fullPath: '/status'
+      preLoaderRoute: typeof StatusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/routes': {
+      id: '/routes'
+      path: '/routes'
+      fullPath: '/routes'
+      preLoaderRoute: typeof RoutesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gtfs-rt': {
+      id: '/gtfs-rt'
+      path: '/gtfs-rt'
+      fullPath: '/gtfs-rt'
+      preLoaderRoute: typeof GtfsRtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/explorer': {
+      id: '/explorer'
+      path: '/explorer'
+      fullPath: '/explorer'
+      preLoaderRoute: typeof ExplorerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/alerts': {
+      id: '/alerts'
+      path: '/alerts'
+      fullPath: '/alerts'
+      preLoaderRoute: typeof AlertsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/actiosae': {
+      id: '/actiosae'
+      path: '/actiosae'
+      fullPath: '/actiosae'
+      preLoaderRoute: typeof ActiosaeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/stops/$stopId': {
@@ -410,18 +403,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StopsStopIdRouteImport
       parentRoute: typeof StopsRoute
     }
-    '/api/public/ads': {
-      id: '/api/public/ads'
-      path: '/api/public/ads'
-      fullPath: '/api/public/ads'
-      preLoaderRoute: typeof ApiPublicAdsRouteImport
+    '/arrivals/$stopId': {
+      id: '/arrivals/$stopId'
+      path: '/arrivals/$stopId'
+      fullPath: '/arrivals/$stopId'
+      preLoaderRoute: typeof ArrivalsStopIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/alerts': {
-      id: '/api/public/alerts'
-      path: '/api/public/alerts'
-      fullPath: '/api/public/alerts'
-      preLoaderRoute: typeof ApiPublicAlertsRouteImport
+    '/api/public/init-admin': {
+      id: '/api/public/init-admin'
+      path: '/api/public/init-admin'
+      fullPath: '/api/public/init-admin'
+      preLoaderRoute: typeof ApiPublicInitAdminRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/health': {
@@ -431,11 +424,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicHealthRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/init-admin': {
-      id: '/api/public/init-admin'
-      path: '/api/public/init-admin'
-      fullPath: '/api/public/init-admin'
-      preLoaderRoute: typeof ApiPublicInitAdminRouteImport
+    '/api/public/alerts': {
+      id: '/api/public/alerts'
+      path: '/api/public/alerts'
+      fullPath: '/api/public/alerts'
+      preLoaderRoute: typeof ApiPublicAlertsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/ads': {
+      id: '/api/public/ads'
+      path: '/api/public/ads'
+      fullPath: '/api/public/ads'
+      preLoaderRoute: typeof ApiPublicAdsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/gtfs-static/$file': {
