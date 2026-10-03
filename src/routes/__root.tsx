@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { AppShell } from "@/components/app-shell";
 
 function NotFoundComponent() {
   return (
@@ -86,6 +87,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Pc7TvDt3YycYbiypl49Z1C8eYV82/social-images/social-1779303317104-Captura_de_pantalla_2026-05-20_205502.webp" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" },
       {
         rel: "stylesheet",
         href: appCss,
@@ -117,38 +121,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="min-h-screen bg-background text-foreground">
-        <header className="border-b border-border bg-card">
-          <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-1 px-4 py-3">
-            <Link to="/" className="mr-4 font-bold text-lg">Arroyobus</Link>
-            {[
-              ["/routes", "Líneas"],
-              ["/stops", "Paradas"],
-              ["/vehicles", "Vehículos"],
-              ["/alerts", "Alertas"],
-              ["/tad", "TAD"],
-              ["/suggestion", "Sugerencias"],
-              ["/gtfs-rt", "GTFS-RT"],
-              ["/actiosae", "GTFS ACTIOSAE"],
-              ["/explorer", "Explorer"],
-              ["/status", "Estado"],
-              ["/admin", "Admin"],
-            ].map(([to, label]) => (
-              <Link
-                key={to}
-                to={to}
-                className="rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-foreground [&.active]:bg-primary [&.active]:text-primary-foreground"
-                activeProps={{ className: "active" }}
-              >
-                {label}
-              </Link>
-            ))}
-          </div>
-        </header>
-        <main className="mx-auto max-w-6xl px-4 py-6">
-          <Outlet />
-        </main>
-      </div>
+      <AppShell><Outlet /></AppShell>
     </QueryClientProvider>
   );
 }
