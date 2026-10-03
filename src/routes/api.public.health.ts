@@ -29,7 +29,7 @@ const SUPABASE_KEY =
 
 const TIMEOUT_MS = 8000;
 
-async function timedFetch(url: string, init?: RequestInit) {
+async function singleFetch(url: string, init?: RequestInit) {
   const started = Date.now();
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
@@ -45,6 +45,15 @@ async function timedFetch(url: string, init?: RequestInit) {
   } finally {
     clearTimeout(timer);
   }
+}
+
+/** Fetch with one retry on network errors or 5xx, to absorb transient blips / cold starts. */
+async function timedFetch(url: string, init?: RequestInit) {
+  const first = await singleFetch(url, init);
+  if (first.res && first.res.status < 500) return first;
+  await new Promise((r) => setTimeout(r, 400));
+  const second = await singleFetch(url, init);
+  return second.res ? second : first;
 }
 
 /** GTFS-RT feed: parsed via its ?format=json debug view. */
@@ -242,8 +251,11 @@ export const Route = createFileRoute("/api/public/health")({
           checks,
         };
 
+        // Default: always 200 with the real state in body + X-Health-Status.
+        // Uptime monitors that want an HTTP failure can use ?strict=1 (503 when down).
+        const strict = reqUrl.searchParams.get("strict") === "1";
         return new Response(JSON.stringify(body, null, 2), {
-          status: overall === "down" ? 503 : 200,
+          status: strict && overall === "down" ? 503 : 200,
           headers: {
             ...CORS,
             "Content-Type": "application/json; charset=utf-8",
