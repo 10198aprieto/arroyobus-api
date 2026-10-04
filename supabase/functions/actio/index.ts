@@ -20,10 +20,17 @@ const ALLOWED = new Set([
   "stop/list",
   "alert/list",
   "vehiclePosition",
+  "transportation-request/filter-options",
+  // App v3.1.19 "api/feed/{feedId}/..." endpoints (proxied under api/)
+  "api/directions",
+  "api/timetable",
+  "api/trajectory",
+  "api/alerts",
 ]);
-const ALLOWED_PREFIX = ["stopInfo/", "arrivals/"];
+const ALLOWED_PREFIX = ["stopInfo/", "arrivals/", "api/infoTrip/"];
 const ALLOWED_POST = new Set([
   "transportation-request/send",
+  "v2/transportation-request/send",
   "v1.1/send-suggestion",
 ]);
 
@@ -163,8 +170,11 @@ Deno.serve(async (req) => {
     });
   }
 
-  const upstream = new URL(`${BASE}/bff/mobile/${path}`);
-  upstream.searchParams.set("feedId", FEED_ID);
+  const isFeedApi = path.startsWith("api/");
+  const upstream = new URL(
+    isFeedApi ? `${BASE}/api/feed/${FEED_ID}/${path.slice(4)}` : `${BASE}/bff/mobile/${path}`,
+  );
+  if (!isFeedApi) upstream.searchParams.set("feedId", FEED_ID);
   upstream.searchParams.set("key", API_KEY);
   // forward additional query params (except `path`)
   for (const [k, v] of url.searchParams) {
