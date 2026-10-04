@@ -19,7 +19,7 @@ export const Route = createFileRoute("/explorer")({
   }),
 });
 
-type EndpointKey = "route/list" | "stop/list" | "arrivals" | "vehiclePosition" | "alert/list" | "stopInfo";
+type EndpointKey = "route/list" | "stop/list" | "arrivals" | "vehiclePosition" | "alert/list" | "stopInfo" | "infoTrip" | "directions" | "trajectory" | "timetable" | "filterOptions";
 
 interface EP {
   key: EndpointKey;
@@ -29,6 +29,13 @@ interface EP {
   refresh?: number;
 }
 
+const q = (p: Record<string, string>, names: string[]) => {
+  const s = new URLSearchParams();
+  for (const n of names) if (p[n]) s.set(n, p[n]);
+  const t = s.toString();
+  return t ? `&${t}` : "";
+};
+
 const ENDPOINTS: EP[] = [
   { key: "route/list", label: "GET /route/list", path: () => "route/list", params: [] },
   { key: "stop/list", label: "GET /stop/list", path: () => "stop/list", params: [] },
@@ -36,6 +43,11 @@ const ENDPOINTS: EP[] = [
   { key: "arrivals", label: "GET /arrivals/{stopId}", path: (p) => `arrivals/${p.stopId}`, params: [{ name: "stopId", required: true, placeholder: "p.ej. 1" }], refresh: 15000 },
   { key: "vehiclePosition", label: "GET /vehiclePosition", path: () => "vehiclePosition", params: [], refresh: 10000 },
   { key: "alert/list", label: "GET /alert/list", path: () => "alert/list", params: [] },
+  { key: "infoTrip", label: "GET /infoTrip/{tripId}", path: (p) => `api/infoTrip/${p.tripId}`, params: [{ name: "tripId", required: true, placeholder: "p.ej. R50" }] },
+  { key: "directions", label: "GET /directions?routeId", path: (p) => `api/directions${q(p, ["routeId"])}`, params: [{ name: "routeId", required: true, placeholder: "Roja" }] },
+  { key: "trajectory", label: "GET /trajectory?routeId&directionId", path: (p) => `api/trajectory${q(p, ["routeId", "directionId"])}`, params: [{ name: "routeId", required: true, placeholder: "Roja" }, { name: "directionId", placeholder: "2" }] },
+  { key: "timetable", label: "GET /timetable?stopId&date", path: (p) => `api/timetable${q(p, ["routeId", "stopId", "date"])}`, params: [{ name: "routeId", placeholder: "Roja" }, { name: "stopId", required: true, placeholder: "1" }, { name: "date", required: true, placeholder: "2026-10-04" }] },
+  { key: "filterOptions", label: "GET /transportation-request/filter-options", path: () => "transportation-request/filter-options", params: [] },
 ];
 
 export interface Stop { stopId: string; stopName?: string; lat?: number | string; lon?: number | string; stopLat?: number | string; stopLon?: number | string }
