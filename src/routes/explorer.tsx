@@ -76,7 +76,8 @@ function ExplorerPage() {
     setErr(null);
     try {
       const path = ep.path(params);
-      const json = await actioGet(path);
+      const [basePath, qs = ""] = path.split(/&(.*)/s);
+      const json = await actioGet(basePath, Object.fromEntries(new URLSearchParams(qs)));
       setData(json);
     } catch (e) {
       setErr((e as Error).message);
