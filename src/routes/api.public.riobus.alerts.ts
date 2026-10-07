@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { createClient } from "@supabase/supabase-js";
 import { encodeAlertsFeed, type AlertRow } from "@/lib/gtfs-pb";
 
-const FEED = "arroyo";
+const FEED = "riobus";
 
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -10,7 +10,7 @@ const CORS = {
   "Access-Control-Allow-Headers": "*",
 };
 
-export const Route = createFileRoute("/api/public/alerts")({
+export const Route = createFileRoute("/api/public/riobus/alerts")({
   server: {
     handlers: {
       OPTIONS: async () => new Response(null, { status: 204, headers: CORS }),
@@ -84,7 +84,7 @@ export const Route = createFileRoute("/api/public/alerts")({
               null,
               2,
             ),
-            { status: 200, headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=2", ...CORS } },
+            { status: 200, headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=2", "X-Robots-Tag": "noindex", ...CORS } },
           );
         }
 
@@ -93,7 +93,7 @@ export const Route = createFileRoute("/api/public/alerts")({
           status: 200,
           headers: {
             "Content-Type": "application/x-protobuf",
-            "Cache-Control": "public, max-age=2",
+            "Cache-Control": "public, max-age=2", "X-Robots-Tag": "noindex",
             ...CORS,
           },
         });
