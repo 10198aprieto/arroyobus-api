@@ -298,8 +298,14 @@ Deno.serve(async (req) => {
   try {
     const url = new URL(req.url);
     const format = url.searchParams.get("format");
-    const [alerts, gtfs] = await Promise.all([fetchAlerts(), getStaticGtfs()]);
+    const feed = url.searchParams.get("feed");
+    // ?feed=riobus serves the own RíoBUS alerts from the database;
+    // anything else keeps the original Actio upstream feed.
+    const [alerts, gtfs] = feed === "riobus"
+      ? [await fetchRiobusAlerts(), null]
+      : await Promise.all([fetchAlerts(), getStaticGtfs()]);
     const feedTs = Math.floor(Date.now() / 1000);
+    const cacheMaxAge = feed === "riobus" ? 2 : 60;
 
     if (format === "json") {
       const entity = alerts.map((a) => {
