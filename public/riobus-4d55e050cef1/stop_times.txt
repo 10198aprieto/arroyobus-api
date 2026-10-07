@@ -1,0 +1,619 @@
+trip_id,arrival_time,departure_time,stop_id,stop_sequence,stop_headsign,pickup_type,drop_off_type,timepoint
+R1,08:45:10,08:45:12,1,1,CC Río Shopping,0,0,0
+R1,08:48:10,08:48:12,2,2,CC Río Shopping,0,0,0
+R1,08:51:10,08:52:12,3,3,CC Río Shopping,0,0,0
+R1,08:55:10,08:55:12,4,4,CC Río Shopping,0,0,0
+R1,08:59:10,09:00:12,5,5,CC Río Shopping,0,0,0
+R1,09:07:10,09:08:12,6,6,CC Río Shopping,0,0,0
+R1,09:45:10,09:45:12,1,7,CC Río Shopping,0,0,0
+R1,09:48:10,09:48:12,2,8,CC Río Shopping,0,0,0
+R1,09:51:10,09:51:12,3,9,CC Río Shopping,0,0,0
+R1,09:55:10,09:55:12,4,10,CC Río Shopping,0,0,0
+R1,09:59:10,09:59:12,5,11,CC Río Shopping,0,0,0
+R1,10:07:10,10:07:12,6,12,CC Río Shopping,0,0,0
+R1,10:45:10,10:45:12,1,13,CC Río Shopping,0,0,0
+R1,10:48:10,10:48:12,2,14,CC Río Shopping,0,0,0
+R1,10:51:10,10:51:12,3,15,CC Río Shopping,0,0,0
+R1,10:55:10,10:55:12,4,16,CC Río Shopping,0,0,0
+R1,10:59:10,10:59:12,5,17,CC Río Shopping,0,0,0
+R1,11:07:10,11:07:12,6,18,CC Río Shopping,0,0,0
+R1,11:45:10,11:45:12,1,19,CC Río Shopping,0,0,0
+R1,11:48:10,11:48:12,2,20,CC Río Shopping,0,0,0
+R1,11:51:10,11:51:12,3,21,CC Río Shopping,0,0,0
+R1,11:55:10,11:55:12,4,22,CC Río Shopping,0,0,0
+R1,11:59:10,11:59:12,5,23,CC Río Shopping,0,0,0
+R1,12:07:10,12:07:12,6,24,CC Río Shopping,0,0,0
+R1,12:45:10,12:45:12,1,25,CC Río Shopping,0,0,0
+R1,12:48:10,12:48:12,2,26,CC Río Shopping,0,0,0
+R1,12:51:10,12:51:12,3,27,CC Río Shopping,0,0,0
+R1,12:55:10,12:55:12,4,28,CC Río Shopping,0,0,0
+R1,12:59:10,12:59:12,5,29,CC Río Shopping,0,0,0
+R1,13:07:10,13:07:12,6,30,CC Río Shopping,0,0,0
+R1,13:45:10,13:45:12,1,31,CC Río Shopping,0,0,0
+R1,13:48:10,13:48:12,2,32,CC Río Shopping,0,0,0
+R1,13:51:10,13:51:12,3,33,CC Río Shopping,0,0,0
+R1,13:55:10,13:55:12,4,34,CC Río Shopping,0,0,0
+R1,13:59:10,13:59:12,5,35,CC Río Shopping,0,0,0
+R1,14:07:10,14:07:12,6,36,CC Río Shopping,0,0,0
+R1,14:45:10,14:45:12,1,37,CC Río Shopping,0,0,0
+R1,14:48:10,14:48:12,2,38,CC Río Shopping,0,0,0
+R1,14:51:10,14:51:12,3,39,CC Río Shopping,0,0,0
+R1,14:55:10,14:55:12,4,40,CC Río Shopping,0,0,0
+R1,14:59:10,14:59:12,5,41,CC Río Shopping,0,0,0
+R1,15:07:10,15:07:12,6,42,CC Río Shopping,0,0,0
+R1,15:45:10,15:45:12,1,43,CC Río Shopping,0,0,0
+R1,15:48:10,15:48:12,2,44,CC Río Shopping,0,0,0
+R1,15:51:10,15:51:12,3,45,CC Río Shopping,0,0,0
+R1,15:55:10,15:55:12,4,46,CC Río Shopping,0,0,0
+R1,15:59:10,15:59:12,5,47,CC Río Shopping,0,0,0
+R1,16:07:10,16:07:12,6,48,CC Río Shopping,0,0,0
+R1,16:45:10,16:45:12,1,49,CC Río Shopping,0,0,0
+R1,16:48:10,16:48:12,2,50,CC Río Shopping,0,0,0
+R1,16:51:10,16:51:12,3,51,CC Río Shopping,0,0,0
+R1,16:55:10,16:55:12,4,52,CC Río Shopping,0,0,0
+R1,16:59:10,16:59:12,5,53,CC Río Shopping,0,0,0
+R1,17:07:10,17:07:12,6,54,CC Río Shopping,0,0,0
+R1,17:45:10,17:45:12,1,55,CC Río Shopping,0,0,0
+R1,17:48:10,17:48:12,2,56,CC Río Shopping,0,0,0
+R1,17:51:10,17:51:12,3,57,CC Río Shopping,0,0,0
+R1,17:55:10,17:55:12,4,58,CC Río Shopping,0,0,0
+R1,17:59:10,17:59:12,5,59,CC Río Shopping,0,0,0
+R1,18:07:10,18:07:12,6,60,CC Río Shopping,0,0,0
+R1,18:45:10,18:45:12,1,61,CC Río Shopping,0,0,0
+R1,18:48:10,18:48:12,2,62,CC Río Shopping,0,0,0
+R1,18:51:10,18:51:12,3,63,CC Río Shopping,0,0,0
+R1,18:55:10,18:55:12,4,64,CC Río Shopping,0,0,0
+R1,18:59:10,18:59:12,5,65,CC Río Shopping,0,0,0
+R1,19:07:10,19:07:12,6,66,CC Río Shopping,0,0,0
+R1,19:45:10,19:45:12,1,67,CC Río Shopping,0,0,0
+R1,19:48:10,19:48:12,2,68,CC Río Shopping,0,0,0
+R1,19:51:10,19:51:12,3,69,CC Río Shopping,0,0,0
+R1,19:55:10,19:55:12,4,70,CC Río Shopping,0,0,0
+R1,19:59:10,19:59:12,5,71,CC Río Shopping,0,0,0
+R1,20:07:10,20:07:12,6,72,CC Río Shopping,0,0,0
+R1,20:45:10,20:45:12,1,73,CC Río Shopping,0,0,0
+R1,20:48:10,20:48:12,2,74,CC Río Shopping,0,0,0
+R1,20:51:10,20:51:12,3,75,CC Río Shopping,0,0,0
+R1,20:55:10,20:55:12,4,76,CC Río Shopping,0,0,0
+R1,20:59:10,20:59:12,5,77,CC Río Shopping,0,0,0
+R1,21:07:10,21:07:12,6,78,CC Río Shopping,0,0,0
+R1,21:45:10,21:45:12,1,79,CC Río Shopping,0,0,0
+R1,21:48:10,21:48:12,2,80,CC Río Shopping,0,0,0
+R1,21:51:10,21:51:12,3,81,CC Río Shopping,0,0,0
+R1,21:55:10,21:55:12,4,82,CC Río Shopping,0,0,0
+R1,21:59:10,21:59:12,5,83,CC Río Shopping,0,0,0
+R1,22:07:10,22:07:12,6,84,CC Río Shopping,0,0,0
+R2,08:45:10,08:45:12,1,1,CC Río Shopping,0,0,0
+R2,08:48:10,08:48:12,2,2,CC Río Shopping,0,0,0
+R2,08:51:10,08:51:12,3,3,CC Río Shopping,0,0,0
+R2,08:55:10,08:55:12,4,4,CC Río Shopping,0,0,0
+R2,08:59:10,08:59:12,5,5,CC Río Shopping,0,0,0
+R2,09:07:10,09:07:12,6,6,CC Río Shopping,0,0,0
+R2,09:45:10,09:45:12,1,7,CC Río Shopping,0,0,0
+R2,09:48:10,09:48:12,2,8,CC Río Shopping,0,0,0
+R2,09:51:10,09:51:12,3,9,CC Río Shopping,0,0,0
+R2,09:55:10,09:55:12,4,10,CC Río Shopping,0,0,0
+R2,09:59:10,09:59:12,5,11,CC Río Shopping,0,0,0
+R2,10:07:10,10:07:12,6,12,CC Río Shopping,0,0,0
+R2,10:45:10,10:45:12,1,13,CC Río Shopping,0,0,0
+R2,10:48:10,10:48:12,2,14,CC Río Shopping,0,0,0
+R2,10:51:10,10:51:12,3,15,CC Río Shopping,0,0,0
+R2,10:55:10,10:55:12,4,16,CC Río Shopping,0,0,0
+R2,10:59:10,10:59:12,5,17,CC Río Shopping,0,0,0
+R2,11:07:10,11:07:12,6,18,CC Río Shopping,0,0,0
+R2,11:45:10,11:45:12,1,19,CC Río Shopping,0,0,0
+R2,11:48:10,11:48:12,2,20,CC Río Shopping,0,0,0
+R2,11:51:10,11:51:12,3,21,CC Río Shopping,0,0,0
+R2,11:55:10,11:55:12,4,22,CC Río Shopping,0,0,0
+R2,11:59:10,11:59:12,5,23,CC Río Shopping,0,0,0
+R2,12:07:10,12:07:12,6,24,CC Río Shopping,0,0,0
+R2,12:45:10,12:45:12,1,25,CC Río Shopping,0,0,0
+R2,12:48:10,12:48:12,2,26,CC Río Shopping,0,0,0
+R2,12:51:10,12:51:12,3,27,CC Río Shopping,0,0,0
+R2,12:55:10,12:55:12,4,28,CC Río Shopping,0,0,0
+R2,12:59:10,12:59:12,5,29,CC Río Shopping,0,0,0
+R2,13:07:10,13:07:12,6,30,CC Río Shopping,0,0,0
+R2,13:45:10,13:45:12,1,31,CC Río Shopping,0,0,0
+R2,13:48:10,13:48:12,2,32,CC Río Shopping,0,0,0
+R2,13:51:10,13:51:12,3,33,CC Río Shopping,0,0,0
+R2,13:55:10,13:55:12,4,34,CC Río Shopping,0,0,0
+R2,13:59:10,13:59:12,5,35,CC Río Shopping,0,0,0
+R2,14:07:10,14:07:12,6,36,CC Río Shopping,0,0,0
+R2,14:45:10,14:45:12,1,37,CC Río Shopping,0,0,0
+R2,14:48:10,14:48:12,2,38,CC Río Shopping,0,0,0
+R2,14:51:10,14:51:12,3,39,CC Río Shopping,0,0,0
+R2,14:55:10,14:55:12,4,40,CC Río Shopping,0,0,0
+R2,14:59:10,14:59:12,5,41,CC Río Shopping,0,0,0
+R2,15:07:10,15:07:12,6,42,CC Río Shopping,0,0,0
+R2,15:45:10,15:45:12,1,43,CC Río Shopping,0,0,0
+R2,15:48:10,15:48:12,2,44,CC Río Shopping,0,0,0
+R2,15:51:10,15:51:12,3,45,CC Río Shopping,0,0,0
+R2,15:55:10,15:55:12,4,46,CC Río Shopping,0,0,0
+R2,15:59:10,15:59:12,5,47,CC Río Shopping,0,0,0
+R2,16:07:10,16:07:12,6,48,CC Río Shopping,0,0,0
+R2,16:45:10,16:45:12,1,49,CC Río Shopping,0,0,0
+R2,16:48:10,16:48:12,2,50,CC Río Shopping,0,0,0
+R2,16:51:10,16:51:12,3,51,CC Río Shopping,0,0,0
+R2,16:55:10,16:55:12,4,52,CC Río Shopping,0,0,0
+R2,16:59:10,16:59:12,5,53,CC Río Shopping,0,0,0
+R2,17:07:10,17:07:12,6,54,CC Río Shopping,0,0,0
+R2,17:15:10,17:15:12,1,55,CC Río Shopping,0,0,0
+R2,17:18:10,17:18:12,2,56,CC Río Shopping,0,0,0
+R2,17:21:10,17:21:12,3,57,CC Río Shopping,0,0,0
+R2,17:25:10,17:25:12,4,58,CC Río Shopping,0,0,0
+R2,17:29:10,17:29:12,5,59,CC Río Shopping,0,0,0
+R2,17:37:10,17:37:12,6,60,CC Río Shopping,0,0,0
+R2,17:45:10,17:45:12,1,61,CC Río Shopping,0,0,0
+R2,17:48:10,17:48:12,2,62,CC Río Shopping,0,0,0
+R2,17:51:10,17:51:12,3,63,CC Río Shopping,0,0,0
+R2,17:55:10,17:55:12,4,64,CC Río Shopping,0,0,0
+R2,17:59:10,17:59:12,5,65,CC Río Shopping,0,0,0
+R2,18:07:10,18:07:12,6,66,CC Río Shopping,0,0,0
+R2,18:15:10,18:15:12,1,67,CC Río Shopping,0,0,0
+R2,18:18:10,18:18:12,2,68,CC Río Shopping,0,0,0
+R2,18:21:10,18:21:12,3,69,CC Río Shopping,0,0,0
+R2,18:25:10,18:25:12,4,70,CC Río Shopping,0,0,0
+R2,18:29:10,18:29:12,5,71,CC Río Shopping,0,0,0
+R2,18:37:10,18:37:12,6,72,CC Río Shopping,0,0,0
+R2,18:45:10,18:45:12,1,73,CC Río Shopping,0,0,0
+R2,18:48:10,18:48:12,2,74,CC Río Shopping,0,0,0
+R2,18:51:10,18:51:12,3,75,CC Río Shopping,0,0,0
+R2,18:55:10,18:55:12,4,76,CC Río Shopping,0,0,0
+R2,18:59:10,18:59:12,5,77,CC Río Shopping,0,0,0
+R2,19:07:10,19:07:12,6,78,CC Río Shopping,0,0,0
+R2,19:15:10,19:15:12,1,79,CC Río Shopping,0,0,0
+R2,19:18:10,19:18:12,2,80,CC Río Shopping,0,0,0
+R2,19:21:10,19:21:12,3,81,CC Río Shopping,0,0,0
+R2,19:25:10,19:25:12,4,82,CC Río Shopping,0,0,0
+R2,19:29:10,19:29:12,5,83,CC Río Shopping,0,0,0
+R2,19:37:10,19:37:12,6,84,CC Río Shopping,0,0,0
+R2,19:45:10,19:45:12,1,85,CC Río Shopping,0,0,0
+R2,19:48:10,19:48:12,2,86,CC Río Shopping,0,0,0
+R2,19:51:10,19:51:12,3,87,CC Río Shopping,0,0,0
+R2,19:55:10,19:55:12,4,88,CC Río Shopping,0,0,0
+R2,19:59:10,19:59:12,5,89,CC Río Shopping,0,0,0
+R2,20:07:10,20:07:12,6,90,CC Río Shopping,0,0,0
+R2,20:15:10,20:15:12,1,91,CC Río Shopping,0,0,0
+R2,20:18:10,20:18:12,2,92,CC Río Shopping,0,0,0
+R2,20:21:10,20:21:12,3,93,CC Río Shopping,0,0,0
+R2,20:25:10,20:25:12,4,94,CC Río Shopping,0,0,0
+R2,20:29:10,20:29:12,5,95,CC Río Shopping,0,0,0
+R2,20:37:10,20:37:12,6,96,CC Río Shopping,0,0,0
+R2,20:45:10,20:45:12,1,97,CC Río Shopping,0,0,0
+R2,20:48:10,20:48:12,2,98,CC Río Shopping,0,0,0
+R2,20:51:10,20:51:12,3,99,CC Río Shopping,0,0,0
+R2,20:55:10,20:55:12,4,100,CC Río Shopping,0,0,0
+R2,20:59:10,20:59:12,5,101,CC Río Shopping,0,0,0
+R2,21:07:10,21:07:12,6,102,CC Río Shopping,0,0,0
+R2,21:45:10,21:45:12,1,103,CC Río Shopping,0,0,0
+R2,21:48:10,21:48:12,2,104,CC Río Shopping,0,0,0
+R2,21:51:10,21:51:12,3,105,CC Río Shopping,0,0,0
+R2,21:55:10,21:55:12,4,106,CC Río Shopping,0,0,0
+R2,21:59:10,21:59:12,5,107,CC Río Shopping,0,0,0
+R2,22:07:10,22:07:12,6,108,CC Río Shopping,0,0,0
+R3,08:45:10,08:45:12,1,1,CC Río Shopping,0,0,0
+R3,08:48:10,08:48:12,2,2,CC Río Shopping,0,0,0
+R3,08:51:10,08:51:12,3,3,CC Río Shopping,0,0,0
+R3,08:55:10,08:55:12,4,4,CC Río Shopping,0,0,0
+R3,08:59:10,08:59:12,5,5,CC Río Shopping,0,0,0
+R3,09:07:10,09:07:12,6,6,CC Río Shopping,0,0,0
+R3,09:45:10,09:45:12,1,7,CC Río Shopping,0,0,0
+R3,09:48:10,09:48:12,2,8,CC Río Shopping,0,0,0
+R3,09:51:10,09:51:12,3,9,CC Río Shopping,0,0,0
+R3,09:55:10,09:55:12,4,10,CC Río Shopping,0,0,0
+R3,09:59:10,09:59:12,5,11,CC Río Shopping,0,0,0
+R3,10:07:10,10:07:12,6,12,CC Río Shopping,0,0,0
+R3,10:45:10,10:45:12,1,13,CC Río Shopping,0,0,0
+R3,10:48:10,10:48:12,2,14,CC Río Shopping,0,0,0
+R3,10:51:10,10:51:12,3,15,CC Río Shopping,0,0,0
+R3,10:55:10,10:55:12,4,16,CC Río Shopping,0,0,0
+R3,10:59:10,10:59:12,5,17,CC Río Shopping,0,0,0
+R3,11:07:10,11:07:12,6,18,CC Río Shopping,0,0,0
+R3,11:45:10,11:45:12,1,19,CC Río Shopping,0,0,0
+R3,11:48:10,11:48:12,2,20,CC Río Shopping,0,0,0
+R3,11:51:10,11:51:12,3,21,CC Río Shopping,0,0,0
+R3,11:55:10,11:55:12,4,22,CC Río Shopping,0,0,0
+R3,11:59:10,11:59:12,5,23,CC Río Shopping,0,0,0
+R3,12:07:10,12:07:12,6,24,CC Río Shopping,0,0,0
+R3,12:45:10,12:45:12,1,25,CC Río Shopping,0,0,0
+R3,12:48:10,12:48:12,2,26,CC Río Shopping,0,0,0
+R3,12:51:10,12:51:12,3,27,CC Río Shopping,0,0,0
+R3,12:55:10,12:55:12,4,28,CC Río Shopping,0,0,0
+R3,12:59:10,12:59:12,5,29,CC Río Shopping,0,0,0
+R3,13:07:10,13:07:12,6,30,CC Río Shopping,0,0,0
+R3,13:45:10,13:45:12,1,31,CC Río Shopping,0,0,0
+R3,13:48:10,13:48:12,2,32,CC Río Shopping,0,0,0
+R3,13:51:10,13:51:12,3,33,CC Río Shopping,0,0,0
+R3,13:55:10,13:55:12,4,34,CC Río Shopping,0,0,0
+R3,13:59:10,13:59:12,5,35,CC Río Shopping,0,0,0
+R3,14:07:10,14:07:12,6,36,CC Río Shopping,0,0,0
+R3,14:45:10,14:45:12,1,37,CC Río Shopping,0,0,0
+R3,14:48:10,14:48:12,2,38,CC Río Shopping,0,0,0
+R3,14:51:10,14:51:12,3,39,CC Río Shopping,0,0,0
+R3,14:55:10,14:55:12,4,40,CC Río Shopping,0,0,0
+R3,14:59:10,14:59:12,5,41,CC Río Shopping,0,0,0
+R3,15:07:10,15:07:12,6,42,CC Río Shopping,0,0,0
+R3,15:45:10,15:45:12,1,43,CC Río Shopping,0,0,0
+R3,15:48:10,15:48:12,2,44,CC Río Shopping,0,0,0
+R3,15:51:10,15:51:12,3,45,CC Río Shopping,0,0,0
+R3,15:55:10,15:55:12,4,46,CC Río Shopping,0,0,0
+R3,15:59:10,15:59:12,5,47,CC Río Shopping,0,0,0
+R3,16:07:10,16:07:12,6,48,CC Río Shopping,0,0,0
+R3,16:45:10,16:45:12,1,49,CC Río Shopping,0,0,0
+R3,16:48:10,16:48:12,2,50,CC Río Shopping,0,0,0
+R3,16:51:10,16:51:12,3,51,CC Río Shopping,0,0,0
+R3,16:55:10,16:55:12,4,52,CC Río Shopping,0,0,0
+R3,16:59:10,16:59:12,5,53,CC Río Shopping,0,0,0
+R3,17:07:10,17:07:12,6,54,CC Río Shopping,0,0,0
+R3,17:15:10,17:15:12,1,55,CC Río Shopping,0,0,0
+R3,17:18:10,17:18:12,2,56,CC Río Shopping,0,0,0
+R3,17:21:10,17:21:12,3,57,CC Río Shopping,0,0,0
+R3,17:25:10,17:25:12,4,58,CC Río Shopping,0,0,0
+R3,17:29:10,17:29:12,5,59,CC Río Shopping,0,0,0
+R3,17:37:10,17:37:12,6,60,CC Río Shopping,0,0,0
+R3,17:45:10,17:45:12,1,61,CC Río Shopping,0,0,0
+R3,17:48:10,17:48:12,2,62,CC Río Shopping,0,0,0
+R3,17:51:10,17:51:12,3,63,CC Río Shopping,0,0,0
+R3,17:55:10,17:55:12,4,64,CC Río Shopping,0,0,0
+R3,17:59:10,17:59:12,5,65,CC Río Shopping,0,0,0
+R3,18:07:10,18:07:12,6,66,CC Río Shopping,0,0,0
+R3,18:15:10,18:15:12,1,67,CC Río Shopping,0,0,0
+R3,18:18:10,18:18:12,2,68,CC Río Shopping,0,0,0
+R3,18:21:10,18:21:12,3,69,CC Río Shopping,0,0,0
+R3,18:25:10,18:25:12,4,70,CC Río Shopping,0,0,0
+R3,18:29:10,18:29:12,5,71,CC Río Shopping,0,0,0
+R3,18:37:10,18:37:12,6,72,CC Río Shopping,0,0,0
+R3,18:45:10,18:45:12,1,73,CC Río Shopping,0,0,0
+R3,18:48:10,18:48:12,2,74,CC Río Shopping,0,0,0
+R3,18:51:10,18:51:12,3,75,CC Río Shopping,0,0,0
+R3,18:55:10,18:55:12,4,76,CC Río Shopping,0,0,0
+R3,18:59:10,18:59:12,5,77,CC Río Shopping,0,0,0
+R3,19:07:10,19:07:12,6,78,CC Río Shopping,0,0,0
+R3,19:15:10,19:15:12,1,79,CC Río Shopping,0,0,0
+R3,19:18:10,19:18:12,2,80,CC Río Shopping,0,0,0
+R3,19:21:10,19:21:12,3,81,CC Río Shopping,0,0,0
+R3,19:25:10,19:25:12,4,82,CC Río Shopping,0,0,0
+R3,19:29:10,19:29:12,5,83,CC Río Shopping,0,0,0
+R3,19:37:10,19:37:12,6,84,CC Río Shopping,0,0,0
+R3,19:45:10,19:45:12,1,85,CC Río Shopping,0,0,0
+R3,19:48:10,19:48:12,2,86,CC Río Shopping,0,0,0
+R3,19:51:10,19:51:12,3,87,CC Río Shopping,0,0,0
+R3,19:55:10,19:55:12,4,88,CC Río Shopping,0,0,0
+R3,19:59:10,19:59:12,5,89,CC Río Shopping,0,0,0
+R3,20:07:10,20:07:12,6,90,CC Río Shopping,0,0,0
+R3,20:15:10,20:15:12,1,91,CC Río Shopping,0,0,0
+R3,20:18:10,20:18:12,2,92,CC Río Shopping,0,0,0
+R3,20:21:10,20:21:12,3,93,CC Río Shopping,0,0,0
+R3,20:25:10,20:25:12,4,94,CC Río Shopping,0,0,0
+R3,20:29:10,20:29:12,5,95,CC Río Shopping,0,0,0
+R3,20:37:10,20:37:12,6,96,CC Río Shopping,0,0,0
+R3,20:45:10,20:45:12,1,97,CC Río Shopping,0,0,0
+R3,20:48:10,20:48:12,2,98,CC Río Shopping,0,0,0
+R3,20:51:10,20:51:12,3,99,CC Río Shopping,0,0,0
+R3,20:55:10,20:55:12,4,100,CC Río Shopping,0,0,0
+R3,20:59:10,20:59:12,5,101,CC Río Shopping,0,0,0
+R3,21:07:10,21:07:12,6,102,CC Río Shopping,0,0,0
+R3,21:45:10,21:45:12,1,103,CC Río Shopping,0,0,0
+R3,21:48:10,21:48:12,2,104,CC Río Shopping,0,0,0
+R3,21:51:10,21:51:12,3,105,CC Río Shopping,0,0,0
+R3,21:55:10,21:55:12,4,106,CC Río Shopping,0,0,0
+R3,21:59:10,21:59:12,5,107,CC Río Shopping,0,0,0
+R3,22:07:10,22:07:12,6,108,CC Río Shopping,0,0,0
+R4,09:15:10,09:15:12,6,1,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,09:23:10,09:23:12,7,2,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,09:27:10,09:27:12,8,3,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,09:31:10,09:31:12,9,4,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,09:34:10,09:34:12,2,5,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,09:37:10,09:37:12,1,6,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,10:15:10,10:15:12,6,7,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,10:23:10,10:23:12,7,8,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,10:27:10,10:27:12,8,9,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,10:31:10,10:31:12,9,10,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,10:34:10,10:34:12,2,11,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,10:37:10,10:37:12,1,12,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,11:15:10,11:15:12,6,13,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,11:23:10,11:23:12,7,14,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,11:27:10,11:27:12,8,15,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,11:31:10,11:31:12,9,16,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,11:34:10,11:34:12,2,17,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,11:37:10,11:37:12,1,18,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,12:15:10,12:15:12,6,19,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,12:23:10,12:23:12,7,20,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,12:27:10,12:27:12,8,21,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,12:31:10,12:31:12,9,22,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,12:34:10,12:34:12,2,23,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,12:37:10,12:37:12,1,24,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,13:15:10,13:15:12,6,25,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,13:23:10,13:23:12,7,26,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,13:27:10,13:27:12,8,27,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,13:31:10,13:31:12,9,28,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,13:34:10,13:34:12,2,29,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,13:37:10,13:37:12,1,30,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,14:15:10,14:15:12,6,31,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,14:23:10,14:23:12,7,32,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,14:27:10,14:27:12,8,33,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,14:31:10,14:31:12,9,34,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,14:34:10,14:34:12,2,35,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,14:37:10,14:37:12,1,36,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,15:15:10,15:15:12,6,37,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,15:23:10,15:23:12,7,38,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,15:27:10,15:27:12,8,39,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,15:31:10,15:31:12,9,40,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,15:34:10,15:34:12,2,41,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,15:37:10,15:37:12,1,42,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,16:15:10,16:15:12,6,43,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,16:23:10,16:23:12,7,44,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,16:27:10,16:27:12,8,45,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,16:31:10,16:31:12,9,46,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,16:34:10,16:34:12,2,47,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,16:37:10,16:37:12,1,48,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,17:15:10,17:15:12,6,49,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,17:23:10,17:23:12,7,50,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,17:27:10,17:27:12,8,51,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,17:31:10,17:31:12,9,52,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,17:34:10,17:34:12,2,53,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,17:37:10,17:37:12,1,54,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,18:15:10,18:15:12,6,55,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,18:23:10,18:23:12,7,56,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,18:27:10,18:27:12,8,57,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,18:31:10,18:31:12,9,58,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,18:34:10,18:34:12,2,59,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,18:37:10,18:37:12,1,60,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,19:15:10,19:15:12,6,61,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,19:23:10,19:23:12,7,62,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,19:27:10,19:27:12,8,63,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,19:31:10,19:31:12,9,64,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,19:34:10,19:34:12,2,65,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,19:37:10,19:37:12,1,66,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,20:15:10,20:15:12,6,67,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,20:23:10,20:23:12,7,68,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,20:27:10,20:27:12,8,69,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,20:31:10,20:31:12,9,70,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,20:34:10,20:34:12,2,71,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,20:37:10,20:37:12,1,72,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,21:15:10,21:15:12,6,73,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,21:23:10,21:23:12,7,74,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,21:27:10,21:27:12,8,75,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,21:31:10,21:31:12,9,76,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,21:34:10,21:34:12,2,77,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,21:37:10,21:37:12,1,78,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,22:15:10,22:15:12,6,79,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,22:23:10,22:23:12,7,80,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,22:27:10,22:27:12,8,81,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,22:31:10,22:31:12,9,82,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,22:34:10,22:34:12,2,83,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,22:37:10,22:37:12,1,84,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,22:45:10,22:45:12,6,85,Paseo de Filipinos frente Campo Grande,0,0,0
+R4,22:53:10,22:53:12,7,86,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,22:57:10,22:57:12,8,87,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,23:01:10,23:01:12,9,88,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,23:04:10,23:04:12,2,89,Paseo de Filipinos frente Campo Grande,1,0,0
+R4,23:07:10,23:07:12,1,90,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,09:15:10,09:15:12,6,1,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,09:23:10,09:23:12,7,2,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,09:27:10,09:27:12,8,3,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,09:31:10,09:31:12,9,4,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,09:34:10,09:34:12,2,5,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,09:37:10,09:37:12,1,6,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,10:15:10,10:15:12,6,7,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,10:23:10,10:23:12,7,8,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,10:27:10,10:27:12,8,9,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,10:31:10,10:31:12,9,10,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,10:34:10,10:34:12,2,11,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,10:37:10,10:37:12,1,12,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,11:15:10,11:15:12,6,13,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,11:23:10,11:23:12,7,14,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,11:27:10,11:27:12,8,15,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,11:31:10,11:31:12,9,16,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,11:34:10,11:34:12,2,17,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,11:37:10,11:37:12,1,18,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,12:15:10,12:15:12,6,19,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,12:23:10,12:23:12,7,20,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,12:27:10,12:27:12,8,21,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,12:31:10,12:31:12,9,22,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,12:34:10,12:34:12,2,23,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,12:37:10,12:37:12,1,24,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,13:15:10,13:15:12,6,25,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,13:23:10,13:23:12,7,26,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,13:27:10,13:27:12,8,27,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,13:31:10,13:31:12,9,28,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,13:34:10,13:34:12,2,29,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,13:37:10,13:37:12,1,30,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,14:15:10,14:15:12,6,31,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,14:23:10,14:23:12,7,32,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,14:27:10,14:27:12,8,33,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,14:31:10,14:31:12,9,34,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,14:34:10,14:34:12,2,35,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,14:37:10,14:37:12,1,36,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,15:15:10,15:15:12,6,37,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,15:23:10,15:23:12,7,38,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,15:27:10,15:27:12,8,39,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,15:31:10,15:31:12,9,40,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,15:34:10,15:34:12,2,41,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,15:37:10,15:37:12,1,42,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,16:15:10,16:15:12,6,43,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,16:23:10,16:23:12,7,44,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,16:27:10,16:27:12,8,45,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,16:31:10,16:31:12,9,46,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,16:34:10,16:34:12,2,47,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,16:37:10,16:37:12,1,48,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,17:15:10,17:15:12,6,49,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,17:23:10,17:23:12,7,50,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,17:27:10,17:27:12,8,51,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,17:31:10,17:31:12,9,52,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,17:34:10,17:34:12,2,53,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,17:37:10,17:37:12,1,54,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,17:45:10,17:45:12,6,55,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,17:53:10,17:53:12,7,56,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,17:57:10,17:57:12,8,57,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:01:10,18:01:12,9,58,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:04:10,18:04:12,2,59,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:07:10,18:07:12,1,60,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:15:10,18:15:12,6,61,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,18:23:10,18:23:12,7,62,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:27:10,18:27:12,8,63,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:31:10,18:31:12,9,64,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:34:10,18:34:12,2,65,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:37:10,18:37:12,1,66,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:45:10,18:45:12,6,67,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,18:53:10,18:53:12,7,68,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,18:57:10,18:57:12,8,69,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:01:10,19:01:12,9,70,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:04:10,19:04:12,2,71,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:07:10,19:07:12,1,72,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:15:10,19:15:12,6,73,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,19:23:10,19:23:12,7,74,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:27:10,19:27:12,8,75,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:31:10,19:31:12,9,76,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:34:10,19:34:12,2,77,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:37:10,19:37:12,1,78,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:45:10,19:45:12,6,79,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,19:53:10,19:53:12,7,80,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,19:57:10,19:57:12,8,81,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:01:10,20:01:12,9,82,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:04:10,20:04:12,2,83,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:07:10,20:07:12,1,84,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:15:10,20:15:12,6,85,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,20:23:10,20:23:12,7,86,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:27:10,20:27:12,8,87,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:31:10,20:31:12,9,88,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:34:10,20:34:12,2,89,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:37:10,20:37:12,1,90,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:45:10,20:45:12,6,91,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,20:53:10,20:53:12,7,92,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,20:57:10,20:57:12,8,93,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,21:01:10,21:01:12,9,94,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,21:04:10,21:04:12,2,95,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,21:07:10,21:07:12,1,96,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,21:15:10,21:15:12,6,97,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,21:23:10,21:23:12,7,98,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,21:27:10,21:27:12,8,99,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,21:31:10,21:31:12,9,100,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,21:34:10,21:34:12,2,101,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,21:37:10,21:37:12,1,102,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,22:15:10,22:15:12,6,103,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,22:23:10,22:23:12,7,104,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,22:27:10,22:27:12,8,105,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,22:31:10,22:31:12,9,106,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,22:34:10,22:34:12,2,107,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,22:37:10,22:37:12,1,108,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,22:45:10,22:45:12,6,109,Paseo de Filipinos frente Campo Grande,0,0,0
+R5,22:53:10,22:53:12,7,110,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,22:57:10,22:57:12,8,111,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,23:01:10,23:01:12,9,112,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,23:04:10,23:04:12,2,113,Paseo de Filipinos frente Campo Grande,1,0,0
+R5,23:07:10,23:07:12,1,114,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,09:15:10,09:15:12,6,1,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,09:23:10,09:23:12,7,2,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,09:27:10,09:27:12,8,3,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,09:31:10,09:31:12,9,4,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,09:34:10,09:34:12,2,5,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,09:37:10,09:37:12,1,6,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,10:15:10,10:15:12,6,7,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,10:23:10,10:23:12,7,8,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,10:27:10,10:27:12,8,9,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,10:31:10,10:31:12,9,10,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,10:34:10,10:34:12,2,11,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,10:37:10,10:37:12,1,12,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,11:15:10,11:15:12,6,13,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,11:23:10,11:23:12,7,14,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,11:27:10,11:27:12,8,15,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,11:31:10,11:31:12,9,16,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,11:34:10,11:34:12,2,17,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,11:37:10,11:37:12,1,18,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,12:15:10,12:15:12,6,19,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,12:23:10,12:23:12,7,20,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,12:27:10,12:27:12,8,21,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,12:31:10,12:31:12,9,22,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,12:34:10,12:34:12,2,23,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,12:37:10,12:37:12,1,24,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,13:15:10,13:15:12,6,25,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,13:23:10,13:23:12,7,26,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,13:27:10,13:27:12,8,27,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,13:31:10,13:31:12,9,28,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,13:34:10,13:34:12,2,29,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,13:37:10,13:37:12,1,30,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,14:15:10,14:15:12,6,31,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,14:23:10,14:23:12,7,32,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,14:27:10,14:27:12,8,33,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,14:31:10,14:31:12,9,34,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,14:34:10,14:34:12,2,35,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,14:37:10,14:37:12,1,36,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,15:15:10,15:15:12,6,37,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,15:23:10,15:23:12,7,38,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,15:27:10,15:27:12,8,39,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,15:31:10,15:31:12,9,40,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,15:34:10,15:34:12,2,41,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,15:37:10,15:37:12,1,42,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,16:15:10,16:15:12,6,43,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,16:23:10,16:23:12,7,44,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,16:27:10,16:27:12,8,45,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,16:31:10,16:31:12,9,46,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,16:34:10,16:34:12,2,47,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,16:37:10,16:37:12,1,48,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,17:15:10,17:15:12,6,49,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,17:23:10,17:23:12,7,50,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,17:27:10,17:27:12,8,51,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,17:31:10,17:31:12,9,52,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,17:34:10,17:34:12,2,53,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,17:37:10,17:37:12,1,54,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,17:45:10,17:45:12,6,55,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,17:53:10,17:53:12,7,56,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,17:57:10,17:57:12,8,57,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:01:10,18:01:12,9,58,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:04:10,18:04:12,2,59,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:07:10,18:07:12,1,60,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:15:10,18:15:12,6,61,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,18:23:10,18:23:12,7,62,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:27:10,18:27:12,8,63,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:31:10,18:31:12,9,64,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:34:10,18:34:12,2,65,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:37:10,18:37:12,1,66,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:45:10,18:45:12,6,67,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,18:53:10,18:53:12,7,68,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,18:57:10,18:57:12,8,69,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:01:10,19:01:12,9,70,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:04:10,19:04:12,2,71,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:07:10,19:07:12,1,72,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:15:10,19:15:12,6,73,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,19:23:10,19:23:12,7,74,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:27:10,19:27:12,8,75,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:31:10,19:31:12,9,76,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:34:10,19:34:12,2,77,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:37:10,19:37:12,1,78,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:45:10,19:45:12,6,79,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,19:53:10,19:53:12,7,80,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,19:57:10,19:57:12,8,81,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:01:10,20:01:12,9,82,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:04:10,20:04:12,2,83,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:07:10,20:07:12,1,84,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:15:10,20:15:12,6,85,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,20:23:10,20:23:12,7,86,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:27:10,20:27:12,8,87,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:31:10,20:31:12,9,88,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:34:10,20:34:12,2,89,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:37:10,20:37:12,1,90,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:45:10,20:45:12,6,91,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,20:53:10,20:53:12,7,92,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,20:57:10,20:57:12,8,93,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,21:01:10,21:01:12,9,94,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,21:04:10,21:04:12,2,95,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,21:07:10,21:07:12,1,96,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,21:15:10,21:15:12,6,97,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,21:23:10,21:23:12,7,98,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,21:27:10,21:27:12,8,99,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,21:31:10,21:31:12,9,100,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,21:34:10,21:34:12,2,101,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,21:37:10,21:37:12,1,102,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,22:15:10,22:15:12,6,103,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,22:23:10,22:23:12,7,104,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,22:27:10,22:27:12,8,105,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,22:31:10,22:31:12,9,106,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,22:34:10,22:34:12,2,107,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,22:37:10,22:37:12,1,108,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,22:45:10,22:45:12,6,109,Paseo de Filipinos frente Campo Grande,0,0,0
+R6,22:53:10,22:53:12,7,110,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,22:57:10,22:57:12,8,111,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,23:01:10,23:01:12,9,112,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,23:04:10,23:04:12,2,113,Paseo de Filipinos frente Campo Grande,1,0,0
+R6,23:07:10,23:07:12,1,114,Paseo de Filipinos frente Campo Grande,1,0,0

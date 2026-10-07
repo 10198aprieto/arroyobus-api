@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,default_lang,feed_start_date,feed_end_date,feed_version,feed_contact_email,feed_contact_url
+Centro Comercial RIO Shopping,https://rioshopping.com/,es,es,20261007,20261231,1.4.1,informacion@rioshopping.com,https://www.rioshopping.com/es/contacto
