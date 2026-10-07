@@ -29,6 +29,7 @@ import { Route as ApiPublicAlertsRouteImport } from './routes/api.public.alerts'
 import { Route as ApiPublicHealthRouteImport } from './routes/api.public.health'
 import { Route as ApiPublicInitAdminRouteImport } from './routes/api.public.init-admin'
 import { Route as ApiPublicGtfsStaticFileRouteImport } from './routes/api.public.gtfs-static.$file'
+import { Route as ApiPublicRiobusAlertsRouteImport } from './routes/api.public.riobus.alerts'
 import { Route as ApiPublicActiosaeGtfsFileRouteImport } from './routes/api.public.actiosae.gtfs.$file'
 
 const IndexRoute = IndexRouteImport.update({
@@ -131,6 +132,11 @@ const ApiPublicGtfsStaticFileRoute = ApiPublicGtfsStaticFileRouteImport.update({
   path: '/api/public/gtfs-static/$file',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicRiobusAlertsRoute = ApiPublicRiobusAlertsRouteImport.update({
+  id: '/api/public/riobus/alerts',
+  path: '/api/public/riobus/alerts',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicActiosaeGtfsFileRoute =
   ApiPublicActiosaeGtfsFileRouteImport.update({
     id: '/api/public/actiosae/gtfs/$file',
@@ -159,6 +165,7 @@ export interface FileRoutesByFullPath {
   '/api/public/health': typeof ApiPublicHealthRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
+  '/api/public/riobus/alerts': typeof ApiPublicRiobusAlertsRoute
   '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
 }
 export interface FileRoutesByTo {
@@ -182,6 +189,7 @@ export interface FileRoutesByTo {
   '/api/public/health': typeof ApiPublicHealthRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
+  '/api/public/riobus/alerts': typeof ApiPublicRiobusAlertsRoute
   '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
 }
 export interface FileRoutesById {
@@ -206,6 +214,7 @@ export interface FileRoutesById {
   '/api/public/health': typeof ApiPublicHealthRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
+  '/api/public/riobus/alerts': typeof ApiPublicRiobusAlertsRoute
   '/api/public/actiosae/gtfs/$file': typeof ApiPublicActiosaeGtfsFileRoute
 }
 export interface FileRouteTypes {
@@ -231,6 +240,7 @@ export interface FileRouteTypes {
     | '/api/public/health'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
+    | '/api/public/riobus/alerts'
     | '/api/public/actiosae/gtfs/$file'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -254,6 +264,7 @@ export interface FileRouteTypes {
     | '/api/public/health'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
+    | '/api/public/riobus/alerts'
     | '/api/public/actiosae/gtfs/$file'
   id:
     | '__root__'
@@ -277,6 +288,7 @@ export interface FileRouteTypes {
     | '/api/public/health'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
+    | '/api/public/riobus/alerts'
     | '/api/public/actiosae/gtfs/$file'
   fileRoutesById: FileRoutesById
 }
@@ -300,6 +312,7 @@ export interface RootRouteChildren {
   ApiPublicHealthRoute: typeof ApiPublicHealthRoute
   ApiPublicInitAdminRoute: typeof ApiPublicInitAdminRoute
   ApiPublicGtfsStaticFileRoute: typeof ApiPublicGtfsStaticFileRoute
+  ApiPublicRiobusAlertsRoute: typeof ApiPublicRiobusAlertsRoute
   ApiPublicActiosaeGtfsFileRoute: typeof ApiPublicActiosaeGtfsFileRoute
 }
 
@@ -445,6 +458,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicGtfsStaticFileRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/riobus/alerts': {
+      id: '/api/public/riobus/alerts'
+      path: '/api/public/riobus/alerts'
+      fullPath: '/api/public/riobus/alerts'
+      preLoaderRoute: typeof ApiPublicRiobusAlertsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/actiosae/gtfs/$file': {
       id: '/api/public/actiosae/gtfs/$file'
       path: '/api/public/actiosae/gtfs/$file'
@@ -485,6 +505,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiPublicHealthRoute: ApiPublicHealthRoute,
   ApiPublicInitAdminRoute: ApiPublicInitAdminRoute,
   ApiPublicGtfsStaticFileRoute: ApiPublicGtfsStaticFileRoute,
+  ApiPublicRiobusAlertsRoute: ApiPublicRiobusAlertsRoute,
   ApiPublicActiosaeGtfsFileRoute: ApiPublicActiosaeGtfsFileRoute,
 }
 export const routeTree = rootRouteImport
