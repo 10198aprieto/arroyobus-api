@@ -245,6 +245,51 @@ async function fetchAlerts(): Promise<Alert[]> {
   return alerts;
 }
 
+// ---------- RíoBUS feed (own alerts table, feed = 'riobus') ----------
+const RIOBUS_TTL_MS = 2_000;
+let riobusCache: { at: number; alerts: Alert[] } | null = null;
+
+interface DbAlertRow {
+  id: string;
+  header: string;
+  description: string;
+  cause: number;
+  effect: number;
+  route_ids: string[];
+  stop_ids: string[];
+  url: string | null;
+  start_at: string;
+  end_at: string | null;
+}
+
+async function fetchRiobusAlerts(): Promise<Alert[]> {
+  if (riobusCache && Date.now() - riobusCache.at < RIOBUS_TTL_MS) return riobusCache.alerts;
+  const base = Deno.env.get("SUPABASE_URL")!;
+  const key = Deno.env.get("SUPABASE_ANON_KEY") ?? Deno.env.get("SUPABASE_PUBLISHABLE_KEY")!;
+  const u = new URL(`${base}/rest/v1/alerts`);
+  u.searchParams.set("select", "id,header,description,cause,effect,route_ids,stop_ids,url,start_at,end_at");
+  u.searchParams.set("activo", "eq.true");
+  u.searchParams.set("feed", "eq.riobus");
+  u.searchParams.set("order", "start_at.desc");
+  const r = await fetch(u, { headers: { apikey: key, Authorization: `Bearer ${key}`, Accept: "application/json" } });
+  if (!r.ok) throw new Error(`riobus alerts ${r.status}`);
+  const rows = (await r.json()) as DbAlertRow[];
+  const now = new Date().toISOString();
+  const alerts: Alert[] = rows
+    .filter((a) => !a.end_at || a.end_at > now)
+    .map((a) => ({
+      alertId: a.id,
+      startDate: a.start_at,
+      endDate: a.end_at ?? undefined,
+      url: a.url ?? undefined,
+      routes: a.route_ids ?? [],
+      stops: a.stop_ids ?? [],
+      messages: [{ lang: "es", title: a.header, body: a.description ?? "" }],
+    }));
+  riobusCache = { at: Date.now(), alerts };
+  return alerts;
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   if (req.method !== "GET") {
