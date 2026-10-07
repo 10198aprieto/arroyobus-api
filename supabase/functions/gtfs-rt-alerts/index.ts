@@ -336,7 +336,7 @@ Deno.serve(async (req) => {
           headers: {
             ...corsHeaders,
             "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": "public, max-age=60",
+            "Cache-Control": `public, max-age=${cacheMaxAge}`,
           },
         },
       );
@@ -347,8 +347,8 @@ Deno.serve(async (req) => {
       headers: {
         ...corsHeaders,
         "Content-Type": "application/x-protobuf",
-        "Content-Disposition": 'inline; filename="service-alerts.pb"',
-        "Cache-Control": "public, max-age=60",
+        "Content-Disposition": `inline; filename="${feed === "riobus" ? "riobus-service-alerts.pb" : "service-alerts.pb"}"`,
+        "Cache-Control": `public, max-age=${cacheMaxAge}`,
         "X-Alert-Count": String(alerts.length),
         "X-Feed-Timestamp": String(feedTs),
       },
