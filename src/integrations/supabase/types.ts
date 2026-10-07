@@ -46,6 +46,7 @@ export type Database = {
           description: string
           effect: number
           end_at: string | null
+          feed: string
           header: string
           id: string
           route_ids: string[]
@@ -60,6 +61,7 @@ export type Database = {
           description?: string
           effect?: number
           end_at?: string | null
+          feed?: string
           header: string
           id?: string
           route_ids?: string[]
@@ -74,6 +76,7 @@ export type Database = {
           description?: string
           effect?: number
           end_at?: string | null
+          feed?: string
           header?: string
           id?: string
           route_ids?: string[]
