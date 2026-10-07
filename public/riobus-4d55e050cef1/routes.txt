@@ -1,0 +1,2 @@
+route_id,agency_id,route_short_name,route_long_name,route_sort_order,route_type,route_url,route_color,route_text_color
+RioBUS,laregional,Rio BUS,Valladolid-Rio Shopping-Valladolid,1,3,https://www.autocareslaregional.com/lineas-regulares/lineas-metropolitanas/valladolid-centro-comercial-rio-shopping/,FFD900,000000

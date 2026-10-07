@@ -94,7 +94,7 @@ function Login() {
 }
 
 function Dashboard({ email }: { email: string }) {
-  const [tab, setTab] = useState<"ads" | "alerts">("ads");
+  const [tab, setTab] = useState<"ads" | "alerts" | "riobus">("ads");
   const [ads, setAds] = useState<Ad[]>([]);
   const [loading, setLoading] = useState(true);
   const [newUrl, setNewUrl] = useState("");
@@ -169,7 +169,7 @@ function Dashboard({ email }: { email: string }) {
       </div>
 
       <div className="flex gap-2 border-b border-border">
-        {(["ads", "alerts"] as const).map((t) => (
+        {(["ads", "alerts", "riobus"] as const).map((t) => (
           <button
             key={t}
             onClick={() => setTab(t)}
@@ -177,13 +177,13 @@ function Dashboard({ email }: { email: string }) {
               tab === t ? "border-primary font-medium text-foreground" : "border-transparent text-muted-foreground"
             }`}
           >
-            {t === "ads" ? "Publicidad" : "Incidencias"}
+            {t === "ads" ? "Publicidad" : t === "alerts" ? "Incidencias" : "RíoBUS (oculto)"}
           </button>
         ))}
       </div>
 
-      {tab === "alerts" ? (
-        <AlertsPanel />
+      {tab === "alerts" || tab === "riobus" ? (
+        <AlertsPanel key={tab} feed={tab === "riobus" ? "riobus" : "arroyo"} />
       ) : (
       <>
       <form onSubmit={addAd} className="flex gap-2 rounded-lg border border-border bg-card p-4">
@@ -295,7 +295,11 @@ type AlertRow = {
 type StopOpt = { stop_id: string; stop_name: string };
 type RouteOpt = { route_id: string; route_short_name: string };
 
-function AlertsPanel() {
+const RIOBUS_GTFS = "/riobus-4d55e050cef1";
+
+function AlertsPanel({ feed }: { feed: "arroyo" | "riobus" }) {
+  const gtfsBase = feed === "riobus" ? RIOBUS_GTFS : "/gtfs";
+  const feedPath = feed === "riobus" ? "/api/public/riobus/alerts" : "/api/public/alerts";
   const [alerts, setAlerts] = useState<AlertRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [routes, setRoutes] = useState<RouteOpt[]>([]);
@@ -318,6 +322,7 @@ function AlertsPanel() {
     const { data } = await supabase
       .from("alerts")
       .select("*")
+      .eq("feed", feed)
       .order("created_at", { ascending: false });
     setAlerts((data ?? []) as AlertRow[]);
     setLoading(false);
@@ -325,11 +330,11 @@ function AlertsPanel() {
 
   useEffect(() => {
     load();
-    fetch("/gtfs/routes.json")
+    fetch(`${gtfsBase}/routes.json`)
       .then((r) => r.json())
       .then((j) => setRoutes(j as RouteOpt[]))
       .catch(() => {});
-    fetch("/gtfs/stops.json")
+    fetch(`${gtfsBase}/stops.json`)
       .then((r) => r.json())
       .then((j) => setStops(j as StopOpt[]))
       .catch(() => {});
@@ -361,6 +366,7 @@ function AlertsPanel() {
       url: url.trim() || null,
       end_at: endAt ? new Date(endAt).toISOString() : null,
       activo: true,
+      feed,
     });
     setBusy(false);
     if (error) {
@@ -549,8 +555,11 @@ function AlertsPanel() {
 
       <div className="rounded-md border border-border bg-card p-3 text-xs text-muted-foreground">
         Feed GTFS-RT ServiceAlerts propio:{" "}
-        <code className="text-foreground">/api/public/alerts</code> ·{" "}
-        <code className="text-foreground">/api/public/alerts?format=json</code>
+        <code className="text-foreground">{feedPath}</code> ·{" "}
+        <code className="text-foreground">{feedPath}?format=json</code>
+        {feed === "riobus" && (
+          <> · GTFS estático oculto: <code className="text-foreground">{RIOBUS_GTFS}/gtfs.zip</code></>
+        )}
       </div>
 
       {loading ? (

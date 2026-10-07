@@ -1,0 +1,10 @@
+stop_id,stop_name,stop_lat,stop_lon
+1,Paseo de Filipinos frente Campo Grande,41.644698930441564,-4.7329060487760195
+2,Estación de Autobuses de Valladolid,41.64185731503579,-4.733477218569197
+3,Paseo Zorrilla 130 junto Centro Comercial,41.63702146892685,-4.739306645344675
+4,Avenida Medina del Campo 15 frente Centro de Salud Arturo Eyries,41.63350539890822,-4.74744741971873
+5,Calle Felipe Ruíz Martín IES José Jiménez Lozano,41.632473451177034,-4.765649488740167
+6,Calle Me Falta un Tornillo junto Centro Comercial Río Shopping,41.62812517530064,-4.78778742078699
+7,Calle Felipe Ruíz Martín 6,41.63208608214567,-4.762981630575297
+8,Avenida de Medina del Campo esquina Centro de Salud,41.63366599157975,-4.747586721638301
+9,Paseo Zorrilla 65 frente Centro Comercial,41.63698716323871,-4.738939171202105
