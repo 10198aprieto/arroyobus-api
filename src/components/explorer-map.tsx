@@ -66,6 +66,9 @@ export default function ExplorerMap({ stops, vehicles }: { stops: Stop[]; vehicl
             <Popup>
               <div className="text-xs">
                 <div className="font-semibold">Bus {v.vehicleId ?? "?"}</div>
+                {(v as { licensePlate?: string | null }).licensePlate && (
+                  <div>Matrícula: {(v as { licensePlate?: string | null }).licensePlate}</div>
+                )}
                 {v.routeId && <div>Línea: {v.routeId}</div>}
                 {v.tripId && <div>Trip: {v.tripId}</div>}
                 {v.timestamp && <div>{new Date(v.timestamp).toLocaleTimeString("es-ES")}</div>}
