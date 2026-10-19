@@ -50,8 +50,19 @@ interface ArrivalWithVehicle {
   route?: { routeId?: string; routeShortName?: string; color?: string };
 }
 
+const LICENSE_PLATES: Record<string, string> = {
+  "6346": "4772LKL",
+  "6372": "1543MPD",
+  "6386": "0475NPG",
+  "6355": "2575MHS",
+  "6352": "2304MHS",
+  "6318": "8612JZX",
+  "6341": "2384LFB",
+};
+
 interface VehiclePosition {
   vehicleId: string;
+  licensePlate: string | null;
   lat: number;
   lon: number;
   latitude: number;
@@ -134,6 +145,7 @@ async function buildVehiclePositions(): Promise<VehiclePosition[]> {
       if (current?.timestampSeconds && timestampSeconds && current.timestampSeconds >= timestampSeconds) continue;
       best.set(arrival.vehicleId, {
         vehicleId: arrival.vehicleId,
+        licensePlate: LICENSE_PLATES[arrival.vehicleId] ?? null,
         lat: arrival.lat,
         lon: arrival.lon,
         latitude: arrival.lat,

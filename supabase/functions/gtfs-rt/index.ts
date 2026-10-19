@@ -207,10 +207,23 @@ function encodeTripDescriptor(s: VehicleSample): Uint8Array | null {
   return w.bytes();
 }
 
+// Fleet number -> license plate (provided by the operator).
+const LICENSE_PLATES: Record<string, string> = {
+  "6346": "4772LKL",
+  "6372": "1543MPD",
+  "6386": "0475NPG",
+  "6355": "2575MHS",
+  "6352": "2304MHS",
+  "6318": "8612JZX",
+  "6341": "2384LFB",
+};
+
 function encodeVehicleDescriptor(id: string): Uint8Array {
   const w = new PbWriter();
   w.tagString(1, id); // id
   w.tagString(2, id); // label
+  const plate = LICENSE_PLATES[id];
+  if (plate) w.tagString(3, plate); // license_plate
   return w.bytes();
 }
 
@@ -412,7 +425,7 @@ Deno.serve(async (req) => {
               current_stop_sequence: s.stopSequence,
               stop_id: s.stopId,
               timestamp: feedTs,
-              vehicle: { id: s.vehicleId, label: s.vehicleId },
+              vehicle: { id: s.vehicleId, label: s.vehicleId, license_plate: LICENSE_PLATES[s.vehicleId] },
               is_approximated: s.isAproximated,
             },
           })),
