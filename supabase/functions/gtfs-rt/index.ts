@@ -218,10 +218,16 @@ const LICENSE_PLATES: Record<string, string> = {
   "6341": "2384LFB",
 };
 
+// "6386 · 0475NPG" — used wherever the JSON feed shows a vehicle id.
+function displayId(id: string): string {
+  const plate = LICENSE_PLATES[id];
+  return plate ? `${id} · ${plate}` : id;
+}
+
 function encodeVehicleDescriptor(id: string): Uint8Array {
   const w = new PbWriter();
   w.tagString(1, id); // id
-  w.tagString(2, id); // label
+  w.tagString(2, displayId(id)); // label
   const plate = LICENSE_PLATES[id];
   if (plate) w.tagString(3, plate); // license_plate
   return w.bytes();

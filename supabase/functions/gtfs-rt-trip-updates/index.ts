@@ -243,6 +243,22 @@ function encTripDescriptor(sample: Normalized): Uint8Array {
   return w.bytes();
 }
 
+const LICENSE_PLATES: Record<string, string> = {
+  "6346": "4772LKL",
+  "6372": "1543MPD",
+  "6386": "0475NPG",
+  "6355": "2575MHS",
+  "6352": "2304MHS",
+  "6318": "8612JZX",
+  "6341": "2384LFB",
+};
+
+// "6386 · 0475NPG" — used wherever the JSON feed shows a vehicle id.
+function displayId(id: string): string {
+  const plate = LICENSE_PLATES[id];
+  return plate ? `${id} · ${plate}` : id;
+}
+
 function encVehicleDescriptor(vehicleId: string): Uint8Array {
   const w = new PbWriter();
   w.tagString(1, vehicleId);
