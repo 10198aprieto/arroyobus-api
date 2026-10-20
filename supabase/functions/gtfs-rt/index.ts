@@ -417,7 +417,7 @@ Deno.serve(async (req) => {
             timestamp: feedTs,
           },
           entity: samples.map((s) => ({
-            id: s.vehicleId,
+            id: displayId(s.vehicleId),
             vehicle: {
               trip: {
                 trip_id: s.tripId,
@@ -431,7 +431,7 @@ Deno.serve(async (req) => {
               current_stop_sequence: s.stopSequence,
               stop_id: s.stopId,
               timestamp: feedTs,
-              vehicle: { id: s.vehicleId, label: s.vehicleId, license_plate: LICENSE_PLATES[s.vehicleId] },
+              vehicle: { id: displayId(s.vehicleId), label: displayId(s.vehicleId), license_plate: LICENSE_PLATES[s.vehicleId] },
               is_approximated: s.isAproximated,
             },
           })),

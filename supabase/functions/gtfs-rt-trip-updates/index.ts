@@ -443,7 +443,7 @@ Deno.serve(async (req) => {
               schedule_relationship: "SCHEDULED",
             },
             vehicle: arrivals.find((a) => a.vehicleId)?.vehicleId
-              ? { id: arrivals.find((a) => a.vehicleId)!.vehicleId }
+              ? { id: displayId(arrivals.find((a) => a.vehicleId)!.vehicleId!) }
               : undefined,
             timestamp: feedTs,
             stop_time_update: [...arrivals]
