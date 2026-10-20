@@ -3,6 +3,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { useEffect } from "react";
 import type { Stop, Vehicle } from "@/routes/explorer";
+import { busLabel } from "@/lib/fleet";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -65,10 +66,7 @@ export default function ExplorerMap({ stops, vehicles }: { stops: Stop[]; vehicl
           <Marker key={`${v.vehicleId ?? i}`} position={[la, lo]}>
             <Popup>
               <div className="text-xs">
-                <div className="font-semibold">Bus {v.vehicleId ?? "?"}</div>
-                {(v as { licensePlate?: string | null }).licensePlate && (
-                  <div>Matrícula: {(v as { licensePlate?: string | null }).licensePlate}</div>
-                )}
+                <div className="font-semibold">Bus {busLabel(v.vehicleId, v.licensePlate)}</div>
                 {v.routeId && <div>Línea: {v.routeId}</div>}
                 {v.tripId && <div>Trip: {v.tripId}</div>}
                 {v.timestamp && <div>{new Date(v.timestamp).toLocaleTimeString("es-ES")}</div>}

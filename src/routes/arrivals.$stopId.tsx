@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { actioGet } from "@/lib/api";
+import { busLabel } from "@/lib/fleet";
 
 export const Route = createFileRoute("/arrivals/$stopId")({ component: ArrivalsPage });
 
@@ -11,6 +12,7 @@ interface Arrival {
   departureTime?: string;
   stopSequence?: string | number;
   vehicleId?: string | null;
+  licensePlate?: string | null;
   isAproximated?: boolean;
   isEstimated?: boolean;
   route?: { routeId?: string; routeShortName?: string; routeColor?: string; routeTextColor?: string };
@@ -60,7 +62,7 @@ function ArrivalsPage() {
               <div className="truncate font-medium">{a.tripHeadsign ?? a.tripId}</div>
               <div className="font-mono text-xs text-muted-foreground">
                 trip={a.tripId} · seq={String(a.stopSequence ?? "?")}
-                {a.vehicleId ? ` · bus=${a.vehicleId}` : a.isAproximated ? " · aprox." : ""}
+                {a.vehicleId ? ` · bus=${busLabel(a.vehicleId, a.licensePlate)}` : a.isAproximated ? " · aprox." : ""}
               </div>
             </div>
             <div className="text-right">
