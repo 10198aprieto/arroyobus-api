@@ -218,10 +218,16 @@ const LICENSE_PLATES: Record<string, string> = {
   "6341": "2384LFB",
 };
 
+// "6386 · 0475NPG" — used wherever the JSON feed shows a vehicle id.
+function displayId(id: string): string {
+  const plate = LICENSE_PLATES[id];
+  return plate ? `${id} · ${plate}` : id;
+}
+
 function encodeVehicleDescriptor(id: string): Uint8Array {
   const w = new PbWriter();
   w.tagString(1, id); // id
-  w.tagString(2, id); // label
+  w.tagString(2, displayId(id)); // label
   const plate = LICENSE_PLATES[id];
   if (plate) w.tagString(3, plate); // license_plate
   return w.bytes();
@@ -411,7 +417,7 @@ Deno.serve(async (req) => {
             timestamp: feedTs,
           },
           entity: samples.map((s) => ({
-            id: s.vehicleId,
+            id: displayId(s.vehicleId),
             vehicle: {
               trip: {
                 trip_id: s.tripId,
@@ -425,7 +431,7 @@ Deno.serve(async (req) => {
               current_stop_sequence: s.stopSequence,
               stop_id: s.stopId,
               timestamp: feedTs,
-              vehicle: { id: s.vehicleId, label: s.vehicleId, license_plate: LICENSE_PLATES[s.vehicleId] },
+              vehicle: { id: displayId(s.vehicleId), label: displayId(s.vehicleId), license_plate: LICENSE_PLATES[s.vehicleId] },
               is_approximated: s.isAproximated,
             },
           })),
