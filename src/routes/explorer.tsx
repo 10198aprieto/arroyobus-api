@@ -51,7 +51,7 @@ const ENDPOINTS: EP[] = [
 ];
 
 export interface Stop { stopId: string; stopName?: string; lat?: number | string; lon?: number | string; stopLat?: number | string; stopLon?: number | string }
-export interface Vehicle { vehicleId?: string; lat?: number; lon?: number; latitude?: number; longitude?: number; bearing?: number; timestamp?: string; gpsTimestamp?: string; routeId?: string; tripId?: string }
+export interface Vehicle { vehicleId?: string; licensePlate?: string | null; lat?: number; lon?: number; latitude?: number; longitude?: number; bearing?: number; timestamp?: string; gpsTimestamp?: string; routeId?: string; tripId?: string }
 
 function toCoord(value: number | string | undefined): number | undefined {
   if (value === undefined || value === null || value === "") return undefined;

@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { actioGet } from "@/lib/api";
+import { busLabel, plateFor } from "@/lib/fleet";
 
 export const Route = createFileRoute("/vehicles")({
   component: VehiclesPage,
@@ -62,9 +63,44 @@ function VehiclesPage() {
               </p>
             </div>
           )}
-          <pre className="mt-4 overflow-auto rounded-lg border border-border bg-card p-4 text-xs">
-            {JSON.stringify(data, null, 2)}
-          </pre>
+          {(data.gpsPositions?.length ?? 0) > 0 && (
+            <ul className="mt-4 divide-y divide-border rounded-lg border border-border bg-card">
+              {(data.gpsPositions ?? []).map((v, i) => {
+                const id = String(v.vehicleId ?? "");
+                const plate = typeof v.licensePlate === "string" ? v.licensePlate : plateFor(id);
+                const route = String(v.routeShortName ?? v.routeId ?? "");
+                const ts = String(v.gpsTimestamp ?? v.timestamp ?? "");
+                const time = ts
+                  ? new Date(ts).toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit", second: "2-digit" })
+                  : "";
+                return (
+                  <li key={`${id || "bus"}-${i}`} className="flex items-center gap-3 p-3">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-bold text-primary">
+                      {id || "?"}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <div className="font-mono text-sm font-semibold">{busLabel(id, plate)}</div>
+                      <div className="font-mono text-xs text-muted-foreground">
+                        {route ? `Línea ${route}` : "sin línea"}
+                        {time ? ` · ${time}` : ""}
+                      </div>
+                    </div>
+                    {plate && (
+                      <span className="rounded-md border border-border bg-muted px-2 py-1 font-mono text-xs">
+                        {plate}
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+          <details className="mt-4 rounded-lg border border-border bg-card">
+            <summary className="cursor-pointer px-3 py-2 text-sm font-medium">Respuesta JSON</summary>
+            <pre className="max-h-[500px] overflow-auto border-t border-border p-3 text-xs">
+              {JSON.stringify(data, null, 2)}
+            </pre>
+          </details>
         </>
       )}
     </div>
