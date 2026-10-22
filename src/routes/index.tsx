@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { Activity, ArrowRight, Bell, BusFront, Database, HeartHandshake, Map, MapPin, Route as RouteIcon, Search, Send, ShieldCheck } from "lucide-react";
+import { Activity, ArrowRight, Bell, BusFront, Database, HeartHandshake, Map, MapPin, Route as RouteIcon, Search, Send, ShieldCheck, ShoppingBag } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
 const TITLE = "Arroyobus Open Data — GTFS y API en tiempo real";
