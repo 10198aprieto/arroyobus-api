@@ -36,7 +36,7 @@ function RioBusPage() {
         </span>
         <h1 className="mt-3 text-3xl font-bold">RíoBUS: Valladolid ⇄ Río Shopping</h1>
         <p className="mt-2 max-w-2xl text-muted-foreground">
-          Autobús gratuito entre el centro de Valladolid y el Centro Comercial Río Shopping. Laborables, sábados, domingos y festivos.
+          Autobús entre el centro de Valladolid y el Centro Comercial Río Shopping. Laborables, sábados, domingos y festivos.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <a href={`${BASE}/gtfs.zip`} download className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
