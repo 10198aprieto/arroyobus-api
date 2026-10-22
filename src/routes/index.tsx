@@ -27,6 +27,7 @@ const SECTIONS = [
   { to: "/routes", title: "Líneas", text: "Recorridos, nombres y colores oficiales de la red.", meta: "GET · route/list", icon: RouteIcon, tone: "primary" },
   { to: "/stops", title: "Paradas", text: "Busca una parada y consulta sus próximas llegadas.", meta: "GET · stop/list", icon: MapPin, tone: "blue" },
   { to: "/vehicles", title: "Vehículos en vivo", text: "Posición de los autobuses con actualización continua.", meta: "TIEMPO REAL", icon: BusFront, tone: "lime" },
+  { to: "/riobus", title: "RíoBUS", text: "Línea al Centro Comercial Río Shopping: recorrido, paradas y GTFS.", meta: "LÍNEA · GTFS", icon: ShoppingBag, tone: "blue" },
   { to: "/alerts", title: "Alertas", text: "Avisos e incidencias que afectan al servicio.", meta: "GET · alert/list", icon: Bell, tone: "warning" },
   { to: "/gtfs-rt", title: "Feeds GTFS-RT", text: "Vehicle Positions, Trip Updates y Service Alerts.", meta: "PROTOBUF + JSON", icon: Activity, tone: "blue" },
   { to: "/explorer", title: "Mapa interactivo", text: "Explora endpoints, paradas y vehículos sobre el mapa.", meta: "EXPLORER", icon: Map, tone: "featured" },
