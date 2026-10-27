@@ -4,7 +4,7 @@
 
 Este proyecto actúa como **proxy/BFF** sobre la API interna de ActioSAE (el SAE que da servicio a la flota), normalizando sus datos a estándares abiertos como **GTFS** y **GTFS-Realtime**, y exponiéndolos como API pública en JSON.
 
-🔗 **Web / API:** [arroyobus-api.lovable.app](https://arroyobus-api.lovable.app)
+🔗 **Web / API:** [api.arroyobus.net](https://api.arroyobus.net)
 
 ---
 
