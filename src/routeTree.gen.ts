@@ -16,6 +16,7 @@ import { Route as AlertsRouteImport } from './routes/alerts'
 import { Route as ExplorerRouteImport } from './routes/explorer'
 import { Route as GtfsRtRouteImport } from './routes/gtfs-rt'
 import { Route as RiobusRouteImport } from './routes/riobus'
+import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as RoutesRouteImport } from './routes/routes'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as StatusRouteImport } from './routes/status'
@@ -66,6 +67,11 @@ const GtfsRtRoute = GtfsRtRouteImport.update({
 const RiobusRoute = RiobusRouteImport.update({
   id: '/riobus',
   path: '/riobus',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
+  id: '/robots.txt',
+  path: '/robots.txt',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RoutesRoute = RoutesRouteImport.update({
@@ -158,6 +164,7 @@ export interface FileRoutesByFullPath {
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
   '/riobus': typeof RiobusRoute
+  '/robots.txt': typeof RobotsDottxtRoute
   '/routes': typeof RoutesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/status': typeof StatusRoute
@@ -183,6 +190,7 @@ export interface FileRoutesByTo {
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
   '/riobus': typeof RiobusRoute
+  '/robots.txt': typeof RobotsDottxtRoute
   '/routes': typeof RoutesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/status': typeof StatusRoute
@@ -209,6 +217,7 @@ export interface FileRoutesById {
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
   '/riobus': typeof RiobusRoute
+  '/robots.txt': typeof RobotsDottxtRoute
   '/routes': typeof RoutesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/status': typeof StatusRoute
@@ -236,6 +245,7 @@ export interface FileRouteTypes {
     | '/explorer'
     | '/gtfs-rt'
     | '/riobus'
+    | '/robots.txt'
     | '/routes'
     | '/sitemap.xml'
     | '/status'
@@ -261,6 +271,7 @@ export interface FileRouteTypes {
     | '/explorer'
     | '/gtfs-rt'
     | '/riobus'
+    | '/robots.txt'
     | '/routes'
     | '/sitemap.xml'
     | '/status'
@@ -286,6 +297,7 @@ export interface FileRouteTypes {
     | '/explorer'
     | '/gtfs-rt'
     | '/riobus'
+    | '/robots.txt'
     | '/routes'
     | '/sitemap.xml'
     | '/status'
@@ -312,6 +324,7 @@ export interface RootRouteChildren {
   ExplorerRoute: typeof ExplorerRoute
   GtfsRtRoute: typeof GtfsRtRoute
   RiobusRoute: typeof RiobusRoute
+  RobotsDottxtRoute: typeof RobotsDottxtRoute
   RoutesRoute: typeof RoutesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   StatusRoute: typeof StatusRoute
@@ -378,6 +391,13 @@ declare module '@tanstack/react-router' {
       path: '/riobus'
       fullPath: '/riobus'
       preLoaderRoute: typeof RiobusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/robots.txt': {
+      id: '/robots.txt'
+      path: '/robots.txt'
+      fullPath: '/robots.txt'
+      preLoaderRoute: typeof RobotsDottxtRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/routes': {
@@ -513,6 +533,7 @@ const rootRouteChildren: RootRouteChildren = {
   ExplorerRoute: ExplorerRoute,
   GtfsRtRoute: GtfsRtRoute,
   RiobusRoute: RiobusRoute,
+  RobotsDottxtRoute: RobotsDottxtRoute,
   RoutesRoute: RoutesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   StatusRoute: StatusRoute,
