@@ -65,3 +65,6 @@ test('both legitimate visits to the same stop survive and backwards departures d
   ];
   expect(tu.cleanRealtimeUpdates(list).map(a=>a.staticStopSequence)).toEqual([1,40]);
 });
+test('trip update timestamp preserves source observation instead of refreshing old data', () => {
+  expect(tu.predictionTimestamp([{...current,receivedAt:'2026-11-07T17:20:12Z'}],now)).toBe(Date.parse('2026-11-07T17:20:12Z')/1000);
+});

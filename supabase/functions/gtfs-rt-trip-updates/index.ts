@@ -352,8 +352,13 @@ function encTripUpdate(arrivals: Normalized[], feedTs: number): Uint8Array {
   // vehicle (field 3)
   const vid = arrivals.find((a) => a.vehicleId)?.vehicleId;
   if (vid) w.tagMessage(3, encVehicleDescriptor(vid));
-  w.tagVarint(4, feedTs); // timestamp
+  w.tagVarint(4, predictionTimestamp(arrivals, feedTs)); // source update timestamp
   return w.bytes();
+}
+
+export function predictionTimestamp(arrivals: Arrival[], fallback: number): number {
+  const times = arrivals.map(a => parseTs(a.receivedAt) ?? parseTs(a.gpsTimestamp)).filter((t): t is number => t !== null && t <= fallback + 30);
+  return times.length ? Math.max(...times) : fallback;
 }
 
 function encFeedEntity(id: string, tu: Uint8Array): Uint8Array {
@@ -436,9 +441,20 @@ async function buildByTrip(): Promise<Map<string, Normalized[]>> {
   if (!gtfs) throw new Error("Static GTFS unavailable; refusing unvalidated trip assignments");
   const now = Math.floor(Date.now()/1000);
   const byTrip = new Map<string, Normalized[]>();
+  const candidates = new Map<string, Arrival[]>();
+  for (const a of all.flat()) {
+    if (!a.vehicleId) continue;
+    const list = candidates.get(a.vehicleId) ?? []; list.push(a); candidates.set(a.vehicleId,list);
+  }
+  const activeTrip = new Map<string, string>();
+  for (const [vehicleId, arrivals] of candidates) {
+    const chosen = selectRealtimeVehicle(arrivals, gtfs, now);
+    if (chosen?.tripId) activeTrip.set(vehicleId, chosen.tripId);
+  }
   for (const a of all.flat()) {
     // Vehicle assignment alone is not a live prediction: it also labels future trips.
     if (a.isEstimated !== true || a.isAproximated === true || (a.vehicleId && !freshRealtimeGps(a,now))) continue;
+    if (a.vehicleId && activeTrip.get(a.vehicleId) !== a.tripId) continue;
     const match = resolveRealtimeArrival(gtfs,a,now);
     if (!match) continue;
     const key = `${match.trip.tripId}:${match.date}`;
@@ -483,7 +499,7 @@ Deno.serve(async (req) => {
               schedule_relationship: "SCHEDULED",
             },
             vehicle: vehicleId ? { id: displayId(vehicleId), label: displayId(vehicleId), license_plate: LICENSE_PLATES[vehicleId] } : undefined,
-            timestamp: feedTs,
+            timestamp: predictionTimestamp(arrivals, feedTs),
             stop_time_update: [...arrivals]
               .sort((a, b) =>
                 (a.staticStopSequence ?? Number(a.stopSequence ?? 0)) -
