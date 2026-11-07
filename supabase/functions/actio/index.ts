@@ -39,6 +39,10 @@ const VEHICLE_CACHE_MS = 2_000;
 
 interface ArrivalWithVehicle {
   vehicleId?: string | null;
+  arrivalTime?: string;
+  isEstimated?: boolean;
+  isAproximated?: boolean;
+  hasAssignment?: boolean;
   lat?: number;
   lon?: number;
   gpsTimestamp?: string;
@@ -97,6 +101,7 @@ function pathAllowed(p: string, method: string): boolean {
 
 function parseTimestampSeconds(value?: string): number | undefined {
   if (!value) return undefined;
+  if (/^\d+(\.\d+)?$/.test(value)) { const n = Number(value); return Number.isFinite(n) ? Math.floor(n > 1e12 ? n/1000 : n) : undefined; }
   const parsed = Date.parse(value);
   if (!Number.isNaN(parsed)) return Math.floor(parsed / 1000);
   const numeric = Number(value);
@@ -137,10 +142,18 @@ async function buildVehiclePositions(): Promise<VehiclePosition[]> {
   if (vehicleCache && Date.now() - vehicleCache.at < VEHICLE_CACHE_MS) return vehicleCache.positions;
   const arrivalsByStop = await pooled(VEHICLE_SAMPLE_STOP_IDS, 3, fetchArrivalsForVehicles);
   const best = new Map<string, VehiclePosition>();
+  const ranked = arrivalsByStop.flat().filter(a => a.isEstimated === true && a.isAproximated !== true)
+    .sort((a,b) => Math.abs((parseTimestampSeconds(a.arrivalTime) ?? Infinity)-Date.now()/1000)-Math.abs((parseTimestampSeconds(b.arrivalTime) ?? Infinity)-Date.now()/1000));
+  const active = new Map<string, ArrivalWithVehicle>();
+  for (const a of ranked) if (a.vehicleId && !active.has(a.vehicleId)) active.set(a.vehicleId,a);
   for (const arrivals of arrivalsByStop) {
     for (const arrival of arrivals) {
       if (!arrival.vehicleId || typeof arrival.lat !== "number" || typeof arrival.lon !== "number") continue;
       const timestampSeconds = parseTimestampSeconds(arrival.gpsTimestamp);
+      if (timestampSeconds === undefined || Date.now()/1000-timestampSeconds>300 || timestampSeconds>Date.now()/1000+30
+        || arrival.hasAssignment === false || !Number.isFinite(arrival.lat) || !Number.isFinite(arrival.lon)
+        || Math.abs(arrival.lat)>90 || Math.abs(arrival.lon)>180 || (arrival.lat===0 && arrival.lon===0)) continue;
+      const assignment = active.get(arrival.vehicleId);
       const current = best.get(arrival.vehicleId);
       if (current?.timestampSeconds && timestampSeconds && current.timestampSeconds >= timestampSeconds) continue;
       best.set(arrival.vehicleId, {
@@ -153,14 +166,14 @@ async function buildVehiclePositions(): Promise<VehiclePosition[]> {
         gpsTimestamp: arrival.gpsTimestamp,
         timestamp: arrival.gpsTimestamp,
         timestampSeconds,
-        tripId: arrival.tripId,
-        routeId: arrival.route?.routeId,
-        routeShortName: arrival.route?.routeShortName,
-        routeColor: arrival.route?.color,
-        stopId: arrival.stopId,
-        stopName: arrival.stopName,
-        stopSequence: arrival.stopSequence,
-        directionId: arrival.directionId,
+        tripId: assignment?.tripId,
+        routeId: assignment?.route?.routeId,
+        routeShortName: assignment?.route?.routeShortName,
+        routeColor: assignment?.route?.color,
+        stopId: assignment?.stopId,
+        stopName: assignment?.stopName,
+        stopSequence: assignment?.stopSequence,
+        directionId: assignment?.directionId,
         source: "reconstructed-arrivals",
       });
     }

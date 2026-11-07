@@ -24,8 +24,9 @@ const VEHICLE_SAMPLE_STOP_IDS = ["1", "12", "22", "43", "60", "10", "20", "29", 
 
 // ---------- static GTFS reference ----------
 const STATIC_BASE = "https://arroyobus-api.lovable.app/gtfs";
-const STATIC_TTL_MS = 60 * 60_000;
+const STATIC_TTL_MS = 5 * 60_000;
 
+interface StaticStopTime { stopId: string; sequence: number; arrival: number; departure: number; }
 interface StaticTrip {
   tripId: string;
   routeId: string;
@@ -39,6 +40,9 @@ interface StaticGtfs {
   stopIds: Set<string>;
   trips: Map<string, StaticTrip>;
   stopSequence: Map<string, number>;
+  stopTimes: Map<string, StaticStopTime[]>;
+  services: Map<string, { days: number[]; start: string; end: string }>;
+  exceptions: Map<string, number>;
 }
 
 let staticCache: { at: number; data: StaticGtfs } | null = null;
@@ -51,17 +55,22 @@ async function fetchStaticJson(file: string): Promise<Record<string, string>[]> 
 async function getStaticGtfs(): Promise<StaticGtfs | null> {
   if (staticCache && Date.now() - staticCache.at < STATIC_TTL_MS) return staticCache.data;
   try {
-    const [routes, stops, trips, stopTimes] = await Promise.all([
+    const [routes, stops, trips, stopTimes, calendar, calDates] = await Promise.all([
       fetchStaticJson("routes"),
       fetchStaticJson("stops"),
       fetchStaticJson("trips"),
       fetchStaticJson("stop_times"),
+      fetchStaticJson("calendar"),
+      fetchStaticJson("calendar_dates"),
     ]);
     const data: StaticGtfs = {
       routeIds: new Set(routes.map((r) => r["route_id"]).filter(Boolean)),
       stopIds: new Set(stops.map((s) => s["stop_id"]).filter(Boolean)),
       trips: new Map(),
       stopSequence: new Map(),
+      stopTimes: new Map(),
+      services: new Map(),
+      exceptions: new Map(),
     };
     for (const t of trips) {
       const id = t["trip_id"];
@@ -81,6 +90,10 @@ async function getStaticGtfs(): Promise<StaticGtfs | null> {
       if (!tid || !sid) continue;
       const seq = Number(st["stop_sequence"]);
       if (Number.isNaN(seq)) continue;
+      const occurrence = { stopId: sid, sequence: seq, arrival: scheduleSeconds(st["arrival_time"] || st["departure_time"]), departure: scheduleSeconds(st["departure_time"] || st["arrival_time"]) };
+      if (Number.isFinite(occurrence.arrival) && Number.isFinite(occurrence.departure)) {
+        const list = data.stopTimes.get(tid) ?? []; list.push(occurrence); data.stopTimes.set(tid,list);
+      }
       const key = `${tid}|${sid}`;
       if (!data.stopSequence.has(key)) data.stopSequence.set(key, seq);
       const trip = data.trips.get(tid);
@@ -88,6 +101,19 @@ async function getStaticGtfs(): Promise<StaticGtfs | null> {
       if (trip && departure && (!trip.startTime || seq < (data.stopSequence.get(`${tid}|__first`) ?? Infinity))) {
         trip.startTime = departure;
         data.stopSequence.set(`${tid}|__first`, seq);
+      }
+    }
+    for (const c of calendar) data.services.set(c["service_id"], {
+      days: ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"].map(d => Number(c[d] ?? 0)),
+      start: c["start_date"], end: c["end_date"],
+    });
+    for (const e of calDates) data.exceptions.set(`${e["service_id"]}|${e["date"]}`,Number(e["exception_type"]));
+    for (const [id,times] of data.stopTimes) {
+      times.sort((a,b) => a.sequence-b.sequence);
+      const trip = data.trips.get(id);
+      if (trip && times.length) {
+        const seconds = times[0].departure;
+        trip.startTime = `${String(Math.floor(seconds/3600)).padStart(2,'0')}:${String(Math.floor(seconds/60)%60).padStart(2,'0')}:${String(seconds%60).padStart(2,'0')}`;
       }
     }
     staticCache = { at: Date.now(), data };
@@ -107,7 +133,12 @@ const corsHeaders: Record<string, string> = {
 
 interface Stop { stopId: string; }
 interface Arrival {
+  hasAssignment?: boolean;
+  receivedAt?: string;
   tripId?: string;
+  arrivalTime?: string;
+  departureTime?: string;
+  isEstimated?: boolean;
   stopId?: string;
   stopSequence?: string | number;
   directionId?: string | number;
@@ -132,6 +163,79 @@ interface VehicleSample {
   isAproximated?: boolean;
   startTime?: string;
   startDate?: string;
+}
+
+
+// Shared algorithm kept inline so these existing functions deploy independently.
+export function parseRealtimeTimestamp(value?: string): number | null {
+  if (!value?.trim()) return null;
+  let seconds: number;
+  if (/^\d+(\.\d+)?$/.test(value)) {
+    const n = Number(value); seconds = n > 1e12 ? n / 1000 : n;
+  } else {
+    if (!/(Z|[+-]\d{2}:?\d{2})$/i.test(value)) return null;
+    seconds = Date.parse(value) / 1000;
+  }
+  return Number.isFinite(seconds) && seconds > 0 ? Math.floor(seconds) : null;
+}
+export function realtimeServiceDate(now = new Date()): string {
+  const parts = new Intl.DateTimeFormat('en', { timeZone: 'Europe/Madrid', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(now);
+  return ['year', 'month', 'day'].map(type => parts.find(p => p.type === type)?.value ?? '').join('');
+}
+function scheduleSeconds(value: string): number {
+  const p = value.split(':').map(Number);
+  return p.length === 3 && p.every(Number.isFinite) ? p[0]*3600+p[1]*60+p[2] : NaN;
+}
+function scheduleEpoch(date: string): number {
+  const noon = Date.UTC(Number(date.slice(0,4)), Number(date.slice(4,6))-1, Number(date.slice(6,8)),12);
+  const localHour = Number(new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Madrid', hour: '2-digit', hourCycle: 'h23' }).format(new Date(noon)));
+  return noon/1000 - (localHour-12)*3600 - 43200;
+}
+export function realtimeServiceActive(g: StaticGtfs, id: string, date: string): boolean {
+  const ex = g.exceptions.get(`${id}|${date}`);
+  if (ex === 1) return true;
+  if (ex === 2) return false;
+  const s = g.services.get(id);
+  const day = new Date(Date.UTC(Number(date.slice(0,4)),Number(date.slice(4,6))-1,Number(date.slice(6,8)))).getUTCDay();
+  return !!s && date >= s.start && date <= s.end && s.days[day] === 1;
+}
+export function freshRealtimeGps(a: Arrival, now: number): boolean {
+  const ts = parseRealtimeTimestamp(a.gpsTimestamp);
+  return ts !== null && now-ts <= 300 && ts <= now+30 && a.hasAssignment !== false;
+}
+export function resolveRealtimeArrival(g: StaticGtfs, a: Arrival, now: number) {
+  if (!a.tripId || !a.stopId) return null;
+  const trip = g.trips.get(a.tripId);
+  if (!trip || (a.route?.routeId && a.route.routeId !== trip.routeId)) return null;
+  const event = parseRealtimeTimestamp(a.arrivalTime) ?? parseRealtimeTimestamp(a.departureTime);
+  if (event === null) return null;
+  const today = realtimeServiceDate(new Date(now*1000));
+  const dates = [-1,0,1].map(offset => {
+    const d = new Date(Date.UTC(Number(today.slice(0,4)),Number(today.slice(4,6))-1,Number(today.slice(6,8))+offset,12));
+    return d.toISOString().slice(0,10).replaceAll('-','');
+  });
+  let best: { trip: StaticTrip; stop: StaticStopTime; date: string; error: number; start: number; end: number } | null = null;
+  for (const date of dates) {
+    if (!realtimeServiceActive(g,trip.serviceId,date)) continue;
+    const times = g.stopTimes.get(trip.tripId) ?? [];
+    if (!times.length) continue;
+    const epoch = scheduleEpoch(date);
+    for (const stop of times.filter(s => s.stopId === a.stopId)) {
+      const error = Math.abs(event-(epoch+stop.arrival));
+      if (error > 1800 || (best && error >= best.error)) continue;
+      best = { trip,stop,date,error,start: epoch+times[0].departure,end: epoch+times[times.length-1].arrival };
+    }
+  }
+  return best;
+}
+export function selectRealtimeVehicle(arrivals: Arrival[], g: StaticGtfs, now: number): Arrival | undefined {
+  return arrivals.filter(a => freshRealtimeGps(a,now) && a.isAproximated !== true)
+    .map(a => ({ a, match: resolveRealtimeArrival(g,a,now) }))
+    .filter(({match}) => match && now >= match.start-120 && now <= match.end+1800)
+    .sort((x,y) => Number(y.a.isEstimated === true)-Number(x.a.isEstimated === true)
+      || Math.abs((parseRealtimeTimestamp(x.a.arrivalTime) ?? Infinity)-now)-Math.abs((parseRealtimeTimestamp(y.a.arrivalTime) ?? Infinity)-now)
+      || (parseRealtimeTimestamp(y.a.gpsTimestamp) ?? 0)-(parseRealtimeTimestamp(x.a.gpsTimestamp) ?? 0)
+      || (x.a.tripId ?? '').localeCompare(y.a.tripId ?? ''))[0]?.a;
 }
 
 // ---------- tiny protobuf writer ----------
@@ -276,15 +380,7 @@ function encodeFeedMessage(samples: VehicleSample[], feedTs: number): Uint8Array
   return w.bytes();
 }
 
-function parseTimestamp(s?: string): number | null {
-  if (!s) return null;
-  // Try ISO first, then numeric seconds/ms.
-  const t = Date.parse(s);
-  if (!Number.isNaN(t)) return Math.floor(t / 1000);
-  const n = Number(s);
-  if (!Number.isNaN(n)) return n > 1e12 ? Math.floor(n / 1000) : Math.floor(n);
-  return null;
-}
+function parseTimestamp(s?: string): number | null { return parseRealtimeTimestamp(s); }
 
 // ---------- upstream fetch ----------
 const upHeaders = {
@@ -303,7 +399,7 @@ async function fetchStopIds(): Promise<string[]> {
   const u = new URL(`${BASE}/bff/mobile/stop/list`);
   u.searchParams.set("feedId", FEED_ID);
   u.searchParams.set("key", API_KEY);
-  const r = await fetch(u, { headers: upHeaders });
+  const r = await fetch(u, { headers: upHeaders, signal: AbortSignal.timeout(8000) });
   if (!r.ok) return VEHICLE_SAMPLE_STOP_IDS;
   const json = await r.json();
   const ids = ((json.stops as Stop[]) ?? []).map((s) => s.stopId);
@@ -315,10 +411,10 @@ async function fetchArrivals(stopId: string): Promise<Arrival[]> {
   const u = new URL(`${BASE}/bff/mobile/arrivals/${encodeURIComponent(stopId)}`);
   u.searchParams.set("feedId", FEED_ID);
   u.searchParams.set("key", API_KEY);
-  const r = await fetch(u, { headers: upHeaders });
+  const r = await fetch(u, { headers: upHeaders, signal: AbortSignal.timeout(8000) });
   if (!r.ok) return [];
   const json = await r.json().catch(() => []);
-  return Array.isArray(json) ? (json as Arrival[]) : [];
+  return Array.isArray(json) ? (json as Arrival[]).map(a => ({ ...a, stopId: a.stopId ?? stopId })) : [];
 }
 
 async function pool<T, R>(items: T[], n: number, fn: (t: T) => Promise<R>): Promise<R[]> {
@@ -343,47 +439,28 @@ async function buildSamples(): Promise<VehicleSample[]> {
     pool(stopIds, FANOUT_CONCURRENCY, fetchArrivals),
     getStaticGtfs(),
   ]);
+  if (!gtfs) throw new Error("Static GTFS unavailable; refusing unvalidated trip assignments");
+  const now = Math.floor(Date.now()/1000);
+  const grouped = new Map<string, Arrival[]>();
+  for (const a of all.flat()) {
+    if (!a.vehicleId || !freshRealtimeGps(a,now) || typeof a.lat !== "number" || typeof a.lon !== "number"
+      || !Number.isFinite(a.lat) || !Number.isFinite(a.lon) || Math.abs(a.lat)>90 || Math.abs(a.lon)>180 || (a.lat===0 && a.lon===0)) continue;
+    const list = grouped.get(a.vehicleId) ?? []; list.push(a); grouped.set(a.vehicleId,list);
+  }
   const best = new Map<string, VehicleSample>();
-  for (const arrivals of all) {
-    for (const a of arrivals) {
-      if (!a.vehicleId) continue;
-      if (typeof a.lat !== "number" || typeof a.lon !== "number") continue;
-      const ts = parseTimestamp(a.gpsTimestamp);
-      if (ts === null) continue;
-      const cur = best.get(a.vehicleId);
-      if (cur && cur.ts >= ts) continue;
-      // Normalize against the static GTFS: only reference ids that exist there.
-      const trip = a.tripId && gtfs ? gtfs.trips.get(a.tripId) : undefined;
-      const tripId = gtfs ? (trip ? trip.tripId : undefined) : a.tripId;
-      const routeId = gtfs
-        ? (trip?.routeId ??
-          (a.route?.routeId && gtfs.routeIds.has(a.route.routeId) ? a.route.routeId : undefined))
-        : a.route?.routeId;
-      const stopId = gtfs
-        ? (a.stopId && gtfs.stopIds.has(a.stopId) ? a.stopId : undefined)
-        : a.stopId;
-      const stopSequence = gtfs && tripId && stopId
-        ? gtfs.stopSequence.get(`${tripId}|${stopId}`)
-        : a.stopSequence;
-      const directionId = gtfs ? trip?.directionId : a.directionId;
-      best.set(a.vehicleId, {
-        vehicleId: a.vehicleId,
-        lat: a.lat,
-        lon: a.lon,
-        ts,
-        tripId,
-        routeId,
-        directionId,
-        stopId,
-        stopSequence,
-        isAproximated: a.isAproximated,
-        startTime: trip?.startTime,
-        startDate: trip ? new Intl.DateTimeFormat("en-CA", {
-          timeZone: "Europe/Madrid",
-          year: "numeric", month: "2-digit", day: "2-digit",
-        }).format(new Date()).replaceAll("-", "") : undefined,
-      });
-    }
+  for (const [id,arrivals] of grouped) {
+    const gps = [...arrivals].sort((a,b) => (parseTimestamp(b.gpsTimestamp) ?? 0)-(parseTimestamp(a.gpsTimestamp) ?? 0))[0];
+    const ts = parseTimestamp(gps.gpsTimestamp);
+    if (ts === null || gps.lat === undefined || gps.lon === undefined) continue;
+    const assigned = selectRealtimeVehicle(arrivals,gtfs,now);
+    const match = assigned ? resolveRealtimeArrival(gtfs,assigned,now) : null;
+    best.set(id, {
+      vehicleId: id, lat: gps.lat, lon: gps.lon, ts,
+      tripId: match?.trip.tripId, routeId: match?.trip.routeId, directionId: match?.trip.directionId,
+      startTime: match?.trip.startTime, startDate: match?.date,
+      // An arrival's destination stop is not the vehicle's current stop.
+      isAproximated: gps.isAproximated,
+    });
   }
   const samples = [...best.values()];
   feedCache = { at: Date.now(), samples };
@@ -402,11 +479,7 @@ Deno.serve(async (req) => {
     const url = new URL(req.url);
     const format = url.searchParams.get("format");
     const feedTs = Math.floor(Date.now() / 1000);
-    // The upstream GPS sample time can jump backwards between stop queries and
-    // becomes stale while a vehicle remains assigned. Use the generation time
-    // as the GTFS-RT observation timestamp; coordinates remain the latest GPS
-    // coordinates returned by the source.
-    const samples = (await buildSamples()).map((sample) => ({ ...sample, ts: feedTs }));
+    const samples = await buildSamples();
 
     if (format === "json") {
       return new Response(
@@ -419,18 +492,18 @@ Deno.serve(async (req) => {
           entity: samples.map((s) => ({
             id: displayId(s.vehicleId),
             vehicle: {
-              trip: {
+              trip: s.tripId ? {
                 trip_id: s.tripId,
                 start_time: s.startTime,
                 start_date: s.startDate,
                 schedule_relationship: "SCHEDULED",
                 route_id: s.routeId,
                 direction_id: s.directionId,
-              },
+              } : undefined,
               position: { latitude: s.lat, longitude: s.lon },
               current_stop_sequence: s.stopSequence,
               stop_id: s.stopId,
-              timestamp: feedTs,
+              timestamp: s.ts,
               vehicle: { id: displayId(s.vehicleId), label: displayId(s.vehicleId), license_plate: LICENSE_PLATES[s.vehicleId] },
               is_approximated: s.isAproximated,
             },
@@ -440,7 +513,7 @@ Deno.serve(async (req) => {
           headers: {
             ...corsHeaders,
             "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": "no-cache",
+            "Cache-Control": "no-store",
           },
         },
       );
@@ -452,7 +525,7 @@ Deno.serve(async (req) => {
         ...corsHeaders,
         "Content-Type": "application/x-protobuf",
         "Content-Disposition": 'inline; filename="vehicle-positions.pb"',
-        "Cache-Control": "no-cache",
+        "Cache-Control": "no-store",
         "X-Vehicle-Count": String(samples.length),
         "X-Feed-Timestamp": String(feedTs),
         "X-Upstream-Status": samples.length === 0 ? "no-vehicles-assigned" : "ok",
