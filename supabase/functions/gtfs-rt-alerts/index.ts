@@ -19,7 +19,12 @@ const FEED_TTL_MS = 60_000;
 const STATIC_BASE = "https://arroyobus-api.lovable.app/gtfs";
 const STATIC_TTL_MS = 60 * 60_000;
 
-interface StaticGtfs { routeIds: Set<string>; stopIds: Set<string>; }
+interface StaticGtfs { routeIds: Set<string>; stopIds: Set<string>; agencyId?: string; }
+const LAGUNA_GTFS: StaticGtfs = {
+  agencyId: "ECSA",
+  routeIds: new Set(["L01", "L01V", "L02", "L02V"]),
+  stopIds: new Set(Array.from({ length: 22 }, (_, i) => String(i + 1))),
+};
 let staticCache: { at: number; data: StaticGtfs } | null = null;
 
 async function fetchStaticJson(file: string): Promise<Record<string, string>[]> {
@@ -69,6 +74,8 @@ interface AlertMessage {
 }
 
 interface Alert {
+  cause?: number;
+  effect?: number;
   alertId: string;
   id?: string;
   feedId?: string;
@@ -153,16 +160,16 @@ function encActivePeriod(start?: string, end?: string): Uint8Array {
 }
 
 /** One EntitySelector: a single route_id, a single stop_id, or the agency. */
-function encEntitySelector(sel: { routeId?: string; stopId?: string }): Uint8Array {
+function encEntitySelector(sel: { routeId?: string; stopId?: string }, agencyId = AGENCY_ID): Uint8Array {
   const w = new PbWriter();
   if (sel.routeId) w.tagString(3, sel.routeId); // route_id
   else if (sel.stopId) w.tagString(5, sel.stopId); // stop_id
-  else w.tagString(1, AGENCY_ID); // agency_id (static GTFS agency)
+  else w.tagString(1, agencyId); // agency_id (static GTFS agency)
   return w.bytes();
 }
 
 /** Route/stop ids that exist in the static GTFS; falls back to agency-wide. */
-function selectorsFor(a: Alert, gtfs: StaticGtfs | null): Array<{ routeId?: string; stopId?: string }> {
+export function selectorsFor(a: Alert, gtfs: StaticGtfs | null): Array<{ routeId?: string; stopId?: string }> {
   const routeIds = idsOf(a.routes, "routeId").filter((id) => !gtfs || gtfs.routeIds.has(id));
   const stopIds = idsOf(a.stops, "stopId").filter((id) => !gtfs || gtfs.stopIds.has(id));
   const out = [
@@ -181,14 +188,14 @@ function encAlert(a: Alert, gtfs: StaticGtfs | null): Uint8Array {
 
   // informed_entity (field 5, repeated) — one selector per static id
   for (const sel of selectorsFor(a, gtfs)) {
-    w.tagMessage(5, encEntitySelector(sel));
+    w.tagMessage(5, encEntitySelector(sel, gtfs?.agencyId));
   }
 
   // cause (field 6): default OTHER_CAUSE (1)
-  w.tagVarint(6, 1);
+  w.tagVarint(6, a.cause ?? 1);
 
   // effect (field 7): default UNKNOWN_EFFECT (7)
-  w.tagVarint(7, 7);
+  w.tagVarint(7, a.effect ?? 7);
 
   const msg = a.messages?.[0];
   if (msg) {
@@ -215,7 +222,7 @@ function encFeedHeader(ts: number): Uint8Array {
   return w.bytes();
 }
 
-function encFeedMessage(alerts: Alert[], feedTs: number, gtfs: StaticGtfs | null): Uint8Array {
+export function encFeedMessage(alerts: Alert[], feedTs: number, gtfs: StaticGtfs | null): Uint8Array {
   const w = new PbWriter();
   w.tagMessage(1, encFeedHeader(feedTs));
   for (const a of alerts) {
@@ -247,7 +254,7 @@ async function fetchAlerts(): Promise<Alert[]> {
 
 // ---------- RíoBUS feed (own alerts table, feed = 'riobus') ----------
 const RIOBUS_TTL_MS = 2_000;
-let riobusCache: { at: number; alerts: Alert[] } | null = null;
+const ownAlertsCache = new Map<string, { at: number; alerts: Alert[] }>();
 
 interface DbAlertRow {
   id: string;
@@ -262,23 +269,27 @@ interface DbAlertRow {
   end_at: string | null;
 }
 
-async function fetchRiobusAlerts(): Promise<Alert[]> {
-  if (riobusCache && Date.now() - riobusCache.at < RIOBUS_TTL_MS) return riobusCache.alerts;
-  const base = Deno.env.get("SUPABASE_URL")!;
-  const key = Deno.env.get("SUPABASE_ANON_KEY") ?? Deno.env.get("SUPABASE_PUBLISHABLE_KEY")!;
+export async function fetchOwnAlerts(feed: "riobus" | "laguna"): Promise<Alert[]> {
+  const cached = ownAlertsCache.get(feed);
+  if (cached && Date.now() - cached.at < RIOBUS_TTL_MS) return cached.alerts;
+  const base = Deno.env.get("SUPABASE_URL");
+  const key = Deno.env.get("SUPABASE_ANON_KEY") ?? Deno.env.get("SUPABASE_PUBLISHABLE_KEY");
+  if (!base || !key) throw new Error("Missing backend configuration");
   const u = new URL(`${base}/rest/v1/alerts`);
   u.searchParams.set("select", "id,header,description,cause,effect,route_ids,stop_ids,url,start_at,end_at");
   u.searchParams.set("activo", "eq.true");
-  u.searchParams.set("feed", "eq.riobus");
+  u.searchParams.set("feed", `eq.${feed}`);
   u.searchParams.set("order", "start_at.desc");
-  const r = await fetch(u, { headers: { apikey: key, Authorization: `Bearer ${key}`, Accept: "application/json" } });
-  if (!r.ok) throw new Error(`riobus alerts ${r.status}`);
+  const r = await fetch(u, { headers: { apikey: key, ...(key.startsWith("sb_") ? {} : { Authorization: `Bearer ${key}` }), Accept: "application/json" } });
+  if (!r.ok) throw new Error(`${feed} alerts ${r.status}`);
   const rows = (await r.json()) as DbAlertRow[];
   const now = new Date().toISOString();
   const alerts: Alert[] = rows
-    .filter((a) => !a.end_at || a.end_at > now)
+    .filter((a) => a.start_at <= now && (!a.end_at || a.end_at > now))
     .map((a) => ({
       alertId: a.id,
+      cause: a.cause,
+      effect: a.effect,
       startDate: a.start_at,
       endDate: a.end_at ?? undefined,
       url: a.url ?? undefined,
@@ -286,7 +297,7 @@ async function fetchRiobusAlerts(): Promise<Alert[]> {
       stops: a.stop_ids ?? [],
       messages: [{ lang: "es", title: a.header, body: a.description ?? "" }],
     }));
-  riobusCache = { at: Date.now(), alerts };
+  ownAlertsCache.set(feed, { at: Date.now(), alerts });
   return alerts;
 }
 
@@ -299,13 +310,13 @@ Deno.serve(async (req) => {
     const url = new URL(req.url);
     const format = url.searchParams.get("format");
     const feed = url.searchParams.get("feed");
-    // ?feed=riobus serves the own RíoBUS alerts from the database;
-    // anything else keeps the original Actio upstream feed.
-    const [alerts, gtfs] = feed === "riobus"
-      ? [await fetchRiobusAlerts(), null]
+    // Own feeds stay isolated from each other and the original Actio feed.
+    const ownFeed = feed === "riobus" || feed === "laguna";
+    const [alerts, gtfs] = ownFeed
+      ? [await fetchOwnAlerts(feed), feed === "laguna" ? LAGUNA_GTFS : null]
       : await Promise.all([fetchAlerts(), getStaticGtfs()]);
     const feedTs = Math.floor(Date.now() / 1000);
-    const cacheMaxAge = feed === "riobus" ? 2 : 60;
+    const cacheMaxAge = ownFeed ? 2 : 60;
 
     if (format === "json") {
       const entity = alerts.map((a) => {
@@ -315,12 +326,12 @@ Deno.serve(async (req) => {
           alert: {
             active_period: [{ start: parseTs(a.startDate), end: parseTs(a.endDate) }],
             informed_entity: selectorsFor(a, gtfs).map((sel) => ({
-              agency_id: !sel.routeId && !sel.stopId ? AGENCY_ID : undefined,
+              agency_id: !sel.routeId && !sel.stopId ? gtfs?.agencyId ?? AGENCY_ID : undefined,
               route_id: sel.routeId,
               stop_id: sel.stopId,
             })),
-            cause: "OTHER_CAUSE",
-            effect: "UNKNOWN_EFFECT",
+            cause: a.cause ?? "OTHER_CAUSE",
+            effect: a.effect ?? "UNKNOWN_EFFECT",
             url: a.url ? { translation: [{ text: a.url }] } : undefined,
             header_text: msg?.title ? { translation: [{ text: msg.title, language: msg.lang }] } : undefined,
             description_text: msg?.body ? { translation: [{ text: msg.body, language: msg.lang }] } : undefined,
@@ -337,6 +348,7 @@ Deno.serve(async (req) => {
             ...corsHeaders,
             "Content-Type": "application/json; charset=utf-8",
             "Cache-Control": `public, max-age=${cacheMaxAge}`,
+            "X-Robots-Tag": "noindex, nofollow",
           },
         },
       );
@@ -347,7 +359,8 @@ Deno.serve(async (req) => {
       headers: {
         ...corsHeaders,
         "Content-Type": "application/x-protobuf",
-        "Content-Disposition": `inline; filename="${feed === "riobus" ? "riobus-service-alerts.pb" : "service-alerts.pb"}"`,
+        "Content-Disposition": `inline; filename="${ownFeed ? `${feed}-service-alerts.pb` : "service-alerts.pb"}"`,
+        "X-Robots-Tag": "noindex, nofollow",
         "Cache-Control": `public, max-age=${cacheMaxAge}`,
         "X-Alert-Count": String(alerts.length),
         "X-Feed-Timestamp": String(feedTs),
