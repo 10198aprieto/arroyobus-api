@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { CAUSES, EFFECTS } from "@/lib/gtfs-pb";
+import lagunaGtfs from "@/lib/laguna-gtfs.json";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/admin")({
   ssr: false,
@@ -11,6 +13,10 @@ export const Route = createFileRoute("/admin")({
       { title: "Panel de publicidad — Arroyobus" },
       { name: "description", content: "Gestión de anuncios para las pantallas embarcadas de Arroyobus." },
       { name: "robots", content: "noindex, nofollow" },
+      { property: "og:title", content: "Administración de avisos — Arroyobus" },
+      { property: "og:description", content: "Panel privado de anuncios e incidencias de transporte." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
 });
@@ -94,7 +100,7 @@ function Login() {
 }
 
 function Dashboard({ email }: { email: string }) {
-  const [tab, setTab] = useState<"ads" | "alerts" | "riobus">("ads");
+  const [tab, setTab] = useState<"ads" | "alerts" | "riobus" | "laguna">("ads");
   const [ads, setAds] = useState<Ad[]>([]);
   const [loading, setLoading] = useState(true);
   const [newUrl, setNewUrl] = useState("");
@@ -168,22 +174,22 @@ function Dashboard({ email }: { email: string }) {
         </button>
       </div>
 
-      <div className="flex gap-2 border-b border-border">
-        {(["ads", "alerts", "riobus"] as const).map((t) => (
-          <button
+      <div className="flex flex-wrap gap-2 border-b border-border">
+        {(["ads", "alerts", "riobus", "laguna"] as const).map((t) => (
+          <Button variant="ghost"
             key={t}
             onClick={() => setTab(t)}
             className={`-mb-px border-b-2 px-3 py-2 text-sm ${
               tab === t ? "border-primary font-medium text-foreground" : "border-transparent text-muted-foreground"
             }`}
           >
-            {t === "ads" ? "Publicidad" : t === "alerts" ? "Incidencias" : "RíoBUS (oculto)"}
-          </button>
+            {t === "ads" ? "Publicidad" : t === "alerts" ? "Incidencias" : t === "riobus" ? "RíoBUS (oculto)" : "Laguna de Duero (oculto)"}
+          </Button>
         ))}
       </div>
 
-      {tab === "alerts" || tab === "riobus" ? (
-        <AlertsPanel key={tab} feed={tab === "riobus" ? "riobus" : "arroyo"} />
+      {tab !== "ads" ? (
+        <AlertsPanel key={tab} feed={tab === "alerts" ? "arroyo" : tab} />
       ) : (
       <>
       <form onSubmit={addAd} className="flex gap-2 rounded-lg border border-border bg-card p-4">
@@ -297,9 +303,12 @@ type RouteOpt = { route_id: string; route_short_name: string };
 
 const RIOBUS_GTFS = "/riobus-4d55e050cef1";
 
-function AlertsPanel({ feed }: { feed: "arroyo" | "riobus" }) {
+function AlertsPanel({ feed }: { feed: "arroyo" | "riobus" | "laguna" }) {
   const gtfsBase = feed === "riobus" ? RIOBUS_GTFS : "/gtfs";
-  const feedPath = feed === "riobus" ? "/api/public/riobus/alerts" : "/api/public/alerts";
+  const feedPath = feed === "laguna"
+    ? `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/gtfs-rt-alerts?feed=laguna`
+    : feed === "riobus" ? "/api/public/riobus/alerts" : "/api/public/alerts";
+  const jsonFeedPath = `${feedPath}${feed === "laguna" ? "&" : "?"}format=json`;
   const [alerts, setAlerts] = useState<AlertRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [routes, setRoutes] = useState<RouteOpt[]>([]);
@@ -330,6 +339,11 @@ function AlertsPanel({ feed }: { feed: "arroyo" | "riobus" }) {
 
   useEffect(() => {
     load();
+    if (feed === "laguna") {
+      setRoutes(lagunaGtfs.routes);
+      setStops(lagunaGtfs.stops);
+      return;
+    }
     fetch(`${gtfsBase}/routes.json`)
       .then((r) => r.json())
       .then((j) => setRoutes(j as RouteOpt[]))
@@ -555,8 +569,9 @@ function AlertsPanel({ feed }: { feed: "arroyo" | "riobus" }) {
 
       <div className="rounded-md border border-border bg-card p-3 text-xs text-muted-foreground">
         Feed GTFS-RT ServiceAlerts propio:{" "}
-        <code className="text-foreground">{feedPath}</code> ·{" "}
-        <code className="text-foreground">{feedPath}?format=json</code>
+        <a className="break-all text-primary underline" href={feedPath} target="_blank" rel="noreferrer">{feedPath}</a> ·{" "}
+        <a className="break-all text-primary underline" href={jsonFeedPath} target="_blank" rel="noreferrer">JSON</a>
+        {feed === "laguna" && <p className="mt-2">Gestión privada. El enlace de avisos es público para Google Maps.</p>}
         {feed === "riobus" && (
           <> · GTFS estático oculto: <code className="text-foreground">{RIOBUS_GTFS}/gtfs.zip</code></>
         )}
