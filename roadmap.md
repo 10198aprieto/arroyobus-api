@@ -1,3 +1,8 @@
+# Google Maps realtime diagnosis
+- [x] Verify live protobuf feeds: five vehicles and four trip updates returned successfully.
+- [ ] Correct the invalid feed_start_date in the static ZIP and synchronize its metadata mirrors; validate dates with a regression test.
+- [ ] Confirm Google Transit ingestion: waiting for the user's latest Google Transit error report and configured static/realtime URLs.
+
 # Realtime API corrections
 - [x] Resolve current trips against static routes, stop times and service calendars.
 - [x] Reject stale GPS and avoid assigning future trips to current vehicles.
