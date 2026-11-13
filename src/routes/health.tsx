@@ -1,0 +1,3 @@
+import { createFileRoute } from '@tanstack/react-router';
+import { HealthHistory } from '@/components/health-history';
+export const Route=createFileRoute('/health')({component:()=> <div><h1 className="text-2xl font-bold">Memoria de la API</h1><HealthHistory/></div>,head:()=>({meta:[{title:'Histórico de disponibilidad — Arroyobus'},{name:'description',content:'Histórico diario de disponibilidad y ausencia de buses de Arroyobus, con exportación CSV y Excel.'},{property:'og:title',content:'Histórico de disponibilidad — Arroyobus'},{property:'og:description',content:'Observaciones e incidentes de la API de Arroyobus.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary'}]})});
