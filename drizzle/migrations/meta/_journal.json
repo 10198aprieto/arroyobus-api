@@ -15,6 +15,13 @@
       "when": 1794208755851,
       "tag": "0001_restore_admin_role_check_execution",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794593404216,
+      "tag": "0002_health_observations",
+      "breakpoints": true
     }
   ]
 }

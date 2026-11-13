@@ -86,6 +86,42 @@ export type Database = {
         }
         Relationships: []
       }
+      health_observations: {
+        Row: {
+          checks: Json
+          id: string
+          observed_at: string
+          source: string
+          status: string
+          took_ms: number
+          trips: number | null
+          vehicle_state: string
+          vehicles: number | null
+        }
+        Insert: {
+          checks?: Json
+          id?: string
+          observed_at?: string
+          source?: string
+          status: string
+          took_ms?: number
+          trips?: number | null
+          vehicle_state: string
+          vehicles?: number | null
+        }
+        Update: {
+          checks?: Json
+          id?: string
+          observed_at?: string
+          source?: string
+          status?: string
+          took_ms?: number
+          trips?: number | null
+          vehicle_state?: string
+          vehicles?: number | null
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           id: string

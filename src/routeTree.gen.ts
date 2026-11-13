@@ -15,6 +15,7 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AlertsRouteImport } from './routes/alerts'
 import { Route as ExplorerRouteImport } from './routes/explorer'
 import { Route as GtfsRtRouteImport } from './routes/gtfs-rt'
+import { Route as HealthRouteImport } from './routes/health'
 import { Route as RiobusRouteImport } from './routes/riobus'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as RoutesRouteImport } from './routes/routes'
@@ -29,6 +30,8 @@ import { Route as StopsStopIdRouteImport } from './routes/stops.$stopId'
 import { Route as ApiPublicAdsRouteImport } from './routes/api.public.ads'
 import { Route as ApiPublicAlertsRouteImport } from './routes/api.public.alerts'
 import { Route as ApiPublicHealthRouteImport } from './routes/api.public.health'
+import { Route as ApiPublicHealthCollectRouteImport } from './routes/api.public.health-collect'
+import { Route as ApiPublicHealthHistoryRouteImport } from './routes/api.public.health-history'
 import { Route as ApiPublicInitAdminRouteImport } from './routes/api.public.init-admin'
 import { Route as ApiPublicGtfsStaticFileRouteImport } from './routes/api.public.gtfs-static.$file'
 import { Route as ApiPublicRiobusAlertsRouteImport } from './routes/api.public.riobus.alerts'
@@ -62,6 +65,11 @@ const ExplorerRoute = ExplorerRouteImport.update({
 const GtfsRtRoute = GtfsRtRouteImport.update({
   id: '/gtfs-rt',
   path: '/gtfs-rt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HealthRoute = HealthRouteImport.update({
+  id: '/health',
+  path: '/health',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RiobusRoute = RiobusRouteImport.update({
@@ -134,6 +142,16 @@ const ApiPublicHealthRoute = ApiPublicHealthRouteImport.update({
   path: '/api/public/health',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicHealthCollectRoute = ApiPublicHealthCollectRouteImport.update({
+  id: '/api/public/health-collect',
+  path: '/api/public/health-collect',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicHealthHistoryRoute = ApiPublicHealthHistoryRouteImport.update({
+  id: '/api/public/health-history',
+  path: '/api/public/health-history',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicInitAdminRoute = ApiPublicInitAdminRouteImport.update({
   id: '/api/public/init-admin',
   path: '/api/public/init-admin',
@@ -163,6 +181,7 @@ export interface FileRoutesByFullPath {
   '/alerts': typeof AlertsRoute
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
+  '/health': typeof HealthRoute
   '/riobus': typeof RiobusRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/routes': typeof RoutesRoute
@@ -177,6 +196,8 @@ export interface FileRoutesByFullPath {
   '/api/public/ads': typeof ApiPublicAdsRoute
   '/api/public/alerts': typeof ApiPublicAlertsRoute
   '/api/public/health': typeof ApiPublicHealthRoute
+  '/api/public/health-collect': typeof ApiPublicHealthCollectRoute
+  '/api/public/health-history': typeof ApiPublicHealthHistoryRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
   '/api/public/riobus/alerts': typeof ApiPublicRiobusAlertsRoute
@@ -189,6 +210,7 @@ export interface FileRoutesByTo {
   '/alerts': typeof AlertsRoute
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
+  '/health': typeof HealthRoute
   '/riobus': typeof RiobusRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/routes': typeof RoutesRoute
@@ -203,6 +225,8 @@ export interface FileRoutesByTo {
   '/api/public/ads': typeof ApiPublicAdsRoute
   '/api/public/alerts': typeof ApiPublicAlertsRoute
   '/api/public/health': typeof ApiPublicHealthRoute
+  '/api/public/health-collect': typeof ApiPublicHealthCollectRoute
+  '/api/public/health-history': typeof ApiPublicHealthHistoryRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
   '/api/public/riobus/alerts': typeof ApiPublicRiobusAlertsRoute
@@ -216,6 +240,7 @@ export interface FileRoutesById {
   '/alerts': typeof AlertsRoute
   '/explorer': typeof ExplorerRoute
   '/gtfs-rt': typeof GtfsRtRoute
+  '/health': typeof HealthRoute
   '/riobus': typeof RiobusRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/routes': typeof RoutesRoute
@@ -230,6 +255,8 @@ export interface FileRoutesById {
   '/api/public/ads': typeof ApiPublicAdsRoute
   '/api/public/alerts': typeof ApiPublicAlertsRoute
   '/api/public/health': typeof ApiPublicHealthRoute
+  '/api/public/health-collect': typeof ApiPublicHealthCollectRoute
+  '/api/public/health-history': typeof ApiPublicHealthHistoryRoute
   '/api/public/init-admin': typeof ApiPublicInitAdminRoute
   '/api/public/gtfs-static/$file': typeof ApiPublicGtfsStaticFileRoute
   '/api/public/riobus/alerts': typeof ApiPublicRiobusAlertsRoute
@@ -244,6 +271,7 @@ export interface FileRouteTypes {
     | '/alerts'
     | '/explorer'
     | '/gtfs-rt'
+    | '/health'
     | '/riobus'
     | '/robots.txt'
     | '/routes'
@@ -258,6 +286,8 @@ export interface FileRouteTypes {
     | '/api/public/ads'
     | '/api/public/alerts'
     | '/api/public/health'
+    | '/api/public/health-collect'
+    | '/api/public/health-history'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
     | '/api/public/riobus/alerts'
@@ -270,6 +300,7 @@ export interface FileRouteTypes {
     | '/alerts'
     | '/explorer'
     | '/gtfs-rt'
+    | '/health'
     | '/riobus'
     | '/robots.txt'
     | '/routes'
@@ -284,6 +315,8 @@ export interface FileRouteTypes {
     | '/api/public/ads'
     | '/api/public/alerts'
     | '/api/public/health'
+    | '/api/public/health-collect'
+    | '/api/public/health-history'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
     | '/api/public/riobus/alerts'
@@ -296,6 +329,7 @@ export interface FileRouteTypes {
     | '/alerts'
     | '/explorer'
     | '/gtfs-rt'
+    | '/health'
     | '/riobus'
     | '/robots.txt'
     | '/routes'
@@ -310,6 +344,8 @@ export interface FileRouteTypes {
     | '/api/public/ads'
     | '/api/public/alerts'
     | '/api/public/health'
+    | '/api/public/health-collect'
+    | '/api/public/health-history'
     | '/api/public/init-admin'
     | '/api/public/gtfs-static/$file'
     | '/api/public/riobus/alerts'
@@ -323,6 +359,7 @@ export interface RootRouteChildren {
   AlertsRoute: typeof AlertsRoute
   ExplorerRoute: typeof ExplorerRoute
   GtfsRtRoute: typeof GtfsRtRoute
+  HealthRoute: typeof HealthRoute
   RiobusRoute: typeof RiobusRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   RoutesRoute: typeof RoutesRoute
@@ -336,6 +373,8 @@ export interface RootRouteChildren {
   ApiPublicAdsRoute: typeof ApiPublicAdsRoute
   ApiPublicAlertsRoute: typeof ApiPublicAlertsRoute
   ApiPublicHealthRoute: typeof ApiPublicHealthRoute
+  ApiPublicHealthCollectRoute: typeof ApiPublicHealthCollectRoute
+  ApiPublicHealthHistoryRoute: typeof ApiPublicHealthHistoryRoute
   ApiPublicInitAdminRoute: typeof ApiPublicInitAdminRoute
   ApiPublicGtfsStaticFileRoute: typeof ApiPublicGtfsStaticFileRoute
   ApiPublicRiobusAlertsRoute: typeof ApiPublicRiobusAlertsRoute
@@ -384,6 +423,13 @@ declare module '@tanstack/react-router' {
       path: '/gtfs-rt'
       fullPath: '/gtfs-rt'
       preLoaderRoute: typeof GtfsRtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/health': {
+      id: '/health'
+      path: '/health'
+      fullPath: '/health'
+      preLoaderRoute: typeof HealthRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/riobus': {
@@ -484,6 +530,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicHealthRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/health-collect': {
+      id: '/api/public/health-collect'
+      path: '/api/public/health-collect'
+      fullPath: '/api/public/health-collect'
+      preLoaderRoute: typeof ApiPublicHealthCollectRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/health-history': {
+      id: '/api/public/health-history'
+      path: '/api/public/health-history'
+      fullPath: '/api/public/health-history'
+      preLoaderRoute: typeof ApiPublicHealthHistoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/init-admin': {
       id: '/api/public/init-admin'
       path: '/api/public/init-admin'
@@ -532,6 +592,7 @@ const rootRouteChildren: RootRouteChildren = {
   AlertsRoute: AlertsRoute,
   ExplorerRoute: ExplorerRoute,
   GtfsRtRoute: GtfsRtRoute,
+  HealthRoute: HealthRoute,
   RiobusRoute: RiobusRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   RoutesRoute: RoutesRoute,
@@ -545,6 +606,8 @@ const rootRouteChildren: RootRouteChildren = {
   ApiPublicAdsRoute: ApiPublicAdsRoute,
   ApiPublicAlertsRoute: ApiPublicAlertsRoute,
   ApiPublicHealthRoute: ApiPublicHealthRoute,
+  ApiPublicHealthCollectRoute: ApiPublicHealthCollectRoute,
+  ApiPublicHealthHistoryRoute: ApiPublicHealthHistoryRoute,
   ApiPublicInitAdminRoute: ApiPublicInitAdminRoute,
   ApiPublicGtfsStaticFileRoute: ApiPublicGtfsStaticFileRoute,
   ApiPublicRiobusAlertsRoute: ApiPublicRiobusAlertsRoute,

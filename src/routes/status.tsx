@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
+import { HealthHistory } from '@/components/health-history';
 
 export const Route = createFileRoute("/status")({
   component: StatusPage,
@@ -149,6 +150,7 @@ function StatusPage() {
         </>
       )}
 
+      <HealthHistory />
       <h2 className="mt-10 text-xl font-bold">CORS</h2>
       <div className="mt-2 rounded-lg border border-border bg-card p-4 text-sm">
         <p className="text-muted-foreground">

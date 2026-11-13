@@ -22,10 +22,9 @@ interface Check {
   note?: string;
 }
 
-const SUPABASE_URL =
-  process.env.SUPABASE_URL ?? "https://enzeyiwpoomhlxmcjivn.supabase.co";
-const SUPABASE_KEY =
-  process.env.SUPABASE_PUBLISHABLE_KEY ?? process.env.SUPABASE_ANON_KEY ?? "";
+function backendConfig() {
+  return { url: process.env.SUPABASE_URL ?? "https://enzeyiwpoomhlxmcjivn.supabase.co", key: process.env.SUPABASE_PUBLISHABLE_KEY ?? process.env.SUPABASE_ANON_KEY ?? "" };
+}
 
 const TIMEOUT_MS = 8000;
 
@@ -62,6 +61,7 @@ async function checkRealtime(
   name: string,
   fn: string,
 ): Promise<Check> {
+  const { url: SUPABASE_URL, key: SUPABASE_KEY } = backendConfig();
   const url = `${SUPABASE_URL}/functions/v1/${fn}?format=json`;
   const { res, latency, error } = await timedFetch(url, {
     headers: SUPABASE_KEY
@@ -144,6 +144,7 @@ async function checkActio(
   path: string,
   expectKey: string,
 ): Promise<Check> {
+  const { url: SUPABASE_URL, key: SUPABASE_KEY } = backendConfig();
   const url = `${SUPABASE_URL}/functions/v1/actio?path=${encodeURIComponent(path)}`;
   const { res, latency, error } = await timedFetch(url, {
     headers: SUPABASE_KEY
@@ -185,6 +186,10 @@ export const Route = createFileRoute("/api/public/health")({
     handlers: {
       OPTIONS: async () => new Response(null, { status: 204, headers: CORS }),
       GET: async ({ request }) => {
+        if (new URL(request.url).searchParams.get("history") === "1") {
+          const { readHistoryResponse } = await import("@/lib/health-history.server");
+          return readHistoryResponse(request);
+        }
         const reqUrl = new URL(request.url);
         const host = request.headers.get("x-forwarded-host") ?? request.headers.get("host") ?? reqUrl.host;
         const isLocal = host.startsWith("localhost") || host.startsWith("127.0.0.1");
