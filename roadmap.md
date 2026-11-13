@@ -1,3 +1,8 @@
+# Health history
+- [ ] Persist observations and distinguish empty vehicle feeds from connection failures, including brief incidents.
+- [ ] Add date-filtered history, daily summary and CSV/XLSX exports to the status page and /health.
+- [ ] Activate authenticated automatic collection and verify storage/readback/exports. Historical data before monitoring must remain explicitly unavailable unless a real source exists.
+
 # Google Maps realtime diagnosis
 - [x] Verify live protobuf feeds: five vehicles and four trip updates returned successfully.
 - [x] Correct the invalid feed_start_date in the static ZIP and synchronize its metadata mirrors; nine static/realtime regression tests pass. Publishing and Google re-ingestion remain necessary.
