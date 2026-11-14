@@ -1,3 +1,6 @@
+# GTFS update
+- [x] Replace Arroyo static ZIP with supplied GTFS_Static.zip (22.2.1) and synchronize all nine TXT/JSON mirrors; exact ZIP, TXT, JSON and API downloads verified, ten static/realtime tests pass. Publish to update production feeds.
+
 # Health history
 - [x] Persist observations and distinguish empty vehicle feeds from connection failures, including brief incidents; real observation saved and read back.
 - [x] Add date-filtered history, daily summary and CSV/XLSX exports to the status page and /health; mobile downloads and workbook contents verified, thirteen regression tests pass.
