@@ -4,10 +4,19 @@ export const Route=createFileRoute('/api/public/health-collect')({server:{handle
   const {authenticateCronRequest}=await import('@/integrations/supabase/cron-auth');
   const denied=await authenticateCronRequest(request);if(denied)return denied;
   // Do not let user-supplied headers or bodies choose the monitored origin.
-  const result=await fetch('https://arroyobus-api.lovable.app/api/public/health',{signal:AbortSignal.timeout(55000)});
-  if(!result.ok)return Response.json({error:'Health unavailable'},{status:502});
-  const health=await result.json() as {status:string;generated_at:string;took_ms:number;checks:{id:string;status:string;entities?:number}[]};
-  if(!Array.isArray(health.checks) || !['ok','degraded','down'].includes(health.status))return Response.json({error:'Invalid health response'},{status:502});
+  const started=Date.now();
+  type Snapshot={status:string;generated_at:string;took_ms:number;checks:{id:string;status:string;entities?:number}[]};
+  let health:Snapshot;
+  try {
+    const result=await fetch('https://arroyobus-api.lovable.app/api/public/health',{signal:AbortSignal.timeout(55000)});
+    if(!result.ok)throw new Error('Health unavailable');
+    const body=await result.json() as Snapshot;
+    if(!Array.isArray(body.checks) || !['ok','degraded','down'].includes(body.status))throw new Error('Invalid health response');
+    health=body;
+  } catch {
+    // A failed health request is itself an observation, not a missing record.
+    health={status:'down',generated_at:new Date().toISOString(),took_ms:Date.now()-started,checks:[{id:'gtfs-rt-vehicle-positions',status:'down'},{id:'gtfs-rt-trip-updates',status:'down'}]};
+  }
   const vehicle=health.checks.find(c=>c.id==='gtfs-rt-vehicle-positions');
   const trip=health.checks.find(c=>c.id==='gtfs-rt-trip-updates');
   const {supabaseAdmin}=await import('@/integrations/supabase/client.server');
