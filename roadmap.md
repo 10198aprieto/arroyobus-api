@@ -1,7 +1,7 @@
 # Health history
-- [ ] Persist observations and distinguish empty vehicle feeds from connection failures, including brief incidents.
-- [ ] Add date-filtered history, daily summary and CSV/XLSX exports to the status page and /health.
-- [ ] Activate authenticated automatic collection and verify storage/readback/exports. Historical data before monitoring must remain explicitly unavailable unless a real source exists.
+- [x] Persist observations and distinguish empty vehicle feeds from connection failures, including brief incidents; real observation saved and read back.
+- [x] Add date-filtered history, daily summary and CSV/XLSX exports to the status page and /health; mobile downloads and workbook contents verified, thirteen regression tests pass.
+- [ ] Automatic minute schedule created, but production callback returns 404 until the user publishes. Authenticated preview callback and rejected anonymous writes verified. Earlier historical data is unavailable without a real source.
 
 # Google Maps realtime diagnosis
 - [x] Verify live protobuf feeds: five vehicles and four trip updates returned successfully.
