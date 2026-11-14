@@ -22,10 +22,10 @@ const g = {
   services: new Map(rows('calendar').map(c=>[c.service_id,{days:['sunday','monday','tuesday','wednesday','thursday','friday','saturday'].map(d=>Number(c[d])),start:c.start_date,end:c.end_date}])),
   exceptions: new Map(rows('calendar_dates').map(c=>[`${c.service_id}|${c.date}`,Number(c.exception_type)])),
 };
-const now = Date.parse('2026-11-07T17:20:22Z')/1000;
-const current = {tripId:'A42',stopId:'12',route:{routeId:'Azul'},vehicleId:'6355',gpsTimestamp:'2026-11-07T17:20:22Z',arrivalTime:'2026-11-07T17:22:09Z',isEstimated:true,isAproximated:false};
+const now = Date.parse('2026-11-14T17:20:22Z')/1000;
+const current = {tripId:'A42',stopId:'12',route:{routeId:'Azul'},vehicleId:'6355',gpsTimestamp:'2026-11-14T17:20:22Z',arrivalTime:'2026-11-14T17:22:09Z',isEstimated:true,isAproximated:false};
 test('current Azul trip wins over future Roja with the same GPS in either input order', () => {
-  const future = {...current,tripId:'R46',route:{routeId:'Roja'},arrivalTime:'2026-11-07T20:07:00Z',isEstimated:false};
+  const future = {...current,tripId:'R46',route:{routeId:'Roja'},arrivalTime:'2026-11-14T20:07:00Z',isEstimated:false};
   for (const module of [vp,tu]) for (const list of [[future,current],[current,future]]) {
     expect(module.selectRealtimeVehicle(list,g,now)?.tripId).toBe('A42');
   }
@@ -34,12 +34,12 @@ test('a trip id cannot override a conflicting upstream color/route', () => {
   for (const module of [vp,tu]) expect(module.resolveRealtimeArrival(g,{...current,route:{routeId:'Roja'}},now)).toBeNull();
 });
 test('return to stop 1 resolves to sequence 40, not the first occurrence', () => {
-  for (const module of [vp,tu]) expect(module.resolveRealtimeArrival(g,{...current,stopId:'1',arrivalTime:'2026-11-07T18:01:35Z'},now)?.stop.sequence).toBe(40);
+  for (const module of [vp,tu]) expect(module.resolveRealtimeArrival(g,{...current,stopId:'1',arrivalTime:'2026-11-14T18:01:35Z'},now)?.stop.sequence).toBe(40);
 });
 test('expired and future GPS is not reported as fresh', () => {
   for (const module of [vp,tu]) {
-    expect(module.freshRealtimeGps({...current,gpsTimestamp:'2026-11-07T16:16:30Z'},now)).toBe(false);
-    expect(module.freshRealtimeGps({...current,gpsTimestamp:'2026-11-07T18:20:22Z'},now)).toBe(false);
+    expect(module.freshRealtimeGps({...current,gpsTimestamp:'2026-11-14T16:16:30Z'},now)).toBe(false);
+    expect(module.freshRealtimeGps({...current,gpsTimestamp:'2026-11-14T18:20:22Z'},now)).toBe(false);
     expect(module.freshRealtimeGps(current,now)).toBe(true);
   }
 });
@@ -47,24 +47,24 @@ test('numeric timestamps are parsed as seconds and milliseconds, not calendar ye
   for (const module of [vp,tu]) {
     expect(module.parseRealtimeTimestamp(String(now))).toBe(now);
     expect(module.parseRealtimeTimestamp(String(now*1000))).toBe(now);
-    expect(module.parseRealtimeTimestamp('2026-11-07T18:20:22')).toBeNull();
+    expect(module.parseRealtimeTimestamp('2026-11-14T18:20:22')).toBeNull();
   }
 });
 test('calendar service is checked, including removal exceptions', () => {
   for (const module of [vp,tu]) {
-    expect(module.realtimeServiceActive(g,'sabados','20261107')).toBe(true);
-    expect(module.realtimeServiceActive(g,'laborales','20261107')).toBe(false);
-    expect(module.realtimeServiceActive(g,'missing','20261107')).toBe(false);
+    expect(module.realtimeServiceActive(g,'sabados','20261114')).toBe(true);
+    expect(module.realtimeServiceActive(g,'laborales','20261114')).toBe(false);
+    expect(module.realtimeServiceActive(g,'missing','20261114')).toBe(false);
   }
 });
 test('both legitimate visits to the same stop survive and backwards departures do not', () => {
   const list = [
-    {...current,stopId:'1',staticStopSequence:1,arrivalTime:'2026-11-07T17:00:00Z'},
-    {...current,stopId:'1',staticStopSequence:40,arrivalTime:'2026-11-07T18:01:00Z'},
-    {...current,staticStopSequence:41,arrivalTime:'2026-11-07T18:02:00Z',departureTime:'2026-11-07T18:00:00Z'},
+    {...current,stopId:'1',staticStopSequence:1,arrivalTime:'2026-11-14T17:00:00Z'},
+    {...current,stopId:'1',staticStopSequence:40,arrivalTime:'2026-11-14T18:01:00Z'},
+    {...current,staticStopSequence:41,arrivalTime:'2026-11-14T18:02:00Z',departureTime:'2026-11-14T18:00:00Z'},
   ];
   expect(tu.cleanRealtimeUpdates(list).map(a=>a.staticStopSequence)).toEqual([1,40]);
 });
 test('trip update timestamp preserves source observation instead of refreshing old data', () => {
-  expect(tu.predictionTimestamp([{...current,receivedAt:'2026-11-07T17:20:12Z'}],now)).toBe(Date.parse('2026-11-07T17:20:12Z')/1000);
+  expect(tu.predictionTimestamp([{...current,receivedAt:'2026-11-14T17:20:12Z'}],now)).toBe(Date.parse('2026-11-14T17:20:12Z')/1000);
 });
