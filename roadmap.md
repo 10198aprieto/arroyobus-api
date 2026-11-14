@@ -1,3 +1,6 @@
+# GTFS update
+- [ ] Replace Arroyo static ZIP with supplied GTFS_Static.zip and synchronize TXT/JSON mirrors; verify downloads and realtime schedule regressions.
+
 # Health history
 - [x] Persist observations and distinguish empty vehicle feeds from connection failures, including brief incidents; real observation saved and read back.
 - [x] Add date-filtered history, daily summary and CSV/XLSX exports to the status page and /health; mobile downloads and workbook contents verified, thirteen regression tests pass.

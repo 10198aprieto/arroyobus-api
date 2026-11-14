@@ -1,13 +1,14 @@
 import { expect, test } from 'bun:test';
 import { execFileSync } from 'node:child_process';
 
-test('static ZIP dates are valid and feed metadata matches TXT and JSON mirrors', () => {
+test('static ZIP dates are valid and all files match TXT and JSON mirrors', () => {
   const result = execFileSync('python3', ['-c', `
 import csv, datetime, io, json, zipfile
 with zipfile.ZipFile('public/gtfs-static.zip') as archive:
     for name in archive.namelist():
         if not name.endswith('.txt'):
             continue
+        
         rows = list(csv.DictReader(io.StringIO(archive.read(name).decode('utf-8-sig'))))
         for row in rows:
             for key, value in row.items():
